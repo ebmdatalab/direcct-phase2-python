@@ -4,7 +4,9 @@ import numpy as np
 from tqdm.auto import tqdm
 from pymed import PubMed
 import xmltodict
+import json
 import re
+from xml.etree.ElementTree import tostring
 
 
 ids_exact = ['(?i)NCT\s*\W*0\d{7}', '20\d{2}\W*0\d{5}\W*\d{2}', '(?i)PACTR\s*\W*20\d{13}', '(?i)ACTRN\s*\W*126\d{11}', 
@@ -43,9 +45,9 @@ def zip_load(path, file, index_col=None, low_memory=True):
       return read_csv(zip_file.open(file), index_col=index_col, low_memory=low_memory)
 
 
-def create_pubmed_archive(results_list):
+def create_pubmed_archive(results_list, length):
       archive = []
-      for r in tqdm(results_list):
+      for r in tqdm(results_list, total=length):
             pm_dict = r.toDict()
             try:
                   xml = pm_dict['xml']

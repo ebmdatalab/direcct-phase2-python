@@ -1,0 +1,237 @@
+,trial_id,results_status,countries,global_trial_end_dates,status_list,secondary_ids
+0,2020-000890-25,(No results available),['FR'],[None],['Ongoing'],{'spon_id': '202002102'}
+1,2020-000919-69,(No results available),['NL'],[None],['Ongoing'],{'spon_id': '73249'}
+2,2020-001301-23,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'APHP200387'}
+3,2020-001381-11,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'APHP200409'}
+4,2020-001442-19,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'IIBSP-COV-2020-23'}
+5,2020-001385-11,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'PrEP_COVID_19'}
+6,2020-001409-21,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'IMIB-DFC-2020-02'}
+7,2020-001492-33,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'CGE_2020_9'}
+8,2020-001194-69,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'MEFLOCOVID-19'}
+9,2020-001565-37,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'PrEP_COVID'}
+10,2020-001421-31,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'QUINAVID-19'}
+11,2020-001606-33,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'HIACO-19'}
+12,2020-001307-16,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'SIC'}
+13,2020-001156-18,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'PanCOVID19'}
+14,2020-001160-28,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'MedOPP376'}
+15,2020-001262-11,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'FJD-COVID19-20-01'}
+16,2020-001290-74,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'SARICOVID'}
+17,2020-001406-27,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'RECHMPL20-168'}
+18,2020-001321-31,(No results available),['ES'],[None],['Ongoing'],{'spon_id': '24032020'}
+19,2020-001437-12,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'COVID-19_ASS'}
+20,2020-001587-29,(No results available),['ES'],[None],['Ongoing'],{'spon_id': '02/04/2020-001'}
+21,2020-001689-12,(No results available),"['ES', 'GB', 'FR', 'GR']","[None, None, None, None]","['Ongoing', 'GB - no longer in EU/EEA', 'Ongoing', 'Ongoing']","{'nct_id': 'NCT04322682', 'spon_id': 'MHIPS-2020-001'}"
+22,2020-001379-34,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'SEVO-COVID19'}
+23,2020-001511-25,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'IMIB-COLVID-2020-03'}
+24,2020-001266-11,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'BALMYS-19'}
+25,2020-001570-30,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'D20-P013'}
+26,2020-001329-30,(No results available),['AT'],[None],['Ongoing'],{'spon_id': '2020P000787'}
+27,2020-001527-14,(No results available),['NL'],[None],['Ongoing'],{'spon_id': '1'}
+28,2020-001255-40,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'STRIKE-SARS-CoV2'}
+29,2020-001659-42,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'ANTITROMBINA'}
+30,2020-001440-26,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'PrevenCOVID-19'}
+31,2020-001459-42,(No results available),['DK'],[None],['Ongoing'],{'spon_id': '26223678Hans'}
+32,2020-001500-41,(No results available),['BE'],[None],['Ongoing'],{'spon_id': 'COV-AID'}
+33,2020-001723-13,(No results available),['FR'],[None],['Ongoing'],{'spon_id': '405'}
+34,2020-001823-15,(No results available),['FR'],[None],['Ongoing'],{'spon_id': '20CH089'}
+35,2020-001717-20,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'COVIDIOL'}
+36,2020-001700-42,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'APHP200410'}
+37,2020-001635-27,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'AB20001'}
+38,2020-001766-11,(No results available),['FR'],[None],['Ongoing'],{'spon_id': '2020-24'}
+39,2020-001709-21,(No results available),['FR'],[None],['Ongoing'],{'spon_id': '2020PI073'}
+40,2020-001768-27,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'P20/07'}
+41,2020-001598-66,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'P20/06'}
+42,2020-001786-36,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'ILIAD-7-UK-Cohort'}
+43,2020-001783-28,(No results available),['HU'],[None],['Ongoing'],{'spon_id': 'BCG-COVID_HU_001'}
+44,2020-001805-21,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'RA486120'}
+45,2020-001614-38,(No results available),['BE'],[None],['Ongoing'],{'spon_id': 'S63935'}
+46,2020-001644-25,(No results available),"['FR', 'DE', 'ES', 'SE', 'IT']","[None, '2020-11-17', None, '2020-11-17', None]","['Ongoing', 'Completed', 'Ongoing', 'Completed', 'Ongoing']",{'spon_id': 'D822FC00001/ACE-ID-201'}
+47,2020-001573-78,(No results available),['FR'],[None],['Ongoing'],{'spon_id': '87RI20_0012'}
+48,2020-001754-21,(No results available),['FR'],[None],['Ongoing'],{'spon_id': '2020-23'}
+49,2020-001536-98,(No results available),['ES'],['2020-04-27'],['Prematurely Ended'],{'spon_id': 'PREPSARS'}
+50,2020-001673-75,(No results available),"['FR', 'DE', 'GB', 'ES', 'IT']","[None, None, None, None, None]","['Ongoing', 'Ongoing', 'GB - no longer in EU/EEA', 'Ongoing', 'Ongoing']",{'spon_id': 'ABX464-401'}
+51,2020-001497-30,(No results available),"['GB', 'FR', 'DE', 'ES']","[None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Ongoing']",{'spon_id': 'ALXN1210-COV-305'}
+52,2020-001597-30,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'MRx-4DP0004-II-001'}
+53,2020-002111-22,(No results available),['PL'],[None],['Ongoing'],{'spon_id': 'BCG/COVID-19/UR/04/2020'}
+54,2020-001849-39,(No results available),['SE'],[None],['Ongoing'],{'spon_id': 'NETs-C19'}
+55,2020-001951-42,(No results available),['PL'],[None],['Ongoing'],{'spon_id': 'ReCOVery-SIRIO'}
+56,2020-002130-33,(No results available),['BE'],[None],['Ongoing'],{'spon_id': 'ZILU-COV'}
+57,2020-001257-51,(No results available),['DK'],[None],['Temporarily Halted'],{'spon_id': '220322020'}
+58,2020-001363-85,(No results available),['DK'],[None],['Prematurely Ended'],{'spon_id': '60152610\u202c'}
+59,2020-001411-25,(No results available),"['DE', 'FR', 'AT', 'GB', 'ES', 'IT']","[None, None, None, None, None, None]","['Prematurely Ended', 'Completed', 'Prematurely Ended', 'GB - no longer in EU/EEA', 'Temporarily Halted', 'Prematurely Ended']",{'spon_id': 'XPORT-COV-1001'}
+60,2020-001264-28,(No results available),"['DE', 'BG', 'GR', 'HU']","[None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","{'nct_id': 'NCT04379271', 'spon_id': 'P2-IMU-838-COV'}"
+61,2020-001937-11,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': '132333'}
+62,2020-001243-15,View results,['BE'],['2020-06-10'],['Completed'],{'spon_id': 'S63874'}
+63,2020-001636-95,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': '282110'}
+64,2020-001889-10,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'STOIC'}
+65,2020-002120-37,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'RESP301-002'}
+66,2020-002233-15,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'NICCAM-001'}
+67,2020-001497-30,(No results available),"['GB', 'FR', 'DE', 'ES']","[None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Ongoing']",{'spon_id': 'ALXN1210-COV-305'}
+68,2020-001767-86,(No results available),['IE'],[None],['Ongoing'],{'spon_id': 'COVIRL-002'}
+69,2020-001777-71,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'RAVEN'}
+70,2020-001501-24,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'IRST100.47'}
+71,2020-001390-76,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'ESCAPE'}
+72,2020-001528-32,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'ARCO-Homestudy'}
+73,2020-001987-28,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'PRECOV'}
+74,2020-001921-30,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'STAUNCH-19'}
+75,2020-001795-15,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'COMBAT-19'}
+76,2020-001854-23,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'AMMURAVID'}
+77,2020-001271-33,(No results available),['FR'],[None],['Completed'],{'spon_id': '49RC20_0071'}
+78,2020-001375-32,(No results available),['NL'],[None],['Ongoing'],{'spon_id': 'PreToVid'}
+79,2020-001411-25,(No results available),"['DE', 'FR', 'AT', 'GB', 'ES', 'IT']","[None, None, None, None, None, None]","['Prematurely Ended', 'Completed', 'Prematurely Ended', 'GB - no longer in EU/EEA', 'Temporarily Halted', 'Prematurely Ended']",{'spon_id': 'XPORT-COV-1001'}
+80,2020-001325-31,(No results available),['NL'],[None],['Ongoing'],{'spon_id': 'NL73551.091.20'}
+81,2020-001270-29,View results,"['DK', 'CZ', 'DE', 'GB', 'FR']","['2020-06-22', None, '2020-06-25', '2020-06-25', '2020-06-25']","['Prematurely Ended', 'Prematurely Ended', 'Prematurely Ended', 'Prematurely Ended', 'Prematurely Ended']",{'spon_id': 'EFC16858'}
+82,2020-001198-55,(No results available),['DK'],[None],['Ongoing'],{'spon_id': 'KronLungesyg_COVID_19_protokol_2'}
+83,2020-001750-22,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': '20HH5926'}
+84,2020-001504-42,(No results available),"['FR', 'BE']","[None, None]","['Ongoing', 'Ongoing']",{'spon_id': 'MOT-C-204'}
+85,2020-001747-21,(No results available),['PT'],[None],['Ongoing'],{'spon_id': 'ISPUP2020CT1'}
+86,2020-002106-68,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'CTU/2020/354'}
+87,2020-001808-42,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'PHM-2020-001'}
+88,2020-002193-27,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'COVID-AT'}
+89,2020-001765-37,(No results available),['ES'],['2020-06-26'],['Prematurely Ended'],{'spon_id': 'PROTOCOLO/ICO/COVID20'}
+90,2020-001707-16,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'TOCICOVID'}
+91,2020-001890-56,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'COVID-Γ'}
+92,2020-001794-77,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'SilCOVID19'}
+93,2020-001929-31,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'ESCORPIO'}
+94,2020-002186-34,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'MP_COVID19'}
+95,2020-002310-41,(No results available),['ES'],[None],['Ongoing'],{'spon_id': '“MADRID-COVID”'}
+96,2020-002166-13,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'HUB-MdI-ICAT-COVID-201'}
+97,2020-002449-41,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'PRE-COVID'}
+98,2020-002713-17,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'GA42469'}
+99,2020-001904-41,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'GETAFIX-2020'}
+100,2020-002668-29,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': '132796'}
+101,2020-002632-75,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'CLI-050000-04'}
+102,2020-002494-10,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': ''}
+103,2020-002476-13,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': '20HH5958'}
+104,2020-002952-18,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'Protocol'}
+105,2020-002503-19,(No results available),"['NL', 'GB']","[None, None]","['Ongoing', 'GB - no longer in EU/EEA']","{'nct_id': 'NCT04327206', 'spon_id': '62586'}"
+106,2020-002091-12,(No results available),['BG'],[None],['Ongoing'],{'spon_id': 'HUVE-19-CT-001'}
+107,2020-001417-21,View results,['BE'],['2020-06-26'],['Prematurely Ended'],{'spon_id': 'ITM202004'}
+108,2020-002102-58,(No results available),['BE'],[None],['Ongoing'],{'spon_id': 'TJT2012'}
+109,2020-001770-30,(No results available),['BE'],[None],['Prematurely Ended'],{'spon_id': '2020COVID-19TCZ'}
+110,2020-002574-27,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'RC20_0230'}
+111,2020-001333-13,(No results available),['FR'],['2020-08-07'],['Prematurely Ended'],{'spon_id': '20-37815010'}
+112,2020-002039-31,(No results available),['FI'],[None],['Ongoing'],{'spon_id': 'covidstorm'}
+113,2020-002038-33,(No results available),['FI'],[None],['Ongoing'],{'spon_id': 'LIBERTY'}
+114,2020-002458-25,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'INTERCOP'}
+115,2020-002283-32,(No results available),['IT'],[None],['Ongoing'],{'spon_id': '2020-34'}
+116,2020-001739-28,(No results available),['BE'],[None],['Ongoing'],{'spon_id': 'S63979'}
+117,2020-001172-15,(No results available),"['DE', 'DK', 'AT', 'GB']","[None, None, None, None]","['Ongoing', 'Prematurely Ended', 'Ongoing', 'GB - no longer in EU/EEA']",{'spon_id': 'APN01-01-COVID19'}
+118,2020-001408-41,(No results available),['DE'],['2020-08-31'],['Prematurely Ended'],{'spon_id': 'UKF-MIT-2020-01'}
+119,2020-002394-94,(No results available),['BE'],[None],['Ongoing'],{'spon_id': 'PULSE-IIT-FluidDA-001'}
+120,2020-001748-24,(No results available),['SE'],[None],['Ongoing'],{'spon_id': 'ImmCoVA'}
+121,2020-002584-63,(No results available),"['DE', 'NL', 'ES']","[None, None, None]","['Ongoing', 'Ongoing', 'Restarted']",{'spon_id': 'VAC31518COV2001'}
+122,2020-002869-34,(No results available),['BE'],[None],['Ongoing'],"{'nct_id': 'NCT04396106', 'spon_id': 'AT-03A-001'}"
+123,2020-002503-19,(No results available),"['NL', 'GB']","[None, None]","['Ongoing', 'GB - no longer in EU/EEA']","{'nct_id': 'NCT04327206', 'spon_id': '62586'}"
+124,2020-002314-40,(No results available),['AT'],[None],['Ongoing'],{'spon_id': 'CoV-2_DDI'}
+125,2020-002027-10,(No results available),['SE'],[None],['Ongoing'],{'spon_id': 'COVIDENZA'}
+126,2020-001281-11,(No results available),['FR'],['2020-04-28'],['Prematurely Ended'],{'spon_id': '20CH065'}
+127,2020-001530-35,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'MeCOVID'}
+128,2020-001622-64,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'TAC-COVID19'}
+129,2020-001722-66,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'REP_COVID'}
+130,2020-001505-22,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'BST-COVID-01'}
+131,2020-001541-39,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'BEVACOR'}
+132,2020-001618-39,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'CL08-ORY-2001_COVID-19'}
+133,2020-000705-86,(No results available),['ES'],[None],['Ongoing'],{'spon_id': '01-2020'}
+134,2020-001825-29,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'ANA-COVID-GEAS'}
+135,2020-001697-30,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'COVIDNA'}
+136,2020-001376-15,(No results available),['DE'],['2020-09-03'],['Prematurely Ended'],{'spon_id': 'VPM1002-DE-3.06CoV'}
+137,2020-002299-11,(No results available),['HU'],[None],['Ongoing'],{'spon_id': 'SD-COVID19-01'}
+138,2020-002728-35,(No results available),['HU'],[None],['Ongoing'],{'spon_id': 'HUN-AVI-01'}
+139,2020-001645-40,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'REPAVID-19'}
+140,2020-003470-47,(No results available),['NL'],[None],['Ongoing'],{'spon_id': '74730.041.20'}
+141,2020-001686-36,(No results available),['FR'],[None],['Ongoing'],{'spon_id': '2020-21'}
+142,2020-002542-16,(No results available),"['GB', 'GR', 'DK', 'DE']","[None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Ongoing']",{'spon_id': 'INSIGHT-013-ITAC'}
+143,2020-001264-28,(No results available),"['DE', 'BG', 'GR', 'HU']","[None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","{'nct_id': 'NCT04379271', 'spon_id': 'P2-IMU-838-COV'}"
+144,2020-001498-63,(No results available),"['BE', 'GB']","[None, None]","['Ongoing', 'GB - no longer in EU/EEA']",{'spon_id': 'BIO101-CL05'}
+145,2020-001327-13,(No results available),['AT'],[None],['Ongoing'],{'spon_id': 'OnCoVID19Trial'}
+146,2020-002110-41,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'CRUKD/20/002'}
+147,2020-001610-38,(No results available),['DK'],[None],['Ongoing'],{'spon_id': 'JAGG2020-1'}
+148,2020-001498-63,(No results available),"['BE', 'GB']","[None, None]","['Ongoing', 'GB - no longer in EU/EEA']",{'spon_id': 'BIO101-CL05'}
+149,2020-001608-40,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'HS216C17(MRCT)'}
+150,2020-003349-12,(No results available),['IE'],[None],['Ongoing'],"{'isrctn': 'ISRCTN12345678', 'nct_id': 'NCT12345678', 'spon_id': 'NUIG-2020-003'}"
+151,2020-004928-42,(No results available),['HU'],[None],['Ongoing'],{'spon_id': 'REM-ENY-01'}
+152,2020-001420-34,(No results available),['DK'],[None],['Ongoing'],{'spon_id': '0001'}
+153,2020-001473-79,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],"{'nct_id': 'NCT04350593', 'spon_id': 'ESR-20-20653'}"
+154,2020-002211-21,(No results available),"['GB', 'CZ']","[None, None]","['GB - no longer in EU/EEA', 'Ongoing']",{'spon_id': 'SGS.1656.201'}
+155,2020-001010-38,(No results available),['NO'],['2020-05-20'],['Prematurely Ended'],{'spon_id': 'Ahus-NO-COVID-19'}
+156,2020-001455-40,(No results available),['GR'],[None],['Completed'],"{'nct_id': 'NCT04326790', 'spon_id': 'GRECCO-19'}"
+157,2020-002295-13,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'APHP200552'}
+158,2020-001867-94,(No results available),['FR'],[None],['Ongoing'],{'spon_id': '20-070'}
+159,2020-002542-16,(No results available),"['GB', 'GR', 'DK', 'DE']","[None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Ongoing']",{'spon_id': 'INSIGHT-013-ITAC'}
+160,2020-001244-26,(No results available),['AT'],[None],['Ongoing'],{'spon_id': 'COV-2-SOLNATIDE-20'}
+161,2020-001504-42,(No results available),"['FR', 'BE']","[None, None]","['Ongoing', 'Ongoing']",{'spon_id': 'MOT-C-204'}
+162,2020-001558-23,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'COFID19-AIFA17/2020'}
+163,2020-001745-40,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'COVID-SARI-001'}
+164,2020-003267-26,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'BNT162-04'}
+165,2020-001732-10,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'KKS-278'}
+166,2020-003486-19,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': '1.002.20'}
+167,2020-003689-37,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'RC20_0319'}
+168,2020-002677-95,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'ABC-201'}
+169,2020-001689-12,(No results available),"['ES', 'GB', 'FR', 'GR']","[None, None, None, None]","['Ongoing', 'GB - no longer in EU/EEA', 'Ongoing', 'Ongoing']","{'nct_id': 'NCT04322682', 'spon_id': 'MHIPS-2020-001'}"
+170,2020-002122-82,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'UKER-COV2-01'}
+171,2020-001936-86,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'COMET'}
+172,2020-001782-37,(No results available),['SK'],[None],['Ongoing'],{'spon_id': 'PО-COV-III-20'}
+173,2020-001891-14,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'Heparin-SARS-CoV2'}
+174,2020-002032-69,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'COVITOZ-01'}
+175,2020-001603-16,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'COLCHI-COVID'}
+176,2020-001994-66,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'ECIT-PRO19'}
+177,2020-001934-37,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'GLUCOCOVID'}
+178,2020-002123-11,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'HUIS-04-2020'}
+179,2020-001474-29,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'SAINT'}
+180,2020-001953-36,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'GC2005'}
+181,2020-002472-12,(No results available),['NL'],[None],[None],
+182,2020-001903-17,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'HMos-012020'}
+183,2020-002114-40,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'APHP200527'}
+184,2020-001852-16,(No results available),['NL'],[None],['Ongoing'],{'spon_id': '01-04-2020'}
+185,2020-002056-20,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'APHP200495'}
+186,2020-004144-28,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],"{'isrctn': 'ISRCTN88057279', 'nct_id': 'NCT04389359', 'spon_id': 'CCTU0307'}"
+187,2020-001857-31,(No results available),['DE'],[None],[None],
+188,2020-002497-27,(No results available),['CZ'],[None],['Ongoing'],{'spon_id': 'KFJ-2020-01_IMUNOR'}
+189,2020-002293-28,(No results available),['SE'],[None],['Ongoing'],{'spon_id': '2020-002293-28'}
+190,2020-001623-13,(No results available),['GR'],[None],['Ongoing'],{'spon_id': 'T3inj-02/Thy-Support'}
+191,2020-002225-29,(No results available),['FR'],[None],['Ongoing'],{'spon_id': 'AntagoBrad-Cov'}
+192,2020-003367-26,(No results available),"['GB', 'SE']","[None, None]","['GB - no longer in EU/EEA', 'Ongoing']",{'spon_id': 'MK4482-001'}
+193,2020-001236-10,(No results available),['NL'],[None],['Ongoing'],{'spon_id': 'COVID-19'}
+194,2020-001467-82,(No results available),['NL'],[None],['Ongoing'],{'spon_id': 'P020.051'}
+195,2020-004743-83,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],{'spon_id': 'SG018'}
+196,2020-001546-19,(No results available),['BE'],['2020-10-26'],['Completed'],{'spon_id': 'ARGX-117-2001'}
+197,2020-001357-52,(No results available),['ES'],[None],['Ongoing'],"{'nct_id': 'NCT04330495', 'spon_id': 'EnCovid-hidroxiCLOROQUINA'}"
+198,2020-001319-26,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'FJD-COVID-ESTATINAS'}
+199,2020-001995-13,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'BREATH-19'}
+200,2020-002274-28,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'COVID-VIT-D'}
+201,2020-001704-42,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'SANsinCOVID'}
+202,2020-002287-31,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'PREVICHARM'}
+203,2020-002037-15,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'SARTRE'}
+204,2020-001960-28,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'RCTVITD/SARS-CoV-19'}
+205,2020-001841-38,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'Col-VID'}
+206,2020-002456-21,(No results available),['NL'],['2020-09-03'],['Completed'],{'spon_id': '74082'}
+207,2020-001605-23,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'HUA-COVID-19'}
+208,2020-002312-43,(No results available),['ES'],[None],['Ongoing'],{'spon_id': '01052020'}
+209,2020-001671-32,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'STS-BDB001-04'}
+210,2020-002009-25,(No results available),['CZ'],[None],['Ongoing'],{'spon_id': 'SARSCov2EFTI1.0'}
+211,2020-001971-33,(No results available),['ES'],[None],['Ongoing'],{'spon_id': 'CORIVER'}
+212,2020-002234-32,(No results available),"['BE', 'IT']","[None, None]","['Ongoing', 'Ongoing']",{'spon_id': 'CONVINCE'}
+213,2020-002913-16,(No results available),"['BE', 'DE', 'AT', 'PT', 'NL', 'DK']","[None, None, None, None, None, None]","['Ongoing', 'Ongoing', '', 'Ongoing', '', '']",{'spon_id': '0135-0347'}
+214,2020-004682-39,(No results available),['CZ'],[None],['Ongoing'],{'spon_id': 'KFJ-2020-02_NORMOSANG'}
+215,2020-001206-35,(No results available),"['AT', 'DE']","[None, None]","['Ongoing', 'Ongoing']",{'spon_id': 'ACEI-COVID-19'}
+216,2020-001689-12,(No results available),"['ES', 'GB', 'FR', 'GR']","[None, None, None, None]","['Ongoing', 'GB - no longer in EU/EEA', 'Ongoing', 'Ongoing']","{'nct_id': 'NCT04322682', 'spon_id': 'MHIPS-2020-001'}"
+217,2020-002322-85,(No results available),['SE'],[None],['Ongoing'],{'spon_id': 'KAN0006'}
+218,2020-003936-25,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'RLX0120'}
+219,2020-003904-15,(No results available),['DK'],[None],['Ongoing'],{'spon_id': '20202407'}
+220,2020-001038-36,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'BNT162-01'}
+221,2020-002282-33,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'COVID-PREVENT'}
+222,2020-001784-88,(No results available),['FI'],[None],['Ongoing'],{'spon_id': 'WHO-FIN-COVID-19'}
+223,2020-002504-39,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'HERO-19'}
+224,2020-004695-18,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'RES-Q-HR'}
+225,2020-002119-23,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'IEO1253'}
+226,2020-001654-21,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'KKS-279'}
+227,2020-003872-42,(No results available),['IT'],[None],['Ongoing'],{'spon_id': 'ANTIICIPATE'}
+228,2020-004408-32,(No results available),['GR'],[None],['Ongoing'],{'spon_id': 'AMY-101_ITHACA'}
+229,2020-001391-15,(No results available),['IE'],[None],['Ongoing'],{'spon_id': 'V323Oct2020'}
+230,2020-000936-23,(No results available),"['FR', 'AT', 'PT']","[None, None, None]","['Ongoing', 'Ongoing', 'Ongoing']",{'spon_id': 'C20-15'}
+231,2020-001335-28,(No results available),"['NL', 'DE']","[None, None]","['Ongoing', 'Ongoing']",{'spon_id': 'IFX-1-P2.9'}
+232,2020-003654-71,(No results available),"['RO', 'GR']","[None, None]","['Ongoing', 'Ongoing']","{'nct_id': 'NCT04452318', 'spon_id': 'R10933-10987-COV-2069'}"
+233,2020-003368-24,(No results available),"['GB', 'DE']","[None, None]","['GB - no longer in EU/EEA', 'Ongoing']",{'spon_id': 'MK-4482-002'}
+234,2020-002502-75,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'P-pVAC-SARS-CoV-2'}
+235,2020-001632-10,(No results available),['DE'],[None],['Ongoing'],{'spon_id': 'SARS-CoV-2CP-HD-001'}

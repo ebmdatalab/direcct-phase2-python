@@ -30,14 +30,15 @@ import numpy as np
 # +
 reg = pd.read_excel(parent + '/data/registry_data/registry_data.xlsx', sheet_name='Full')
 
-ictrp = pd.read_csv(parent + '/data/cleaned_ictrp_29June2020.csv')
+ictrp = pd.read_csv(parent + '/data/cleaned_ictrp_29June2020.csv').drop('secondary_ids', axis=1)
 # -
 
 reg.columns
 
 ictrp.head()
 
-merged = reg.merge(ictrp[['trialid', 'web_address']], how='left', left_on='trial_id', right_on='trialid').drop('trialid', axis=1)
+merged = reg.merge(ictrp[['trialid', 'web_address']], how='left', 
+                   left_on='trial_id', right_on='trialid').drop('trialid', axis=1)
 
 merged['pcd'] = pd.to_datetime(merged['pcd'], errors='coerce')
 merged['scd'] = pd.to_datetime(merged['scd'], errors='coerce')

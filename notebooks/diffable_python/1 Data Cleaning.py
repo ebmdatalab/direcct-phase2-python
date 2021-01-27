@@ -33,19 +33,25 @@ import pandas as pd
 import numpy as np
 from datetime import date
 
-df = pd.read_csv(parent + '/data/ictrp_data/COVID19-web_29June2020.csv', dtype={'Phase': str})
+df = pd.read_csv(parent + '/data/ictrp_data/COVID19-web_16dec2020.csv', dtype={'Phase': str})
 
 # +
 from lib.data_cleaning import enrollment_dates, fix_date, fix_errors, d_c
 
 #This is fixes for known broken enrollement dates    
-known_errors= {
-    'IRCT20200310046736N1': ['2641-06-14', '2020-04-01'],
+enrollment_errors= {
+    'IRCT20200310046736N1': ['14/06/2641', '2020-04-01'],
     'EUCTR2020-001909-22-FR': ['nan', '2020-04-29']
 }
-# -
 
-df = fix_errors(known_errors, df)
+reg_date_errors = {
+    'RBR-5p8nzk6': ['0', '20201125'],
+    'RBR-8tygcz7': ['0', '20201201']}
+
+# +
+df = fix_errors(enrollment_errors, df, 'Date enrollement')
+
+df = fix_errors(reg_date_errors, df, 'Date registration3')
 
 # +
 df['Date enrollement'] = df['Date enrollement'].apply(enrollment_dates)
@@ -159,11 +165,11 @@ df_cond_all['Phase'] = df_cond_all['Phase'].fillna('Not Applicable')
 na = ['0', 'Retrospective study', 'Not applicable', 'New Treatment Measure Clinical Study', 'Not selected', 
       'Phase 0', 'Diagnostic New Technique Clincal Study', '0 (exploratory trials)', 'Not Specified']
 p1 = ['1', 'Early Phase 1', 'I', 'Phase-1', 'Phase I']
-p12 = ['1-2', '2020-02-01 00:00:00', 'Phase I/II', 'Phase 1 / Phase 2', 'Phase 1/ Phase 2',
+p12 = ['1-2', '2020-02-01 00:00:00', 'Phase I/II', 'Phase 1 / Phase 2', 'Phase 1/ Phase 2', '02-Jan',
        'Human pharmacology (Phase I): yes\nTherapeutic exploratory (Phase II): yes\nTherapeutic confirmatory - (Phase III): no\nTherapeutic use (Phase IV): no\n']
 p2 = ['2', 'II', 'Phase II', 'IIb', 'Phase-2', 'Phase2',
       'Human pharmacology (Phase I): no\nTherapeutic exploratory (Phase II): yes\nTherapeutic confirmatory - (Phase III): no\nTherapeutic use (Phase IV): no\n']
-p23 = ['Phase II/III', '2020-03-02 00:00:00', 'II-III', 'Phase 2 / Phase 3', 'Phase 2/ Phase 3', '2-3',
+p23 = ['Phase II/III', '2020-03-02 00:00:00', 'II-III', 'Phase 2 / Phase 3', 'Phase 2/ Phase 3', '2-3', '03-Feb',
        'Human pharmacology (Phase I): no\nTherapeutic exploratory (Phase II): yes\nTherapeutic confirmatory - (Phase III): yes\nTherapeutic use (Phase IV): no\n']
 p3 = ['3', 'Phase III', 'Phase-3', 'III',
       'Human pharmacology (Phase I): no\nTherapeutic exploratory (Phase II): no\nTherapeutic confirmatory - (Phase III): yes\nTherapeutic use (Phase IV): no\n']
@@ -239,8 +245,16 @@ for c in country_values:
         country_list.append('Malaysia')
     elif c in ['Congo', 'Congo, Democratic Republic', 'Congo, The Democratic Republic of the']:
         country_list.append('Democratic Republic of Congo')
-    elif c in ["C√¥te D'Ivoire", 'Cote Divoire']:
+    elif c in ["C√¥te D'Ivoire", 'Cote Divoire', "CÃ´te D'Ivoire"]:
         country_list.append("Cote d'Ivoire")
+    elif c in ['Türkiye', 'TÃ¼rkiye', 'TÃƒÂ¼rkiye']:
+        country_list.append('Turkey')
+    elif c == 'SOUTH AMERICA':
+        country_list.append('South America')
+    elif c == 'AFRICA':
+        country_list.append('Africa')
+    elif c == 'italy':
+        country_list.append('Italy')
     elif ';' in c:
         c_list = c.split(';')
         unique_values = list(set(c_list))
@@ -269,8 +283,16 @@ for c in country_values:
                 country_list.append('Malaysia')
             elif v in ['Congo', 'Congo, Democratic Republic', 'Congo, The Democratic Republic of the']:
                 country_list.append('Democratic Republic of Congo')
-            elif v in ["C√¥te D'Ivoire", 'Cote Divoire']:
+            elif v in ["C√¥te D'Ivoire", 'Cote Divoire', "CÃ´te D'Ivoire"]:
                 country_list.append("Cote d'Ivoire")
+            elif v in ['Türkiye', 'TÃ¼rkiye', 'TÃƒÂ¼rkiye']:
+                country_list.append('Turkey')
+            elif v == 'SOUTH AMERICA':
+                country_list.append('South America')
+            elif v == 'AFRICA':
+                country_list.append('Africa')
+            elif v == 'italy':
+                country_list.append('Italy')
             else:
                 country_list.append(v)
     else:
@@ -337,7 +359,7 @@ reorder = ['trialid', 'source_register', 'date_registration', 'date_enrollement'
 df_final = df_cond_int[reorder].reset_index(drop=True).drop_duplicates().reset_index()
 # -
 
-df_final.to_csv(parent + '/data/cleaned_ictrp_29June2020.csv', index=False)
+df_final.to_csv(parent + '/data/cleaned_ictrp_16Dec2020.csv', index=False)
 
 # +
 print(f'There are {len(df_final)} total unique registered studies on the ICTRP')
@@ -355,7 +377,7 @@ withdrawn = in_2020[~(in_2020.public_title.str.contains('Cancelled') | in_2020.p
 print(f'{len(withdrawn)} are not listed as cancelled/withdrawn. We exclude {len(in_2020) - len(withdrawn)} at this step but will exclude additional trials after scraping the registries')
 # -
 
-withdrawn.to_csv(parent + '/data/ictrp_with_exclusions_29Jul2020.csv')
+withdrawn.to_csv(parent + '/data/ictrp_with_exclusions_16Dec2020.csv')
 
 
 

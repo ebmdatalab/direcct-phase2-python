@@ -9,12 +9,15 @@ def enrollment_dates(x):
     format_2 = re.compile(r"\d{2}/\d{2}/\d{4}")
     format_3 = re.compile(r"\d{4}-\d{2}-\d{2}")
     format_4 = re.compile(r"\d{2}-\d{2}-\d{4}")
-    if isinstance(x, str) and x[0].isalpha():
+    format_5 = re.compile(r"\w{3}-\d{2}")
+    if isinstance(x, str) and bool(re.match(format_5, x)):
+        return(pd.to_datetime(x, format='%b-%y'))
+    elif isinstance(x, str) and x[0].isalpha():
         return pd.to_datetime(x)
     elif isinstance(x, str) and bool(re.match(format_1, x)):
-        return pd.to_datetime(x, format='%d/%m/%Y')
-    elif isinstance(x, str) and bool(re.match(format_2, x)):
         return pd.to_datetime(x, format='%Y/%m/%d')
+    elif isinstance(x, str) and bool(re.match(format_2, x)):
+        return pd.to_datetime(x, format='%d/%m/%Y')
     elif isinstance(x, str) and bool(re.match(format_3, x)):
         return pd.to_datetime(x, format='%Y-%m-%d')
     elif isinstance(x, str) and bool(re.match(format_4, x)):
@@ -30,14 +33,13 @@ def fix_date(x):
         x = pd.to_datetime(x).date()
         return x
 
-def fix_errors(fix_dict, df):
+def fix_errors(fix_dict, df, col):
     for a, b in fix_dict.items():
-        if a in df.TrialID.tolist():
-            ind = df[df.TrialID == a].index.values[0]
-            if str(df.at[ind, 'Date enrollement']) == str(b[0]):
-                df.at[ind, 'Date enrollement'] = b[1]
-            else:
-                print(f'Original Value Did not Match for {a}')
+        ind = df[df.TrialID == a].index.values[0]
+        if str(df.at[ind, col]) == str(b[0]):
+            df.at[ind, col] = b[1]
+        else:
+            print(f'Original Value Did not Match for {a}')
     return df
     
 def d_c(x):

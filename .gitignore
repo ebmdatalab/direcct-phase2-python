@@ -19,6 +19,8 @@ __pycache__/
 # custom
 credentials.py
 document_parses
+pubmed_archive_1Jan_2021.csv
+pubmed_archive_1Jan_2021.csv.zip
 
 # Emacs
 *~

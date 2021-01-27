@@ -45,8 +45,8 @@ from xml.etree.ElementTree import tostring
 #If the archive exists, load it in.
 try:
     from lib.id_searches import zip_load
-    archive_df = zip_load(parent + '/data/pubmed/pubmed_archive_1July_2020.csv.zip', 
-                  'pubmed_archive_1July_2020.csv', index_col = 0)
+    archive_df = zip_load(parent + '/data/pubmed/pubmed_archive_1Jan_2020.csv.zip', 
+                  'pubmed_archive_1Jan_2020.csv', index_col = 0)
 
 #If it doesn't exist, you can do a new PubMed search
 except FileNotFoundError:
@@ -55,13 +55,18 @@ except FileNotFoundError:
     from lib.id_searches import query, create_pubmed_archive
     print('Archive file not found, conduting new PubMed search.')
     pubmed = PubMed(tool="Pymed", email=email)
-    results = pubmed.query(query, max_results=100000)
+    results = pubmed.query(query, max_results=150000)
+    results_length = pubmed.getTotalResultsCount(query)
+    print(f'There are {results_length} results')
+          
+    print('Transforming results. This may take a few minutes.')
+    #results_list = list(results) #This can take a while
+    #print(f'Transformed {len(results_list)} results')
     
-    print('Transforming results. This may take a few minutes')
-    results_list = list(results) #This can take a while
-    
-    archive_df = create_pubmed_archive(results_list)
-    archive_df.to_csv(parent + '/data/pubmed/pubmed_archive_1July_2020.csv')
+    #archive_df = create_pubmed_archive(results_list)
+    archive_df = create_pubmed_archive(results, results_length)
+    archive_df.to_csv(parent + '/data/pubmed/pubmed_archive_1Jan_2021.csv')
+    print('Archive created')
     
 # -
 
@@ -143,9 +148,9 @@ final_pubmed['pm_id'] = final_pubmed['id']
 final_pubmed['cord_id'] = None
 # -
 
-final_pubmed.to_csv(parent + '/data/pubmed/pubmed_search_results.csv')
+final_pubmed.to_csv(parent + '/data/pubmed/pubmed_search_results_jul2020.csv')
 
-# # Searching CORD-10 data
+# # Searching CORD-19 data
 
 metadata = zip_load(parent + '/data/cord_19/metadata.csv.zip', 'metadata.csv', low_memory = False)
 metadata['publish_time'] = pd.to_datetime(metadata['publish_time'])

@@ -51,7 +51,7 @@ save_path = parent + '/data/raw_scraping_output/'
 
 # The trials these were run on are those in the ICTRP dataset after the initial inclusions/exclusions were made (observational, pre-2020 trials, trials that are withdrawn/cancelled). This code assumes you read in that dataset to a DataFrame below and work from there.
 
-df = pd.read_csv(parent + '/data/ictrp_with_exclusions_29Jul2020.csv')
+df = pd.read_csv(parent + '/data/ictrp_with_exclusions_16Dec2020.csv')
 df.source_register.unique()
 
 # # ClinicalTrials.gov
@@ -128,7 +128,7 @@ ctgov_results = pd.DataFrame(ctgov_list)
 ctgov_results['pcd'] = pd.to_datetime(ctgov_results['pcd'])
 ctgov_results['scd'] = pd.to_datetime(ctgov_results['scd'])
 
-ctgov_results.to_csv(save_path + 'ctgov_results.csv')
+ctgov_results.to_csv(save_path + 'ctgov_results_4jan2021.csv')
 # -
 
 # # ISRCTN
@@ -264,7 +264,7 @@ for i in tqdm(euctr_ids):
     euctr_trials.append(trial_dict)
 # -
 
-pd.DataFrame(euctr_trials).to_csv(save_path + 'euctr_1jul_2020.csv')
+pd.DataFrame(euctr_trials).to_csv(save_path + 'euctr_4jan_2021.csv')
 
 
 # # DRKS
@@ -340,7 +340,7 @@ for d in tqdm(drks_urls):
     drks_trials.append(trial_dict)
 # -
 
-pd.DataFrame(drks_trials).to_csv(save_path + 'drks_trials_1jul_2020.csv')
+pd.DataFrame(drks_trials).to_csv(save_path + 'drks_trials_4jan_2021.csv')
 
 
 # # CTRI
@@ -398,7 +398,7 @@ for c in tqdm(ctri_urls):
 
 ctri_list[0]
 
-pd.DataFrame(ctri_list).to_csv(save_path + 'ctri_2jul2020_fix.csv')
+pd.DataFrame(ctri_list).to_csv(save_path + 'ctri_4jan2021.csv')
 
 # # ANZCTR
 
@@ -455,7 +455,7 @@ for u in tqdm(anzctr_urls):
 # -
 
 anzctr_df = pd.DataFrame(anzctr_trials)
-anzctr_df.to_csv(save_path + 'anzctr_trials_2jul2020.csv.csv')
+anzctr_df.to_csv(save_path + 'anzctr_trials_4jan2021.csv.csv')
 
 # # NTR
 
@@ -490,6 +490,20 @@ def ntr_csv(save_path):
 
 ntr_csv(save_path)
 
+# +
+#Only what we need from the NTR
+
+ntr_ids = df[df.source_register == 'Netherlands Trial Register'].trialid.to_list()
+
+ntr_df = pd.read_csv(save_path + 'ntr - 2021-01-04.csv')
+
+covid_ntr = ntr_df[ntr_df.idFull.isin(ntr_ids)]
+
+covid_ntr[['idFull', 'status', 'dateStop', 'publications', 'idSource', 'isrctn']].to_csv(save_path + 'ntr_covid_4jan.csv')
+# -
+
+ntr_df.columns
+
 # # IRCT
 
 # +
@@ -502,22 +516,33 @@ for url in tqdm(irct_urls):
     soup=get_url(url)
 
     trial_dict = {}
+    
+    if soup.find('span', text='IRCT registration number:'):
+        trial_dict['trial_id'] = soup.find('span', text='IRCT registration number:').find_next('strong').text.strip()
+    else:
+        trial_dict['trial_id'] = None
 
-    trial_dict['trial_id'] = soup.find('span', text='IRCT registration number:').find_next('strong').text.strip()
+    if soup.find('dt', text=re.compile('\sRecruitment status\s')):
+        trial_dict['trial_status'] = soup.find('dt', text=re.compile('\sRecruitment status\s')).find_next('dd').text.strip()
+    else:
+        trial_dict['trial_status'] = None
 
-    trial_dict['trial_status'] = soup.find('dt', text=re.compile('\sRecruitment status\s')).find_next('dd').text.strip()
-
-    if soup.find('dt', text=re.compile('\sTrial completion date\s')).find_next('dd').text.strip() == 'empty':
+    if not soup.find('dt', text=re.compile('\sTrial completion date\s')) or soup.find('dt', text=re.compile('\sTrial completion date\s')).find_next('dd').text.strip() == 'empty':
         trial_dict['completion_date'] = None
     else:
         trial_dict['completion_date'] = re.findall(re.compile('\d{4}-\d{2}-\d{2}'), soup.find('dt', text=re.compile('\sTrial completion date\s')).find_next('dd').text.strip())[0]
 
-    trial_dict['secondary_ids'] = soup.find('h3', text=re.compile('Secondary Ids')).parent
+    if soup.find('h3', text=re.compile('Secondary Ids')):
+        trial_dict['secondary_ids'] = soup.find('h3', text=re.compile('Secondary Ids')).parent
+    else:
+        trial_dict['secondary_ids'] = None
     
     irct_list.append(trial_dict)
 # -
 
-pd.DataFrame(irct_list).to_csv(save_path + 'irct_1jul_2020.csv')
+irct_urls[64]
+
+pd.DataFrame(irct_list).to_csv(save_path + 'irct_5jan_2021.csv')
 
 # # ChiCTR
 #
@@ -530,16 +555,23 @@ chictr_urls = df[df.source_register == 'ChiCTR'].web_address.to_list()
 
 chictr_trials = []
 
-for u in tqdm(chictr_urls[299:]):
+for u in tqdm(chictr_urls[327:]):
     
     soup=get_url(u)
     
     trial_dict = {}
     
+    try:
+        test = soup.find('p', text = re.compile('\w*Registration number\w*'))
+    except AttributeError:
+        trial_dict['error'] = u
+        chictr_trials.append(trial_dict)
+        continue
+    
     trial_dict['trial_id'] = soup.find('p', text = re.compile('\w*Registration number\w*')).find_next('td').text.strip()
     
     if len(re.findall(re.compile('\d{4}-\d{2}-\d{2}'), soup.find('span', text='To').parent.text)) > 1:
-         trial_dict['comp_date'] = re.findall(re.compile('\d{4}-\d{2}-\d{2}'), soup.find('span', text='To').parent.text)[1]
+        trial_dict['comp_date'] = re.findall(re.compile('\d{4}-\d{2}-\d{2}'), soup.find('span', text='To').parent.text)[1]
     else:
         trial_dict['comp_date'] = None
             
@@ -551,12 +583,78 @@ for u in tqdm(chictr_urls[299:]):
     sleep(10)
 # -
 
+len(chictr_urls)
+
 pd.DataFrame(chictr_trials).to_csv(save_path + 'chictr.csv')
 
+chictr_urls[28]
+
+# # jRCT
+
+# +
+jrct_urls = df[(df.source_register == 'JPRN') & (df.trialid.str.contains('jRCT'))].web_address.to_list()
+
+jrct_urls_eng = []
+
+for j in jrct_urls:
+    jrct_urls_eng.append(j[:24] + 'en-' + j[24:])
 
 
+# +
+jrct_trials = []
 
+for j in tqdm(jrct_urls_eng):
+    j_dict = {}
+    soup = get_url(j)
+    
+    j_dict['trial_id'] = 'JPRN-' + j[-14:]
+    
+    j_dict['status'] = soup.find('label', text='Recruitment status').find_next().find_next().text
+    
+    j_dict['secondary_ids'] = soup.find('label', text='Secondary ID(s)').find_next().text
+    
+    jrct_trials.append(j_dict)
+# -
 
+pd.DataFrame(jrct_trials).to_csv(v)
 
+pd.DataFrame(jrct_trials)
+
+# # REBEC
+
+# +
+rebec_ids = df[df.source_register == 'REBEC'].trialid.to_list()
+
+rebec_url = 'https://ensaiosclinicos.gov.br/rg/{}'
+# -
+
+rebec_ids[0]
+
+# +
+rebec_trials = []
+
+for r in tqdm(rebec_ids):
+    soup = get_url(rebec_url.format(r))
+    
+    r_t = {}
+    
+    r_t['trial_id'] = r
+    
+    try:
+        r_t['trial_status'] = soup.find('span', text="Study status:").find_next().text.strip()
+    except AttributeError:
+        r_t['trial_status'] = None
+    
+    try:
+        r_t['last_enrollment'] = soup.find('span', text='Date last enrollment:').find_next().text.strip()
+    except AttributeError:
+        r_t['last_enrollment'] = None
+    
+    rebec_trials.append(r_t)
+# -
+
+pd.DataFrame(rebec_trials).to_csv(save_path + 'rebec_10jan_2021.csv')
+
+soup.find('span', text="Study status:").find_next().text.strip()
 
 

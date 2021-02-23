@@ -30,7 +30,7 @@ import numpy as np
 # +
 reg = pd.read_excel(parent + '/data/registry_data/registry_data.xlsx', sheet_name='Full')
 
-ictrp = pd.read_csv(parent + '/data/cleaned_ictrp_29June2020.csv').drop('secondary_ids', axis=1)
+ictrp = pd.read_csv(parent + '/data/cleaned_ictrp_16Dec2020.csv')
 # -
 
 reg.columns
@@ -60,8 +60,6 @@ filt_2 = merged.other_results_2.notnull()
 # -
 
 merged['potential_other_results'] = np.where((filt_1 | filt_2), 1, 0)
-
-merged.head()
 
 merged.to_csv(parent + '/data/registry_data/registry_data_clean.csv')
 

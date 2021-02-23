@@ -45,8 +45,8 @@ from xml.etree.ElementTree import tostring
 #If the archive exists, load it in.
 try:
     from lib.id_searches import zip_load
-    archive_df = zip_load(parent + '/data/pubmed/pubmed_archive_1Jan_2020.csv.zip', 
-                  'pubmed_archive_1Jan_2020.csv', index_col = 0)
+    archive_df = zip_load(parent + '/data/pubmed/pubmed_archive_1Jan_2021.csv.zip', 
+                  'pubmed_archive_1Jan_2021.csv', index_col = 0)
 
 #If it doesn't exist, you can do a new PubMed search
 except FileNotFoundError:
@@ -70,6 +70,8 @@ except FileNotFoundError:
     
 # -
 
+archive_df.head()
+
 pubmed_data = archive_df.xml_json.tolist()
 
 # +
@@ -81,6 +83,14 @@ for rec in tqdm(pubmed_data):
     entry_dict['source'] = 'PubMed'
     entry_dict['pmid'] = pm_dict['MedlineCitation']['PMID']['#text']
     entry_dict['doi'] = None
+    
+    if isinstance(pm_dict['MedlineCitation']['Article']['ArticleTitle'], str):
+        entry_dict['title'] = pm_dict['MedlineCitation']['Article']['ArticleTitle']
+    elif isinstance(pm_dict['MedlineCitation']['Article']['ArticleTitle'], dict):
+        entry_dict['title'] = pm_dict['MedlineCitation']['Article']['ArticleTitle']['#text']
+    elif pm_dict['MedlineCitation']['Article']['ArticleTitle'] is None:
+        entry_dict['title'] = 'No Title'
+    
     if isinstance(art_ids, list):
         for x in art_ids:
             if x['@IdType'] == 'doi':
@@ -111,16 +121,31 @@ for rec in tqdm(pubmed_data):
             entry_dict['accession'] = None
     except KeyError:
         entry_dict['accession'] = None
+        
+    
+    try:
+        pub_type_list = []
+        pub_types = pm_dict['MedlineCitation']['Article']['PublicationTypeList']['PublicationType']
+        if isinstance(pub_types, list):
+            for pt in pub_types:
+                pub_type_list.append(pt['#text'])
+        elif isinstance(pub_types, dict):
+            pub_type_list.append(pub_types['#text'])
+        entry_dict['pub_types'] = pub_type_list
+    except KeyError:
+        entry_dict['pub_types'] = None
+    
+    try:
+        entry_dict['pub_types_raw'] = pm_dict['MedlineCitation']['Article']['PublicationTypeList']
+    except KeyError:
+        entry_dict['pub_types_raw'] = None
+    
     
     try:
         entry_dict['abstract'] = str(pm_dict['MedlineCitation']['Article']['Abstract']['AbstractText'])
     except KeyError:
         entry_dict['abstract'] = None
-    
-    try:
-        entry_dict['pub_types'] = pm_dict['MedlineCitation']['Article']['PublicationTypeList']
-    except KeyError:
-        entry_dict['pub_types'] = None
+
     pubmed_dicts.append(entry_dict)
 
 
@@ -132,6 +157,17 @@ for d in tqdm(pubmed_dicts):
     d['abst_id_hits'] = search_text(ids_exact, d['abstract'])
     d['reg_prefix_hits'] = search_text(prefixes, d['abstract'])
     d['reg_name_hits'] = search_text(registry_names, d['abstract'])
+    if 'review' in d['title'].lower():
+        d['review_in_title'] = True
+    else:
+        d['review_in_title'] = False
+    try:
+        if 'Review' in d['pub_types']:
+            d['review_type'] = True
+        else:
+            d['review_type'] = False
+    except TypeError:
+        d['review_type'] = False
 
 
 # -
@@ -148,7 +184,7 @@ final_pubmed['pm_id'] = final_pubmed['id']
 final_pubmed['cord_id'] = None
 # -
 
-final_pubmed.to_csv(parent + '/data/pubmed/pubmed_search_results_jul2020.csv')
+final_pubmed.to_csv(parent + '/data/pubmed/pubmed_search_results_jan2021.csv')
 
 # # Searching CORD-19 data
 

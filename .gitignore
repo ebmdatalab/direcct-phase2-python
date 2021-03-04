@@ -21,6 +21,9 @@ credentials.py
 document_parses
 pubmed_archive_1Jan_2021.csv
 pubmed_archive_1Jan_2021.csv.zip
-
+metadata.csv
+metadata.csv.zip
+document_parses.tar.gz
+pubmed_search_results_jan2021.csv
 # Emacs
 *~

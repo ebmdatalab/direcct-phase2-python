@@ -9,7 +9,8 @@ import re
 from xml.etree.ElementTree import tostring
 
 
-ids_exact = ['(?i)NCT\s*\W*0\d{7}', '20\d{2}\W*0\d{5}\W*\d{2}', '(?i)PACTR\s*\W*20\d{13}', '(?i)ACTRN\s*\W*126\d{11}', 
+#for the EUCTR, we can't be a generic as '20\d{2}\W*0\d{5}\W*\d{2}' so we hard code in the "-" and the third character as a "2"
+ids_exact = ['(?i)NCT\s*\W*0\d{7}', '202\d{1}-0\d{5}-\d{2}', '(?i)PACTR\s*\W*20\d{13}', '(?i)ACTRN\s*\W*126\d{11}', 
             '(?i)ANZCTR\s*\W*126\d{11}', '(?i)NTR\s*\W*\d{4}', '(?i)KCT\s*\W*00\d{5}', '(?i)DRKS\s*\W*000\d{5}', 
             '(?i)ISRCTN\s*\W*\d{8}', '(?i)ChiCTR\s*\W*20000\d{5}', '(?i)IRCT\s*\W*20\d{10,11}N\d{1,3}', 
             '(?i)CTRI\s?\W*\/\s*\W*202\d{1}\s?\W*\/\s*\W*\d{2,3}\s*\W*\/\s*\W*0\d{5}', '(?i)Japic\s*CTI\s*\W*\d{6}', 
@@ -18,9 +19,7 @@ ids_exact = ['(?i)NCT\s*\W*0\d{7}', '20\d{2}\W*0\d{5}\W*\d{2}', '(?i)PACTR\s*\W*
             '(?i)TCTR\s*\W*202\d{8}', '{?i}PER\s*\W*\d{3}\s*\W*\d{2}']
 
 
-#There are currently no relevant Peruvian trial registered for COVID-19 via the ICTRP dataset and
-#including it here leads to lots of false positives, so for the moment I am removing.
-#For future, regex is r'(?i)\bPER\d*\b'
+#The prefix for the Peruvian registry (PER) leads to far too many flase positives so we have to exclude.
 prefixes = [r'(?i)\bNCT', r'(?i)\bEudraCT', r'(?i)\bEUCTR', r'(?i)\bPACTR', r'(?i)\bACTRN', r'(?i)\bANZCTR', 
             r'(?i)\bNTR\d*\b', r'(?i)\bKCT', r'(?i)\bDRKS', r'(?i)\bISRCTN', r'(?i)\bChiCTR', r'(?i)\bIRCT', 
             r'(?i)\bCTRI', r'(?i)\bJapic\s*CTI', r'(?i)\bjRCT', r'(?i)\bUMIN', r'(?i)\bRBR', r'(?i)\bRPCEC', 
@@ -96,3 +95,9 @@ def stringify(x):
             return str(x)
       else:
             return x
+
+def dedupe_list(x):
+    if isinstance(x, list):
+        return(list(set(x)))
+    else:
+        return x

@@ -1,0 +1,911 @@
+{
+    "paper_id": "0a0b130a7ef02117ec87232801b56f97be2540b7",
+    "metadata": {
+        "title": "",
+        "authors": [
+            {
+                "first": "Ciara",
+                "middle": [
+                    "M E"
+                ],
+                "last": "Reynolds",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "UCD Centre for Human Reproduction",
+                    "institution": "Coombe Women and Infants University Hospital",
+                    "location": {
+                        "addrLine": "Cork Street, Dublin 8",
+                        "country": "Ireland"
+                    }
+                },
+                "email": "ciara.reynolds@ucdconnect.ie"
+            },
+            {
+                "first": "L\u00e9an",
+                "middle": [
+                    "E"
+                ],
+                "last": "Mcmahon",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "UCD Centre for Human Reproduction",
+                    "institution": "Coombe Women and Infants University Hospital",
+                    "location": {
+                        "addrLine": "Cork Street, Dublin 8",
+                        "country": "Ireland"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Eimer",
+                "middle": [
+                    "G"
+                ],
+                "last": "O&apos;malley",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "UCD Centre for Human Reproduction",
+                    "institution": "Coombe Women and Infants University Hospital",
+                    "location": {
+                        "addrLine": "Cork Street, Dublin 8",
+                        "country": "Ireland"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michael",
+                "middle": [
+                    "P"
+                ],
+                "last": "O&apos;connell",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "UCD Centre for Human Reproduction",
+                    "institution": "Coombe Women and Infants University Hospital",
+                    "location": {
+                        "addrLine": "Cork Street, Dublin 8",
+                        "country": "Ireland"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Sharon",
+                "middle": [
+                    "R"
+                ],
+                "last": "Sheehan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "UCD Centre for Human Reproduction",
+                    "institution": "Coombe Women and Infants University Hospital",
+                    "location": {
+                        "addrLine": "Cork Street, Dublin 8",
+                        "country": "Ireland"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Michael",
+                "middle": [
+                    "J"
+                ],
+                "last": "Turner",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "UCD Centre for Human Reproduction",
+                    "institution": "Coombe Women and Infants University Hospital",
+                    "location": {
+                        "addrLine": "Cork Street, Dublin 8",
+                        "country": "Ireland"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Background Maternity care in hospitals in the Republic of Ireland is funded by a hybrid of public finance and private health insurance. Aims The aim of this longitudinal observational study was to investigate the annual trends in maternity care from 2009 to 2017 during and after the Great Economic Recession. Methods All women who delivered a singleton baby weighing \u2265 500 g during the 9 years (2009-2017) were included. Detailed clinical and sociodemographic details were computerised at the first antenatal visit by a trained midwife. Women who delivered their first baby during the study were analysed longitudinally if they delivered again during the 9 years. Results The mean age of the 73,266 women was 31.3 \u00b1 5.6 years, 40.1% were nulliparas, and 70.3% were Irish-born. Overall, 75.2% opted for the public, 10.8% for the semi-private, and 14.0% for the private package of maternity care. Over the 9 years, the number of women choosing private and semi-private care decreased by 21.6% and 35.3%, respectively, whereas the number of women using public care increased by 12.3%. Most women opted for the same package of care in subsequent pregnancies. Conclusions Ireland's recent economic recession was accompanied by an overall decrease in the number of women choosing private maternity care after 2009. Furthermore, economic recovery with increasing female employment after 2012 was not associated with a recovery in demand for private care. These findings have important implications for healthcare policies and for the future organisation and funding of our maternity services.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "In the Republic of Ireland, maternity services are highly centralised compared with other countries. All 19 maternity units are in public ownership with no remaining private maternity hospitals and only a small number of planned home deliveries [1] . The hospital maternity services are funded by a hybrid of government funding through the Health Services Executive and through private health insurance (PHI).",
+            "cite_spans": [
+                {
+                    "start": 245,
+                    "end": 248,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In the capital city Dublin, there are three large stand-alone maternity university hospitals where more than 8000 women are delivered in each hospital annually [2] . All three hospitals accept women without differentiation from all socioeconomic groups. There are no catchment areas, and women living in the capital or outside can exercise their choice as to what hospital they wish to attend.",
+            "cite_spans": [
+                {
+                    "start": 160,
+                    "end": 163,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "All three hospitals provide three packages of maternity care: public, semi-private, and private. All women are entitled to free public care which is funded by the government based on an annual service level agreement. Outpatient and inpatient services before and after delivery are provided without charge for the woman and her baby by the same team of obstetricians and midwives. Women may also choose semi-private or private care. Almost always, women choosing these models of care have PHI which covers all their hospital costs and part of their medical fees.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Despite government funding of the health services, a large proportion of the adult population in the Republic of Ireland takes out PHI [3] . The reasons for this vary depending on the individual, but privately, there is usually quicker access to services, particularly elective services, a wider choice of individual specialists with better continuity of care and access to better facilities in both public and private hospitals [3, 4] .",
+            "cite_spans": [
+                {
+                    "start": 135,
+                    "end": 138,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 429,
+                    "end": 432,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 433,
+                    "end": 435,
+                    "text": "4]",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "From 1994 onwards, Ireland enjoyed rapid economic growth in which time unemployment decreased and the number of people taking out PHI increased to a peak in 2008 at 50.9% of the population [3, 5, 6] . It was in 2008 that the collapse of the Lehman Brothers Bank triggered a major banking crisis in which the government intervened with a 3-year programme restructuring the banking sector. During this Great Recession (2008-2012), unemployment rose but stabilised at 15.9% [7] . From 2009, the percentage of the population taking out PHI linearly decreased to its lowest point of 43.4% in 2014. It has since recovered to 45.4% in 2018 [6] .",
+            "cite_spans": [
+                {
+                    "start": 189,
+                    "end": 192,
+                    "text": "[3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 193,
+                    "end": 195,
+                    "text": "5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 196,
+                    "end": 198,
+                    "text": "6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 471,
+                    "end": 474,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 633,
+                    "end": 636,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The purpose of this longitudinal study was to analyse the trends in private maternity care in a large university hospital in Ireland's capital city from 2009 to 2017, during and after the Great Economic Recession.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "This study used the data collected at the first antenatal appointment (usually about 12 weeks gestation) in the Coombe Women and Infants University Hospital, Dublin, Ireland. The data are routinely collected and computerised using a barcode system by trained midwives as part of medical records. Data are updated following delivery and before discharge from the hospital. The system used to collect the data has standardised question and answer fields that remained unchanged over the study period. The hospital is one of the largest in Europe, and although based in the southwest of the city, it receives women from both rural and urban areas and all socioeconomic backgrounds. About one in every eight births nationally delivers in the hospital, and its population is broadly representative of the national obstetric population [2, 8, 9] .",
+            "cite_spans": [
+                {
+                    "start": 830,
+                    "end": 833,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 834,
+                    "end": 836,
+                    "text": "8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 837,
+                    "end": 839,
+                    "text": "9]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "The study included all women with a singleton pregnancy who attended for maternity care between the years 2009 and 2017 resulting in a live birth \u2265 500 g or a stillbirth at 20 weeks gestation or later. The data collected at the first antenatal visit included age, parity, employment status, marital status, pregnancy intention, nationality, psychiatric history, psychiatric medications, previous clinical data such as miscarriage history, and lifestyle data including current maternal smoking status. Height and weight were measured by a midwife at the first antenatal visit and recorded to one decimal place before the body mass index (BMI) was calculated.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "The variable of interest in this study was the package of care and was categorised as 'private,' semi-private,' and 'public' as previously described. All women are entitled to free maternity care, and for this reason, the public package of care is the most dominant in Ireland. Public care is provided by a senior obstetrician and shared among a team of doctors, midwives, other healthcare professionals, and general practitioners. Any inpatient care antenatally or in the postnatal period is provided on the public ward [10] . Midwives and student midwives usually provide care to the woman during labour and birth with supervision provided by an obstetrician. Semi-private care differs in that antenatal and postnatal care may be provided in a private room subject to availability.",
+            "cite_spans": [
+                {
+                    "start": 521,
+                    "end": 525,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "Private care is a consultant-provided package whereby the women chooses to attend the same consultant obstetrician in their private consulting rooms on an ongoing basis throughout her pregnancy and in the postnatal period. Inpatient care is provided in a private room subject to availability. Per diem payments are required for hospital accommodation. Medical fees are paid for using a combination of PHI and patient copayments. Irrespective of the package of care, all women are delivered in the same labour ward and operating theatres and are cared for by the same staff.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Methods"
+        },
+        {
+            "text": "The data were analysed using the statistical software programme SPSS version 24.0 and the online statistical programme Vassarstats [11] . The data were checked for normality using the visual inspections of histograms, skewness and kurtosis values, and the Kolmogorov-Smirnov Test statistic. Descriptive statistics were used to analyse the characteristics and the changes in private care over the 9 years. Multinomial logistic regression models were used to examine the relationship between the package of care and the maternal characteristics and the lifestyle factors. The regression model was adjusted for age, parity, BMI, maternal occupation, marital status, pregnancy intention, nationality, history of miscarriage smoking status, and psychological history and medication use. The study was approved by the Hospital Research Ethics Committee (4-2013). Table 1 shows the study population analysed by the package of maternity care. Overall, 75.2% of the 73,266 women chose the public package, 10.8% chose the semi-private package, and 14.0% chose the private package over the 9 years. The mean age was 31.3 \u00b1 5.6 years, 40.1% were nulliparas, and ",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 135,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 857,
+                    "end": 864,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Methods"
+        },
+        {
+            "text": "Overall reference group: Public n = 55,072",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Results"
+        },
+        {
+            "text": "All variables included in the tables were mutually adjusted for in the regression analyses a p < 0.001; b p < 0.01; c p < 0.05. Missing data: \u221e n = 541, *n = 57,^n = 50, $ n = 33~n = 9 70.3% were Irish-born. Compared with public patients, women choosing the private package of care were more likely to be older, Irish-born, married, to be in professional/managerial employment, to be a non-smoker, to have planned their pregnancy, and to have a history of infertility or miscarriage ( Table 2) . Table 3 shows the trends in the number of women choosing the three different packages of care annually over the 9 years. Compared with 2009, there was a 21.6% decrease in the number of women attending privately and a 35.3% decrease in the number of women attending semi-privately. As a result, the number of women attending publicly increased by 12.3%. There was a once-off increase in private patients in 2014 due to the transfer of patients from the country's only remaining private maternity hospital which closed suddenly in January of that year.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 485,
+                    "end": 493,
+                    "text": "Table 2)",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 496,
+                    "end": 503,
+                    "text": "Table 3",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "These trends were observed across all parity, employment, and age categories (Tables 4, 5, and 6). The number of nulliparas opting for public care increased from 73.4% in 2009 to 77.8% in 2017, whereas the numbers of nulliparas opting for semi-private or private care decreased by 21.1% and 11.6%, respectively. Overall, more multiparas consistently opted for private care than nulliparas over the 9 years. However, there was a greater overall decrease in the numbers of multiparas opting for private care by 2017 (26.7%) and a greater increase in those opting for public care compared with nulliparas (Table 4 ). Despite an association between professional/managerial employment and private care, the proportions of women in this class attending privately decreased by almost a third between 2009 and 2017 ( Table 5) . Over three times the number of women aged \u2265 35 years choose private care compared to those aged < 35 years; however, the numbers of women aged \u2265 35 years choosing private care decreased by almost 30% (Table 6) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 602,
+                    "end": 610,
+                    "text": "(Table 4",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 809,
+                    "end": 817,
+                    "text": "Table 5)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1020,
+                    "end": 1029,
+                    "text": "(Table 6)",
+                    "ref_id": "TABREF7"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "Women who delivered successive pregnancies in the hospital were identified. A total of 11,991 delivered twice, 2375 delivered three times, and 235 women delivered four times over the 9-year study period. The majority of women who delivered twice attended for antenatal care in their first pregnancy before 2013 (79.7%). Analysing the deliveries longitudinally, 89.3% (n = 10,757) of 11,991 women opted for the same package of care in the second pregnancy as in their first (Table 7) . Of the women who delivered twice, 85.5% retained a private package of care in their second pregnancy, whereas 7.4% changed to semi-private, and 1.7%, to public. Of the women who delivered three and four times, 84.4% and 84.2% retained private health insurance from their first pregnancy respectively.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 473,
+                    "end": 482,
+                    "text": "(Table 7)",
+                    "ref_id": "TABREF6"
+                }
+            ],
+            "section": "Results"
+        },
+        {
+            "text": "This observational study found that the Great Economic Recession in the Republic of Ireland was accompanied with a decrease in demand for the private and semi-private packages of maternity care and an increase in the demand for publicly funded maternity care. However, despite economic recovery and an increase in both male and female employment rates nationally, the demand for private and semi-private packages of care did not recover. The longitudinal analysis showed also that women who choose private care in their first pregnancy usually opted for private care in their subsequent pregnancies, and, likewise, women who choose public care in their first pregnancy usually opted for public care in their subsequent pregnancies.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The Irish health insurance system is based on the key principles of community rating, open enrolment, lifetime cover, and minimum benefits [6] . Between 2009 and 2017, there was a significant exodus of younger people from the PHI market from 36 to 30% in the 18-39 years age group [3] . As a result, the Irish Government introduced the Lifetime Community Rating (LCR) loading in 2015 which penalises adults who take out PHI for the first time after 35 years of age [6] . The loading rises steeply again after 45 years of age. In the 19-39year age group, the number of people taking out PHI had fallen from 675,000 in 2009 to 484,000 in 2014 [6] . The LCR has resulted in an increase in adults taking out PHI in this age group to 506,000 in 2017. Missing cases in maternal occupation:",
+            "cite_spans": [
+                {
+                    "start": 139,
+                    "end": 142,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 281,
+                    "end": 284,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 465,
+                    "end": 468,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 641,
+                    "end": 644,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The decrease in women choosing private maternity care may be explained in part by the decrease in younger women holding PHI. However, the increase in female employment after the recession and the introduction of the LCR have not been accompanied by an increase in demand for private care. It may be the case that this cohort of women is challenged fiscally by, for example, the costs of mortgages and childcare.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "It is interesting, but not surprising, that the largest decrease in women opting for the private package of care were women in the professional or management class. Families in this category may have faced a cut in salary and an increase in income tax during the recession. In contrast, women who were not in employment were less likely to have chosen private care before the recession, and their take home income may have been socially protected as a result of government policies. However, these findings we believe require detailed study.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In May 2018, the Houses of the Oireachtas Committee on the Future of Healthcare (Sl\u00e1intecare) report was published [12] . It was a unique crossparty political consensus on a major health reform in Ireland. A 10-year-costed plan recommended a whole system reform with a universal single-tier health service where patients are treated solely on the basis of need. Although an Implementation Office was established by the Department of Health, a single-tier system is not imminent, and the health services are currently prioritising the management of the COVID pandemic. No specific recommendations were made in the report for funding maternity services. In an analysis from the ESRI using the hospital discharge data from public hospitals in 2015, public maternity patients accounted for a 6.0% activity share, and private patients, a 1.4% activity share [13] .",
+            "cite_spans": [
+                {
+                    "start": 115,
+                    "end": 119,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 853,
+                    "end": 857,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In the absence of an increase in per diem charges to private patients, a falling demand in those opting for private care will lead to a decrease in publically funded hospitals' revenue. The growing increase in the demand for the public package of care means that there will be little or no reduction in ongoing hospital costs. As pregnancy and delivery rates are beyond the control of the health services, funding shortages cannot be solved by methods applicable for other services, for example, waiting lists for elective surgery. As there are no private maternity hospitals left in Ireland, removing private maternity practice from public hospitals as proposed by Sl\u00e1intecare also poses challenges [12] . Given the prohibitive costs of obstetric negligence insurance, it is unlikely that private hospitals will open private inpatient maternity services in the future.",
+            "cite_spans": [
+                {
+                    "start": 700,
+                    "end": 704,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "In Ireland, choice is important to women when it comes to maternity care [4, 14] . In particular, they prioritise safety for their baby and the continuity of care over a hospital's facilities. A qualitative paper found that women who choose private care felt an added sense of security in labour due to the continuity of care with their obstetrician [4] . The abolition of the private and semi-private packages of care in public hospitals would deny women who have been paying PHI, perhaps for many years, of choice. It is notable in our study that the continuity of care packages was maintained from one pregnancy to the next. Younger women who pay PHI are generally healthy, and the national policy of community rating means that younger subscribers to PHI subsidise older subscribers [6] . A recent Irish study has shown decreasing percentages of 'very healthy' and 'healthy' women with PHI coverage between 2009 and 2017 [3] . Despite the LCR, the absence of benefits for maternity care may lead to a further exodus from PHI of younger, healthy subscribers who face more immediate financial demands.",
+            "cite_spans": [
+                {
+                    "start": 73,
+                    "end": 76,
+                    "text": "[4,",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 77,
+                    "end": 80,
+                    "text": "14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 350,
+                    "end": 353,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 787,
+                    "end": 790,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 925,
+                    "end": 928,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "The Great Economic Recession and subsequent recovery had a dramatic impact on Ireland, which makes it an interesting case study on the link between the economy and the purchasing of PHI [3] . In general, increasing age, higher educational achievement, and higher incomes are associated with increased PHI coverage. This is consistent with our observations in maternity care. However, it is notable that the recession and the increase in unemployment rates nationally were associated with a decrease in demand for private and semiprivate care and that the subsequent recovery and decrease in unemployment rates has not seen a decrease in women opting for public care. It also remains to be seen what impact the COVID-19 pandemic and the anticipated acute economic recession will have on maternity services over the next decade.",
+            "cite_spans": [
+                {
+                    "start": 186,
+                    "end": 189,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "This study has strengths. The clinical and sociodemographic characteristics were recorded at the first antenatal visit by a trained midwife in a standardised way over 9 years. The hospital population is large and broadly representative of the national obstetric population [2] . Due to the large sample size and pseudoanonymisation of the study subjects, we were able to analyse the data of women who delivered more than once over time and analyse the changes in packages of maternity care from one pregnancy to the next.",
+            "cite_spans": [
+                {
+                    "start": 273,
+                    "end": 276,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "A potential weakness is that we do not have information on which women had private health insurance but chose not to opt for a private package of care. In addition, the semi-private package of care is unique to the three large Dublin maternity hospitals and is not available outside the capital. Nonetheless, the increase in demand for public care is likely to have been replicated in the 16 other maternity hospitals nationally.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Discussion"
+        },
+        {
+            "text": "This detailed analysis on annual trends in the demands for the different packages of maternity care in a large hospital in Ireland's capital provides information that should help shape the implementation of the National Maternity Strategy and the Sl\u00e1intecare Report [12, 15] . In particular, it demonstrates that future enrolment in PHI, and the demands for private maternity care cannot be modelled based on the rates of female employment alone.",
+            "cite_spans": [
+                {
+                    "start": 266,
+                    "end": 270,
+                    "text": "[12,",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 271,
+                    "end": 274,
+                    "text": "15]",
+                    "ref_id": "BIBREF14"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Discussion"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "An analysis of antenatal care pathways to mode of birth in Ireland",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Gillespie",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Walsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cullinan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Econ Soc Rev (Irel)",
+            "volume": "50",
+            "issn": "",
+            "pages": "391--427",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "National Women and Infants Health Programme Clinical Programme for Obstetrics and Gynaecology",
+            "authors": [],
+            "year": 2018,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Private health insurance in Ireland: trends and determinants",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kapur",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Econ Soc Rev (Irel)",
+            "volume": "51",
+            "issn": "",
+            "pages": "63--92",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "What women want: exploring pregnant women's preferences for alternative models of maternity care",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Fawsitt",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Bourke",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Lutomski",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Health Policy",
+            "volume": "121",
+            "issn": "",
+            "pages": "66--74",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "The Irish fiscal crisis",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Bergin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fitzgerald",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Kearney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Natl Inst Econ Rev",
+            "volume": "217",
+            "issn": "",
+            "pages": "47--59",
+            "other_ids": {
+                "DOI": [
+                    "10.1177/0027950111420920"
+                ]
+            }
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Private Health Insurance in Ireland: market penetration and lifetime community rating reforms",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Malone",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Public Policy. Available at",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Ireland's economic crisis: the good, the bad and the ugly",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Whelan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "J Macroecon",
+            "volume": "39",
+            "issn": "",
+            "pages": "424--440",
+            "other_ids": {
+                "DOI": [
+                    "10.1016/j.jmacro.2013.08.008"
+                ]
+            }
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Healthcare pricing office. Reporting System",
+            "authors": [],
+            "year": 2016,
+            "venue": "Health Service Executive Available",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Comparison of midwife-led and consultant-led care of healthy women at low risk of childbirth complications in the Republic of Ireland: a randomised trial",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Begley",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Devane",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Clarke",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "BMC Pregnancy Childbirth",
+            "volume": "11",
+            "issn": "",
+            "pages": "",
+            "other_ids": {
+                "DOI": [
+                    "10.1186/1471-2393-11-85"
+                ]
+            }
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "VassarStats: website for statistical computation",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Lowry",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Sl\u00e1intecare Report. Houses of the Oireachtas Available at",
+            "authors": [],
+            "year": 2017,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "An examination of activity in public and private hospitals in Ireland",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Keegan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Brick",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wren",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "What models of maternity care do pregnant women in Ireland want",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Byrne",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Kennedy",
+                    "suffix": ""
+                },
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Dwyer",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Ir Med J",
+            "volume": "104",
+            "issn": "",
+            "pages": "180--182",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Department of health",
+            "authors": [],
+            "year": 2016,
+            "venue": "National Maternity Strategy -Creating a Better Future Together",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+            "authors": [],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": "",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "The adjusted odds ratio (aOR) of the characteristics and lifestyle behaviours of women choosing the private and semi-private packages of care compared to the public package",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Trends in package of care 2009-2017",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Trends in package of care by parity 8525 n = 8386 n = 8340 n = 7915 n = 7739 n = 8537 n = 8120 n = 7855 n = 7849",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF6": {
+            "text": "Changes in package of care between the first and successive pregnancies",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF7": {
+            "text": "Trends in package of care by age category Percentage change n = 8525 n = 8386 n = 8340 n = 7915 n = 7739 n = 8537 n = 8120 n = 7855 n = 7849",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Acknowledgements We thank our midwifery colleagues and Ms. Emma McNamee in our IT Department for their work in collecting and computerising the data. The study does not have a sponsor. Dr. Reynolds' salary as a research fellow is provided by the hospital's fundraising arm Friends of the Coombe. Data availability The data that support the findings of this study are available from the Coombe Women and Infants University Hospital, but restrictions apply to the availability of these data, which were used under licence for the current study and so are not publicly available. Data are however available from the authors upon reasonable request and with permission of the Coombe Women and Infants University Hospital.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "acknowledgement"
+        },
+        {
+            "text": "The study was approved by the Coombe Women and Infants University Hospital Research Ethics Committee .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Compliance with ethical standards"
+        },
+        {
+            "text": "Conflict of interest The authors declare that they have no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "annex"
+        },
+        {
+            "text": "Code availability Not applicable.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Consent for publication Not applicable."
+        }
+    ]
+}

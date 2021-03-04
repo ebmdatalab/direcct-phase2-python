@@ -1,0 +1,2917 @@
+{
+    "paper_id": "0a0f64ff0a69e3f2d878fab95559d3b891f98cd1",
+    "metadata": {
+        "title": "The extensive margin and US aggregate fluctuations: A quantitative assessment R",
+        "authors": [
+            {
+                "first": "Miguel",
+                "middle": [],
+                "last": "Casares",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Universidad P\u00fablica de Navarra",
+                    "location": {
+                        "postCode": "31006",
+                        "settlement": "Pamplona",
+                        "country": "Spain"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Hashmat",
+                "middle": [],
+                "last": "Khan",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "Carleton University",
+                    "location": {
+                        "postCode": "K1S 5B6",
+                        "settlement": "Ottawa",
+                        "region": "ON",
+                        "country": "Canada"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Jean-Christophe",
+                "middle": [],
+                "last": "Poutineau",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "UMR CNRS 6211",
+                    "institution": "Universit\u00e9 de Rennes I",
+                    "location": {
+                        "settlement": "Rennes",
+                        "country": "France"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We report empirical evidence indicating that US net business formation has recently turned more volatile, procyclical and persistent. To study these stylized facts, we estimate a DSGE model with endogenous entry and exit. Business units feature heterogeneous productivity and they shut down if the present value of expected future dividends falls below the current liquidation value. The model provides a better fit than a constant exit rate model with the fluctuations of US business formation. The introduction of the extensive margin amplifies the effects of technology and risk-premium shocks, and reduces the procyclicality of firm-level production. The main sources of variability of the US aggregate fluctuations during the Great Recession are countercyclical technology shocks, persistent adverse risk-premium shocks, and expansionary monetary policy shocks.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "A secular decline in entrepreneurial activity has characterized the US economy in recent years Decker, 2016; Hathaway, 2014 and Decker, 2017 . Along this downward trend, this paper provides empirical evidence showing that the short-run fluctuations of US net business formation have turned more volatile, procyclical and persistent after the global financial crisis of 2007-08. Changes in both establishment entry and exit have contributed to these new cyclical patterns of business formation, making the role of the extensive margin much more relevant for US business cycles than what it was during the Great Moderation period.",
+            "cite_spans": [
+                {
+                    "start": 95,
+                    "end": 108,
+                    "text": "Decker, 2016;",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 109,
+                    "end": 127,
+                    "text": "Hathaway, 2014 and",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 128,
+                    "end": 140,
+                    "text": "Decker, 2017",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Following Melitz (2008, 2012) , there has been a renewed interest in studying the extensive margin of aggregate fluctuations. Our paper contributes to this growing literature. Building on Lewis and Poilly (2012) , Lewis and Stevens (2015) and LaCroce and Rossi (2018) , we consider a sticky-price model with variable number of firms, and extend the analysis to account for the above mentioned stylized facts. 1 Lewis and Poilly (2012) consider the extensive margin in a Dynamic Stochastic General Equilibrium (DSGE) model to analyze monetary policy and business cycles. In addition, Lewis and Stevens (2015) provide a quantitative exploration of the extensive margin of activity by estimating a DSGE-style model with Bayesian methods. LaCroce and Rossi (2018) include financial frictions and a banking sector with monopolistically competitive retail banks. More recently, Hamano and Zanetti (2018) focus on the effect of product quality and variety due to firm entry for the cyclical properties of inflation and the volatility of business cycle fluctuations. 2 However, as a common feature, these papers assume a constant rate of exit which leaves business formation mostly driven by fluctuations in the rate of entry. The variability in the rate of exit observed in the data is clearly at odds with the constant rate of exit rate formulation.",
+            "cite_spans": [
+                {
+                    "start": 10,
+                    "end": 29,
+                    "text": "Melitz (2008, 2012)",
+                    "ref_id": null
+                },
+                {
+                    "start": 188,
+                    "end": 211,
+                    "text": "Lewis and Poilly (2012)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 214,
+                    "end": 238,
+                    "text": "Lewis and Stevens (2015)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 255,
+                    "end": 267,
+                    "text": "Rossi (2018)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 409,
+                    "end": 410,
+                    "text": "1",
+                    "ref_id": null
+                },
+                {
+                    "start": 411,
+                    "end": 434,
+                    "text": "Lewis and Poilly (2012)",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 583,
+                    "end": 607,
+                    "text": "Lewis and Stevens (2015)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 747,
+                    "end": 759,
+                    "text": "Rossi (2018)",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 872,
+                    "end": 897,
+                    "text": "Hamano and Zanetti (2018)",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Hence, the first contribution of our paper on the modelling side is to introduce an intertemporal exit rate decision that takes into account the liquidation value of the firm and expected dividends. Remarkably, while the entry of new firms (or new varieties of consumption goods) has been widely considered in DSGE models, few papers have proposed an analysis of firm exit. 3 Recently, Chugh and Cavallari (2015) , Cavallari (2015) , Zanetti (2017 , 2020 ) , and Rossi (2019) have proposed endogenous exit of firms motivated by reasons different than ours. 4 These attempts, however, turn out to be not satisfactory in addressing the stylized facts in the post-2008 financial crisis period. In Hamano and Zanetti (2017) , for example, the exit decision is based upon the current value of profits and it does not consider any liquidation cost associated with exit. This feature makes the exit decision intratemporal . In another recent paper, Cavallari (2015) considers scrap values, which are time-invariant and firm specific, in the exit decision. Rossi (2019) assumes that the liquidation value is zero. By contrast, we introduce heterogeneity through both firm-specific productivity and a time-varying liquidation value. This formulation has the advantage that we can assess how both the heterogeneity of incumbents and changes in the liquidation value can shape the intertemporal exit decision. 5 In our model, the exit rate depends on the productivity threshold that compares a firm's continuation value with its liquidation value. At the end of the production period, the business unit remains in the industry if the present value of all expected dividends exceeds the liquidation value. 6 In the opposite case, the business unit exits the industry, the production of its variety ends and there is business destruction.",
+            "cite_spans": [
+                {
+                    "start": 374,
+                    "end": 375,
+                    "text": "3",
+                    "ref_id": null
+                },
+                {
+                    "start": 386,
+                    "end": 412,
+                    "text": "Chugh and Cavallari (2015)",
+                    "ref_id": null
+                },
+                {
+                    "start": 415,
+                    "end": 431,
+                    "text": "Cavallari (2015)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 434,
+                    "end": 456,
+                    "text": "Zanetti (2017 , 2020 )",
+                    "ref_id": null
+                },
+                {
+                    "start": 463,
+                    "end": 475,
+                    "text": "Rossi (2019)",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 694,
+                    "end": 719,
+                    "text": "Hamano and Zanetti (2017)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 942,
+                    "end": 958,
+                    "text": "Cavallari (2015)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1049,
+                    "end": 1061,
+                    "text": "Rossi (2019)",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 1399,
+                    "end": 1400,
+                    "text": "5",
+                    "ref_id": null
+                },
+                {
+                    "start": 1694,
+                    "end": 1695,
+                    "text": "6",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "For a quantitative evaluation of the role of the extensive margin for US aggregate fluctuations, we conduct a Bayesian estimation of our model with US quarterly data between 1993 and 2018. The extended model performs well on replicating business creation and destruction observed in recent US data. In particular, the posterior estimates generate model simulations that provide a good match on the second-moment statistics of the US entry rates, exit rates and net business formation. In the variance decomposition, the sources of fluctuations for entry and exit are rather different. The entry rate fluctuations are mainly the consequence of demand-side shocks while supply-side shocks, by contrast, have a large impact on the exit rate. Shocks to the entry costs and to the liquidation value are additional sources of US aggregate fluctuations that are not accounted in conventional DSGE models. We find that they jointly explain 13% of the variability of the quarterly rate of growth of US real GDP.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Our estimation exercise also includes a variant of the model that assumes a constant exit rate. We find that the baseline model with both endogenous entry and exit outperforms the more standard constant exit rate model because it provides a better description of the joint dynamics of business creation and destruction. Besides, the overall fit of the estimated model to the data is superior when the exit behavior is endogenized.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Our business cycle analysis is mostly focused on the determinants of US aggregate fluctuations during the 2007-2018 period. In line with what is observed in the data, the dynamics of US business formation become important to explain US aggregate fluctuations after the financial crisis . The extensive margin of activity (number of incumbents) gains action due to larger and more persistent fluctuations in entry and exit. The estimated shock decomposition for US data identify technology shocks, risk-premium shocks and monetary policy shocks as the three main components that explain the changes in US GDP growth over the Great Recession. The important role of technology shocks to explain business cycle fluctuations during this episode has also been documented by Jermann and Quadrini (2012) and Zanetti, 2019 in the context of models without entry and exit. The importance of risk-premium shocks during the Great Recession was also established in Christiano et al. (2014) . Additionally, we identify monetary policy shocks capturing the two waves of conventional and unconventional monetary expansions of the US Federal Reserve (in 2007-09 and 2013-15 , respectively) with significant effects for GDP growth and business formation.",
+            "cite_spans": [
+                {
+                    "start": 768,
+                    "end": 795,
+                    "text": "Jermann and Quadrini (2012)",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 800,
+                    "end": 813,
+                    "text": "Zanetti, 2019",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 952,
+                    "end": 976,
+                    "text": "Christiano et al. (2014)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 1125,
+                    "end": 1148,
+                    "text": "Reserve (in 2007-09 and",
+                    "ref_id": null
+                },
+                {
+                    "start": 1149,
+                    "end": 1156,
+                    "text": "2013-15",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The rest of the paper is organized as follows. Section 2 provides the empirical motivation of our paper and outlines the key stylized facts on US business formation. Section 3 presents the extended DSGE model with a special focus on the processes of business creation and destruction. Section 4 introduces the Bayesian estimation strategy and provides the posterior estimates of the DSGE model with extensive margin for the US economy, including a validation exercise based on the empirical fit of second-moment statistics. Section 5 presents the main analysis and proceeds with the discussion of results. Section 6 concludes with the summary of the most relevant findings of the paper.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "The Business Employment Dynamics report from the Bureau of Labor Statistics (BLS) provides business data in 'establishment' units, which refer to \"the physical location of a certain economic activity-for example, a factory, mine, store, or office. A single establishment generally produces a single good or provides a single service.\". 7 Our choice of establishments to measure business formation is due to the fact that other candidates such as firms or enterprises may be the collection of multiple establishments. 8 The creation or destruction of establishments within multi-establishment firms would have no effect observed on the extensive margin in the data. Table 1 reports descriptive statistics of the rate of growth of Total Private Establishments (TPE) per capita and the rates of establishment entry and exit for the total sample period , and for the subsamples that belong to either the Great Moderation (1993) (1994) (1995) (1996) (1997) (1998) (1999) (2000) (2001) (2002) (2003) (2004) (2005) (2006) or the Great Recession (2007) (2008) (2009) (2010) (2011) (2012) (2013) (2014) (2015) (2016) (2017) (2018) . 9 The rate of entry is calculated as the percent ratio between private sector establishment births and TPE, whereas the rate of exit is the percentage of establishment deaths over TPE.",
+            "cite_spans": [
+                {
+                    "start": 917,
+                    "end": 923,
+                    "text": "(1993)",
+                    "ref_id": null
+                },
+                {
+                    "start": 924,
+                    "end": 930,
+                    "text": "(1994)",
+                    "ref_id": null
+                },
+                {
+                    "start": 931,
+                    "end": 937,
+                    "text": "(1995)",
+                    "ref_id": null
+                },
+                {
+                    "start": 938,
+                    "end": 944,
+                    "text": "(1996)",
+                    "ref_id": null
+                },
+                {
+                    "start": 945,
+                    "end": 951,
+                    "text": "(1997)",
+                    "ref_id": null
+                },
+                {
+                    "start": 952,
+                    "end": 958,
+                    "text": "(1998)",
+                    "ref_id": null
+                },
+                {
+                    "start": 959,
+                    "end": 965,
+                    "text": "(1999)",
+                    "ref_id": null
+                },
+                {
+                    "start": 966,
+                    "end": 972,
+                    "text": "(2000)",
+                    "ref_id": null
+                },
+                {
+                    "start": 973,
+                    "end": 979,
+                    "text": "(2001)",
+                    "ref_id": null
+                },
+                {
+                    "start": 980,
+                    "end": 986,
+                    "text": "(2002)",
+                    "ref_id": null
+                },
+                {
+                    "start": 987,
+                    "end": 993,
+                    "text": "(2003)",
+                    "ref_id": null
+                },
+                {
+                    "start": 994,
+                    "end": 1000,
+                    "text": "(2004)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1001,
+                    "end": 1007,
+                    "text": "(2005)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1008,
+                    "end": 1014,
+                    "text": "(2006)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1038,
+                    "end": 1044,
+                    "text": "(2007)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1045,
+                    "end": 1051,
+                    "text": "(2008)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1052,
+                    "end": 1058,
+                    "text": "(2009)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1059,
+                    "end": 1065,
+                    "text": "(2010)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1066,
+                    "end": 1072,
+                    "text": "(2011)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1073,
+                    "end": 1079,
+                    "text": "(2012)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1080,
+                    "end": 1086,
+                    "text": "(2013)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1087,
+                    "end": 1093,
+                    "text": "(2014)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1094,
+                    "end": 1100,
+                    "text": "(2015)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1101,
+                    "end": 1107,
+                    "text": "(2016)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1108,
+                    "end": 1114,
+                    "text": "(2017)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1115,
+                    "end": 1121,
+                    "text": "(2018)",
+                    "ref_id": null
+                },
+                {
+                    "start": 1124,
+                    "end": 1125,
+                    "text": "9",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 665,
+                    "end": 672,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Empirical evidence"
+        },
+        {
+            "text": "The mean value of the three variables fell during the Great Recession compared to the Great Moderation period. In fact, the average value of the quarterly rate of growth of TPE per capita becomes virtually null during the Great Recession (0.0%) from a 0.21% value during the Great Moderation. The decline of the entry rate strongly contributes to the fall of the average quarterly business formation as its mean falls from 3.39% to 3.00%. 10 The exit rate also falls, although it does so to a lesser extent from an average of 2.98% in 1993-2006 to 2.83% in the Great Recession. Table 1 shows some remarkable stylized facts on the second-moment statistics. The extensive margin of aggregate fluctuations (measured by the percent variations in TPE) turns more volatile, more procyclical with respect to real GDP growth (both at the same quarter and with a one-quarter lag), and more persistent after the financial crisis of 2007-08. The standard deviation of TPE growth, its correlation with real GDP growth and its autocorrelation increase substantially between the Great Moderation and the Great Recession. 11 Table 1 also informs on stronger procyclical patterns of US net business formation when considering a one-quarter lag for real GDP growth possibly due to some time-to-build delay.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 578,
+                    "end": 585,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1110,
+                    "end": 1117,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Empirical evidence"
+        },
+        {
+            "text": "Meanwhile, the business cycle patterns of volatility, cyclicality and inertia of the entry rate evolve in a similar way to those of TPE growth (higher values that measure volatility, cross correlation with GDP growth and autocorrelation). The US entry rate is more procyclical with lagged real GDP growth than with contemporaneous real GDP growth which may 7 All the data from the Business Employment Dynamics report from the BLS are available for free access at https://www.bls.gov/bdm/ 8 The BLS indicates that 'an enterprise (a private firm, government, or nonprofit organization) can consist of a single establishment or multiple establishments'. 9 The first section of the technical Appendix includes plots and some discussion of the time series of US quarterly data on business formation, entry and exit from 1993 to 2018. 10 This is a clear signal of the decline of entrepreneurial activity in the US economy (Decker, 2016) . As another piece of evidence, the average quarterly rate of growth of real GDP per capita within the whole sample period was 0.38%, whereas TPE growth per capita only grew at a quarterly average of 0.12%. 11 Notably, there was neither inertia nor cyclicality of TPE growth over the period 1993 to 2006 (the sample statistics on cyclical correlation and auctocorrelation are both zero). reflect the time-to-build requirements to create new businesses. Likewise, there are increasing patterns for the volatility and persistence of the exit rate fluctuations, and also a stronger negative comovement between the exit rate and real GDP growth during the Great Recession period. Table 1 reports more substantial changes in the standard deviation, and in the cyclical correlation of the exit rate than of the entry rate. Fig. 1 shows rolling-window statistics obtained from US quarterly data of 48 quarters per sample. There are striking patterns observed as the quarters of the Great Recession enter the sample. Hence, the series of TPE growth increases its volatility, procyclicality and persistence after 1997. Such increasing role of the extensive margin for aggregate fluctuations remains strong as the window rolls over time, with high values for the latest windows. As Fig. 1 displays, the changes in the second-moment statistics of the entry rate seems to be transitory (with peaks observed in the central subsamples between 1998 and 2009). Nevertheless, the exit rate still exhibits increased volatility, countercyclicality and persistence over the last years of the rolling window which indicates its relevance in explaining the role of the extensive margin (TPE growth) for US aggregate fluctuations.",
+            "cite_spans": [
+                {
+                    "start": 651,
+                    "end": 652,
+                    "text": "9",
+                    "ref_id": null
+                },
+                {
+                    "start": 916,
+                    "end": 930,
+                    "text": "(Decker, 2016)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1138,
+                    "end": 1140,
+                    "text": "11",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1607,
+                    "end": 1614,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 1748,
+                    "end": 1754,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                },
+                {
+                    "start": 2203,
+                    "end": 2209,
+                    "text": "Fig. 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Empirical evidence"
+        },
+        {
+            "text": "Two conclusions emerge from this empirical analysis that are useful to complete existing evidence on the increased volatility of the variables in the post financial crisis period (Doz et al. , 2020; Liu et al. , 2019 and Pizzinelli et al. , 2020) . First, the evolution of net business formation has become more volatile, sensitive to the cycle, and persistent. Second, both fluctuations in the entry rate and, especially, the exit rate contribute substantially to business formation fluctuations during the Great Recession. Therefore, the processes of business creation and destruction in the US have brought significant variations in the extensive margin of economic activity that may have effects on aggregate fluctuations. These aspects of the extensive margin have not yet been investigated. Towards this end, we present in the next section a DSGE model with richer entry and exit dynamics relative to the literature.",
+            "cite_spans": [
+                {
+                    "start": 179,
+                    "end": 198,
+                    "text": "(Doz et al. , 2020;",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 199,
+                    "end": 220,
+                    "text": "Liu et al. , 2019 and",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 221,
+                    "end": 246,
+                    "text": "Pizzinelli et al. , 2020)",
+                    "ref_id": "BIBREF37"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Empirical evidence"
+        },
+        {
+            "text": "The model represents an economy populated by households, firms, and the public sector (government and central bank). There are monopolistically competitive markets for goods and labor and perfectly competitive asset markets of capital, equity shares and government bonds. Households purchase bundles of consumption goods, set nominal wages, supply one specific labor service, own assets and decide on business creation and destruction. The number of varieties of consumption goods changes over time as a result of flows of entry and exit of firms producing differentiated goods. Hence, firms produce and set the price of their differentiated consumption good. For production, firms demand bundles of labor services and capital to be used in a Cobb-Douglas technology with firm-specific productivity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "A DSGE model with endogenous entry and exit"
+        },
+        {
+            "text": "Following the standard assumptions of DSGE models (Christiano et al. , 2005; Smets and Wouters, 2007) , nominal and real rigidities and frictions are considered to enhance the empirical fit of the model. The set of real rigidities include consumption habits, adjustment costs on investment, and variable capital utilization. Regarding nominal rigidities, we consider fixed probabilities of not being able to optimally adjust both prices and wages as in Calvo (1983) , combined with indexation rules that include inflationary shocks. 12",
+            "cite_spans": [
+                {
+                    "start": 50,
+                    "end": 76,
+                    "text": "(Christiano et al. , 2005;",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 77,
+                    "end": 101,
+                    "text": "Smets and Wouters, 2007)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 453,
+                    "end": 465,
+                    "text": "Calvo (1983)",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "A DSGE model with endogenous entry and exit"
+        },
+        {
+            "text": "As in Bilbiie et al. (2012) , each firm is specialized in the production of one specific good within a single location (establishment). It leads to a convenient setup in which the total number of goods, firms and establishments is the same and indexed within the same business unit. Therefore, in the model there is no distinction between firms, establishments or varieties of goods. Formally, there are n t\u22121 varieties of consumption goods (firms, establishments) at the end of period t \u2212 1 . In period t , the production of n x t goods (equivalently, firms or establishments) shuts down and firms exit the market, while the remaining amount of n s t incumbents survive and continue operating in the market. Hence, we have",
+            "cite_spans": [
+                {
+                    "start": 6,
+                    "end": 27,
+                    "text": "Bilbiie et al. (2012)",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "The extensive margin"
+        },
+        {
+            "text": "which implies the following exit rate",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The extensive margin"
+        },
+        {
+            "text": "and its complementary survival rate 1 \u2212 x t = n s t /n t\u22121 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The extensive margin"
+        },
+        {
+            "text": "Households decide how much to invest in the creation of new firms (establishments) to produce differentiated consumption goods. 13 A one-period time-to-build is required for firm creation. Thus, the desired number of entries n e t must be decided as part of households optimal portfolio in period t \u2212 1 . At the beginning of period t , the firm-specific productivity draws are released for all the new establishments. As we will show below, these draws determine the number of firms that survive. The number of effective entries at the end of the time-to-build period is the survival rate multiplied by the number of desired entries, ( 1 \u2212 x t ) n e t . Accordingly, applying the survival rate, 1 \u2212 x t , to both the active lines of production at the end of the previous period, n t\u22121 , and the new desired establishments, n e t , brings this law of motion",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The extensive margin"
+        },
+        {
+            "text": "which gives the total number of productive firms at the beginning of period t, n t , as the number of incumbents that remain alive plus the effective number of entries. The rate of effective entry is defined as follows ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The extensive margin"
+        },
+        {
+            "text": "The definitions of both the effective entry rate, e t , and the exit rate, x t , imply that the rate of growth of the total number of firms (net business formation) coincides with the difference between the effective entry rate and the exit rate,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The extensive margin"
+        },
+        {
+            "text": "Next, let us describe separately the endogenous determination of the dynamics for entry and exit.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "The extensive margin"
+        },
+        {
+            "text": "Following Bilbiie et al. (2012) , Cavallari (2015) , Lewis and Stevens (2015) , and Rossi (2019) , the free-entry decision is primarily based on the comparison between the prospective equity value and the cost of entry. Unlike these papers, however, the cost of entry is not obtained here from the marginal cost of production or from any specific production function. We 12 The model incorporates sticky prices a la Calvo (1983) instead of the Rotemberg (1982) 's price adjustment costs traditionally adopted in other papers with extensive margin. Cavallari (2015) also assumes Calvo (1983) -type price rigidity, however, in a calibrated model. 13 The technical appendix provides the details of the optimization problems for both households and firms.",
+            "cite_spans": [
+                {
+                    "start": 10,
+                    "end": 31,
+                    "text": "Bilbiie et al. (2012)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 34,
+                    "end": 50,
+                    "text": "Cavallari (2015)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 53,
+                    "end": 77,
+                    "text": "Lewis and Stevens (2015)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 416,
+                    "end": 428,
+                    "text": "Calvo (1983)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 444,
+                    "end": 460,
+                    "text": "Rotemberg (1982)",
+                    "ref_id": "BIBREF39"
+                },
+                {
+                    "start": 548,
+                    "end": 564,
+                    "text": "Cavallari (2015)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 578,
+                    "end": 590,
+                    "text": "Calvo (1983)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 645,
+                    "end": 647,
+                    "text": "13",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "assume that the cost of opening a new firm is a combination of its licence fee and start-up variable costs. In particular, we have the following specification to determine the unit cost of business creation in period t exp ( \u03b5 e t ) ( f e + e c t ) , where \u03b5 e t is an AR(1) exogenous entry cost shock, f e is the unit real cost of a license fee required by the government to begin the production of a new variety, and e c t is a variable congestion cost for start-ups which increases with the desired entry rate as follows",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "setting parameter values e > 0 and \u03c2 e > 1 for convexity. 14 In the portfolio choice of the representative household (see technical Appendix), the first order conditions of the number of entries and equity investment are, respectively,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "where \u03bb t is the Lagrange multiplier of the budget constraint in period t, v t is the average (expected) equity value, \u03b2 is the household discount factor, d t+1 is the expected dividend in period t + 1 if incumbents survive, and l v t+1 is the expected liquidation value in period t + 1 if incumbents die. As observed in the right hand side of conditions (6) and (7), the expected marginal benefit combines the returns in the scenarios of incumbents survival, E t n s t+1 n t ( d t+1 + v t+1 ) , and death, Combining (6) and (7) results in the free-entry equilibrium condition",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "which equates the marginal cost of entry to its expected marginal benefit. A log-linear approximation to the free entry condition (8) that incorporates the entry cost function (5) brings the following equation for log deviations of entry with respect to its steady state level",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "where v and e c are the steady-state levels for average equity and the congestion cost of entry, respectively. 15 Thus, households decide to raise their spending on the creation of new firms when they observe an increase in the average equity value, v t . Firm-specific productivity will be observed ex post and the expected return of new firms is the current average equity value. If there is an increase in the exogenous component of the cost of entry, \u03b5 e t , the number of new firms created by the households is going to fall. The elasticity of the congestion entry cost \u03c2 modulates the response of log fluctuations of desired entry , n e t+1 , to both driving factors, v t and \u03b5 e t . The first order condition for purchases of government bonds is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "where r t is the real interest rate and \u03b5 b t is an exogenous risk-premium shock. Using it in (6) gives the equation that determines the equilibrium equity value",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "The coefficients v i > 0 for i = 1 , . . . , 5 depend on the structural parameters. 16 14 The desired entry rate in period t is expressed as n e t+1 /n t because households decide on business creation one period in advance. 15 Throughout the paper, we follow the standard notation of variables topped with a hat sign \" \" to denote log fluctuations with respect to its level in the balanced-growth deterministic steady state, whereas variables with no time subscript denote the steady state level along such balanced-growth path. 16 In",
+            "cite_spans": [
+                {
+                    "start": 87,
+                    "end": 89,
+                    "text": "14",
+                    "ref_id": null
+                },
+                {
+                    "start": 224,
+                    "end": 226,
+                    "text": "15",
+                    "ref_id": null
+                },
+                {
+                    "start": 529,
+                    "end": 531,
+                    "text": "16",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "where \u03b3 > 0 is the long-run rate of economic growth used in the detrended deterministic steady state.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "For the entry rate equation, we can take a semi-loglinear approximation to its definition (4), 17 and use the lagged version of the business creation dynamics (9) to obtain",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "where the value of v t\u22121 is provided by taking equation (10) with one lag.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business creation (entry)"
+        },
+        {
+            "text": "The exit decision is determined from rational behavior. The relative position of incumbents in terms of their productivity determines whether a single firm shuts down or continues with the production activity. As in Ghironi and Melitz (2005) , firms produce with a specific productivity drawn from a Pareto distribution. The productivity draw, z , is released after making the decision on entry and it remains the same for all future periods. The probability density function, g ( z ), of the Pareto distribution of productivity draws is",
+            "cite_spans": [
+                {
+                    "start": 216,
+                    "end": 241,
+                    "text": "Ghironi and Melitz (2005)",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "where z min is the minimum productivity and \u03ba is a parameter that determines the concentration of establishments with low productivity (i.e., close to z min ). As proved in the technical Appendix, the average firm-level productivity is constant at the value",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": ", which requires holding the technical constraint \u03ba > \u03b8 p \u2212 1 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "At the end of the production period, each incumbent faces a survival test. Those goods produced under low-efficiency technologies are at risk of business termination due to the lack of profitability over the prospective business cycles. Concretely, if the present value of all expected dividends exceeds the liquidation value, the rational decision is to continue with the production for the next period. In the opposite case, the rational decision is to shut down the production of that variety.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "Hence, the representative firm \u03c9 at period t faces the following choice",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "\u03b2 is a discount factor that incorporates the steady-state survival rate, and l v t is the current liquidation value. At the margin, there would be a critical value of firm-level productivity, z cr t ( \u03c9 ) , for which the expected dividend stream exactly coincides with the liquidation value,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "The parity equation (12) holds for the representative firm at one critical value of specific productivity, z cr t ( \u03c9 ) . Assuming Dixit and Stiglitz (1977) 's monopolistic competition for firm-level demand curves, we can rewrite (12) as follows",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 156,
+                    "text": "Dixit and Stiglitz (1977)",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "where P t+ j ( \u03c9 ) /P c t+ j is the relative price in terms of the consumption bundle, y t+ j is the Dixit-Stiglitz aggregate output. As proved in the technical Appendix, the critical value z cr t ( \u03c9 ) is embedded in the denominator of the real marginal cost,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "which connects mc cr t+ j ( \u03c9 ) to the real marginal cost for the firm that produces with the average productivity, mc t+ j . Even though firm-specific productivity, z ( \u03c9), is constant, it is worth noticing that its productivity threshold, z cr t ( \u03c9 ) , is time dependent due to the variability in expected relative prices, aggregate output, marginal costs, or the liquidation value that enter (12').",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "Let us define \u03c1 t+ j ( \u03c9 ) = P t+ j ( \u03c9 ) /P c t+ j as the relative price in terms of consumption bundles in any t + j period. Using (13) and loglinearizing (12'), we can obtain the following forward-looking loglinear equation for the fluctuations of z cr t ( \u03c9 ) ,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "where z i > 0 for i = 1 , . . . , 5 are coefficients that depend on the structural parameters. 18 Equation (14) shows that the value of log fluctuations in the average expected real marginal costs, mc t+1 , raises z cr t . This occurs because the expected dividends will be lower. By contrast, increases in the expected aggregate demand, y t+1 , and a higher expected unit revenue from sales, \u03c1 t+1 , reduce z cr t as they both raise the average expected dividend. Finally, any increase in the current liquidation value relative to its next period's expected value increases z cr t because of the higher return on exit.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "The liquidation value is obtained as the difference between the share, 1 \u2212 \u03c4, with 0 < \u03c4 < 1, of the licence fee that is reimbursed by the government and a variable exit cost, x c t , with exogenous variations provided by an AR(1) shock, \u03b5 x t , as follows",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "where the cost of shutting down is determined by the increasing convex function of the exit rate ",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "Also as in Ghironi and Melitz (2005) , the critical productivity splits up the fraction of establishments that survive from those that exit at the end of period t , according to the properties of the Pareto distribution. Thus, the exit rate, x t = n x t /n t\u22121 , depends positively on the productivity threshold z cr",
+            "cite_spans": [
+                {
+                    "start": 11,
+                    "end": 36,
+                    "text": "Ghironi and Melitz (2005)",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "which, in semi-loglinear terms, implies that exit rate deviations are given by this expression",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "where \u03ba ( 1 \u2212 x ) defines the semi-elasticity of the exit rate to the critical productivity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "Thus, equations (14), (15) and (16) together govern the intertemporal exit dynamics of the model.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business destruction (exit)"
+        },
+        {
+            "text": "The endogenous determination of the number of goods (firms, establishments), n t , allows for a distinction between the Consumer Price Index (CPI) and the Producer Price Index (PPI). The Dixit-Stiglitz aggregate price level provides the CPI from the aggregation of prices across the differentiated goods",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate prices and inflation"
+        },
+        {
+            "text": "Next, let P t denote the PPI in period t , obtained as the average price across firms producing with the average productivity, z . As shown in the technical Appendix, both price indices are related as follows 19",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate prices and inflation"
+        },
+        {
+            "text": "Hence, the price of the consumption bundle, P c t , increases with the producer price index P t , and decreases with the number of goods n t . Provided the definition of the average relative price, \u03c1 t = P t /P c t , relation (17) brings a variety effect that implies a higher value for \u03c1 t (unit revenue for the firm with average productivity) when there is a higher value on the number of goods, n t , 18 The detailed derivation is available in the technical appendix. It should be noticed that in the original non-linear relationships that determine z cr",
+            "cite_spans": [
+                {
+                    "start": 404,
+                    "end": 406,
+                    "text": "18",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Aggregate prices and inflation"
+        },
+        {
+            "text": "there are differences depending upon the relative firm-specific productivity and the history of pricing. Such wedges are constant proportions and do not show up after taking the loglinear approximations. The structural coefficients of (14) are",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate prices and inflation"
+        },
+        {
+            "text": "See the technical appendix for further details. 19 Recalling the definitions of both the CPI and the PPI, equation (17) can be divided by its lagged version to bring a link between the rate of CPI inflation, \u03c0 c t , and that of PPI inflation, \u03c0 t , through the change in the number of goods:",
+            "cite_spans": [
+                {
+                    "start": 48,
+                    "end": 50,
+                    "text": "19",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Aggregate prices and inflation"
+        },
+        {
+            "text": "with elasticity at \u03b8 p \u2212 1 \u22121 that depends inversely on the Dixit-Stiglitz demand elasticity.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate prices and inflation"
+        },
+        {
+            "text": "Firms set prices conditional to a Calvo (1983) nominal rigidity scheme. Hence, there is a fixed probability 0 < \u03be p < 1 that the firm cannot set the optimal prices. If that is the case, the firm will automatically adjust the price by applying an indexation rule that depends on lagged inflation (with a weight \u03b9 p ), and on the steady state rate of inflation affected by a price-push exogenous shock, \u03b5 p t (with a weight 1 \u2212 \u03b9 p ). The PPI rate of inflation is \u03c0 t = P t \u2212 P t\u22121 , evaluated at the firms that produce with the average productivity z . As proved in the technical Appendix, the PPI inflation equation (the New Keynesian Phillips curve) of the model is",
+            "cite_spans": [
+                {
+                    "start": 34,
+                    "end": 46,
+                    "text": "Calvo (1983)",
+                    "ref_id": "BIBREF5"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Aggregate prices and inflation"
+        },
+        {
+            "text": "where mc t denotes the log deviation of their real marginal cost with respect to the steady-state level, and \u03c1 t is the log fluctuation of relative prices defined above. The inflation dynamics provided by (19) are hybrid between backward-looking due to the indexation rule on lagged inflation and forward-looking due to nominal rigidities on price setting. The gap between fluctuations of the real marginal cost and relative prices, mc t \u2212 \u03c1 t , drive inflation variability with a slope coefficient inversely determined by the Calvo probability \u03be p . The increase in the number of goods n t has some deflationary effect because of its relation to relative prices \u03c1 t (variety effect). Finally, the term on the price-push shock, \u03b5 p",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate prices and inflation"
+        },
+        {
+            "text": ", brings the exogenous source for inflation variability.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate prices and inflation"
+        },
+        {
+            "text": "Monetary policy is described by a Taylor, 1993 -type rule, of the kind used in standard DSGE models. Thus, we follow Smets and Wouters (2007) and consider that the central bank adjusts the nominal interest rate to stabilize inflation and both the current and the change in the output gap, with a partial-adjustment pattern that includes lagged nominal interest rate to smooth down monetary policy actions,",
+            "cite_spans": [
+                {
+                    "start": 117,
+                    "end": 141,
+                    "text": "Smets and Wouters (2007)",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Central bank and government"
+        },
+        {
+            "text": "where \u03bc \u03c0 > 1.0, \u03bc y , \u03bc y \u2265 0, and 0 \u2264 \u03bc R < 1 is the policy smoothing parameter. Both the nominal interest rate and PPI inflation enter (20) as level deviations with respect to their steady state values. The central bank targets PPI inflation \u03c0 t , (and not CPI inflation \u03c0 c t that shapes the real interest rate) because optimal monetary policy in a sticky-price framework with business formation must stabilize the rate of inflation of producer prices (Bilbiie et al. , 2008) . As usual ingredients of monetary policy rule in models with sticky prices, y t \u2212 y p t is the output gap between the cyclical component of output ( y t ) and its potential (natural-rate) realization ( y p t ), and \u03b5 R t is an exogenous monetary policy shock. 20 Regarding the role of the government, its fiscal policy consists of holding the budget constraint,",
+            "cite_spans": [
+                {
+                    "start": 456,
+                    "end": 479,
+                    "text": "(Bilbiie et al. , 2008)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 741,
+                    "end": 743,
+                    "text": "20",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Central bank and government"
+        },
+        {
+            "text": "which implies that the exogenous public expenditures on consumption goods, \u03b5 g t , are financed within the period by either collecting lump-sum taxes, t t , by obtaining net revenues from selling operating licenses, exp \u03b5 e t f e n e t+1 \u2212 exp \u03b5 x t (1 \u2212 \u03c4 ) f e n x t + n x t /n t\u22121 n e t , and by selling newly issued bonds b t that yield the real return exp \u03b5 b t ( 1 + r t ) in the equilibrium of the bonds market.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Central bank and government"
+        },
+        {
+            "text": "Using (18) in the Dixit-Stiglitz demand constraint, y t = ( \u03c1 t ) \u2212\u03b8p y t , aggregate output can be related to the average establishment-level production as follows",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate output"
+        },
+        {
+            "text": "where noticing n \u03b8 p \u03b8 p \u22121 t = n t n 1 \u03b8 p \u22121 t and plugging the expression for relative prices, \u03c1 t , implied by (18), aggregate output can be decomposed as the number of establishments, n t , multiplied by firm-level production in terms of consumption bundles, \u03c1 t y t , y t = n t \u03c1 t y t .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate output"
+        },
+        {
+            "text": "20 Potential output is computed assuming fully-flexible prices set by firms and nominal wages set by households.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate output"
+        },
+        {
+            "text": "As (23) indicates, aggregate output, y t , may have variations in either its extensive margin (the number of establishments, n t ), or in its intensive margin (the amount of production at the firm with average productivity, \u03c1 t y t ). Finally, the equilibrium condition for the market of bundles of consumption goods (overall resources constraint) is,",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate output"
+        },
+        {
+            "text": "which displays the uses of aggregate income, y t , on consumption expenditures, c t , on private investment on capital goods, i t , on the adjustments costs of variable capital utilization, a (u t ) k t\u22121 , on the exogenous net public spending that results from the fiscal policy, \u03b5 g t , on the total variable cost of planned entries, exp \u03b5 e t e c t n e t+1 , and -as a novelty of the setting -on the total variable cost of exits, exp \u03b5 x t x c t n x t n s t n t . 21",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Aggregate output"
+        },
+        {
+            "text": "The complete model with business formation is written for short-run fluctuations as the set of log-linearized dynamic equations available in the technical Appendix. 22 As one particular case of the baseline model, the variant with a constant exit rate can be obtained by replacing the business destruction block with an equation that fixes the establishment exit rate at its steady-state value, x t = x, and dropping both the variables related to the exit decision ( n x t , l v t , z cr t , and x c t ) and the liquidation value shock, \u03b5 x t . We will also estimate this constant exit rate model for a comparison with the baseline model to show the implications of endogenizing the exit dynamics in a DSGE model.",
+            "cite_spans": [
+                {
+                    "start": 165,
+                    "end": 167,
+                    "text": "22",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Aggregate output"
+        },
+        {
+            "text": "We estimate the loglinearized DSGE model with entry and exit in Dynare using the Bayesian estimation routine (Adjemian et al. , 2011) with nine exogenous processes that bring model variability: seven AR(1) shocks on technology, riskpremium, interest rates (monetary policy), investment adjustment costs, fiscal policy, entry cost and liquidation value; and two ARMA(1,1) shocks pushing on prices and nominal wages, respectively, through the indexation rules. 23 The data used for the estimation consist of nine quarterly time series including the rates of establishment entry and exit obtained in the Business Employment Dynamics report mentioned in Section 2 . All the other observable series are comparable to those used in the estimation of the DSGE model by Smets and Wouters (2007) with three differences. First, the CPI has been used to deflate the nominal series to be consistent with the model. Secondly, per-capita series were computed dividing the aggregate series by the US working-age population adjusted by populational controls as released in the Current Population Survey of the Bureau of Labour Statistics (2013) . 24 And third, we have used the series of shadow nominal interest rate calculated by Wu and Xia, 2016 in order to accommodate the effects of the unconventional balance-sheet policy actions in the zero lower bound scenario of the Great Recession. 25 The constant exit rate model is also estimated excluding the series of establishment exit as observables because there is no liquidation value shock in the model. The sample period is constrained by data availability on US quarterly entry and exit, which runs from 1993:2 to 2018:4. Thus, we have 103 observations. Some standard underlying parameters are fixed before the estimation. Following Smets and Wouters, 2007 , the rate of capital depreciation is set at \u03b4 = 0 . 025 , the labor elasticity of substitution at \u03b8 w = 3 . 0 , and the government spending, \u03b5 g , is assumed to be 18% of aggregate output in steady-state, \u03b5 g = 0 . 18 y . In addition, the capital utilization rate is assumed to be equal to 100% in steady state ( u = 1 ), when there are no costs of variable capital utilization ( a (u ) = 0 ). The minimum firm-level productivity is normalized at z min = 1 . 0 . Finally, the parameter \u03c4 , which determines the share of sunk costs at entry (licence fee), is calibrated to imply that the total number of goods in steady state is normalized at n = 1 . This leads to choosing the value \u03c4 = 0 . 54 . Tables 2 and 3 display the priors and estimated posteriors found in the Bayesian estimation. The selection of priors mostly follows Lewis and Stevens (2015) and Smets and Wouters (2007) , and we only note here the few differences with these papers. The steady-state quarterly rate of exit is set at a prior of x = 2 . 91% (slightly higher than the value assigned by Lewis and Stevens, 2015 ) in order to match the mean value obtained in US data. Regarding the variable costs of business creation and destruction, we assume a quadratic specification in both cases with \u03c2 e = 2 and \u03c2 x = 2 . The size of these costs is controlled by their respective scale coefficents, e and x . Due to the uncertainty about these scale parameters, we have estimated the steady-state ratio of these entry and exit cost with respect to equity value. The priors are at 2%, ie., 21 Budget constraints for both the households and the government are taken into account for the derivation of the overall resources constraint (see the technical Appendix for the proof). 22 The non-linear system of equations that determines the balanced-growth solution in steady state is also available in the technical appendix. 23 The choice of ARMA(1,1) processes for these two shocks follows Smets and Wouters (2007) . It is a useful one as it allows us to capture the stickiness and persistency of prices and wages through the moving average component without the need of estimating a high number of parameter as in the case of an AR(n) process. 24 Hence, the observed time series obtained for the estimation are the establishment entry rate, the establishment exit rate, the log difference in percapita real GDP, the log difference in per-capita real Personal Consumption Expenditures, the log difference in per-capita real Private Fixed Investment, the log difference in the real wage obtained from the Average Hourly Earnings in the Nonfarm Business Sector, the rate of change in the GDP price deflator, the Wu and Xia (2016) 's shadow Federal Funds rate, and the log of Hours of per worker obtained as the product between the Average Weekly Hours and Civilian Employment divided by the Civilian Labor Force. The sources to obtain these series are the Business Employment Report from the BLS and the FRED database compiled by the St. Louis Fed. The measurement equations and data definitions are available in the technical appendix. 25 A recent paper by Ikeda et al. (2020) outlines several issues related to the estimation of models at the zero lower bound and formulates a shadow rate for monetary policy. ",
+            "cite_spans": [
+                {
+                    "start": 109,
+                    "end": 133,
+                    "text": "(Adjemian et al. , 2011)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 459,
+                    "end": 461,
+                    "text": "23",
+                    "ref_id": null
+                },
+                {
+                    "start": 762,
+                    "end": 786,
+                    "text": "Smets and Wouters (2007)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 1215,
+                    "end": 1231,
+                    "text": "Wu and Xia, 2016",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 1376,
+                    "end": 1378,
+                    "text": "25",
+                    "ref_id": null
+                },
+                {
+                    "start": 1773,
+                    "end": 1796,
+                    "text": "Smets and Wouters, 2007",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 2626,
+                    "end": 2650,
+                    "text": "Lewis and Stevens (2015)",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 2655,
+                    "end": 2679,
+                    "text": "Smets and Wouters (2007)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 2860,
+                    "end": 2885,
+                    "text": "Lewis and Stevens, 2015 )",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 3351,
+                    "end": 3353,
+                    "text": "21",
+                    "ref_id": null
+                },
+                {
+                    "start": 3538,
+                    "end": 3540,
+                    "text": "22",
+                    "ref_id": null
+                },
+                {
+                    "start": 3682,
+                    "end": 3684,
+                    "text": "23",
+                    "ref_id": null
+                },
+                {
+                    "start": 3748,
+                    "end": 3772,
+                    "text": "Smets and Wouters (2007)",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 4003,
+                    "end": 4005,
+                    "text": "24",
+                    "ref_id": null
+                },
+                {
+                    "start": 4914,
+                    "end": 4933,
+                    "text": "Ikeda et al. (2020)",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data and estimation"
+        },
+        {
+            "text": "Once the posterior estimates are found, these nubmers will be used to pin down the implied values of e and x in the steady state solution of the model. Finally, the shape parameter of the Pareto distribution \u03ba takes a prior of 5.0, sufficiently high to meet the condition of the Pareto distribution for a well-behaved average productivity, \u03ba > \u03b8 p \u2212 1 .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and estimation"
+        },
+        {
+            "text": "The posterior estimates, from both the baseline model and the constant exit rate model, are reported in Tables 2 and 3 . As reported in Table 2 :",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 104,
+                    "end": 118,
+                    "text": "Tables 2 and 3",
+                    "ref_id": "TABREF1"
+                },
+                {
+                    "start": 136,
+                    "end": 143,
+                    "text": "Table 2",
+                    "ref_id": "TABREF1"
+                }
+            ],
+            "section": "Data and estimation"
+        },
+        {
+            "text": "\u2022 The estimate of the coefficient on household risk aversion, \u03c3 c , is low (0.77), falling significantly below its prior value (1.5), and also lower than the number obtained when assuming a constant exit rate (0.94). Subsequently, the elasticity of consumption intertemporal substitution turns higher when extending the DSGE model with entry and exit. The procyclicality of business formation following changes in the real interest rate can explain this result.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and estimation"
+        },
+        {
+            "text": "\u2022 The baseline model delivers a lower estimate of price stickiness ( \u03be p at 0.95) relative to that of wage stickiness ( \u03be w at 0.98), while in the model with a fixed exit rate there is slightly more price stickiness ( \u03be p at 0.96) than wage stickiness ( \u03be w at 0.95). In both cases, the estimated Calvo probabilities for price and wage stickiness are numbers close to 1.0, which is consistent with the flattening of the inflation equation (New Keynesian Phillips curve) observed in recent US business cycles (Casares and Vazquez, 2018) . Furthermore, our model does not feature Kimball (1995) 's aggregator for consumption varieties which would reduce significantly the slope of the New Keynesian Phillips curve as in Smets and Wouters, 2007 . In addition, there is a variety effect through the introduction of relative prices in the New Keynesian Phillips Curve (19), which may play some role on inflation volatility.",
+            "cite_spans": [
+                {
+                    "start": 508,
+                    "end": 535,
+                    "text": "(Casares and Vazquez, 2018)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 578,
+                    "end": 592,
+                    "text": "Kimball (1995)",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 718,
+                    "end": 743,
+                    "text": "Smets and Wouters, 2007 .",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data and estimation"
+        },
+        {
+            "text": "\u2022 The posterior mean estimate of the Dixit-Stiglitz demand elasticity in the baseline model is lower than its prior at \u03b8 p = 2 . 56 . This result implies a mark-up in steady state at 64% (substantially higher than the numbers typically used in the calibration of DSGE models (for example, \u03b8 p = 6 to have a 20% steady-state mark-up of prices over marginal costs) but The estimation method requires a small value for \u03b8 p in order to replicate the relative variability of business formation with respect to real GDP fluctuations observed in US data. In other words, a value of \u03b8 p around 6 or higher would bring excessive volatility of business formation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Data and estimation"
+        },
+        {
+            "text": "\u2022 Regarding the parameters that characterize entry and exit dynamics, the elasticity of the entry congestion costs is in steady state. They imply e = 9 , 773 . 48 and x = 6 , 471 . 98 . In the model with constant exit rate, the posterior estimate of the entry cost ratio is slightly lower at 2.51%, and no exit costs are assumed, resulting in a value for the scale parameter of the entry cost at e = 4 , 299 . 06 . The posterior estimate of the shape parameter in the Pareto distribution is above its prior at \u03ba = 6 . 69 , although it is still substantially lower than the number used in the calibration proposed by Hamano and Zanetti (2017) for a model without an intertemporal approach in the exit decision. 27 Our posterior estimates imply a critical firm-level productivity in steady state at z cr = 1 . 0047 (0.47% higher than the minimum productivity z min = 1 . 00 ), and an average productivity at z = 1 . 19 (19% higher than the minimum productivity). The parameters of volatility and persistence that characterize the exogenous processes of the estimated models are reported in Table 3 . Technology shocks are less persistent in the extended DSGE model than in the model without business formation. Risk-premium shocks have innovations with lower standard deviation but their estimated inertia is larger than in the model without entry and exit. Specific shocks on entry and exit have moderate inertia, \u03c1 e = 0 . 49 and \u03c1 x = 0 . 69 , more remarkable for liquidation value shocks. In the comparison between the estimated shock parameters of the baseline model and the constant exit rate model, we do not find any remarkable difference. We discuss and compare the role of these shocks as sources of variability below in the impulse-response and variance decomposition analyses. Table 4 reports a selection of second-moment statistics obtained from model simulations and their comparison to actual statistics from US data:",
+            "cite_spans": [
+                {
+                    "start": 616,
+                    "end": 641,
+                    "text": "Hamano and Zanetti (2017)",
+                    "ref_id": "BIBREF23"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1088,
+                    "end": 1095,
+                    "text": "Table 3",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 1787,
+                    "end": 1794,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Data and estimation"
+        },
+        {
+            "text": "The estimated model replicates quite well the statistics of the observable series on volatility (standard deviations), cyclical correlation (cross correlation with output growth) and persistence (coefficient of autocorrelation). Both in the simulated series of the baseline model and in US data, the rate of growth of firms-establishments ( n t ) and both the entry rates ( e t ) and the exit rates ( x t ) are less volatile but more persistent than aggregate output growth. Table 4 shows an excessive persistence on business growth when comparing the results of the model with US data. 28 Looking at cross correlations with output growth, both net business formation and the entry rate are procyclical both in the models and the data. Taking a one-quarter lag of output growth, the correlation of business creation rises substantially in the baseline model with endogenous entry and exit (the coefficients of correlation increase from 0.18 to 0.57 in the case of the entry rate and from 0.30 to 0.53 for the establishments growth), similarly to what it is observed in US data (see Table 4 ). The model with constant exit rate brings only a little procyclicality of business formation with lower numerical values for the cross correlations of either the establishment growth or the entry rate with output.",
+            "cite_spans": [
+                {
+                    "start": 587,
+                    "end": 589,
+                    "text": "28",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 475,
+                    "end": 482,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                },
+                {
+                    "start": 1082,
+                    "end": 1089,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Data and estimation"
+        },
+        {
+            "text": "The exit rate is countercyclical with a negative correlation with output growth at -0.28 in the model (matching closely with the value of -0.30 observed in US data). The numbers in Table 4 do not indicate the presence of greater delayed 27 Hamano and Zanetti (2017) assume \u03ba = 11 . 51 . One reason for the gap between their value and our posterior estimate can be that they choose \u03ba to match the average US product destruction rate (6%), which is more than two times higher than the average US establishment exit rate considered here. 28 The reason is that both the entry rate and the exit rate are quite persistent in the data and the observed rate of growth of establishments is the difference between them. Having both the entry rate and the exit rate as observables leads to long inertia for net business formation in the estimated model. responses of business destruction to GDP growth in both the model and the data. If the assumption of a constant exit rate is considered, the lack of fluctuations of the exit results in a zero standard deviation and a zero cross correlation with output growth. For a model comparison in the overall capacity to fit the data, we have looked at the log data density (Laplace approximation) provided as part of Dynare estimation results. The baseline model gives a value of \u2212426 . 87 , higher than the value of \u2212428 . 13 obtained after the estimation of the constant exit rate model. Therefore, the data-generating structure of the baseline model with endogenous entry and exit is superior to the constant exit rate model to replicate US business cycle data. 29",
+            "cite_spans": [
+                {
+                    "start": 237,
+                    "end": 239,
+                    "text": "27",
+                    "ref_id": null
+                },
+                {
+                    "start": 240,
+                    "end": 265,
+                    "text": "Hamano and Zanetti (2017)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 535,
+                    "end": 537,
+                    "text": "28",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 181,
+                    "end": 188,
+                    "text": "Table 4",
+                    "ref_id": "TABREF3"
+                }
+            ],
+            "section": "Data and estimation"
+        },
+        {
+            "text": "Our model can account for aggregate fluctuations driven by the extensive margin adjustment since changes in the number of business units have an impact on aggregate output. Each business unit (firm, establishment) produces a single differentiated variety of consumption. We can define firm-level output as the amount y t produced by the establishment that operates with average productivity z , which in terms of consumption bundles of is",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business cycle analysis of the extensive margin of aggregate fluctuations"
+        },
+        {
+            "text": "Introducing y f t in the composition of aggregate output (23) yields y t = n t y f t where taking logs and the first difference leads to the decomposition of the rate of growth of aggregate output",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business cycle analysis of the extensive margin of aggregate fluctuations"
+        },
+        {
+            "text": "between the contributions of the extensive margin, n t , and the intensive margin, y f t .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Business cycle analysis of the extensive margin of aggregate fluctuations"
+        },
+        {
+            "text": "We discuss here the dynamics of the number of firms and its influence on aggregate fluctuations in response to typical examples of either a supply-side shock or a demand-side shock. For the supply-side shock we show the effects of a total factor productivity (technology) innovation in Figure 2 . For a demand-side shock, Fig. 3 displays the responses following a exogenous increase in the risk-premium. The size of the shocks have been normalized at the values of their corresponding estimated standard deviations reported in Table 3 . We have decided to show the impulse-response functions after technology and risk-premium shocks because they take the highest shares in the variance decomposition of the rate of growth of the total number of firms (see the column labeled n in Table 5 ), which make them the main sources for fluctuations of the extensive margin in the US. 30 Fig. 2 . Impulse-response functions following a technology shock. As Fig. 2 shows, a technology shock increases the entry rate and reduces the exit rate, which results in a positive variation in the total number of firms. 31 Although the intensive margin (average firm-level production) takes the initial stand to bring aggregate output growth, the gradual response of the extensive margin (number of firms) turns dominant a few quarters after the shock. Thus, the extensive margin amplifies the effect of a technology shock because of the procyclical reaction of net business formation. The average production of incumbents falls below its steady-state threshold value several quarters after the shock, which leaves an industry with more firms producing lower amounts of output. The positive effect on entry occurs because households invest on business creation as they observe an increase of equity value due to higher expected dividends and lower interest rates. The effective entry takes one period to be materialized on the goods market due to the time-to-build requirement. Meanwhile, the exit rate decreases. The positive technology shock lowers the critical productivity z cr because of a decrease in the expected real marginal cost, combined with a higher expected aggregate output and a higher expected unit revenue at the firms (see the dynamic equation for z cr , (14)). In Hamano and Zanetti (2017) 's flexible-price model with endogenous exit, this average firm-level productivity rises after an adverse technology shock. This result can be replicated in our model by reversing the sign of the shock displayed in Fig. 2 . 32 In the model with constant exit rate, the role of the extensive margin is weaker because the adjustement to the shock does not take into account the decrease in the rate of firms' exit for an almost similar increase in the rate of entry. Subsequently, establishments grow more slowly and the technology shock has a higher positive impact on firm-level production. Fig. 3 plots the responses obtained following a risk-premium shock. The effective real interest rate rises and aggregate demand shrinks as households reduce their desired spending on both consumption and investment goods. Such demand contraction results in a long-lasting decline of aggregate output, fed by the two margins as both the number of firms and the amount of firm-level output produced fall. The net business destruction is mostly explained by a procyclical reaction of entry because firm exit rises at the time of the shock but soon moves down to the negative side. 33 The persistent fall of business entry comes justified by the lower average equity value due to the combination of higher interest rates and lower expected dividends. Over the first quarters after the shock, the intensive margin absorbs the demand contraction and firms reduce their production with no significant business destruction. However, as time goes by, the number of establishments keeps falling because the effective firm entry needs more than 40 quarters to return to its steady state level. Thus, the model with entry and exit reports a longer recession after a risk-premium shock in comparison to a DSGE model with a constant exit rate in which the entry rate returns quicker to steady state and the exit rate does not change.",
+            "cite_spans": [
+                {
+                    "start": 2265,
+                    "end": 2290,
+                    "text": "Hamano and Zanetti (2017)",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 3460,
+                    "end": 3462,
+                    "text": "33",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 286,
+                    "end": 294,
+                    "text": "Figure 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 322,
+                    "end": 328,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF6"
+                },
+                {
+                    "start": 527,
+                    "end": 534,
+                    "text": "Table 3",
+                    "ref_id": "TABREF2"
+                },
+                {
+                    "start": 780,
+                    "end": 787,
+                    "text": "Table 5",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 879,
+                    "end": 885,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 948,
+                    "end": 954,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 2506,
+                    "end": 2512,
+                    "text": "Fig. 2",
+                    "ref_id": null
+                },
+                {
+                    "start": 2882,
+                    "end": 2888,
+                    "text": "Fig. 3",
+                    "ref_id": "FIGREF6"
+                }
+            ],
+            "section": "Impulse-response functions"
+        },
+        {
+            "text": "The sources of variability of US real GDP growth and business entry-exit rates are captured in the variance decomposition of the estimated model. Table 5 reports the percent shares obtained for the contribution of each shock in the long-run variance decomposition (infinite forecasting horizon). The model with constant exit rate provides similar shares (see technical Appendix for the corresponding Table) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 146,
+                    "end": 153,
+                    "text": "Table 5",
+                    "ref_id": "TABREF4"
+                },
+                {
+                    "start": 400,
+                    "end": 406,
+                    "text": "Table)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Variance decomposition"
+        },
+        {
+            "text": "Demand-side shocks govern most of the fluctuations of the rates of growth of both aggregate and firm-level output, y and y f , with 72.0% and 63.8% of their respective variance decomposition. A predominant role is observed for risk-premium shocks with 31.7% of aggregate output growth and 26.5% of firm-level output growth which reflects the large impact of these shocks during the financial crisis and the Great Recession (and their persistence on aggregate fluctuations, as discussed in the previous Subsection). Both monetary and fiscal/net exports shocks are also very influential on the fluctuations of US real GDP growth (22.7% and 17.2% of the variance decomposition, respectively) to underline the active role of the Fed and of the government on taking discretionary actions to either stimulate or stabilize the economy. Remarkably, the investment adjustment cost shock has a minor influence on the variability of aggregate and firm-level activity (0.4% and 0.3%). Technology shocks explain 12% of fluctuations in aggregate output growth and 6.7% on firm-level output growth. The price-push and, especially, the wage-push shocks do not have a significant impact on US aggregate fluctuations. It is particularly striking that wage-push shocks have so little influence on recent US business cycles (1.4% on aggregate output growth and 3.3% on firm-level output growth) as they were found quite influential over the Great Moderation period in conventional DSGE models (Smets and Wouters, 2007) .",
+            "cite_spans": [
+                {
+                    "start": 1473,
+                    "end": 1498,
+                    "text": "(Smets and Wouters, 2007)",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Variance decomposition"
+        },
+        {
+            "text": "The shocks to the entry cost and to the liquidation value have a moderate impact on aggregate fluctuations. Thus, the shock on the entry cost explains 5.8% and 12% of variability of the quarterly growth rates of aggregate and firm-level output, respectively. Meanwhile, the liquidation value (exit) shock brings cyclical fluctuations that account for 7.2% of changes in output growth and 11.1% of changes in the firm-level output growth.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Variance decomposition"
+        },
+        {
+            "text": "Regarding the extensive margin, supply-side shocks are predominant to explain 59.2% of the estimated variability in the rate of growth of the number of incumbents, n . There are three main contributors: technology shocks take 26.9% of business formation variability, entry costs take responsibility of 7.3% through its effect on business creation, and the liquidation shocks bring 20.3% of variability of establishments growth because of their effect on business destruction. Wagepush shocks account for 3.6% of business creation and price-push shocks only for 1.1%. On the demand side, both riskpremium and interest rate shocks have a relevant impact on business formation because they respectively 22.1% and 18.3% of the total variability of n . The role of investment and fiscal shocks is negligible with percentage values below 0.5%.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Variance decomposition"
+        },
+        {
+            "text": "When comparing the determinants of fluctuations in the entry and exit rates, we find that demand-side shocks explain 65.4% of the variability in the entry rate, quite evenly distributed between the effects of risk-premium shocks and interest rate shocks. These shocks have a direct impact on the real interest rate and on the fluctuations of equity value because they have a large quantitative impact on the expected dividends, the expected aggregate demand and the discount factor. The exogenous driver of the entry rate (cost of entry shock) takes 17.9% of its variance decomposition. Technology shocks have also influence of entry rate variability with 12% while price-push and wage push shocks are less influential with just 2.2% and 1.8%, respectively.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Variance decomposition"
+        },
+        {
+            "text": "As for the exit rate variability, supply-side shocks mostly explain it (81.3%) as a combination of the effects from technology shocks (24.1%), price shocks (4.4%), wage shocks (7.3%) and liquidation shocks (45.4%). We could say that these four shocks are responsible for most of the fluctuations of the critical productivity which drives exit variability, and liquidation value shocks could be capturing the business destruction due to changes in regulation that favors bankruptcy filing. Demand-side shocks altogether take the remaining 18.7% of the overall variance of the exit rate, with a predominant role from risk-premium shocks (11.9%) to capture tighter financial conditions. In the estimated model with constant exit rate, the variance decomposition brings similar shares for the shock contributions (see the technical Appendix for the numbers). Demand-side shocks dominate on the variability of aggregate output growth while supply-side shocks explain a higher percentage of the fluctuations in the rate of establishment growth. The only noticeable difference with respect to the baseline model (apart from the lack of exit rate variability) is the higher influence of demand-side shocks for the variability of firm-level output growth.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Variance decomposition"
+        },
+        {
+            "text": "The empirical evidence provided in Section 2 indicates that the short-run fluctuations of the quarterly rates of TPE growth in the US have turned more volatile, more persistent and more correlated with real GDP growth after the financial crisis. Using counterfactual simulations within our baseline estimated model, we can discuss the sources of aggregate fluctuations during the Great Recession. 34 The size and sign of the shocks may be a key factor to explain the new patterns of US business cycle fluctuations. 35 There could also have been structural breaks on key parameters that govern price/wage rigidities, monetary policy, production technology or household preferences. 36 Unfortunately, data availabilty leaves short the number of observations of the subsamples of the Great Moderation and Great Recession (55 and 48 observations, respectively) and the quality of the estimation results would be questioned. In spite of that, we have run the subsamples estimation and reported the results in the technical Appendix. 37 Fig. 4 displays the quarterly contributions of a selection of shocks to the fluctuations of the rate of growth of US Total Private Establishments per capita, the rate of growth of the US real GDP per capita, the US establishment entry rate and the US establishment exit rate from 2007:1 to 2018:4. The criterion to decide the shocks to display has been to select those with the largest contribution to the variability of the corresponding endogenous variable. Table 6 provides the standard deviations of the contributions of the nine shocks. The four highest values from each variable determine the list of shocks on display in Fig. 4 . 38 As observed in Fig. 4 , technology shocks are crucial for the recovery of business activity (TPE) from 2009 to 2012 (as it can be foreseen when looking at the estimated series of the shock available in the technical Appendix). Actually, the contributions of technological innovations for TPE growth, real GDP growth and the entry rate swing dramatically from negative values at the early stages of the financial crisis to positive values in 2009. In addition, technology shocks have a major role on the reduction of the exit rate after 2009. Quarterly contributions of positive technology shocks range between 0.5% and 1% for both TPE growth and real GDP growth, and numbers remain on the positive side until 2012. It could be argued that the enormous business destruction that took place during the financial crisis of 2008 (more than 10 0,0 0 0 establishments closed in net terms) led to economy-wide technological innovations a few quarters later. This can be considered as a Schumpeterian interpretation (creative destruction) following the exit of the least productive firms, supported by the estimation results showing technology shocks help the business formation along the recovery path. 39 34 The analysis of this section is restricted to the baseline model with endogenous entry and exit as it has proved a better capacity to explain the US quarterly data on business creation and destruction. 35 As we document in the technical Appendix, the estimated series of the shocks of the model have some specific patterns during the Great Recession. In particular, technology shocks are more volatile and persistent, risk-premium shocks are more persistent, and fiscal shocks are less volatile and persistent. Remarkably, the quarterly series of risk-premium shock swings from the negative to the positive side in 2007, with high values (bordering the 1% value per quarter, 4% annualized) from 2008 to 2013. Technology shocks also play a significant role during the Great Recession as they turn strongly positive on the quarters that initiate the recovery path (2009) (2010) (2011) . 36 Hurtado (2014) estimates Smets and Wouters, 2007 model using a rolling-window approach. He shows that most parameters, including those that are considered structural, exhibit major shifts. This applies specifically to those related to Calvo price stickiness and the elasticity of labor supply. 37 In summary, we find that the Great Moderation had lower estimated values for the elasticity of the capital adjustment costs, \u03d5 k , and the capital share in the production technology, which explain the higher responsiveness of investment and physical capital (intensive margin) to absorb the effects of shocks. 38 See the technical Appendix for the complete shock decomposition with all the shocks of the model, and also for a display of the full sample period, 1993 to 2018. 39 There is empirical evidence consistent with our results: technology shocks grow after the financial crisis while the number of establishments fall. Following the Solow residual methodology of Fernald, 2014 , the Federal Reserve Bank of San Francisco publishes a times series of Total Factor Productivity (TFP) growth in the US. This reports high rates of growth of US productivity in 2009 and 2010, with annualized rates of growth of TFP close to 4%. Moreover, The other main driver of recent US business fluctuations is risk premium shocks. Fig. 4 identifies risk-premium innovations as responsible for the severe contractions of both the number of establishments and real GDP in 2008 and 2009. Such negative contributions of risk-premium shocks averaging around 0.5% for TPE growth and 1% for real GDP growth between 2008 and 2009, consistent with the rapid increase in the cost of borrowing for the private sector (the deepest impact is a -2.27% cut in real GDP estimated for the last quarter of 2008). 40 It can also observed in Fig. 4 that the reduction in the number of establishments due to risk-premium shocks is simultaneously explained by a negative effect on the entry rate and the positive impact on the exit rate. The contributions of risk premium shock are very persistent: still contractionary until 2011 for real GDP growth (though its size and effect are diminishing over time) and even longer lasting for entry and exit which suffer negative contributions until 2014.",
+            "cite_spans": [
+                {
+                    "start": 397,
+                    "end": 399,
+                    "text": "34",
+                    "ref_id": null
+                },
+                {
+                    "start": 1668,
+                    "end": 1670,
+                    "text": "38",
+                    "ref_id": null
+                },
+                {
+                    "start": 2870,
+                    "end": 2872,
+                    "text": "34",
+                    "ref_id": null
+                },
+                {
+                    "start": 3075,
+                    "end": 3077,
+                    "text": "35",
+                    "ref_id": null
+                },
+                {
+                    "start": 3735,
+                    "end": 3741,
+                    "text": "(2009)",
+                    "ref_id": null
+                },
+                {
+                    "start": 3742,
+                    "end": 3748,
+                    "text": "(2010)",
+                    "ref_id": null
+                },
+                {
+                    "start": 3749,
+                    "end": 3755,
+                    "text": "(2011)",
+                    "ref_id": null
+                },
+                {
+                    "start": 3758,
+                    "end": 3760,
+                    "text": "36",
+                    "ref_id": null
+                },
+                {
+                    "start": 4055,
+                    "end": 4057,
+                    "text": "37",
+                    "ref_id": null
+                },
+                {
+                    "start": 4368,
+                    "end": 4370,
+                    "text": "38",
+                    "ref_id": null
+                },
+                {
+                    "start": 4533,
+                    "end": 4535,
+                    "text": "39",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1031,
+                    "end": 1037,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 1491,
+                    "end": 1498,
+                    "text": "Table 6",
+                    "ref_id": "TABREF5"
+                },
+                {
+                    "start": 1659,
+                    "end": 1665,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 1686,
+                    "end": 1692,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 5078,
+                    "end": 5084,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                },
+                {
+                    "start": 5569,
+                    "end": 5575,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "The extensive margin during the great recession"
+        },
+        {
+            "text": "Interest rate shocks have two expansionary waves: in 2008-9 (financial crisis) and in 2014-15 (QE programs). In both cases, the expansionary actions of the Fed had positive effects on business formation. During the financial crisis, the Fed intervention to cut interest rates down to 0% provided some stimulus in 2008, with an average quarterly contribution of +0.36% to real GDP growth within that year and a peak effect of +0.70% in the first quarter of 2008. The impact on business growth is more moderate, with an average contribution of +0.18% in 2008. Between 2009 and 2011, the estimated contributions of monetary policy shocks are negative for both business formation and GDP growth, which reflects the severity of the the cross correlation between the quarterly rate of growth of US Total Factor Productivity Fernald, 2014 and the quarterly rate of growth of US Total Private Establishments (Bureau of Labor Statistics) between 2007:1 and 2011:4 is -0.47, consisted with the notion of Schumpeterian creative destruction. 40 The annualized spreads between Commercial and Industrial Loan Rates and the Federal Funds rate rose stadily from 1.72% in the first quarter of 2007:1 to 3.49% in the second quarter of 2010. Source: Board of Governors of the Federal Reserve Bank. economic recession and the impossibility of additional interest rate cuts due to the zero lower bound. 41 Later, the massive asset purchase program of the Fed (QE policies), give a second wave of monetary stimulus in 2013-2015. Interest-rate shocks may capture the role of unconventional monetary policy during the Great Recession as we have taken for the estimation the shadow interest rate series of Wu and Xia, 2016 . Expansionary QE policy actions can be observed as below-zero values in the shadow interest rate that bring negative estimates of the error term, \u03b5 R t , entering the monetary policy rule (20). In 2014, the year in which the Fed's balance sheet reached its highest value (around 4 trillion dollars) the average quarterly effect monetary shocks on real GDP growth is +0.70% with a peak effect of +0.9% in the second quarter of 2014. 42 Fiscal policy turns influential for fluctuations of US real GDP growth in several punctual quarters. 43 In particular, there is a contractionary fiscal shock in 2011:1 that has a negative impact of -0.71% on real GDP growth. Other adverse fiscal shocks on GDP are displayed in Fig. 4 corresponding to the fiscal cliff turbulences occurred in 2012-2014.",
+            "cite_spans": [
+                {
+                    "start": 1030,
+                    "end": 1032,
+                    "text": "40",
+                    "ref_id": null
+                },
+                {
+                    "start": 1681,
+                    "end": 1697,
+                    "text": "Wu and Xia, 2016",
+                    "ref_id": "BIBREF44"
+                },
+                {
+                    "start": 2131,
+                    "end": 2133,
+                    "text": "42",
+                    "ref_id": null
+                },
+                {
+                    "start": 2235,
+                    "end": 2237,
+                    "text": "43",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 2411,
+                    "end": 2417,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "The extensive margin during the great recession"
+        },
+        {
+            "text": "All the remaining sources of variability play a minor role (see Table 6 ). Investment shocks have little effects on fluctuations in business and GDP growth during the Great Recession. Price-push shocks and wage-push shocks also report small contributions. The entry cost shock shows countercyclical contributions for business formation although its quantitative impact is not large. Finally, the liquidation value shock affects business formation, with noticeable effects for reducing the exit rate and increasing the rate of growth of TPE between 2012 and 2018. Table 6 reports the mean and standard deviation of these sources of variability along the whole subsample 2007:1-2018:4. The sources of real GDP growth during the Great Recession are the technology shock (+0.096% per quarter) and, to a weaker extend, the interest rate shock (+0.036%), and the liquidation value shock (+0.076% per quarter). Meanwhile, the recession is mostly justified on the demand-side risk premium shocks with a negative effect of -0.266%. Fiscal shocks are quite volatile (with continuous short lasting ups and downs) because its standard deviation is almost as high as that of the interest rate shocks, even if the overall effect is quantitatively small.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 64,
+                    "end": 71,
+                    "text": "Table 6",
+                    "ref_id": "TABREF5"
+                },
+                {
+                    "start": 563,
+                    "end": 570,
+                    "text": "Table 6",
+                    "ref_id": "TABREF5"
+                }
+            ],
+            "section": "The extensive margin during the great recession"
+        },
+        {
+            "text": "Both price-push and, especially, wage-push shocks play a minor role on output growth variability. The entry cost shock and the liquidation value shock have some impact on US growth variability, with similar standard deviations of their contributions and a higher positive value on liquidation (exit) shocks. The influence of these entry/exit shocks is more noticeable after the economic recession of 2008-09 as documented in Table 6 .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 425,
+                    "end": 432,
+                    "text": "Table 6",
+                    "ref_id": "TABREF5"
+                }
+            ],
+            "section": "The extensive margin during the great recession"
+        },
+        {
+            "text": "As for business growth, Fig. 4 shows that technology shocks contribute even slightly more to business formation than to GDP growth, with an average impact of +0.116% per quarter. Financial and monetary shocks are very influential (although not as much as they are for real GDP growth) an average reduction per quarter of n due to risk premium shocks estimated at -0.236% and an average increase due to monetary shocks at +0.015%. The standard deviations of these contributions of financial and monetary innovations to business growth are both high, which indicates their major relevance for explaining fluctuations in net business creation in the Great Recession. Both the entry cost shocks (+0.018% per quarter) and exit liquidation shocks (+0.117% per quarter) have favorable effects, with a higher standard deviation on the latter to explain that exit variations play a more significant role than entry fluctuations.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 24,
+                    "end": 30,
+                    "text": "Fig. 4",
+                    "ref_id": "FIGREF7"
+                }
+            ],
+            "section": "The extensive margin during the great recession"
+        },
+        {
+            "text": "We have introduced a DSGE model with endogenous business creation (entry) and destruction (exit) to discuss the role of the extensive margin on US aggregate fluctuations. The Bayesian estimation of the model delivers fluctuations of the aggregate GDP explained by either changes at the extensive margin (number of firms) or at the intensive margin (firmlevel production). The model simulations provide a good matching to the second-moment statistics of the rate of growth of US private businesses, and also for those of the entry and exit rates. A variant of the model with a constant exit rate underestimates the procyclicality of business creation and gives a lower overall fit to US data.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "In the impulse-response functions analysis, we show that business formation is procyclical after technology and riskpremium shocks, which amplifies the effect of these shocks for aggregate fluctuations. In the variance decomposition analysis, the fluctuations of the rate of growth of aggregate US real GDP and firm-level output are mostly explained by demand-side shocks whereas supply-side shocks are the main drivers of the extensive margin (business formation), especially through exit dynamics. Moreover, shocks on the entry cost and liquidation value shocks explain together 13% of fluctuations of US real GDP growth and 27% of variability on the rate of growth of US private establishments. The evolution of the entry rate depends upon both demand and supply factors with a prevalence of risk-premium and monetary policy shocks, whereas the exit rate is mainly affected by supply factors such as shocks on technology and on firm liquidation value.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        },
+        {
+            "text": "Since the empirical evidence shows an increasing role of business formation for US aggregate fluctuations over, we have examined the sources of these fluctuations during the Great Recession period that followed the financial crisis. Technology shocks were crucial for the start of the recovery with a significant influence to increase business entry, to reduce business exit, and to increase the rate of business growth. Risk-premium shocks had a dominant effect on the contraction of aggregate GDP and entrepreneurial activity during the financial crisis of 20 08 and 20 09, with long-lasting effects until 2014-15. Monetary policy shocks were expansionary both during the financial crisis and over the quarters of Federal Reserve's quantitative easing program .",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conclusions"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Dynare: Reference manual version 4, dynare working papers 1, CEPREMAP, revised",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Adjemian",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Bastani",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Juillard",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Karam\u00e9",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Maih",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Mihoubi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Perendia",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Pfeifer",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Ratto",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Villemot",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Multi-product firms and product switching",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Bernard",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Redding",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Schott",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "American Economic Review",
+            "volume": "100",
+            "issn": "",
+            "pages": "70--97",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Monetary policy and business cycles with endogenous entry and product variety",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Bilbiie",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ghironi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Melitz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "NBER Macroeconomics Annual",
+            "volume": "22",
+            "issn": "",
+            "pages": "299--353",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Labor Force and Employment Estimates Smoothed for Population Adjustments, Bureau of Labor Statistics. Labor Force and Employment Estimates Smoothed for Population Adjustments",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Bilbiie",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ghironi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Melitz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Current Population Survey (CPS)",
+            "volume": "120",
+            "issn": "",
+            "pages": "304--345",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "International trade and macroeconomic dynamics with labor market frictions",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Cacciatore",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Journal of International Economic",
+            "volume": "93",
+            "issn": "",
+            "pages": "17--30",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Staggered prices in a utility-maximizing framework",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Calvo",
+                    "suffix": ""
+                }
+            ],
+            "year": 1983,
+            "venue": "J. Monet. Econ",
+            "volume": "12",
+            "issn": "",
+            "pages": "383--398",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Entry, exit, embodied technology, and business cycles",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Campbell",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Rev. Econ. Dyn",
+            "volume": "1",
+            "issn": "",
+            "pages": "371--408",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "The swings of U.S. inflation and the gibson paradox",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Casares",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Vazquez",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Econ. Inq",
+            "volume": "56",
+            "issn": "",
+            "pages": "799--820",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Entry costs and the dynamics of business formation",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Cavallari",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "J. Macroecon",
+            "volume": "44",
+            "issn": "",
+            "pages": "312--326",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Nominal rigidities and the dynamic effects of a shock to monetary policy",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Christiano",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Eichenbaum",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Evans",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Journal of Political Economy",
+            "volume": "113",
+            "issn": "",
+            "pages": "1--45",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Risk shocks",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Christiano",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Motto",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rostagno",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "American Economic Review",
+            "volume": "104",
+            "issn": "",
+            "pages": "27--65",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Optimal fiscal policy with endogenous product variety. CEPR discussion papers 10674",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chugh",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ghironi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "C. E.P.R. Discussion Papers",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Entry, exit, firm dynamics, and aggregate fluctuations",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Clementi",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Palazzo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "American Economic Journal: Macroeconomics",
+            "volume": "8",
+            "issn": "3",
+            "pages": "1--41",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Endogenous market structures and optimal taxation",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Colciago",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Economic Journal",
+            "volume": "126",
+            "issn": "",
+            "pages": "1441--1483",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Declining business dynamism: what we know and the way forward",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Decker",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Haltiwanger",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Jarmin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Miranda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "American Economic Review",
+            "volume": "106",
+            "issn": "",
+            "pages": "203--207",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Declining dynamism, allocative efficiency, and the productivity slowdown",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Decker",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Haltiwanger",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Jarmin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Miranda",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "American Economic Review",
+            "volume": "107",
+            "issn": "",
+            "pages": "322--326",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "The rise of market power and the macroeconomic implications",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Deloecker",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Eeckhout",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Unger",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Quarterly Journal of Economics",
+            "volume": "135",
+            "issn": "",
+            "pages": "561--644",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Monopolistic competition, increasing returns, and the effects of government spending",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Devereux",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Head",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Lapham",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "Journal of Money, Credit and Banking",
+            "volume": "28",
+            "issn": "",
+            "pages": "233--254",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Monopolistic competition and optimum product diversity",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Dixit",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Stiglitz",
+                    "suffix": ""
+                }
+            ],
+            "year": 1977,
+            "venue": "American Economic Review",
+            "volume": "67",
+            "issn": "",
+            "pages": "297--308",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Business cycle dynamics after the great recession: an extended markov-switching dynamic factor model",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Doz",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ferrara",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Pionnier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "OECD Statistics Working Papers",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Entry and exit, multi-product firms, and allocative distortions",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Fattal-Jaef",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "American Economic Journal: Macroeconomics",
+            "volume": "10",
+            "issn": "",
+            "pages": "86--112",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "A quarterly, utilization-adjusted series on total factor productivity. Federal Reserve Bank of San Francisco Working Paper Series",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Fernald",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "International trade and macroeconomic dynamics with heterogeneous firms",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Ghironi",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Melitz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Quarterly Journal of Economics",
+            "volume": "120",
+            "issn": "",
+            "pages": "865--915",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Endogenous product turnover and macroeconomic dynamics",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hamano",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zanetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2017,
+            "venue": "Rev. Econ. Dyn",
+            "volume": "26",
+            "issn": "",
+            "pages": "263--279",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "On quality and variety bias in aggregate prices",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hamano",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zanetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Journal of Money, Credit and Banking",
+            "volume": "50",
+            "issn": "6",
+            "pages": "1343--1363",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Monetary policy, firm heterogeneity and product variety. Waseda Institute of Political Economy",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Hamano",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zanetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Working Paper Series",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Declining business dynamism in the united states: alook at states and metros. Brookings Institution . Hopenhayn, H. , 1992. Entry, exit, and firm dynamics in long run equilibrium",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hathaway",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Litan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Econometrica",
+            "volume": "60",
+            "issn": "",
+            "pages": "1127--1150",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "DSGE Models and the lucas critique",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hurtado",
+                    "suffix": ""
+                }
+            ],
+            "year": 2014,
+            "venue": "Econ. Model",
+            "volume": "44",
+            "issn": "",
+            "pages": "12--19",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Testing the effectiveness of unconventional monetary policy in japan and the united states",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ikeda",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Mavroeidis",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zanetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Firm dynamics and markup variations: implications for sunspot equilibria and endogenous economic fluctuations",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Jaimovich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "J. Econ. Theory",
+            "volume": "137",
+            "issn": "",
+            "pages": "300--325",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Firm dynamics, markup variations, and the business cycle",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Jaimovich",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Floetotto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J. Monet. Econ",
+            "volume": "55",
+            "issn": "",
+            "pages": "1238--1252",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Macroeconomic effects of financial shocks",
+            "authors": [
+                {
+                    "first": "U",
+                    "middle": [],
+                    "last": "Jermann",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Quadrini",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "American Economic Review",
+            "volume": "102",
+            "issn": "",
+            "pages": "238--271",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "The quantitative analytics of the basic neomonetarist model",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Kimball",
+                    "suffix": ""
+                }
+            ],
+            "year": 1995,
+            "venue": "J. Money Credit Bank",
+            "volume": "27",
+            "issn": "",
+            "pages": "1241--1277",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Firms endogenous entry and monopolistic banking in a DSGE model",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Lacroce",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rossi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2018,
+            "venue": "Macroecon. Dyn",
+            "volume": "22",
+            "issn": "",
+            "pages": "153--171",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Firm entry, markups and the monetary transmission mechanism",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Lewis",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Poilly",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J. Monet. Econ",
+            "volume": "59",
+            "issn": "",
+            "pages": "670--685",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Entry and markup dynamics in an estimated business cycle model",
+            "authors": [
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Lewis",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Stevens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2015,
+            "venue": "Eur. Econ. Rev",
+            "volume": "74",
+            "issn": "",
+            "pages": "14--35",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Changing macroeconomic dynamics at the zero lower bound",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Theodoridis",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Mumtaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zanetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Journal of Business and Economic Statistics",
+            "volume": "37",
+            "issn": "",
+            "pages": "391--404",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "State dependence in labor market fluctuations",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Pizzinelli",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Konstantinos",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zanetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "The overshooting of firms' destruction, banks and productivity shocks",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Rossi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Eur. Econ. Rev",
+            "volume": "113",
+            "issn": "",
+            "pages": "136--155",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Monopolistic price adjustment and aggregate output",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Rotemberg",
+                    "suffix": ""
+                }
+            ],
+            "year": 1982,
+            "venue": "Review of Economic Studies",
+            "volume": "49",
+            "issn": "",
+            "pages": "517--531",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Entry, exit and business cycle in a general equilibrium model",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Samaniego",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Rev. Econ. Dyn",
+            "volume": "11",
+            "issn": "",
+            "pages": "529--541",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Shocks and frictions in u. s. business cycles: abayesian DSGE approach",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Smets",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wouters",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "American Economic Review",
+            "volume": "97",
+            "issn": "",
+            "pages": "586--606",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Discretion versus policy rules in practice",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Taylor",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "Carnegie-Rochester Conference Series on Public Policy",
+            "volume": "39",
+            "issn": "",
+            "pages": "195--214",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Firms' heterogeneity, endogenous entry, and exit decisions, economics working paper, christian-albrechts-universit\u00e4t kiel",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Totzek",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Measuring the macroeconomic impact of monetary policy at the zero lower bound",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Xia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "J. Money Credit Bank",
+            "volume": "48",
+            "issn": "",
+            "pages": "253--291",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Financial shocks, job destruction shocks, and labor market fluctuations",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zanetti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Macroecon. Dyn",
+            "volume": "23",
+            "issn": "",
+            "pages": "1137--1165",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "US business formation statistics (rolling window 48-quarter).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "are, respectively, the probabilities of remaining and leaving the industry.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "and \u03c2 x > 1. The exit cost depends on the exit rate in a way that resembles the congestion costs associated with a large number of firms leaving the industry at the same time (analogous to the one assumed in entry decisions). Inserting the function for x c t in the equation of the liquidation value and taking logs results in this expression for log fluctuations of the liquidation value",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF4": {
+            "text": "consistent with recent empirical evidence reported byDeLoecker et al. (2020) .26  The role of the extensive margin for the aggregate fluctuations of the model may explain large markups, because the elasticity of aggregate output to variations in the total number of establishments coincides with the gross mark-up ( \u2202 y t /\u2202 n t = \u03b8p \u03b8p \u22121 can be observed in equation 22).",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF5": {
+            "text": "estimated at \u03c2 e = 2 . 74 , a similar value to that of the exit cost at \u03c2 x = 2 . 70 , which are not far from their priors that represent the quadratic adjustment costs. In the model with constant exit rate, the elasticity of the entry cost is lower than in the baseline model at \u03c2 e = 2 . 59 , embedding a greater variability of entry dynamics because the exit rate remains constant. The posterior estimates on the size of the congestion costs of entry and exit are, respectively, 2.58% and 1.99% of equity value 26 Furthermore,Smets and Wouters (2007) report a posterior estimate for the steady-state mark-up in their canonical DSGE model of the US economy that corresponds to value of \u03b8p = 2 . 67 , rather similar to the one we have found in our estimated DSGE model with business formation.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF6": {
+            "text": "Impulse-response functions following a risk-premium shock.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF7": {
+            "text": "Shock decomposition during the Great Recession, 2007:1 to 2018:4.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Descriptive statistics from US business formation.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF1": {
+            "text": "Priors and estimated posteriors.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF2": {
+            "text": "Priors and estimated posteriors of (shocks-related) parameters.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF3": {
+            "text": "Selected second-moment statistics.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF4": {
+            "text": "Estimated variance decomposition, %.",
+            "latex": null,
+            "type": "table"
+        },
+        "TABREF5": {
+            "text": "Sources of fluctuations during the Great Recession, 2007:1-2018:4.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

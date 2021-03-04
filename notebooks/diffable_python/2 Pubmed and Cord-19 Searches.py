@@ -16,7 +16,7 @@
 
 # This notebook performs the searches of PubMed and the CORD-19 Database for text representing trial registrations.
 
-# # PubMed Search
+# # Setup
 
 # +
 import sys
@@ -37,9 +37,17 @@ import json
 import pandas as pd
 import numpy as np
 import xmltodict
+import tarfile
+import pickle
 
 from bs4 import BeautifulSoup
 from xml.etree.ElementTree import tostring
+
+#Our searching function and lists of our regular expressions
+from lib.id_searches import search_text, ids_exact, prefixes, registry_names
+# -
+
+# # PubMed Search
 
 # +
 #If the archive exists, load it in.
@@ -69,8 +77,6 @@ except FileNotFoundError:
     print('Archive created')
     
 # -
-
-archive_df.head()
 
 pubmed_data = archive_df.xml_json.tolist()
 
@@ -150,9 +156,6 @@ for rec in tqdm(pubmed_data):
 
 
 # +
-#Our searching function and lists of our regular expressions
-from lib.id_searches import search_text, ids_exact, prefixes, registry_names
-
 for d in tqdm(pubmed_dicts):
     d['abst_id_hits'] = search_text(ids_exact, d['abstract'])
     d['reg_prefix_hits'] = search_text(prefixes, d['abstract'])
@@ -173,18 +176,9 @@ for d in tqdm(pubmed_dicts):
 # -
 
 pubmed_search_results = pd.DataFrame(pubmed_dicts)
+pubmed_search_results.to_csv(parent + '/data/pubmed/pubmed_search_results_jan2021.csv')
 
-# +
-col_order = ['pmid', 'source', 'abst_id_hits', 'reg_prefix_hits', 'reg_name_hits', 'accession', 'pub_types', 'doi']
-col_rename = ['id', 'source', 'id_hits', 'prefix_hits', 'reg_name_hits', 'accession', 'pub_types', 'doi']
-
-final_pubmed = pubmed_search_results[col_order].reset_index(drop=True)
-final_pubmed.columns = col_rename
-final_pubmed['pm_id'] = final_pubmed['id']
-final_pubmed['cord_id'] = None
-# -
-
-final_pubmed.to_csv(parent + '/data/pubmed/pubmed_search_results_jan2021.csv')
+del archive_df
 
 # # Searching CORD-19 data
 
@@ -202,6 +196,181 @@ for c in covid_19_arts:
 recent_pmcs = []
 for p in covid_19_pmc:
     recent_pmcs.append(str(p) + '.xml.json')
+# -
+
+cord_hit_list = []
+with tarfile.open(parent+'/data/cord_19/document_parses.tar.gz', 'r:gz') as tar:
+    file_names = tar.getnames()
+    files = tar.getmembers()
+    for fn, f in zip(file_names, tqdm(files)):
+        name = fn.split('/')[-1]
+        doc_dict = {}
+        if name in recent_articles:
+            file = tar.extractfile(f)
+            content = file.read()
+            stringify = content.decode('utf-8')
+            j = json.loads(content)
+            doc_dict['file_name'] = j['paper_id']
+            doc_dict['source'] = 'cord_pdf'
+            doc_dict['id_hits'] = search_text(ids_exact, stringify)
+            doc_dict['reg_prefix_hits'] = search_text(prefixes, stringify)
+            doc_dict['reg_name_hits'] = search_text(registry_names, stringify)
+            doc_dict['title'] = j['metadata']['title']
+            if 'review' in doc_dict['title'].lower():
+                doc_dict['review_in_title'] = True
+            else:
+                doc_dict['review_in_title'] = False
+        elif name in recent_pmcs:
+            file = tar.extractfile(f)
+            content = file.read()
+            stringify = content.decode('utf-8')
+            j = json.loads(content)
+            doc_dict['file_name'] = j['paper_id']
+            doc_dict['source'] = 'cord_pmc'
+            doc_dict['id_hits'] = search_text(ids_exact, stringify)
+            doc_dict['reg_prefix_hits'] = search_text(prefixes, stringify)
+            doc_dict['reg_name_hits'] = search_text(registry_names, stringify)
+            doc_dict['title'] = j['metadata']['title']
+            if 'review' in doc_dict['title'].lower():
+                doc_dict['review_in_title'] = True
+            else:
+                doc_dict['review_in_title'] = False
+        else:
+            continue
+        if doc_dict:
+            cord_hit_list.append(doc_dict)
+
+cord_df = pd.DataFrame(cord_hit_list)
+
+import pickle
+pickle.dump(cord_df, open('cord_df.pkl', 'wb'))
+
+# # Bringing it all together
+
+from lib.id_searches import make_doi_url, trial_pub_type, dedupe_list
+
+# +
+cord_pdf_merge = cord_df.merge(metadata[['sha', 'doi', 'pubmed_id', 'cord_uid', 'url']], how='left', left_on='file_name', right_on='sha').drop(['sha'], axis=1)
+
+cord_pmc_merge = cord_df.merge(metadata[['pmcid', 'doi', 'pubmed_id', 'cord_uid', 'url']], how='left', left_on='file_name', right_on='pmcid').drop(['pmcid'], axis=1)
+
+# +
+combined = cord_pdf_merge[cord_pdf_merge.doi.notnull()].append(cord_pmc_merge[cord_pmc_merge.doi.notnull()], ignore_index=True)
+
+final_cord = combined.loc[combined.astype(str).drop_duplicates().index].drop(['file_name'], axis=1).reset_index(drop=True)
+
+merged = final_cord.merge(pubmed_search_results, how='outer', left_on='pubmed_id', right_on='pmid').drop(['abstract', 'pub_types_raw'], axis=1)
+
+# +
+source_conds = [(merged.source_x.notnull() & merged.source_y.isna()), 
+                (merged.source_x.isna() & merged.source_y.notnull()), 
+                merged.source_x.notnull() & merged.source_y.notnull()]
+source_output = [merged.source_x, merged.source_y, 'mixed']
+
+merged['source'] = np.select(source_conds, source_output, None)
+merged.drop(['source_x', 'source_y'], axis=1, inplace=True)
+
+# +
+title_conds = [(merged.title_x.notnull() & merged.title_y.isna()), 
+                (merged.title_x.isna() & merged.title_y.notnull()), 
+                merged.title_x.notnull() & merged.title_y.notnull()]
+title_output = [merged.title_x, merged.title_y, merged.title_y]
+
+merged['title'] = np.select(title_conds, title_output, None)
+merged.drop(['title_x', 'title_y'], axis=1, inplace=True)
+
+# +
+doi_conds = [(merged.doi_x.notnull() & merged.doi_y.isna()), 
+                (merged.doi_x.isna() & merged.doi_y.notnull()), 
+                merged.doi_x.notnull() & merged.doi_y.notnull()]
+doi_output = [merged.doi_x, merged.doi_y, merged.doi_y]
+
+merged['doi'] = np.select(doi_conds, doi_output, None)
+merged.drop(['doi_x', 'doi_y'], axis=1, inplace=True)
+
+# +
+pmid_conds = [(merged.pubmed_id.notnull() & merged.pmid.isna()), 
+                (merged.pubmed_id.isna() & merged.pmid.notnull()), 
+                merged.pubmed_id.notnull() & merged.pmid.notnull()]
+pmid_output = [merged.pubmed_id, merged.pmid, merged.pmid]
+
+merged['pm_id'] = np.select(pmid_conds, pmid_output, None)
+merged.drop(['pubmed_id', 'pmid'], axis=1, inplace=True)
+
+# +
+review_title_conds = [(merged.review_in_title_x.notnull() & merged.review_in_title_y.isna()), 
+                      (merged.review_in_title_x.isna() & merged.review_in_title_y.notnull()), 
+                      (merged.review_in_title_x == True) | (merged.review_in_title_y == True), 
+                      (merged.review_in_title_x == False) & (merged.review_in_title_y == False)]
+review_title_output = [merged.review_in_title_x, merged.review_in_title_y, True, False]
+
+merged['review_in_title'] = np.select(review_title_conds, review_title_output)
+merged.drop(['review_in_title_x', 'review_in_title_y'], axis=1, inplace=True)
+
+# +
+id_hits_cond = [merged.id_hits.notnull() & merged.abst_id_hits.isna(), 
+                merged.id_hits.isna() & merged.abst_id_hits.notnull(), 
+                merged.id_hits.notnull() & merged.abst_id_hits.notnull()]
+id_hits_output= [merged.id_hits, merged.abst_id_hits, merged.id_hits + merged.abst_id_hits]
+    
+    
+merged['trial_id_hits'] = np.select(id_hits_cond, id_hits_output, None)
+merged['trial_id_hits'] = merged['trial_id_hits'].apply(dedupe_list)
+merged.drop(['id_hits', 'abst_id_hits'], axis=1, inplace=True)
+
+# +
+prefix_hits_cond = [merged.reg_prefix_hits_x.notnull() & merged.reg_prefix_hits_y.isna(), 
+                merged.reg_prefix_hits_x.isna() & merged.reg_prefix_hits_y.notnull(), 
+                merged.reg_prefix_hits_x.notnull() & merged.reg_prefix_hits_y.notnull()]
+prefix_hits_output= [merged.reg_prefix_hits_x, merged.reg_prefix_hits_y, 
+                     merged.reg_prefix_hits_x + merged.reg_prefix_hits_y]
+    
+    
+merged['prefix_hits'] = np.select(prefix_hits_cond, prefix_hits_output, None)
+merged['prefix_hits'] = merged['prefix_hits'].apply(dedupe_list)
+merged.drop(['reg_prefix_hits_x', 'reg_prefix_hits_y'], axis=1, inplace=True)
+
+# +
+reg_name_hits_cond = [merged.reg_name_hits_x.notnull() & merged.reg_name_hits_y.isna(), 
+                      merged.reg_name_hits_x.isna() & merged.reg_name_hits_y.notnull(), 
+                      merged.reg_name_hits_x.notnull() & merged.reg_name_hits_y.notnull()]
+reg_name_hits_output= [merged.reg_name_hits_x, merged.reg_name_hits_y, 
+                       merged.reg_name_hits_x + merged.reg_name_hits_y]
+    
+    
+merged['reg_name_hits'] = np.select(reg_name_hits_cond, reg_name_hits_output, None)
+merged['reg_name_hits'] = merged['reg_name_hits'].apply(dedupe_list)
+merged.drop(['reg_name_hits_x', 'reg_name_hits_y'], axis=1, inplace=True)
+# -
+
+merged['id'] = np.where(merged.pm_id.isna(), merged.cord_uid, merged.pm_id)
+
+final_df = merged.fillna(np.nan).groupby('id', as_index=False).first()
+
+# +
+final_df = final_df[['id', 'trial_id_hits', 'prefix_hits', 'reg_name_hits', 'pub_types', 'doi', 'pm_id', 
+                     'cord_uid', 'url', 'title', 'review_in_title', 'review_type']]
+
+final_df.columns = ['id', 'id_hits', 'prefix_hits', 'reg_name_hits', 'pub_types', 'doi', 'pm_id', 'cord_id', 'url', 
+                    'title', 'review_in_title', 'review_type']
+# -
+
+final_df['pub_types'] = final_df.pub_types.astype(str).apply(trial_pub_type)
+final_df['doi_link'] = final_df.doi.apply(make_doi_url)
+
+final_df[((final_df.id_hits.notnull()) | (final_df.pub_types.notnull())) & 
+         ((final_df.review_in_title != True) & (final_df.review_in_title != True))]
+
+final_df[((final_df.id_hits.notnull()) | (final_df.prefix_hits.notnull()) | (final_df.reg_name_hits.notnull()) | (final_df.pub_types.notnull())) & 
+         ((final_df.review_in_title != True) & (final_df.review_in_title != True))]
+
+final_df.to_csv(parent + '/data/final_auto_24Feb2021.csv')
+
+
+
+
+
+
 
 # +
 #The CORD-19 document parses are too big to fit in the GitHub repo so you need to download and add locally
@@ -274,7 +443,7 @@ final_cord = interim_cord[col_order].reset_index(drop=True)
 final_cord.columns = col_names
 # -
 
-final_cord.to_csv(parent + '/data/cord_19/cord_19_search_results.csv')
+final_cord.to_csv(parent + '/data/cord_19/cord_19_search_results_jan2021.csv')
 
 # # Final Data Management
 
@@ -318,4 +487,4 @@ final = combined.merge(metadata[['cord_uid', 'url', 'title']], how='left', left_
 #Do a final dedupe
 final_deduped = final.drop_duplicates('id').reset_index(drop=True)
 
-final_deduped.to_csv(parent + '/data/final_auto_15Sept2020.csv')
+

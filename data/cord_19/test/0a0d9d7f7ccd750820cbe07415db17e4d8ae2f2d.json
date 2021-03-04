@@ -1,0 +1,655 @@
+{
+    "paper_id": "0a0d9d7f7ccd750820cbe07415db17e4d8ae2f2d",
+    "metadata": {
+        "title": "CoV-AbDab: the Coronavirus Antibody Database Associate Editor: XXXXXXX Received on XXXXX; revised on XXXXX; accepted on XXXXX",
+        "authors": [
+            {
+                "first": "Matthew",
+                "middle": [
+                    "I J"
+                ],
+                "last": "Raybould",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oxford",
+                    "location": {
+                        "addrLine": "24-29 St. Giles'",
+                        "postCode": "OX1 3LB",
+                        "settlement": "Oxford",
+                        "country": "United Kingdom"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Aleksandr",
+                "middle": [],
+                "last": "Kovaltsuk",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oxford",
+                    "location": {
+                        "addrLine": "24-29 St. Giles'",
+                        "postCode": "OX1 3LB",
+                        "settlement": "Oxford",
+                        "country": "United Kingdom"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Claire",
+                "middle": [],
+                "last": "Marks",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oxford",
+                    "location": {
+                        "addrLine": "24-29 St. Giles'",
+                        "postCode": "OX1 3LB",
+                        "settlement": "Oxford",
+                        "country": "United Kingdom"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Charlotte",
+                "middle": [
+                    "M"
+                ],
+                "last": "Deane",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of Oxford",
+                    "location": {
+                        "addrLine": "24-29 St. Giles'",
+                        "postCode": "OX1 3LB",
+                        "settlement": "Oxford",
+                        "country": "United Kingdom"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "The emergence of a novel strain of betacoronavirus, SARS-CoV-2, has led to a pandemic that has been associated with over 700,000 deaths as of 5 th August 2020. Research is ongoing around the world to create vaccines and therapies to minimise rates of disease spread and mortality. Crucial to these efforts are molecular characterisations of neutralising antibodies to SARS-CoV-2. Such antibodies would be valuable for measuring vaccine efficacy, diagnosing exposure, and developing effective biotherapeutics. Here, we describe our new database, CoV-AbDab, which already contains data on over 1400 published/patented antibodies and nanobodies known to bind to at least one betacoronavirus. This database is the first consolidation of antibodies known to bind SARS-CoV-2 as well as other betacoronaviruses such as SARS-CoV-1 and MERS-CoV. It contains relevant metadata including evidence of cross-neutralisation, antibody/nanobody origin, full variable domain sequence (where available) and germline assignments, epitope region, links to relevant PDB entries, homology models, and source literature. Results: On 5 th August 2020, CoV-AbDab referenced sequence information on 1402 anti-coronavirus antibodies and nanobodies, spanning 66 papers and 21 patents. Of these, 1131 bind to SARS-CoV-2.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "CoV-AbDab is free to access and download without registration at",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "To respond effectively to the recent Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) pandemic, it is essential to understand the molecular basis for a successful immune response to coronavirus infection (Iwasaki and Yang (2020) ). In particular, characterising the B-cell response is important as the identification of potent neutralising antibodies could pave the way for effective treatments, aid in prior exposure diagnosis, or assist in predicting vaccine efficacy (e.g. Tay et al. (2020) ; Liao et al. (2020) ; Wen et al. (2020) ; Zhao et al. (2020); Nielsen et al. (2020) ; Galson et al. (2020) ). Such molecular characterisations of binding/neutralising antibodies to SARS-CoV-2 antigens are now beginning to emerge.",
+            "cite_spans": [
+                {
+                    "start": 216,
+                    "end": 240,
+                    "text": "(Iwasaki and Yang (2020)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 488,
+                    "end": 505,
+                    "text": "Tay et al. (2020)",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 508,
+                    "end": 526,
+                    "text": "Liao et al. (2020)",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 529,
+                    "end": 546,
+                    "text": "Wen et al. (2020)",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 549,
+                    "end": 568,
+                    "text": "Zhao et al. (2020);",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 569,
+                    "end": 590,
+                    "text": "Nielsen et al. (2020)",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 593,
+                    "end": 613,
+                    "text": "Galson et al. (2020)",
+                    "ref_id": "BIBREF3"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Early studies have shown a large proportion of the SARS-CoV-2 neutralising response is SARS-CoV-2 specific, although some SARS-CoV-2/SARS-CoV-1 (the virus responsible for the 2003 epidemic) crossneutralising antibodies do exist (Pinto et al. (2020) ; Yuan et al. (2020) ; Robbiani et al. (2020) ). This is possible because many of the SARS-CoV-1 and SARS-CoV-2 spike protein domains, including the Receptor Binding Domain (RBD), share high sequence and structural similarity (Tay et al. (2020) ). Other SARS-CoV-2 surface proteins also display high sequence similarity to more distantly related betacoronaviruses, such as the Middle East Respiratory Syndrome coronavirus (MERS-CoV). Therefore, molecular knowledge of any antibody able to bind a betacoronavirus antigen could be relevant in treating SARS-CoV-2 infection.",
+            "cite_spans": [
+                {
+                    "start": 228,
+                    "end": 248,
+                    "text": "(Pinto et al. (2020)",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 251,
+                    "end": 269,
+                    "text": "Yuan et al. (2020)",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 272,
+                    "end": 294,
+                    "text": "Robbiani et al. (2020)",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 475,
+                    "end": 493,
+                    "text": "(Tay et al. (2020)",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "In addition to the large existing body of work studying SARS-CoV-1 and MERS-CoV, the number of investigations into SARS-CoV-2 is extremely high. As an indication, 1,134 SARS-CoV-2 preprints were uploaded to BioRxiv and MedRxiv between January-March 2020, while 3,462 were uploaded in April and May. We have therefore built CoV-AbDab, a database that documents molecular information (i.e. sequence and structure) and metadata on all preprinted, published, and patented anti-coronavirus antibodies. It will save valuable time in the fight against COVID-19 and act as a central hub to consolidate knowledge and coordinate efforts to identify novel antibodies that neutralise SARS-CoV-2. Researchers can use CoV-AbDab to yield new insights, including deriving crucial sequence/structural patterns that distinguish neutralising from nonneutralising SARS-CoV-2 binders (Iwasaki and Yang (2020) ), or deducing independent neutralising epitopes exploitable by combination therapies (Hansen et al. (2020) ).",
+            "cite_spans": [
+                {
+                    "start": 863,
+                    "end": 887,
+                    "text": "(Iwasaki and Yang (2020)",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 974,
+                    "end": 995,
+                    "text": "(Hansen et al. (2020)",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "Academic papers and patents containing coronavirus-binding antibodies were sourced by querying PubMed, BioRxiv, MedRxiv, GenBank, and Google Patents with relevant search terms. A full list of references is given in the database and in the Supporting Information. ANARCI (Dunbar and Deane (2016) ) was used to number amino acid sequences in the IMGT (Lefranc et al. (2003) ) numbering scheme, and to assign V and J gene origins. Our Structural Antibody Database (Dunbar et al. (2013) ), which tracks all antibody structures submitted to the Protein Data Bank (PDB, Berman et al. (2000) ), was mined to identify relevant solved structures. Our antibody/nanobody homology modelling tool, ABodyBuilder (Leem et al. (2016) ), was used to generate full Fv region structural models.",
+            "cite_spans": [
+                {
+                    "start": 270,
+                    "end": 294,
+                    "text": "(Dunbar and Deane (2016)",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 349,
+                    "end": 371,
+                    "text": "(Lefranc et al. (2003)",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 461,
+                    "end": 482,
+                    "text": "(Dunbar et al. (2013)",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 564,
+                    "end": 584,
+                    "text": "Berman et al. (2000)",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 698,
+                    "end": 717,
+                    "text": "(Leem et al. (2016)",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Data Sources"
+        },
+        {
+            "text": "As of 5 th August 2020, CoV-AbDab contains 1402 entries from 66 publications and 21 patents. Of these entries, 147 bind to MERS-CoV, 483 bind to SARS-CoV-1, and 1131 bind to SARS-CoV-2 (each entry may be tested against multiple coronaviruses). All entries contain a minimum of germline information, the CDR3 sequence, or Material Transfer Agreement contact information (a complete list of metadata is provided in the Supporting Information). Currently, 1303/1402 entries (92.9%) contain full variable domain antibody (Fv) or nanobody (VHH) sequences.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Contents"
+        },
+        {
+            "text": "A comparative analysis of SARS-CoV-2, SARS-CoV-1, and MERS-CoV binder biological/synthetic origins (Fig. S1 ), binder targets (Fig. S2) , and human antibody binder heavy V-gene germlines (Fig. S3) is available in the Supporting Information. The origin plots show how technological advances have impacted the nature of isolated binders and this should be considered when comparing binders to different coronaviruses.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 99,
+                    "end": 107,
+                    "text": "(Fig. S1",
+                    "ref_id": null
+                },
+                {
+                    "start": 126,
+                    "end": 135,
+                    "text": "(Fig. S2)",
+                    "ref_id": null
+                },
+                {
+                    "start": 187,
+                    "end": 196,
+                    "text": "(Fig. S3)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Contents"
+        },
+        {
+            "text": "We are reaching out to authors of new studies characterising coronavirus binding antibodies to send us their data in Excel or CSV format (opig@stats.ox.ac.uk). We require a minimum of the antibody/nanobody clonotype (closest heavy and light V and J gene transcripts plus the CDR3 amino acid sequences) but ideally seek the full antibody variable domain [Fv] or full nanobody [VHH] sequence. We also require binding data against at least one specified coronavirus protein reported in a preprint, publication, or patent. Through these submissions and our own efforts to track the scientific literature, we hope to provide a central community resource for coronavirus antibody sequence and structural information.",
+            "cite_spans": [
+                {
+                    "start": 353,
+                    "end": 357,
+                    "text": "[Fv]",
+                    "ref_id": null
+                }
+            ],
+            "ref_spans": [],
+            "section": "Contents"
+        },
+        {
+            "text": "CoV-AbDab is located at http://opig.stats.ox.ac.uk/webapps/coronavirus (Fig. S4A) . Users can download the entire database or search-filtered results as a CSV file and bulk download all ANARCI numberings, IMGT-numbered antibody-or nanobody-CoV structure files, and IMGTnumbered antibody/nanobody homology models (Fig. S4B) . A summary of tracked (but not included) antibodies and coronavirus studies is also provided.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 71,
+                    "end": 81,
+                    "text": "(Fig. S4A)",
+                    "ref_id": null
+                },
+                {
+                    "start": 312,
+                    "end": 322,
+                    "text": "(Fig. S4B)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Usage"
+        },
+        {
+            "text": "The database can be queried by variable domain sequence (Fig.  S4C ) or by attribute (Fig. S4D) . Attribute search results can be further filtered by a search term and ordered by any metadata field for maximum interpretability (Fig. S4E) . Searching by sequence returns the top-10 same-length whole chain and/or CDR3 sequence identities to the query. Query-target alignments are displayed (Fig. S4F) . Any entry with a homology model can be viewed in-browser using our native molecular viewer (Fig. S4G) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 56,
+                    "end": 66,
+                    "text": "(Fig.  S4C",
+                    "ref_id": null
+                },
+                {
+                    "start": 85,
+                    "end": 95,
+                    "text": "(Fig. S4D)",
+                    "ref_id": null
+                },
+                {
+                    "start": 227,
+                    "end": 237,
+                    "text": "(Fig. S4E)",
+                    "ref_id": null
+                },
+                {
+                    "start": 389,
+                    "end": 399,
+                    "text": "(Fig. S4F)",
+                    "ref_id": null
+                },
+                {
+                    "start": 493,
+                    "end": 503,
+                    "text": "(Fig. S4G)",
+                    "ref_id": null
+                }
+            ],
+            "section": "Usage"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "The Protein Data Bank",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Berman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Nucleic Acids Res",
+            "volume": "28",
+            "issn": "1",
+            "pages": "235--242",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "ANARCI: antigen receptor numbering and receptor classification",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dunbar",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Deane",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "Bioinformatics",
+            "volume": "32",
+            "issn": "2",
+            "pages": "298--300",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "SAbDab: the structural antibody database",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Dunbar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Nucleic Acids Res",
+            "volume": "42",
+            "issn": "D1",
+            "pages": "1140--1146",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Deep sequencing of B cell receptor repertoires from COVID-19 patients reveals strong convergent immune signatures. bioRxiv",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Galson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Studies in humanized mice and convalescent humans yield a SARS-CoV-2 antibody cocktail",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Hansen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "The potential danger of suboptimal antibody responses in COVID-19",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Iwasaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Yang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat. Rev",
+            "volume": "20",
+            "issn": "",
+            "pages": "339--341",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "ABodyBuilder: Automated antibody structure prediction with data-driven accuracy estimation",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Leem",
+                    "suffix": ""
+                }
+            ],
+            "year": 2016,
+            "venue": "mAbs",
+            "volume": "8",
+            "issn": "7",
+            "pages": "1259--1268",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "IMGT unique numbering for immunoglobulin and T cell receptor variable domains and Ig superfamily V-like domains",
+            "authors": [
+                {
+                    "first": "M.-P",
+                    "middle": [],
+                    "last": "Lefranc",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Dev. Comp. Immunol",
+            "volume": "27",
+            "issn": "1",
+            "pages": "55--77",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Single-cell landscape of bronchoalveolar immune cells in patients with COVID-19",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Liao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat. Med",
+            "volume": "26",
+            "issn": "",
+            "pages": "842--844",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "B cell clonal expansion and convergent antibody responses to SARS-CoV-2. Research Square (Nature Preprint)",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "C A"
+                    ],
+                    "last": "Nielsen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Structural and functional analysis of a potent sarbecovirus neutralizing antibody. bioRxiv",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pinto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Convergent Antibody Responses to SARS-CoV-2 Infection in Convalescent Individuals",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Robbiani",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nature",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "The trinity of COVID-19: immunity, inflammation and intervention",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "Tay",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Nat. Rev. Immunol",
+            "volume": "20",
+            "issn": "",
+            "pages": "363--374",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Immune cell profiling of COVID-19 patients in the recovery stage by single-cell sequencing",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Wen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Cell Discov",
+            "volume": "6",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "A highly conserved cryptic epitope in the receptorbinding domains of SARS-CoV-2 and SARS-CoV",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yuan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Science",
+            "volume": "368",
+            "issn": "",
+            "pages": "630--633",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Antibody responses to SARS-CoV-2 in patients of novel coronavirus disease",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2019,
+            "venue": "Clin. Infect. Dis",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {},
+    "back_matter": [
+        {
+            "text": "We would like to thank the many authors who have responded in a timely and helpful manner to our requests for data. This work was supported by an EPSRC and MRC grant [EP/L016044/1] awarded to MIJR, a BBSRC grant [BB/M011224/1] awarded to AK, and funding from GlaxoSmithKline plc, UCB Pharma Ltd., AstraZeneca plc, and F. Hoffmann-La Roche AG.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgements and Funding"
+        }
+    ]
+}

@@ -1,0 +1,392 @@
+{
+    "paper_id": "0a00fe902ce5f523ceca3d01dc68dd1ddaac253b",
+    "metadata": {
+        "title": "Gastroenterology and Hepatology From Bed to Bench. Modified Corona Score can easily identify Covid-19 patients with gastrointestinal symptoms: An Italian proposal",
+        "authors": [
+            {
+                "first": "Roberto",
+                "middle": [],
+                "last": "Assandri",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Clinical Investigation Laboratory, Clinical Investigation Laboratory",
+                    "institution": "ASST-Crema",
+                    "location": {
+                        "settlement": "Cremona",
+                        "country": "Italy"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Alessandro",
+                "middle": [],
+                "last": "Montanelli",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "Clinical Investigation Laboratory",
+                    "institution": "Ospedale Bolognini Seriate",
+                    "location": {
+                        "settlement": "Bergamo"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "We propose the Modified Corona Score (MCorona score), an alternative approach to identifying new likely Covid-19 patients without positive chest images, but with gastrointestinal onset. Background: In April, 2020, a total of 104,291 laboratory-confirmed cases had been documented in Italy; Lombardy, the Northern Italian Region, recorded over 60,000 Covid-19 cases. Method: The MCorona score is built by several laboratory parameters linked between age and gender, ranging from 0 to 10. Results: Using the preliminary score cut-off of 4, we successfully identified likely Covid-19 patients with gastrointestinal onset. However, more caution is needed, and a larger sample size is required to verify the accuracy and specificity of the score. Conclusion: We propose the complete validation of the MCorona score, an instrument able to diagnose likely Covid-19 patients with symptoms other than respiratory distress.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "On behalf of all authors, the corresponding author states that there is no conflict of interest. After the December 2019 outbreak in China, the novel Coronavirus infection, designated SARS-CoV-2 (Covid-19), spread very quickly worldwide. By April, 2020, a total of 104,291 laboratory-confirmed cases had been documented in Italy. Large-scale testing finds and isolates infections quickly, limiting the virus's spread and protecting vulnerable populations. To properly survey populations, millions of Covid-19 test kits will need to be processed. Organizations around the world are trying to ramp up their capacity as quickly as possible. Local, national, and international media continuously attack regional and national institutions, complaining about the inability of the Lombardy Region, the most solid and advanced Italian region in terms of public health, for not having the possibility to process a capillary population-based swab screening test. Covid-19 causes a clinical syndrome encompassing a wide range of clinical features, from an asymptomatic or oligosymptomatic course to acute respiratory distress and death (1, 2) . In a very recent publication in Gut, Lin et al. showed that around 11% of patients infected with Covid-19 presented with gastrointestinal (GI) symptoms (1), i.e. diarrhea, nausea, vomiting, and/or abdominal pain, or described having them at disease onset or even before respiratory symptoms. Following this evidence, our work published in Gut clearly remarked the importance of including GI symptoms in the spectrum of Covid-19 features (3). In a very recent work, we preliminarily observed that several laboratory tests have been shown as characteristically altered in Covid-19. In our paper,",
+            "cite_spans": [
+                {
+                    "start": 1125,
+                    "end": 1128,
+                    "text": "(1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 1129,
+                    "end": 1131,
+                    "text": "2)",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "baseline biochemical parameters were clearly linked to clinical features. Our hematological exams at admission showed low white blood cell counts (WBC count) and low neutrophil counts in over 80% of cases and lymphocyte counts below 1x109/L at least half of the patients. Also C-reactive protein (CRP) serum levels were elevated in most patients, particularly among those with the worst clinical picture and outcome (Benelli G et al., SARS-COV-2 comorbidity network and outcome in hospitalized patients in Crema, Italy. https://doiorg/101101/2020041420053090 2020). In our opinion paper published in the Archive of Medical Research, we proposed a few laboratory tests as rapid and sensitive alternatives for identifying likely Covid-19 cases (4) . The Corona Score model was recently proposed as an easy-to-use algorithm for identifying Covid-19 patients with respiratory symptoms (5) . This approach uses a chest images-relative score (1 to 4) and several laboratory parameters to classify emergency room patients. This algorithm is recommended for use only with patients with respiratory symptoms and fails in patients with negative chest imaging, as occurs in some Covid-19 patients with GI onset (5). In the light of these observations, we decided to choose an \"alternative\" approach to identifying likely Covid-19 patients with GI onset. We have created and propose a new scoring system, called the Modified Corona Score, (MCorona score), using age, gender, and laboratory parameters, as shown in table 1, without including chest images as part of the score that now ranges between 0 and 10. We retrospectively analyzed 400 confirmed Covid-19 patients (with positive real-time polymerase chain reaction) admitted to the General Hospital of Crema between February 21 and March 13, 2020. Among them, 42 (10.5%) reported GI symptoms including nausea vomiting, diarrhea, and abdominal pain. Absence of cough was reported in 83% of patients with GI symptoms and 16.6% (7 patients) with negative chest imaging. We applied our score to a patients cohort and calculated the score range and mean value. The MCorona score in our patients cohort ranged between 6 and 10, with the mean score being 7. The same evidence was reported in 42 patients with GI symptoms (6-10, mean = 7). Using preliminary score cut-offs of 4, we applied this evidence to patients without respiratory onset. All six patients presented a mean range of 7, the same as other patients. The preliminary score accuracy appeared satisfactory, increasing the detection rate of patients with GI onset and negative chest images (42/42, 100%). Our study offers a new and rapid tool for identifying patients with gastrointestinal onset of Covid-19. This scoring method could be used to accelerate determination of isolation needs and optimize the predictive outcome of CT scans. However, more caution and a larger sample size are needed in order to verify the accuracy and specificity of the score. In conclusion, we propose the completely validated MCorona score method for assessing Covid-19 patients with GI features. The preliminary data regarding this scoring system is very encouraging, but further studies are needed. MCorona score could open a new road to successfully identifying all likely Covid-19 patients with symptoms other than respiratory distress. ",
+            "cite_spans": [
+                {
+                    "start": 742,
+                    "end": 745,
+                    "text": "(4)",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 881,
+                    "end": 884,
+                    "text": "(5)",
+                    "ref_id": "BIBREF4"
+                }
+            ],
+            "ref_spans": [],
+            "section": "SHORT REPORT"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China",
+            "authors": [
+                {
+                    "first": "Huang",
+                    "middle": [],
+                    "last": "Ch",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Ren",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhao",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Lancet",
+            "volume": "395",
+            "issn": "",
+            "pages": "497--506",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Clinical Characteristics of 138 Hospitalized Patients with 2019 Novel Coronavirus-Infected Pneumonia in Wuhan",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Hu",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Liu",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "China. J Am Med Assoc",
+            "volume": "323",
+            "issn": "",
+            "pages": "1061--1070",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "GI symptoms as early signs of COVID-19 in hospitalised Italian patients",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Buscarini",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Manfredi",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Brambilla",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Menozzi",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Londoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Alicante",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Gut",
+            "volume": "69",
+            "issn": "",
+            "pages": "1547--1555",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Laboratory Biomarkers Predicting COVID-19 Severity in the Emergency Room",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Assandri",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Buscarini",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Canetta",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Scartabellati",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Vigan\u00f2",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Montanelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Arch Med Res",
+            "volume": "51",
+            "issn": "",
+            "pages": "598--607",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Rapid identification of SARS-CoV-2-infected patients at the emergency department using routine testing",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Kurstjens",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Van Der Horst",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Herpers",
+                    "suffix": ""
+                },
+                {
+                    "first": "Wlm",
+                    "middle": [],
+                    "last": "Geerits",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ycm",
+                    "middle": [],
+                    "last": "Kluiters-De Hingh",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "G\u00f6ttgens",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Clin Chem Lab Med",
+            "volume": "58",
+            "issn": "",
+            "pages": "1587--93",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Laboratory markers included in the Corona Score can identify false negative results on COVID-19 RT-PCR in the emergency room",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Assandri",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Canetta",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Vigan\u00f2",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Buscarini",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Scartabellati",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Montanelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2020,
+            "venue": "Biochem Med",
+            "volume": "30",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": "Modified CRP, C-reactive protein; LDH, lactate dehydrogenase; ALC, absolute lymphocyte count; ANC, absolute neutrophil count; CXR, chest X-ray",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors declare that they have no conflict of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of interests"
+        }
+    ]
+}

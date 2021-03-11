@@ -361,16 +361,6 @@ df_final = df_cond_int[reorder].reset_index(drop=True).drop_duplicates().reset_i
 
 df_final.to_csv(parent + '/data/cleaned_ictrp_16Dec2020.csv', index=False)
 
-df_final[df_final.trialid.str.contains('2020-001504-42')]
-
-df_final[df_final.trialid.str.contains('EUCTR')].trialid.to_csv('euctr_trials.csv')
-
-
-
-
-
-
-
 # +
 print(f'There are {len(df_final)} total unique registered studies on the ICTRP')
 

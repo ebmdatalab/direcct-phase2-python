@@ -178,12 +178,21 @@ for d in tqdm(pubmed_dicts):
 pubmed_search_results = pd.DataFrame(pubmed_dicts)
 pubmed_search_results.to_csv(parent + '/data/pubmed/pubmed_search_results_jan2021.csv')
 
+
+pickle.dump(pubmed_search_results, open('pubmed_df.pkl', 'wb'))
+
 del archive_df
 
 # # Searching CORD-19 data
 
+cord_df = pickle.load( open( "cord_df.pkl", "rb" ) )
+
+cord_df.head()
+
 metadata = zip_load(parent + '/data/cord_19/metadata.csv.zip', 'metadata.csv', low_memory = False)
 metadata['publish_time'] = pd.to_datetime(metadata['publish_time'])
+
+
 
 # +
 #Getting a list of all the filenames for the papers that were published in 2020
@@ -242,7 +251,6 @@ with tarfile.open(parent+'/data/cord_19/document_parses.tar.gz', 'r:gz') as tar:
 
 cord_df = pd.DataFrame(cord_hit_list)
 
-import pickle
 pickle.dump(cord_df, open('cord_df.pkl', 'wb'))
 
 # # Bringing it all together
@@ -359,4 +367,7 @@ final_df['pub_types'] = final_df.pub_types.astype(str).apply(trial_pub_type)
 final_df['doi_link'] = final_df.doi.apply(make_doi_url)
 
 final_df[((final_df.id_hits.notnull()) | (final_df.pub_types.notnull())) & 
-         ((final_df.review_in_title != True) & (final_df.review_in_title != True))].to_csv(parent + '/data/final_auto_24Feb2021.csv')
+         ((final_df.review_in_title != True) & (final_df.review_type != True)
+         )].to_csv(parent + '/data/final_auto_24Feb2021.csv')
+
+

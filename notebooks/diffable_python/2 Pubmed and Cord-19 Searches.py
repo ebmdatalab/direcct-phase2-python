@@ -194,6 +194,8 @@ metadata['publish_time'] = pd.to_datetime(metadata['publish_time'])
 
 
 
+
+
 # +
 #Getting a list of all the filenames for the papers that were published in 2020
 covid_19_arts = metadata[metadata.publish_time >= pd.Timestamp(2020,1,1)].sha.to_list()

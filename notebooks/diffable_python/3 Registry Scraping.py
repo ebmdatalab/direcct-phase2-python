@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # ---
 # jupyter:
 #   jupytext:
@@ -20,6 +21,11 @@
 #
 # This doesn't really need to be a notebook but for organisation, disply, and if you are running than all at once, ease. Any of the specific scrapers could be copied into a .py file and run that way if preferred.
 
+# To add for July scrape:
+#
+# -Contact info
+# -last updated date
+
 import sys
 from pathlib import Path
 import os
@@ -37,10 +43,14 @@ import csv
 import pandas as pd
 from tqdm.auto import tqdm
 
-def get_url(url):
-    response = get(url, verify = False)
+def get_url(url, parse='html'):
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+    response = get(url, verify = False, headers=headers)
     html = response.content
-    soup = BeautifulSoup(html, "html.parser")
+    if parse == 'html':
+        soup = BeautifulSoup(html, "html.parser")
+    elif parse == 'xml':
+        soup = BeautifulSoup(html, "xml")
     return soup
 
 import urllib3
@@ -51,8 +61,10 @@ save_path = parent + '/data/raw_scraping_output/'
 
 # The trials these were run on are those in the ICTRP dataset after the initial inclusions/exclusions were made (observational, pre-2020 trials, trials that are withdrawn/cancelled). This code assumes you read in that dataset to a DataFrame below and work from there.
 
-df = pd.read_csv(parent + '/data/ictrp_with_exclusions_16Dec2020.csv')
+df = pd.read_csv(parent + '/data/scrape_df_jul21.csv')
 df.source_register.unique()
+
+df.columns
 
 # # ClinicalTrials.gov
 
@@ -116,6 +128,17 @@ for nct in tqdm(nct_urls):
             if a.strip():
                 ids.append(a.strip())
         trial_dict['secondary_ids'] = ids
+        
+    #Last updated date:
+    if soup.find('span', {'data-term': 'Last Update Posted'}):
+        trial_dict['last_updated'] = soup.find('span', {'data-term': 'Last Update Posted'}).next_sibling.replace(':','').strip()
+    else:
+        trial_dict['last_updated'] = None
+        
+    emails = []
+    for x in soup.select('a[href^=mailto]'):
+        emails.append(x.text)
+    trial_dict['emails'] = emails
     
     ctgov_list.append(trial_dict)
     
@@ -127,26 +150,29 @@ ctgov_results = pd.DataFrame(ctgov_list)
 
 ctgov_results['pcd'] = pd.to_datetime(ctgov_results['pcd'])
 ctgov_results['scd'] = pd.to_datetime(ctgov_results['scd'])
+ctgov_results['last_updated'] = pd.to_datetime(ctgov_results['last_updated'])
 
-ctgov_results.to_csv(save_path + 'ctgov_results_4jan2021.csv')
+ctgov_results.to_csv(save_path + 'ctgov_results_11jul2021.csv')
 # -
 
 # # ISRCTN
 
+isrctn_ids = df[df.source_register == 'ISRCTN'].trialid.to_list()
+
 # +
 #ISRCTN
 
-isrctn_urls = df[df.source_register == 'ISRCTN'].web_address.to_list()
+isrctn_urls = df[df.source_register == 'ISRCTN'].trialid.to_list()
 
 isrctn_list = []
 
-for i in tqdm(isrctn_urls):
+for i in tqdm(isrctn_urls[0:10]):
 
     trial_dict = {}
-    soup = get_url(i)
+    soup = get_url(f'https://www.isrctn.com/{i}')
 
     #Trial ID
-    trial_dict['trial_id'] = soup.find('span', {'class':'ComplexTitle_primary'}).text
+    trial_dict['trial_id'] = i
 
     #Trial Status
     if soup.find('dt', text='Overall trial status'):
@@ -187,11 +213,32 @@ for i in tqdm(isrctn_urls):
         trial_dict['pub_list'] = soup.find('h3', text='Publication list').find_next().text.strip()
     else:
         trial_dict['pub_list'] = None
+        
+    if soup.find('dt', text='Last edited'):
+        trial_dict['last_updated'] = soup.find('dt', text='Overall trial status').find_next().text.strip()
+    else:
+        trial_dict['last_updated'] = None
+    
+    emails = []
+    for x in soup.select('a[href^=mailto]'):
+        emails.append(x.text)
+    trial_dict['emails'] = emails
     
     isrctn_list.append(trial_dict)
 # -
 
-pd.DataFrame(isrctn_list).to_csv(save_path + 'isrctn_2jul_2020.csv')
+pd.DataFrame(isrctn_list).to_csv(save_path + 'isrctn_11jul_2021.csv')
+
+# +
+#The above doesn't work great anymore because ISRCTN switched to an API but easier to just download the 
+#full isrctn and just filter it and grab the IDs we want than fiddle with the API.
+# -
+
+isrctn_data = pd.read_csv(parent + '/data/registry_data/ISRCTN search results_11july.csv')
+
+isrctn_data[isrctn_data.ISRCTN.isin(isrctn_ids)].to_csv(save_path + 'isrctn_11jul_2021.csv')
+
+
 
 # # EUCTR
 # IDs will be injested in form of EUCTR2020-000890-25-FR
@@ -232,6 +279,7 @@ for i in tqdm(euctr_ids):
     #Completion dates
     comp_dates = []
     status_list = []
+    emails = []
     for c in country_list:
         psoup = get_url(protocol_url.format(euctr_id, c))
         if psoup.find('td', text='Date of the global end of the trial'):
@@ -253,9 +301,16 @@ for i in tqdm(euctr_ids):
             sid_dict['nct_id'] = psoup.find('td', text='US NCT (ClinicalTrials.gov registry) number').find_next().text.strip()
         if psoup.find('td', text="Sponsor's protocol code number"):
             sid_dict['spon_id'] = psoup.find('td', text="Sponsor's protocol code number").find_next().text.strip()
-
+            
+    #emails
+        if psoup.find('td', text='E-mail'):
+            for x in psoup.find_all('td', text='E-mail'):
+                emails.append(x.find_next().text)
+            
+    
     trial_dict['global_trial_end_dates'] =  comp_dates
     trial_dict['status_list'] = status_list
+    trial_dict['emails'] = emails
     if len(sid_dict) > 0:
         trial_dict['secondary_ids'] = sid_dict
     else:
@@ -264,7 +319,7 @@ for i in tqdm(euctr_ids):
     euctr_trials.append(trial_dict)
 # -
 
-pd.DataFrame(euctr_trials).to_csv(save_path + 'euctr_4jan_2021.csv')
+pd.DataFrame(euctr_trials).to_csv(save_path + 'euctr_12jul_2021.csv')
 
 
 # # DRKS
@@ -295,6 +350,8 @@ for d in tqdm(drks_urls):
 
     trial_dict['trial_id'] = soup.find('li', class_='drksId').next_element.next_element.next_element.next_element.strip()
 
+    history = get_url(f'https://www.drks.de/drks_web/navigate.do?navigationId=trial.history&TRIAL_ID={trial_dict["trial_id"]}')
+    
     st_class = ['state', 'deadline']
     st_labels = ['recruitment_status', 'study_closing_date']
     for lab, s_class in zip(st_labels, st_class):
@@ -337,18 +394,26 @@ for d in tqdm(drks_urls):
             docs_list.append(doc_dict)
     trial_dict['results_publications_documents'] = docs_list
     
+    trial_dict['last_updated'] = pd.to_datetime(history.find('tbody').find_next('td').text, format='%m-%d-%Y')
+    
+    emails = []
+    for x in soup.select('a[href^=mailto]'):
+        emails.append(x.text.replace(' at ', '@'))
+    trial_dict['emails'] = emails
+    
     drks_trials.append(trial_dict)
 # -
 
-pd.DataFrame(drks_trials).to_csv(save_path + 'drks_trials_4jan_2021.csv')
-
+pd.DataFrame(drks_trials).to_csv(save_path + 'drks_trials_12jul_2021.csv')
 
 # # CTRI
 #
 # We can get right to a trial registration with a URL from the ICTRP like:
 # http://www.ctri.nic.in/Clinicaltrials/pmaindet2.php?trialid=43553
 
-# +
+ctri_urls = df[df.source_register == 'CTRI'].web_address.to_list()
+
+
 #Need a slightly more robust function to fetch trial data from the CTRI
 def get_ctri(url):
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
@@ -366,8 +431,12 @@ def get_ctri(url):
     soup = BeautifulSoup(html, "html.parser")
     return soup
 
-ctri_urls = df[df.source_register == 'CTRI'].web_address.to_list()
 
+ctri_urls[406]
+
+ctri_list[-1]
+
+# +
 ctri_list = []
 
 for c in tqdm(ctri_urls):
@@ -393,12 +462,19 @@ for c in tqdm(ctri_urls):
     else:
         trial_dict['secondary_ids'] = None
 
+    trial_dict['last_updated'] = soup.find('b', text='Last Modified On:').find_next('td').text.strip()
+    
+    emails = []
+    for x in soup.find_all('td', text='Email '):
+        emails.append(x.find_next('td').text.strip())
+    trial_dict['emails'] = list(set(emails))
+    
     ctri_list.append(trial_dict)
+    from time import sleep
+    sleep(1)
 # -
 
-ctri_list[0]
-
-pd.DataFrame(ctri_list).to_csv(save_path + 'ctri_4jan2021.csv')
+pd.DataFrame(ctri_list).to_csv(save_path + 'ctri_12jul2021.csv')
 
 # # ANZCTR
 
@@ -451,11 +527,19 @@ for u in tqdm(anzctr_urls):
 
     trial_dict['results'] = results_dict
     
+    trial_dict['last_updated'] = pd.to_datetime(soup.find('span', {'id': 'ctl00_body_CXUPDATEDATE'}).text, format='%d/%m/%Y')
+    
+    emails = []
+    for x in soup.select('span[id$=_CXEMAIL]'):
+        if x.text and 'Email [' not in x.text:
+            emails.append(x.text)
+    trial_dict['emails'] = list(set(emails))
+    
     anzctr_trials.append(trial_dict)
 # -
 
 anzctr_df = pd.DataFrame(anzctr_trials)
-anzctr_df.to_csv(save_path + 'anzctr_trials_4jan2021.csv.csv')
+anzctr_df.to_csv(save_path + 'anzctr_trials_12jul2021.csv.csv')
 
 # # NTR
 
@@ -495,16 +579,26 @@ ntr_csv(save_path)
 
 ntr_ids = df[df.source_register == 'Netherlands Trial Register'].trialid.to_list()
 
-ntr_df = pd.read_csv(save_path + 'ntr - 2021-01-04.csv')
+ntr_df = pd.read_csv(save_path + 'ntr - 2021-07-12.csv')
 
 covid_ntr = ntr_df[ntr_df.idFull.isin(ntr_ids)]
 
-covid_ntr[['idFull', 'status', 'dateStop', 'publications', 'idSource', 'isrctn']].to_csv(save_path + 'ntr_covid_4jan.csv')
+covid_ntr[['idFull', 'status', 'dateStop', 'publications', 'idSource', 'isrctn', 'contact']].to_csv(save_path + 'ntr_covid_12jul.csv')
 # -
 
-ntr_df.columns
-
 # # IRCT
+
+s = get_url('https://www.irct.ir/trial/53653')
+
+for x in s.find_all('strong', text='Email'):
+    print(x.find_next())
+
+re.findall(r'\d{4}-\d{2}-\d{2}', s.find('span', text='Last update:').find_next().text)[0]
+
+# +
+
+trial_dict['last_updated'] = re.findall(r'\d{4}-\d{2}-\d{2}', soup.find('span', text='Last update:').find_next().text)[0]
+
 
 # +
 irct_urls = df[df.source_register == 'IRCT'].web_address.to_list()
@@ -537,25 +631,36 @@ for url in tqdm(irct_urls):
     else:
         trial_dict['secondary_ids'] = None
     
+    if soup.find('span', text='Last update:'):
+        trial_dict['last_updated'] = re.findall(r'\d{4}-\d{2}-\d{2}', soup.find('span', text='Last update:').find_next().text)[0]
+    else:
+        trial_dict['last_updated'] = None
+    
+    emails = []
+    for x in soup.find_all('strong', text='Email'):
+        emails.append(x.find_next().text.strip())
+    trial_dict['emails'] = list(set(emails))
+    
     irct_list.append(trial_dict)
 # -
 
-irct_urls[64]
-
-pd.DataFrame(irct_list).to_csv(save_path + 'irct_5jan_2021.csv')
+pd.DataFrame(irct_list).to_csv(save_path + 'irct_12jul_2021.csv')
 
 # # ChiCTR
 #
 # This scraper works poorly. You only get between 10-30 trials scraped before you run into the anti-dos blocks. I ran it multiple times over about a day and a half to gather the data on ChiCTR trials.
 
 # +
-from time import sleep
-
 chictr_urls = df[df.source_register == 'ChiCTR'].web_address.to_list()
 
 chictr_trials = []
 
-for u in tqdm(chictr_urls[327:]):
+tracker = 0
+
+# +
+from time import sleep
+
+for u in tqdm(chictr_urls[tracker:]):
     
     soup=get_url(u)
     
@@ -578,16 +683,22 @@ for u in tqdm(chictr_urls[327:]):
 
     trial_dict['trial_status'] = soup.find('p', text = re.compile('\w*Recruiting status\w*')).find_next('p').find_next('p').text.strip()
     
-    chictr_trials.append(trial_dict)
+    trial_dict['last_updated'] = soup.find('p', text = re.compile('Date of Last Refreshed on\w*')).find_next('td').text.strip()
     
+    email_identifiers = [r'\w*Applicant E-mail\w*', r"\w*Study leader's fax\w*"]
+    
+    emails = []
+    for e in email_identifiers:
+        emails.append(soup.find('p', text=re.compile(e)).find_next('td').text.strip())
+    trial_dict['emails'] = list(set(emails))
+    
+    
+    chictr_trials.append(trial_dict)
+    tracker +=1
     sleep(10)
 # -
 
-len(chictr_urls)
-
-pd.DataFrame(chictr_trials).to_csv(save_path + 'chictr.csv')
-
-chictr_urls[28]
+pd.DataFrame(chictr_trials).to_csv(save_path + 'chictr_jul21.csv')
 
 # # jRCT
 
@@ -598,7 +709,10 @@ jrct_urls_eng = []
 
 for j in jrct_urls:
     jrct_urls_eng.append(j[:24] + 'en-' + j[24:])
+# -
 
+
+jrct_urls_eng[0]
 
 # +
 jrct_trials = []
@@ -613,12 +727,17 @@ for j in tqdm(jrct_urls_eng):
     
     j_dict['secondary_ids'] = soup.find('label', text='Secondary ID(s)').find_next().text
     
+    j_dict['last_updated'] = pd.to_datetime(soup.find('label', text='Last modified on').find_next().text)
+    
+    emails = []
+    for x in soup.find_all('label', text='E-mail'):
+        emails.append(x.find_next().text.strip())
+    j_dict['emails'] = list(set(emails))
+    
     jrct_trials.append(j_dict)
 # -
 
-pd.DataFrame(jrct_trials).to_csv(v)
-
-pd.DataFrame(jrct_trials)
+pd.DataFrame(jrct_trials).to_csv(save_path + 'jrct_13jul21.csv')
 
 # # REBEC
 
@@ -628,7 +747,7 @@ rebec_ids = df[df.source_register == 'REBEC'].trialid.to_list()
 rebec_url = 'https://ensaiosclinicos.gov.br/rg/{}'
 # -
 
-rebec_ids[0]
+s = get_url(rebec_url.format(rebec_ids[0]))
 
 # +
 rebec_trials = []
@@ -649,12 +768,172 @@ for r in tqdm(rebec_ids):
         r_t['last_enrollment'] = soup.find('span', text='Date last enrollment:').find_next().text.strip()
     except AttributeError:
         r_t['last_enrollment'] = None
+        
+    try:
+        r_t['last_updated'] = pd.to_datetime(soup.find('span', text='Last approval date\xa0:').find_next('span').text.strip()[:10])
+    except AttributeError:
+        r_t['last_updated'] = None
+        
+    try:
+        emails = []
+        for x in soup.find_all('span', {'class':'email'}):
+            emails.append(x.text.strip())
+        r_t['emails'] = list(set(emails))
+    except AttributeError:
+        r_t['emails'] = None
     
     rebec_trials.append(r_t)
 # -
 
-pd.DataFrame(rebec_trials).to_csv(save_path + 'rebec_10jan_2021.csv')
+pd.DataFrame(rebec_trials).to_csv(save_path + 'rebec_13jul_2021.csv')
 
-soup.find('span', text="Study status:").find_next().text.strip()
+# # PACTR
+
+pactr_urls = df[df.source_register == 'PACTR'].web_address.to_list()
+
+# +
+pactr_trials = []
+id_regex = re.compile(r'PACTR\d{15}')
+
+for p in tqdm(pactr_urls):
+    soup = get_url(p)
+    p_dict = {}
+    
+    p_dict['trial_id'] = soup.find('td', text=re.compile(id_regex)).text
+    
+    p_dict['anticipated_comp'] = pd.to_datetime(soup.find('td', text='Anticipated date of last follow up').find_next('td').text)
+    
+    p_dict['actual_comp'] = pd.to_datetime(soup.find('td', text='Actual Last follow-up date').find_next('td').text)
+    
+    p_dict['trial_status'] = soup.find('td', text='Recruitment status').find_next('td').text
+    
+    if s.find('td', text='Changes to trial information').find_next('tr'):
+        p_dict['last_updated'] = pd.to_datetime(soup.find('td', text='Changes to trial information').find_next('tr').find_next('tr').find_all('td')[2].text)
+    else:
+        p_dict['last_updated'] = pd.to_datetime(soup.find('td', text='\r\n                  Date of Approval:\r\n                ').find_next('td').text)
+        
+    emails = []
+    for e in soup.find('td', text='CONTACT PEOPLE').parent.parent.find_all('b',text='Email'):
+        emails.append(e.find_next('tr').find_all('td')[2].text)
+    p_dict['emails'] = emails
+    
+    pactr_trials.append(p_dict)
+# -
+
+pd.DataFrame(pactr_trials).to_csv(save_path + 'pactr_16jul_2021.csv')
+
+# # Cris
+
+cris_urls = df[df.source_register == 'CRIS'].web_address.to_list()
+
+# +
+cris_trials = []
+
+for c in tqdm(cris_urls):
+    soup = get_url(c)
+    c_dict = {}
+    
+    c_dict['trial_id'] = soup.find('th', text='\r\n\t\t\t\t\t\t\t\t1. Background\r\n\t\t\t\t\t\t\t').find_next('th').find_next('td').text.strip()
+    
+    c_dict['last_updated'] = pd.to_datetime(soup.find('p', {'class':'page_title_info'}).find_all('span')[-1].text)
+    
+    c_dict['trial_status'] = soup.find('th', text='\r\n\t\t\t\t\t\t\t\t4. Status\r\n\t\t\t\t\t\t\t').find_next('th').find_next('th').find_next('td').text.strip()
+    
+    if soup.find('th', text='Primary Completion Date').find_next('td'):
+        c_dict['pcd'] = pd.to_datetime(soup.find('th', text='Primary Completion Date').find_next('td').text.strip()[:10])
+    else:
+        c_dict['pcd'] = None
+    
+    if soup.find('th', text='Study Completion Date').find_next('td'):
+        c_dict['scd'] = pd.to_datetime(soup.find('th', text='Study Completion Date').find_next('td').text.strip()[:10])
+    else:
+        c_dict['scd'] = None
+        
+    c_dict['results_status'] = soup.find('th', text='\r\n\t\t\t\t\t\t\t\t11. Study Results and Publication\r\n\t\t\t\t\t\t\t').find_next('th').find_next('td').text.strip()
+    
+    cris_trials.append(c_dict)
+# -
+
+pd.DataFrame(cris_trials).to_csv(save_path + 'cris_16jul_2021.csv')
+
+# # JPRN UMIN
+
+umin_urls = df[(df.source_register == 'JPRN') & (df.trialid.str.contains('UMIN'))].web_address.to_list()
+
+umin_urls[0]
+
+# +
+umin_trials = []
+
+for u in tqdm(umin_urls):
+    u_dict = {}
+    soup=get_url(u)
+    
+    u_dict['trial_id'] = 'JPRN-' + soup.find('font', text='Unique ID issued by UMIN').find_next('td').text
+    
+    u_dict['trial_status'] = soup.find('font', text='Recruitment status').find_next('td').text
+    
+    u_dict['comp_date'] = pd.to_datetime(soup.find('font', text='Date trial data considered complete').find_next('td').text, errors='coerce')
+    
+    u_dict['last_updated'] = pd.to_datetime(soup.find('font', text='Last modified on').find_next('td').text, errors='coerce')
+    
+    emails = []
+    emails.append(soup.find('font', text='Research contact person').parent.parent.parent.parent.find('font', text='Email').find_next('td').text)
+    emails.append(soup.find('font', text='Public contact ').parent.parent.parent.parent.find('font', text='Email').find_next('td').text)
+    u_dict['emails'] = list(set(emails))
+    
+    results = []
+    results_sec = soup.find('font', text='Result').parent.parent.parent.parent
+    
+    results.append(results_sec.find('font', text='Results').find_next('td'))
+
+    results.append(results_sec.find('font', text='URL related to results and publications').find_next('td'))
+    u_dict['results'] = results
+    
+    umin_trials.append(u_dict)
+    
+# -
+
+pd.DataFrame(umin_trials).to_csv(save_path + 'umin_trials18jul21.csv')
+
+
+
+# # RPCEC
+
+rpcec_urls = df[df.source_register == 'RPCEC'].web_address.to_list()
+
+# +
+rpcec_trials = []
+
+for rp in tqdm(rpcec_urls):
+    rp_dict = {}
+    soup = get_url(rp)
+    sopa = get_url(rp.replace('En', 'Sp').replace('en/trials', 'ensayos'))
+    
+    rp_dict['trial_id'] = soup.find('div', text=re.compile(r'\s*Unique ID number:\s*')).find_next().text.strip()
+    
+    rp_dict['trial_status'] = soup.find('div', text=re.compile(r'\s*Recruitment status:\s*')).find_next().text.strip()
+    
+    rp_dict['comp_date'] = pd.to_datetime(soup.find('div', text=re.compile(r'\s*Study completion date:\s*')).find_next().text.strip())
+    
+    rp_dict['last_updated'] = pd.to_datetime(soup.find('div', text = re.compile(r'\s*Record Verification Date\s*:\s*')).find_next().text.strip())
+    
+    emails = []
+    for e in soup.find_all('div', text = re.compile(r'\s*Email\s*:\s*')):
+        emails.append(e.find_next().text.strip())
+    rp_dict['emails'] = list(set(emails))
+    
+    rp_dict['results'] = sopa.find('div', text=re.compile(r'\s*Referencias:\s*')).find_next().text.strip()
+    
+    rpcec_trials.append(rp_dict)
+# -
+
+pd.DataFrame(rpcec_trials).to_csv(save_path + 'rpcec_18jul21.csv')
+
+
+
+
+
+
 
 

@@ -7,6 +7,8 @@ import xmltodict
 import json
 import re
 from xml.etree.ElementTree import tostring
+from urllib.error import HTTPError
+from time import sleep
 
 
 #for the EUCTR, we can't be a generic as '20\d{2}\W*0\d{5}\W*\d{2}' so we hard code in the "-" and the third character as a "2"
@@ -44,17 +46,26 @@ def zip_load(path, file, index_col=None, low_memory=True):
       return read_csv(zip_file.open(file), index_col=index_col, low_memory=low_memory)
 
 
-def create_pubmed_archive(results_list, length):
-      archive = []
-      for r in tqdm(results_list, total=length):
-            pm_dict = r.toDict()
-            try:
-                  xml = pm_dict['xml']
-            except KeyError:
-                  continue
-            pm_dict['xml_json'] = json.dumps(xmltodict.parse(tostring(xml), dict_constructor=dict))
-            archive.append(pm_dict)
-      return DataFrame(archive)
+def make_xml(record):
+    pm_dict = record.toDict()
+    try:
+        xml = pm_dict['xml']
+        pm_dict['xml_json'] = json.dumps(xmltodict.parse(tostring(xml), dict_constructor=dict))
+    except KeyError:
+        pm_dict = None
+    return pm_dict
+
+
+def create_pubmed_archive(record):
+    try:
+        x = make_xml(record)
+    except HTTPError:
+        sleep(2)
+        try:
+            x = make_xml(record)
+        except HTTPError:
+            x = None
+    return x
 
 def search_text(regex_list, to_search):
       hits = []

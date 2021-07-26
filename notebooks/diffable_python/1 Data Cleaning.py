@@ -33,7 +33,7 @@ import pandas as pd
 import numpy as np
 from datetime import date
 
-df = pd.read_csv(parent + '/data/ictrp_data/COVID19-web_16dec2020.csv', dtype={'Phase': str})
+df = pd.read_csv(parent + '/data/ictrp_data/COVID19-web_1July2021.csv', dtype={'Phase': str})
 
 # +
 from lib.data_cleaning import enrollment_dates, fix_date, fix_errors, d_c
@@ -56,7 +56,7 @@ df = fix_errors(reg_date_errors, df, 'Date registration3')
 # +
 df['Date enrollement'] = df['Date enrollement'].apply(enrollment_dates)
 
-df['Date registration'] = pd.to_datetime(df['Date registration3'], format='%Y%m%d')
+df['Date registration'] = pd.to_datetime(df['Date registration3'], format='%Y%m%d', errors='coerce')
 
 # +
 from lib.data_cleaning import enroll_extract
@@ -301,65 +301,65 @@ for c in country_values:
 
 df_cond_all['Countries'] = new_list
 
-# +
-#Normalizing sponsor names
-#Run this cell, updating the spon_norm csv you are loading after manual adjusting
-#until you get the 'All sponsor names normalized' to print
+# + active=""
+# #Normalizing sponsor names
+# #Run this cell, updating the spon_norm csv you are loading after manual adjusting
+# #until you get the 'All sponsor names normalized' to print
+#
+# spon_norm = pd.read_excel(manual_data, sheet_name = 'sponsor')
+#
+# df_cond_norm = df_cond_all.merge(spon_norm, left_on = 'Primary_sponsor', right_on ='unique_spon_names', how='left')
+# df_cond_norm = df_cond_norm.drop('unique_spon_names', axis=1)
+#
+# new_unique_spon_names = (df_cond_norm[df_cond_norm['normed_spon_names'].isna()][['Primary_sponsor', 'TrialID']]
+#                         .groupby('Primary_sponsor').count())
+#
+# if len(new_unique_spon_names) > 0:
+#     new_unique_spon_names.to_csv('to_norm.csv')
+#     print('Update the normalisation schedule and rerun')
+# else:
+#     print('All sponsor names normalized')
 
-spon_norm = pd.read_excel(manual_data, sheet_name = 'sponsor')
-
-df_cond_norm = df_cond_all.merge(spon_norm, left_on = 'Primary_sponsor', right_on ='unique_spon_names', how='left')
-df_cond_norm = df_cond_norm.drop('unique_spon_names', axis=1)
-
-new_unique_spon_names = (df_cond_norm[df_cond_norm['normed_spon_names'].isna()][['Primary_sponsor', 'TrialID']]
-                        .groupby('Primary_sponsor').count())
-
-if len(new_unique_spon_names) > 0:
-    new_unique_spon_names.to_csv('to_norm.csv')
-    print('Update the normalisation schedule and rerun')
-else:
-    print('All sponsor names normalized')
-
-# +
-#Integrating intervention type data
-#Once again, run to bring in the old int-type data, islolate the new ones, update, and rerun until
-#producing the all-clear message
-
-int_type = pd.read_excel(manual_data, sheet_name = 'intervention')
-df_cond_int = df_cond_norm.merge(int_type[['trial_id', 'study_category',
-                                           'intervention', 'intervention_list']], 
-                                 left_on = 'TrialID', right_on = 'trial_id', how='left')
-
-df_cond_int = df_cond_int.drop('trial_id', axis=1)
-
-new_int_trials = df_cond_int[(df_cond_int['study_category'].isna()) | (df_cond_int['intervention'].isna())]
-
-if len(new_int_trials) > 0:
-    new_int_trials[['TrialID', 'Public_title', 'Intervention', 'study_category', 
-                    'intervention', 'intervention_list']].to_csv('int_to_assess.csv')
-    print('Update the intervention type assessments and rerun')
-else:
-    print('All intervention types matched')
-    df_cond_int = df_cond_int.drop('Intervention', axis=1).reset_index(drop=True)
+# + active=""
+# #Integrating intervention type data
+# #Once again, run to bring in the old int-type data, islolate the new ones, update, and rerun until
+# #producing the all-clear message
+#
+# int_type = pd.read_excel(manual_data, sheet_name = 'intervention')
+# df_cond_int = df_cond_norm.merge(int_type[['trial_id', 'study_category',
+#                                            'intervention', 'intervention_list']], 
+#                                  left_on = 'TrialID', right_on = 'trial_id', how='left')
+#
+# df_cond_int = df_cond_int.drop('trial_id', axis=1)
+#
+# new_int_trials = df_cond_int[(df_cond_int['study_category'].isna()) | (df_cond_int['intervention'].isna())]
+#
+# if len(new_int_trials) > 0:
+#     new_int_trials[['TrialID', 'Public_title', 'Intervention', 'study_category', 
+#                     'intervention', 'intervention_list']].to_csv('int_to_assess.csv')
+#     print('Update the intervention type assessments and rerun')
+# else:
+#     print('All intervention types matched')
+#     df_cond_int = df_cond_int.drop('Intervention', axis=1).reset_index(drop=True)
 
 # +
 #Final organising
 
 col_names = []
 
-for col in list(df_cond_int.columns):
+for col in list(df_cond_all.columns):
     col_names.append(col.lower())
     
-df_cond_int.columns = col_names
+df_cond_all.columns = col_names
 
 reorder = ['trialid', 'source_register', 'date_registration', 'date_enrollement', 'retrospective_registration', 
            'normed_spon_names', 'recruitment_status', 'phase', 'study_type', 'countries', 'public_title', 
            'study_category', 'intervention', 'intervention_list', 'target_enrollment', 'web_address', 'cross_registrations']
 
-df_final = df_cond_int[reorder].reset_index(drop=True).drop_duplicates().reset_index()
+df_final = df_cond_all[reorder].reset_index(drop=True).drop_duplicates().reset_index()
 # -
 
-df_final.to_csv(parent + '/data/cleaned_ictrp_16Dec2020.csv', index=False)
+df_final.to_csv(parent + '/data/cleaned_ictrp_1jul2021.csv', index=False)
 
 # +
 print(f'There are {len(df_final)} total unique registered studies on the ICTRP')
@@ -377,10 +377,28 @@ withdrawn = in_2020[~(in_2020.public_title.str.contains('Cancelled') | in_2020.p
 print(f'{len(withdrawn)} are not listed as cancelled/withdrawn. We exclude {len(in_2020) - len(withdrawn)} at this step but will exclude additional trials after scraping the registries')
 # -
 
-withdrawn.to_csv(parent + '/data/ictrp_with_exclusions_16Dec2020.csv')
+withdrawn.to_csv(parent + '/data/ictrp_with_exclusions_1Jul201.csv')
 
 
 
 
+
+df_cond_all.columns
+
+# +
+print(f'There are {len(df_cond_all)} total unique registered studies on the ICTRP')
+
+non_int = df_cond_all[((df_cond_all.Study_type == 'Interventional') | (df_cond_all.Study_type == 'Prevention'))].reset_index(drop=True)
+
+print(f'{len(non_int)} are Interventional or on Prevention. We exclude {len(df_cond_all) - len(non_int)} at this setp')
+
+in_2020 = non_int[(non_int.Date_registration >= pd.Timestamp(2020,1,1))].reset_index(drop=True)
+
+print(f'{len(in_2020)} started since 1 Jan 2020. We exclude {len(non_int) - len(in_2020)} at this step')
+
+withdrawn = in_2020[~(in_2020.Public_title.str.contains('Cancelled') | in_2020.Public_title.str.contains('Retracted due to'))].reset_index(drop=True)
+
+print(f'{len(withdrawn)} are not listed as cancelled/withdrawn. We exclude {len(in_2020) - len(withdrawn)} at this step but will exclude additional trials after scraping the registries')
+# +
 
 

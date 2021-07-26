@@ -1,0 +1,66 @@
+,trial_id,overall_status,recruitment_status,trial_start_date,trial_end_date,secondary_ids,basic_results,pub_list
+0,ISRCTN13311119,Completed,No longer recruiting,17/04/2020,26/06/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'NV-05-943-2020'}",,
+1,ISRCTN85216856,Completed,No longer recruiting,11/03/2020,31/12/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,
+2,ISRCTN15254871,Completed,No longer recruiting,06/04/2020,15/12/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': '2020/185'}",,
+3,ISRCTN50212645,Ongoing,No longer recruiting,17/03/2020,30/04/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'CTU/2020/353, IRAS 283014'}",,
+4,ISRCTN11384058,Completed,No longer recruiting,25/03/2020,15/06/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'CoV-2-GOASUR-SWALIS2020-FP1'}",,
+5,ISRCTN94091479,Ongoing,No longer recruiting,01/04/2020,31/12/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'CPMS 45854, IRAS 249030'}",,
+6,ISRCTN33578935,Completed,No longer recruiting,26/04/2020,31/12/2020,"{'eudract_number': '2020-002326-90', 'ctgov_number': 'Nil known', 'other_id': '89081'}",,
+7,ISRCTN21363594,Completed,No longer recruiting,01/04/2020,29/12/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'KSMC-IRB-H1R1-29-Apr20-01'}",,2020 protocol in https://doi.org/10.1186/s13063-020-04454-4 (added 10/06/2020)
+8,ISRCTN54917435,Ongoing,Recruiting,20/04/2020,25/06/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': '1'}",,
+9,ISRCTN17896927,Completed,No longer recruiting,01/05/2020,24/07/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': '1312013102'}",,
+10,ISRCTN13035264,Completed,No longer recruiting,17/03/2020,30/08/2020,"{'eudract_number': '2020-001052-18', 'ctgov_number': 'NCT04280705', 'other_id': 'DMID Protocol Number: 20-0006, INSIGHT Protocol Number: 010, UPHR - CPMS 45521, IRAS 281800'}",,
+11,ISRCTN17072692,Ongoing,No longer recruiting,01/04/2020,31/07/2021,"{'eudract_number': '2020-001646-20', 'ctgov_number': 'Nil known', 'other_id': 'IRAS 279315'}",,
+12,ISRCTN88057279,Ongoing,Recruiting,03/04/2020,03/05/2025,"{'eudract_number': '2020-002016-48', 'ctgov_number': 'Nil known', 'other_id': 'CCTU0307, IRAS 282317'}",,
+13,ISRCTN15913068,Completed,No longer recruiting,06/05/2020,30/12/2020,"{'eudract_number': '2020-001786-36', 'ctgov_number': 'NCT04379076', 'other_id': 'IRAS 283184\u200b'}",,
+14,ISRCTN60069084,Ongoing,Recruiting,21/03/2020,01/10/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'NCT04455243', 'other_id': 'E-20-4934'}",,
+15,ISRCTN48734830,Ongoing,Recruiting,21/04/2020,28/02/2021,"{'eudract_number': '2020-002040-22', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,
+16,ISRCTN16912075,Ongoing,Recruiting,30/03/2020,05/05/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Sponsor: 26/19-20, IRAS 282338'}",,2020 protocol in https://pubmed.ncbi.nlm.nih.gov/32727624/ (added 03/08/2020)
+17,ISRCTN40302986,Completed,No longer recruiting,23/04/2020,06/10/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,
+18,ISRCTN33260034,Ongoing,Recruiting,01/07/2020,31/12/2021,"{'eudract_number': '2020-003628-18', 'ctgov_number': 'Nil known', 'other_id': 'IRAS 287434'}",,
+19,ISRCTN99248812,Completed,No longer recruiting,01/04/2020,10/07/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'R69810/RE001'}",,
+20,ISRCTN74727214,Completed,No longer recruiting,25/05/2020,15/08/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,
+21,ISRCTN67000769,Ongoing,Recruiting,11/04/2016,31/12/2023,"{'eudract_number': '2015-002340-14', 'ctgov_number': 'NCT02735707', 'other_id': 'CPMS 38197, IRAS 237150'}",,2020 protocol in https://pubmed.ncbi.nlm.nih.gov/32267771/ (added 16/07/2020)2020 results in https://pubmed.ncbi.nlm.nih.gov/32876697/ (added 03/09/2020)
+22,ISRCTN95933274,Ongoing,Recruiting,15/04/2020,16/06/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': '329/2020'}",,2020 results in https://pubmed.ncbi.nlm.nih.gov/33315181/ (added 16/12/2020)
+23,ISRCTN44152751,Completed,Suspended,18/03/2020,30/09/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,
+24,ISRCTN86534580,Ongoing,Recruiting,12/03/2020,24/09/2021,"{'eudract_number': '2020-001209-22', 'ctgov_number': 'Nil known', 'other_id': 'IRAS 281958'}",,
+25,ISRCTN51232965,Ongoing,No longer recruiting,16/03/2020,22/09/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'NCT04495933', 'other_id': 'UQ-1-SARS-CoV-2-Sclamp'}",,
+26,ISRCTN34160010,Completed,No longer recruiting,22/04/2020,02/09/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'MIBVD-19'}",,
+27,ISRCTN10378358,Ongoing,Recruiting,15/06/2020,01/03/2022,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'IRAS 285515'}",,
+28,ISRCTN57085639,Ongoing,Recruiting,20/04/2020,04/09/2021,"{'eudract_number': '2020-001736-95', 'ctgov_number': 'Nil known', 'other_id': 'CPMS 45616, IRAS 282769'}",,
+29,ISRCTN53038326,Ongoing,Recruiting,23/03/2020,15/05/2021,"{'eudract_number': '2020-001805-21', 'ctgov_number': 'Nil known', 'other_id': 'CPMS 45777, IRAS 282532'}",,
+30,ISRCTN18428598,Ongoing,No longer recruiting,01/06/2019,31/01/2023,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,
+31,ISRCTN10197987,Completed,No longer recruiting,30/04/2020,20/11/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'MRC 05-106'}",,
+32,ISRCTN14602359,Ongoing,Recruiting,30/03/2020,30/04/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'CPMS 46740, IRAS 287978, UKRI (MRC) MC_PC_19068, UoB 2020-3213'}",,
+33,ISRCTN10207947,Ongoing,Recruiting,13/02/2020,30/09/2021,"{'eudract_number': '2020-001441-39', 'ctgov_number': 'NCT04303507', 'other_id': 'CPMS 45731, IRAS 282109'}",,
+34,ISRCTN43900695,Ongoing,Recruiting,25/03/2020,06/04/2022,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'V1.0 (20 July 2020)'}",,2020 protocol in https://pubmed.ncbi.nlm.nih.gov/32771068/ (added 13/08/2020)
+35,ISRCTN12107048,Ongoing,No longer recruiting,07/04/2020,30/04/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Version 2.0 18.05.2020'}",,
+36,ISRCTN14966673,Ongoing,No longer recruiting,07/02/2020,01/04/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'RHM MED1696, IRAS 280621'}",,2020 results in https://pubmed.ncbi.nlm.nih.gov/33038974/ (added 13/10/2020)
+37,ISRCTN12890382,Ongoing,Recruiting,01/09/2020,31/08/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'IRAS 288074, CPMS 46902'}",,
+38,ISRCTN13177364,Ongoing,Recruiting,20/07/2020,19/04/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'MR/V02776X/1, IRAS 287288, CPMS 46874'}",,
+39,ISRCTN13447477,Ongoing,No longer recruiting,15/03/2020,28/02/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'IRAS 283182'}",,
+40,ISRCTN83971151,Ongoing,Recruiting,01/03/2020,25/03/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': '0003361'}",,2020 interim results in preprint https://doi.org/10.1101/2020.10.15.20209817 (added 19/10/2020)
+41,ISRCTN83971151,Ongoing,Recruiting,01/03/2020,25/03/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': '0003361'}",,2020 interim results in preprint https://doi.org/10.1101/2020.10.15.20209817 (added 19/10/2020)
+42,ISRCTN13455972,Completed,No longer recruiting,01/07/2020,30/09/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'TP_2020065'}",,
+43,ISRCTN25647404,Completed,No longer recruiting,20/05/2020,27/12/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'IRAS 285247'}",,
+44,ISRCTN79623250,Completed,No longer recruiting,31/03/2020,02/09/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'IRRID: RR1-10.2196/24264'}",,
+45,ISRCTN16842454,Completed,No longer recruiting,26/04/2020,13/12/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': '003'}",,
+46,ISRCTN12792822,Ongoing,No longer recruiting,02/10/2020,30/06/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'p661'}",,
+47,ISRCTN90437126,Ongoing,Recruiting,10/04/2020,30/06/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'IvermecPrev-Brazil ScinetN001.2020'}",,
+48,ISRCTN68675756,Completed,No longer recruiting,01/02/2020,22/03/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,2020 results in https://pubmed.ncbi.nlm.nih.gov/33192723/ (added 17/11/2020)
+49,ISRCTN11466448,Ongoing,Recruiting,01/09/2020,31/08/2022,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'CPMS 46819, IRAS 288362'}",,
+50,ISRCTN11970082,Completed,No longer recruiting,27/07/2020,01/01/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'CR/20-21/ED/208/ALUM/002553\u200b'}",,
+51,ISRCTN31062548,Ongoing,No longer recruiting,01/04/2020,31/12/2021,"{'eudract_number': '2020-001904-41', 'ctgov_number': 'Nil known', 'other_id': 'CPMS 46289, IRAS 283151'}",,2020 protocol in https://pubmed.ncbi.nlm.nih.gov/33213530/ (added 23/11/2020)
+52,ISRCTN93382525,Ongoing,Recruiting,01/02/2020,30/11/2024,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'NIHR 128623, IRAS 275697, CPMS 46008'}",,
+53,ISRCTN17898730,Completed,No longer recruiting,21/03/2020,20/12/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': '2020-20'}",,2020 results in https://pubmed.ncbi.nlm.nih.gov/33240180/ (added 27/11/2020)
+54,ISRCTN27106947,Ongoing,Recruiting,31/03/2020,30/11/2021,"{'eudract_number': '2020-001860-27', 'ctgov_number': 'Nil known', 'other_id': 'UoL001542, CPMS 45759, IRAS 282781'}",,2020 protocol in https://doi.org/10.1186/s13063-020-04473-1 (added 03/12/2020)
+55,ISRCTN11713182,Ongoing,Recruiting,30/04/2020,30/09/2021,"{'eudract_number': '2020-002567-57', 'ctgov_number': 'Nil known', 'other_id': 'CPMS 47241, IRAS 282381'}",,
+56,ISRCTN19845486,Ongoing,No longer recruiting,27/01/2020,31/03/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,
+57,ISRCTN77689525,Ongoing,No longer recruiting,01/06/2020,31/05/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,
+58,ISRCTN77941736,Ongoing,No longer recruiting,01/10/2020,30/03/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",,
+59,ISRCTN10989132,Ongoing,Not yet recruiting,01/01/2018,01/02/2023,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': ""IRAS 287507, Sponsor's number 2020-4883, WT 214554/Z/18/Z""}",,
+60,ISRCTN89951424,Ongoing,No longer recruiting,01/05/2020,31/12/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'COV003'}",,2020 interim results in https://pubmed.ncbi.nlm.nih.gov/33306989/ (added 09/12/2020)
+61,ISRCTN59048638,Completed,No longer recruiting,15/04/2020,30/11/2020,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Nil known'}",See additional files (ISRCTN59048638_BasicResults_04Dec2020),
+62,ISRCTN37530113,Ongoing,Recruiting,01/10/2015,31/12/2021,"{'eudract_number': 'Nil known', 'ctgov_number': 'Nil known', 'other_id': 'Samarbeidsorganet mellom Helse Midt-Norge RHF project nr 90023600'}",,2020 protocol in https://pubmed.ncbi.nlm.nih.gov/33203621/ (added 19/11/2020)
+63,ISRCTN40580903,Ongoing,No longer recruiting,26/03/2020,01/05/2021,"{'eudract_number': '2020-001684-85', 'ctgov_number': 'Nil known', 'other_id': 'RG_20-030, CPMS 45648, IRAS 282431'}",,
+64,ISRCTN30564012,Ongoing,No longer recruiting,30/03/2020,31/01/2021,"{'eudract_number': '2020-001643-13', 'ctgov_number': 'Nil known', 'other_id': '01.01.20, IRAS 281986, CPMS 45682'}",,

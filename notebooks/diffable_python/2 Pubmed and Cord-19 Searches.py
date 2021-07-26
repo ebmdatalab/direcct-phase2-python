@@ -53,32 +53,44 @@ from lib.id_searches import search_text, ids_exact, prefixes, registry_names
 #If the archive exists, load it in.
 try:
     from lib.id_searches import zip_load
-    archive_df = zip_load(parent + '/data/pubmed/pubmed_archive_1Jan_2021.csv.zip', 
-                  'pubmed_archive_1Jan_2021.csv', index_col = 0)
+    archive_df = zip_load(parent + '/data/pubmed/pubmed_archive_14Jul_2021.csv.zip', 
+                  'pubmed_archive_14Jul_2021.csv', index_col = 0)
 
 #If it doesn't exist, you can do a new PubMed search
 except FileNotFoundError:
     from pymed import PubMed
     from lib.credentials import email
     from lib.id_searches import query, create_pubmed_archive
-    print('Archive file not found, conduting new PubMed search.')
+    print('Archive file not found, conducting new PubMed search.')
     pubmed = PubMed(tool="Pymed", email=email)
-    results = pubmed.query(query, max_results=150000)
+    results = pubmed.query(query, max_results=160000)
     results_length = pubmed.getTotalResultsCount(query)
     print(f'There are {results_length} results')
           
-    print('Transforming results. This may take a few minutes.')
-    #results_list = list(results) #This can take a while
-    #print(f'Transformed {len(results_list)} results')
+    print('Archiving results. This may take a few minutes.')
+    ##results_list = list(results) #This can take a while
+    ##print(f'Transformed {len(results_list)} results')
     
     #archive_df = create_pubmed_archive(results_list)
-    archive_df = create_pubmed_archive(results, results_length)
-    archive_df.to_csv(parent + '/data/pubmed/pubmed_archive_1Jan_2021.csv')
-    print('Archive created')
+    archive = []
+    for r in tqdm(results, total=results_length):
+        rec = create_pubmed_archive(r)
+        if rec:
+            archive.append(rec)
+        else:
+            continue
     
+    archive_df = pd.DataFrame(archive)
+    archive_df.to_csv(parent + '/data/pubmed/pubmed_archive_14Jul_2021.csv')
+    print('Archive created')
 # -
 
+
 pubmed_data = archive_df.xml_json.tolist()
+
+#getting rid of these when we don't need them anymore to save some memory
+del archive
+del archive_df
 
 # +
 pubmed_dicts = []
@@ -93,7 +105,10 @@ for rec in tqdm(pubmed_data):
     if isinstance(pm_dict['MedlineCitation']['Article']['ArticleTitle'], str):
         entry_dict['title'] = pm_dict['MedlineCitation']['Article']['ArticleTitle']
     elif isinstance(pm_dict['MedlineCitation']['Article']['ArticleTitle'], dict):
-        entry_dict['title'] = pm_dict['MedlineCitation']['Article']['ArticleTitle']['#text']
+        try:
+            entry_dict['title'] = pm_dict['MedlineCitation']['Article']['ArticleTitle']['#text']
+        except KeyError:
+            entry_dict['title'] = pm_dict['MedlineCitation']['Article']['ArticleTitle']['b']
     elif pm_dict['MedlineCitation']['Article']['ArticleTitle'] is None:
         entry_dict['title'] = 'No Title'
     
@@ -173,28 +188,30 @@ for d in tqdm(pubmed_dicts):
         d['review_type'] = False
 
 
-# -
-
+# +
 pubmed_search_results = pd.DataFrame(pubmed_dicts)
-pubmed_search_results.to_csv(parent + '/data/pubmed/pubmed_search_results_jan2021.csv')
+pubmed_search_results.to_csv(parent + '/data/pubmed/pubmed_search_results_jul2021.csv')
 
 
-pickle.dump(pubmed_search_results, open('pubmed_df.pkl', 'wb'))
-
-del archive_df
+# +
+#pickle.dump(pubmed_search_results, open('pubmed_df_jul21.pkl', 'wb'))
+# -
 
 # # Searching CORD-19 data
 
-cord_df = pickle.load( open( "cord_df.pkl", "rb" ) )
+# +
+#cord_df = pickle.load( open( "cord_df.pkl", "rb" ) )
 
-cord_df.head()
+# +
+#cord_df.head()
+# -
 
-metadata = zip_load(parent + '/data/cord_19/metadata.csv.zip', 'metadata.csv', low_memory = False)
+md = 'https://www.dropbox.com/s/b6oog6w4al4uxic/metadata.csv.zip?dl=1'
+
+metadata = pd.read_csv(md, compression='zip', low_memory = False)
+
+#metadata = zip_load(parent + '/data/cord_19/metadata.csv.zip', 'metadata.csv', low_memory = False)
 metadata['publish_time'] = pd.to_datetime(metadata['publish_time'])
-
-
-
-
 
 # +
 #Getting a list of all the filenames for the papers that were published in 2020
@@ -253,7 +270,9 @@ with tarfile.open(parent+'/data/cord_19/document_parses.tar.gz', 'r:gz') as tar:
 
 cord_df = pd.DataFrame(cord_hit_list)
 
-pickle.dump(cord_df, open('cord_df.pkl', 'wb'))
+# +
+#pickle.dump(cord_df, open('cord_df_jul21.pkl', 'wb'))
+# -
 
 # # Bringing it all together
 
@@ -370,6 +389,6 @@ final_df['doi_link'] = final_df.doi.apply(make_doi_url)
 
 final_df[((final_df.id_hits.notnull()) | (final_df.pub_types.notnull())) & 
          ((final_df.review_in_title != True) & (final_df.review_type != True)
-         )].to_csv(parent + '/data/final_auto_24Feb2021.csv')
+         )].to_csv(parent + '/data/final_auto_14Jul2021.csv')
 
 

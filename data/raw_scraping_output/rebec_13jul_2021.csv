@@ -1,0 +1,51 @@
+,trial_id,trial_status,last_enrollment,last_updated,emails
+0,RBR-8969zg,Not yet recruiting,10/14/2020                                            (mm/dd/yyyy),2020-04-13,['julio.alencar@hc.fm.usp.br']
+1,RBR-658khm,Recruiting,12/01/2020                                            (mm/dd/yyyy),2020-04-22,['mchechter@hotmail.com']
+2,RBR-6w5tbk,Not yet recruiting,07/31/2020                                            (mm/dd/yyyy),2020-04-29,['cleandro.albuquerque@gmail.com']
+3,RBR-5s2mqg,Recruiting,12/31/2020                                            (mm/dd/yyyy),2020-05-05,['lavelloso@fcm.unicamp.br']
+4,RBR-3k4wxb,Not yet recruiting,11/30/2020                                            (mm/dd/yyyy),2020-05-05,['maboliveira@gmail.com']
+5,RBR-4vm3yy,Recruiting,05/31/2020                                            (mm/dd/yyyy),2020-05-15,['kurtzpedro@mac.com']
+6,RBR-9d8z6m,Recruitment completed,,2020-05-28,"['abiasi@hcor.com.br', 'fzampieri@hcor.com.br']"
+7,RBR-2dxyx4,Not yet recruiting,06/11/2020                                            (mm/dd/yyyy),2020-06-02,['d.salgado@globo.com']
+8,RBR-949z6v,Recruiting,05/30/2021                                            (mm/dd/yyyy),2020-06-04,['chmiranda@fmrp.usp.br']
+9,RBR-876qb5,Recruiting,07/10/2020                                            (mm/dd/yyyy),2020-06-08,"['rtcalado@fmrp.usp.br', 'brunogarciapires@gmail.com']"
+10,RBR-3zdynp,Recruiting,12/31/2020                                            (mm/dd/yyyy),2020-06-23,['torcortes@yahoo.com.br']
+11,RBR-4wnx2q,Recruiting,06/06/2022                                            (mm/dd/yyyy),2020-06-26,['criedi@unicentro.br']
+12,RBR-5kkpg6,Not yet recruiting,09/30/2020                                            (mm/dd/yyyy),2020-06-28,"['miriancelly@hotmail.com', 'rhowenajane@gmail.com']"
+13,RBR-7jqpnw,Not yet recruiting,07/30/2021                                            (mm/dd/yyyy),2020-06-29,['demofilho@gmail.com']
+14,RBR-3rywwg,Recruiting,08/30/2020                                            (mm/dd/yyyy),2020-07-10,['joelmavg@gmail.com']
+15,RBR-7jrxqm,Recruiting,10/01/2020                                            (mm/dd/yyyy),2020-07-10,"['rodrigo.pimentel@ebserh.gov.br', 'mmerces@uneb.br']"
+16,RBR-45kf9p,Recruiting,12/31/2020                                            (mm/dd/yyyy),2020-07-13,"['camila.eleuterio@hc.fm.usp.br', 'paulo.lins@hc.fm.usp.br']"
+17,RBR-7drpyr,Recruitment completed,,2020-07-13,['grenata@unicamp.br']
+18,RBR-5ysj54,Not yet recruiting,11/14/2020                                            (mm/dd/yyyy),2020-07-27,['fcqmello@gmail.com']
+19,RBR-3g5f9f,Not yet recruiting,09/28/2020                                            (mm/dd/yyyy),2020-07-29,"['edson.junior@einstein.br', 'livia.pedrilio@einstein.br', 'sidiniz@usp.br']"
+20,RBR-8jyhxh,Recruiting,09/30/2020                                            (mm/dd/yyyy),2020-07-30,['rdroliveira@hcrp.usp.br']
+21,RBR-35734p,Recruiting,10/30/2020                                            (mm/dd/yyyy),2020-08-05,"['santos@icb.ufmg.br', 'anavalle9@icloud.com']"
+22,RBR-2w7ghc,Recruiting,09/30/2020                                            (mm/dd/yyyy),2020-08-07,['rosariovonflach@gmail.com']
+23,RBR-7d7ngw,Recruiting,12/20/2020                                            (mm/dd/yyyy),2020-08-07,"['cicerofontenelle1@hotmail.com', 'camposludmilla@yahoo.com.br', 'jorgelmanjos@hotmail.com']"
+24,RBR-2k66ft,Not yet recruiting,10/31/2020                                            (mm/dd/yyyy),2020-08-10,['rbiondi@hobra.com.br']
+25,RBR-9y32yy,Not yet recruiting,12/31/2021                                            (mm/dd/yyyy),2020-08-10,"['emmanuel.ciolac@unesp.br', 'adheubel@yahoo.com.br', 'arianeaviana@gmail.com', 'renatamendes@ufscar.br']"
+26,RBR-4vy54v,Not yet recruiting,,2020-08-11,"['alves.als@upf.br', 'silvanalba@upf.br']"
+27,RBR-4pfygr,Not yet recruiting,08/30/2020                                            (mm/dd/yyyy),2020-08-13,"['eliefiss@uol.com.br', 'coordenacao.pesquisa@cryopraxis.com.br', 'dvilanova@haoc.com.br']"
+28,RBR-3rdhgm,Recruiting,04/30/2021                                            (mm/dd/yyyy),2020-08-24,['welderzamoner@gmail.com']
+29,RBR-9xs978,Recruiting,11/30/2020                                            (mm/dd/yyyy),2020-08-24,"['jarbasroriz@gmail.com', 'dra.daniellelima@gmail.com']"
+30,RBR-2z3f7k,Recruiting,12/29/2020                                            (mm/dd/yyyy),2020-08-25,"['tiago.xavier@ifrj.edu.br', 'monica.cruz80@gmail.com', 'luciana.camilo@ifrj.edu.br']"
+31,RBR-2kjm6y,Recruiting,09/30/2020                                            (mm/dd/yyyy),2020-08-26,"['dfalci@hcpa.edu.br', 'dgarcia@clinipace.com', 'antonio.freire@santacasapesquisa.com.br', 'suzanaalobo@gmail.com', 'baldfons@fmrp.usp.br', 'superintendencia@hucam.edu.br', 'administra.upeclin.fmb@unesp.br', 'rosane@santamarcelina.org', 'diego.queiroz@unesp.br', 'centrodepesquisa@hospitaldapuc-campinas.com.br', 'mariapatelli@uol.com.br', 'marcelo.zollinger@hositaldabahia.com.br', 'diretoria@hospitaldebase.com.br', 'tania.reuter@gmail.com', 'diretoria@santacasabh.org.br', 'marianna.andrade@hospitaldabahia.com.br', 'upc-hc@hcrp.usp.br', 'mariguela.bari@gmail.com']"
+32,RBR-72bg24,Not yet recruiting,12/15/2020                                            (mm/dd/yyyy),2020-08-27,"['meilaba@tecpar.br', 'appalka@tecpar.br', 'atesser1951@gmail.com']"
+33,RBR-5vpyh4,Recruiting,12/28/2020                                            (mm/dd/yyyy),2020-08-31,['gustavogomesresende@yahoo.com.br']
+34,RBR-2fvjjm,Recruiting,12/31/2020                                            (mm/dd/yyyy),2020-09-04,"['rafaelzambelli@gmail.com', 'danielbaumfeld@gmail.com', 'motadort@gmail.com']"
+35,RBR-9rnkbs,Recruiting,11/30/2020                                            (mm/dd/yyyy),2020-09-22,['maximiliano.gomes@pucrs.br']
+36,RBR-8nfx26,Not yet recruiting,,2021-06-30,['mhjones@pucrs.br']
+37,RBR-97nt6j,Not yet recruiting,10/05/2021                                            (mm/dd/yyyy),2020-09-24,['arnoldos@cardiol.br']
+38,RBR-5v3k5d,Recruiting,07/05/2021                                            (mm/dd/yyyy),2020-10-02,['emilia.gadelha1@gmail.com']
+39,RBR-8h7q82,Recruitment completed,,2020-10-02,"['allex.jardim@bol.com.br', 'ruysouza28@gmail.com']"
+40,RBR-2xxrrq,Recruitment completed,,2020-10-02,"['juliana.lima@unifesp.br', 'elainepeixoto8@gmail.com', 'cep@unifesp.br']"
+41,RBR-825p57,Recruiting,06/25/2021                                            (mm/dd/yyyy),2020-10-08,"['carolina.tsen@estudante.ufscar.br', 'psicologa.andreatto@gmail.com', 'larissa.andrade@ufscar.br']"
+42,RBR-4nr86m,Recruiting,12/08/2020                                            (mm/dd/yyyy),2020-10-27,"['pedroleme@biof.ufrj.br', 'prmrocco@biof.ufrj.br', 'ffcruz@biof.ufrj.br']"
+43,RBR-58ftdj,Recruiting,11/30/2020                                            (mm/dd/yyyy),2020-10-28,"['paulosss@fob.usp.br', 'bernardoforcina@outlook.com']"
+44,RBR-9b6kvp,Not yet recruiting,11/10/2020                                            (mm/dd/yyyy),2020-10-29,['phelipewilde97@hotmail.com']
+45,RBR-4kjqtg,Recruiting,12/31/2020                                            (mm/dd/yyyy),2020-10-29,"['ana_kipnis@ufg.br', 'akipnis@ufg.br']"
+46,RBR-8x8g36,Not yet recruiting,11/30/2020                                            (mm/dd/yyyy),2020-10-29,['marcelo_poleti@yahoo.com.br']
+47,RBR-5d7hkv,Recruiting,04/30/2021                                            (mm/dd/yyyy),2020-11-03,['atrape@usp.br']
+48,RBR-2fvw6v,Not yet recruiting,04/04/2022                                            (mm/dd/yyyy),2020-11-16,['leounifal@gmail.com']
+49,RBR-2z5t7z,Recruiting,10/04/2022                                            (mm/dd/yyyy),2020-11-16,['pam_milaf@yahoo.com.br']

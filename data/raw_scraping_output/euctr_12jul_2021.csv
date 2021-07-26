@@ -1,0 +1,476 @@
+,trial_id,results_status,countries,global_trial_end_dates,status_list,emails,secondary_ids
+0,2020-000890-25,(No results available),['FR'],[None],['Ongoing'],['line.meddeb@ap-hm.fr'],{'spon_id': '202002102'}
+1,2020-000919-69,(No results available),['NL'],[None],['Ongoing'],['M.J.M.Bonten@umcutrecht.nl'],{'spon_id': '73249'}
+2,2020-001023-14,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['jody.brookes@synairgen.com'],{'spon_id': 'SG016'}
+3,2020-000936-23,(No results available),"['FR', 'BE', 'AT', 'PT', 'CZ', 'NO', 'HU']","[None, None, None, None, None, None, None]","['Ongoing', 'Ongoing', 'Temporarily Halted', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['rqrc.siege@inserm.fr', 'christelle.delmas@inserm.fr', 'juliette.saillard@inserm.fr', 'juliette.saillard@inserm.fr', 'juliette.saillard@inserm.fr', 'christelle.delmas@inserm.fr', 'christelle.delmas@inserm.fr']",{'spon_id': 'C20-15'}
+4,2020-001386-37,(No results available),['IT'],[None],['Ongoing'],['global.rochegenentechtrials@roche.com'],{'spon_id': 'RCT-TCZ-COVID-19'}
+5,2020-001301-23,(No results available),['FR'],[None],['Ongoing'],['elodie.soler@aphp.fr'],{'spon_id': 'APHP200387'}
+6,2020-001188-96,(No results available),['FR'],[None],['Ongoing'],['arnauld.garcin@chu-st-etienne.fr'],{'spon_id': '20PH061'}
+7,2020-001373-70,(No results available),['FR'],[None],['Ongoing'],['julien.gautier@lyon.unicancer.fr'],{'spon_id': 'ET20-076'}
+8,2020-001381-11,(No results available),['FR'],[None],['Ongoing'],['carla.vandenabele@aphp.fr'],{'spon_id': 'APHP200409'}
+9,2020-001457-43,(No results available),['FR'],[None],['Ongoing'],['fadila.amerali@aphp.fr'],{'spon_id': 'APHP200388'}
+10,2020-001442-19,(No results available),['ES'],[None],['Ongoing'],['epenag@santpau.cat'],{'spon_id': 'IIBSP-COV-2020-23'}
+11,2020-001385-11,(No results available),['ES'],[None],['Ongoing'],[],{'spon_id': 'PrEP_COVID_19'}
+12,2020-001409-21,(No results available),['ES'],[None],['Ongoing'],['lola.serna@carm.es'],{'spon_id': 'IMIB-DFC-2020-02'}
+13,2020-001492-33,(No results available),['FR'],[None],['Ongoing'],['pvachey@for.paris'],{'spon_id': 'CGE_2020_9'}
+14,2020-001194-69,(No results available),['ES'],[None],['Ongoing'],"['gutierrez_fel@gva.es', 'masia_marcana@gva.es']",{'spon_id': 'MEFLOCOVID-19'}
+15,2020-001565-37,(No results available),['ES'],[None],['Ongoing'],['jose.munoz@isglobal.org'],{'spon_id': 'PrEP_COVID'}
+16,2020-001421-31,(No results available),['ES'],[None],['Ongoing'],['secretaria@delosclinical.com'],{'spon_id': 'QUINAVID-19'}
+17,2020-001606-33,(No results available),['ES'],[None],['Ongoing'],['eunate.aranaarri@osakidetza.eus'],{'spon_id': 'HIACO-19'}
+18,2020-001039-29,(No results available),['GR'],[None],['Ongoing'],['insepsis@otenet.gr'],{'spon_id': 'ESCAPE'}
+19,2020-001303-16,(No results available),['FR'],[None],['Ongoing'],['dpidrci@chru-strasbourg.fr'],{'spon_id': '7747'}
+20,2020-001156-18,(No results available),['ES'],[None],['Ongoing'],['a.borobia@gmail.com'],{'spon_id': 'PanCOVID19'}
+21,2020-001160-28,(No results available),['ES'],[None],['Ongoing'],['regulatory@medsir.org'],{'spon_id': 'MedOPP376'}
+22,2020-001262-11,(No results available),['ES'],[None],['Ongoing'],['mireia.arcas@fjd.es'],{'spon_id': 'FJD-COVID19-20-01'}
+23,2020-001290-74,(No results available),['ES'],[None],['Ongoing'],['aaldea@imim.es'],{'spon_id': 'SARICOVID'}
+24,2020-001321-31,(No results available),['ES'],[None],['Ongoing'],['fernando.bermejo@salud.madrid.org'],{'spon_id': '24032020'}
+25,2020-001437-12,(No results available),['ES'],[None],['Ongoing'],[],{'spon_id': 'COVID-19_ASS'}
+26,2020-001587-29,(No results available),['ES'],[None],['Ongoing'],['clara.menendez@isglobal.org'],{'spon_id': '02/04/2020-001'}
+27,2020-001689-12,(No results available),"['ES', 'GB', 'FR', 'GR']","[None, None, '2020-12-18', None]","['Ongoing', 'GB - no longer in EU/EEA', 'Prematurely Ended', 'Ongoing']","['alberto.borobia@salud.madrid.org', 'Zohar.Bassevitch@mhicc.org', 'Zohar.Bassevitch@mhicc.org', 'Zohar.Bassevitch@mhicc.org']","{'nct_id': 'NCT04322682', 'spon_id': 'MHIPS-2020-001'}"
+28,2020-001331-26,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['ccturegulatory@addenbrookes.nhs.uk'],"{'nct_id': 'NCT00000000', 'spon_id': 'PROLIFIC2020'}"
+29,2020-001379-34,(No results available),['ES'],[None],['Ongoing'],['gestioncientifica@incliva.es'],{'spon_id': 'SEVO-COVID19'}
+30,2020-001682-36,(No results available),['ES'],[None],['Ongoing'],['enrique.conde@efficeresearch.com'],{'spon_id': 'MSV_COVID'}
+31,2020-001511-25,(No results available),['ES'],[None],['Ongoing'],['Lola.serna@carm.es'],{'spon_id': 'IMIB-COLVID-2020-03'}
+32,2020-001448-24,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['d.smith.6@bham.ac.uk'],{'spon_id': 'RG_20-029COVID-19'}
+33,2020-001570-30,(No results available),['FR'],[None],['Completed'],['v.awassi@ghu-paris.fr'],{'spon_id': 'D20-P013'}
+34,2020-001254-22,(No results available),['BE'],[None],['Ongoing'],['hiruz.ctu@uzgent.be'],{'spon_id': 'SARPAC'}
+35,2020-001329-30,(No results available),['AT'],[None],['Ongoing'],[],{'spon_id': '2020P000787'}
+36,2020-001527-14,(No results available),['NL'],[None],['Ongoing'],['j.aerts@erasmusmc.nl'],{'spon_id': '1'}
+37,2020-001366-11,(No results available),"['ES', 'LT', 'IE', 'IT', 'PT', 'SK', 'RO', 'LV']","[None, None, None, None, None, None, None, None]","['Temporarily Halted', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['fibucicec.hcsc@salud.madrid.org', 'fibucicec.hcsc@salud.madrid.org', 'laimonas.griskevicius@santa.lt', 'j.eustace@ucc.ie', 'j.eustace@ucc.ie', 'evelina.tacconelli@univr.it', 'helena.beaumont@aicib.pt', 'helena.beaument@aicib.pt', 'ivv@health.gov.sk', 'alexandru.rafila@ms.ro', 'alexandru.rafila@ms.ro', 'Inese.Kaupere@vm.gov.lv', 'Inese.Kaupere@vm.gov.lv']",{'spon_id': 'Solidarity'}
+38,2020-001255-40,(No results available),['ES'],[None],['Ongoing'],['ucicec@unav.es'],{'spon_id': 'STRIKE-SARS-CoV2'}
+39,2020-001531-27,(No results available),['ES'],[None],['Ongoing'],['uicec@imibic.org'],{'spon_id': 'SARICOR'}
+40,2020-001459-42,(No results available),['DK'],[None],['Ongoing'],['hans.hasselbalch@gmail.com'],{'spon_id': '26223678Hans'}
+41,2020-001500-41,(No results available),['BE'],[None],['Ongoing'],['hiruz.ctu@uzgent.be'],{'spon_id': 'COV-AID'}
+42,2020-001723-13,(No results available),['FR'],[None],['Ongoing'],['nbennasr@hpsj.fr'],{'spon_id': '405'}
+43,2020-001823-15,(No results available),['FR'],[None],['Ongoing'],['carine.labruyere@chu-st-etienne.fr'],{'spon_id': '20CH089'}
+44,2020-001678-31,(No results available),['FR'],[None],['Ongoing'],['moufida.dabbech@aphp.fr'],{'spon_id': 'APHP200462'}
+45,2020-001364-29,(No results available),['ES'],[None],['Ongoing'],['fabiola.lora@juntadeandalucia.es'],{'spon_id': 'AdiQure/COVID-19'}
+46,2020-001717-20,(No results available),['ES'],[None],['Ongoing'],['uicec@imibic.org'],{'spon_id': 'COVIDIOL'}
+47,2020-000982-18,(No results available),"['NO', 'SE']","[None, None]","['Ongoing', 'Prematurely Ended']","['andreas.barrattdue@gmail.com', 'soo.aleman@sll.se']",{'spon_id': 'WHO-NOR-COVID-19'}
+48,2020-001700-42,(No results available),['FR'],[None],['Ongoing'],['france.guyot@aphp.fr'],{'spon_id': 'APHP200410'}
+49,2020-001766-11,(No results available),['FR'],[None],['Ongoing'],['promotion.interne@ap-hm.fr'],{'spon_id': '2020-24'}
+50,2020-001370-30,(No results available),"['DE', 'GB', 'FR', 'ES', 'HU', 'IT']","[None, None, '2020-12-22', None, '2020-12-22', None]","['Completed', 'GB - no longer in EU/EEA', 'Completed', 'Ongoing', 'Completed', 'Completed']","['infoservice.novartis@novartis.com', 'icm.phfr@novartis.com', 'eecc.novartis@novartis.com', 'infoph.hungary@novartis.com', 'info.studiclinici@novartis.com']",{'spon_id': 'CACZ885D2310'}
+51,2020-001709-21,(No results available),['FR'],[None],['Ongoing'],['dripromoteur@chru-nancy.fr'],{'spon_id': '2020PI073'}
+52,2020-001768-27,(No results available),['FR'],[None],['Ongoing'],['mfort@ch-versailles.fr'],{'spon_id': 'P20/07'}
+53,2020-001598-66,(No results available),['FR'],[None],['Ongoing'],['sroux@ch-versailles.fr'],{'spon_id': 'P20/06'}
+54,2020-001909-22,(No results available),['FR'],[None],['Ongoing'],['sophie.courtial-destembert@aphp.fr'],{'spon_id': 'APHP200461'}
+55,2020-001449-38,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['research.development@chelwest.nhs.uk'],{'spon_id': 'CW002'}
+56,2020-001786-36,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['mmorre@revimmune.com'],{'spon_id': 'ILIAD-7-UK-Cohort'}
+57,2020-001721-31,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['afroze.khan@nhs.net'],{'spon_id': 'SPON-AK-0420'}
+58,2020-001783-28,(No results available),['HU'],[None],['Ongoing'],['igazgatosag@koranyi.hu'],{'spon_id': 'BCG-COVID_HU_001'}
+59,2020-001882-36,(No results available),['GR'],[None],['Ongoing'],['insepsis@otenet.gr'],{'spon_id': 'ACHIEVE'}
+60,2020-001206-35,(No results available),"['AT', 'DE']","[None, None]","['Ongoing', 'Completed']","['kks-regulatory@i-med.ac.at', 'kks-regulatory@i-med.ac.at']",{'spon_id': 'ACEI-COVID-19'}
+61,2020-001696-32,(No results available),['ES'],[None],['Ongoing'],['IGregulatory.affairs@grifols.com'],{'spon_id': 'GC2004'}
+62,2020-001805-21,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['kavi.sharma@uhcw.nhs.uk'],{'spon_id': 'RA486120'}
+63,2020-001886-35,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['mike.grocott@soton.ac.uk'],"{'nct_id': 'NCT04362059', 'spon_id': 'RHMCRI0399'}"
+64,2020-001614-38,(No results available),['BE'],[None],['Completed'],['ctc@uzleuven.be'],{'spon_id': 'S63935'}
+65,2020-001573-78,(No results available),['FR'],[None],['Ongoing'],['renaud.martin@chu-limoges.fr'],{'spon_id': '87RI20_0012'}
+66,2020-001754-21,(No results available),['FR'],['2021-07-09'],['Prematurely Ended'],['promotion.interne@ap-hm.fr'],{'spon_id': '2020-23'}
+67,2020-001963-10,(No results available),['FR'],[None],['Ongoing'],['asmaa.jobic@ch-toulon.fr'],{'spon_id': '2020-CHITS-003'}
+68,2020-001536-98,(No results available),['ES'],['2020-04-27'],['Prematurely Ended'],['lboix@mutuaterrassa.cat'],{'spon_id': 'PREPSARS'}
+69,2020-001497-30,(No results available),"['GB', 'FR', 'DE', 'ES', 'IT']","[None, None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Temporarily Halted', 'Ongoing']","['clinicaltrials.eu@alexion.com', 'clinicaltrials.eu@alexion.com', 'clinicaltrials.eu@alexion.com', 'clinicaltrials.eu@alexion.com', 'clinicaltrials.eu@alexion.com']","{'nct_id': 'NCT04369469', 'spon_id': 'ALXN1210-COV-305'}"
+70,2020-001684-89,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],[],"{'isrctn': 'ISRCTN40580903', 'nct_id': 'NCT12345678', 'spon_id': 'RG_20-030'}"
+71,2020-001296-33,(No results available),['DK'],['2021-04-26'],['Completed'],['kristine.holst.pedersen.01@regionh.dk'],{'spon_id': 'COMBAT-COVID-19'}
+72,2020-001759-42,(No results available),"['GB', 'NL', 'ES', 'BE', 'DE']","[None, None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['GSKClinicalSupportHD@gsk.com', 'GSKClinicalSupportHD@gsk.com', 'es-ci@gsk.com', 'GSKClinicalSupportHD@gsk.com', 'GSKClinicalSupportHD@gsk.com']",{'spon_id': '214094'}
+73,2020-001597-30,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['clinicaltrials@4dpharmaplc.com'],{'spon_id': 'MRx-4DP0004-II-001'}
+74,2020-002111-22,(No results available),['PL'],[None],['Ongoing'],['hanna.czajka@onet.pl'],{'spon_id': 'BCG/COVID-19/UR/04/2020'}
+75,2020-001849-39,(No results available),['SE'],[None],['Ongoing'],['adam.linder@med.lu.se'],{'spon_id': 'NETs-C19'}
+76,2020-001951-42,(No results available),['PL'],[None],['Ongoing'],['jkubica@cm.umk.pl'],{'spon_id': 'ReCOVery-SIRIO'}
+77,2020-001571-32,(No results available),['FR'],[None],['Ongoing'],['eunice.nubret@aphp.fr'],{'spon_id': 'APHP200406'}
+78,2020-001363-85,View results,['DK'],[None],['Prematurely Ended'],[],{'spon_id': '60152610\u202c'}
+79,2020-001411-25,(No results available),"['DE', 'FR', 'AT', 'GB', 'ES', 'IT']","['2021-01-13', '2021-01-13', '2021-01-13', None, None, None]","['Completed', 'Completed', 'Completed', 'GB - no longer in EU/EEA', 'Temporarily Halted', 'Prematurely Ended']","['clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com']",{'spon_id': 'XPORT-COV-1001'}
+80,2020-001937-11,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],[],{'spon_id': '132333'}
+81,2020-001636-95,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['tim.felton@manchester.ac.uk'],{'spon_id': '282110'}
+82,2020-001481-11,(No results available),['DE'],[None],['Ongoing'],['ruxcoflam@med.uni-jena.de'],"{'nct_id': 'NCT04338958', 'spon_id': 'RuxCoFlam'}"
+83,2020-001889-10,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['magda.laskawiec@ouh.nhs.uk'],{'spon_id': 'STOIC'}
+84,2020-002120-37,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['contact@30.technology'],{'spon_id': 'RESP301-002'}
+85,2020-001497-30,(No results available),"['GB', 'FR', 'DE', 'ES', 'IT']","[None, None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Temporarily Halted', 'Ongoing']","['clinicaltrials.eu@alexion.com', 'clinicaltrials.eu@alexion.com', 'clinicaltrials.eu@alexion.com', 'clinicaltrials.eu@alexion.com', 'clinicaltrials.eu@alexion.com']","{'nct_id': 'NCT04369469', 'spon_id': 'ALXN1210-COV-305'}"
+86,2020-001767-86,(No results available),['IE'],[None],['Ongoing'],['crc.monitoring@ucd.ie'],{'spon_id': 'COVIRL-002'}
+87,2020-002060-31,(No results available),['CZ'],[None],['Prematurely Ended'],['demlova@med.muni.cz'],"{'isrctn': 'ISRCTN83971151', 'spon_id': 'WHOCOVID-19coreprotocol'}"
+88,2020-001777-71,View results,['GB'],[None],['GB - no longer in EU/EEA'],['Donal.mclornan@gstt.nhs.uk'],{'spon_id': 'RAVEN'}
+89,2020-001435-27,(No results available),['FR'],[None],['Ongoing'],['patrick.cassai@chu-bordeaux.fr'],"{'nct_id': 'NCT04356495', 'spon_id': 'CHUBX2020/12'}"
+90,2020-001271-33,(No results available),['FR'],[None],['Completed'],['DRCI-Promotion-Interne@chu-angers.fr'],{'spon_id': '49RC20_0071'}
+91,2020-001258-23,(No results available),['IT'],[None],['Ongoing'],['cconfalonieri@ao.pr.it'],"{'nct_id': 'NCT04322565', 'spon_id': 'ColCOVID19'}"
+92,2020-002230-32,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['Annya.Bruce@ed.ac.uk'],{'spon_id': ''}
+93,2020-002448-21,(No results available),['GR'],[None],['Ongoing'],['headad@sepsis.gr'],"{'nct_id': 'NCT04414267', 'spon_id': 'ACTIVATEII'}"
+94,2020-001740-26,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['octrutrialshub@ndorms.ox.ac.uk'],{'spon_id': 'ATOMIC2'}
+95,2020-001366-11,(No results available),"['ES', 'LT', 'IE', 'IT', 'PT', 'SK', 'RO', 'LV']","[None, None, None, None, None, None, None, None]","['Temporarily Halted', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['fibucicec.hcsc@salud.madrid.org', 'fibucicec.hcsc@salud.madrid.org', 'laimonas.griskevicius@santa.lt', 'j.eustace@ucc.ie', 'j.eustace@ucc.ie', 'evelina.tacconelli@univr.it', 'helena.beaumont@aicib.pt', 'helena.beaument@aicib.pt', 'ivv@health.gov.sk', 'alexandru.rafila@ms.ro', 'alexandru.rafila@ms.ro', 'Inese.Kaupere@vm.gov.lv', 'Inese.Kaupere@vm.gov.lv']",{'spon_id': 'Solidarity'}
+96,2020-001413-20,(No results available),['ES'],[None],['Temporarily Halted'],['fgarcia@clinic.cat'],{'spon_id': 'SILCOR-COVID19'}
+97,2020-001270-29,View results,"['DK', 'CZ', 'DE', 'GB', 'FR']","['2020-06-22', None, '2020-06-25', '2020-06-25', '2020-06-25']","['Prematurely Ended', 'Prematurely Ended', 'Prematurely Ended', 'Prematurely Ended', 'Prematurely Ended']","['Clinicaltrialsinfo.Denmark@sanofi.com', 'cz-info@sanofi.com', 'medinfo.de@sanofi.com', 'uk-medicalinformation@sanofi.com', 'Public-Registry-MA-France@sanofi.com']",{'spon_id': 'EFC16858'}
+98,2020-001198-55,View results,['DK'],[None],['Ongoing'],['jens.ulrik.jensen@regionh.dk'],{'spon_id': 'KronLungesyg_COVID_19_protokol_2'}
+99,2020-001750-22,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['t.shturova@nhs.net'],{'spon_id': '20HH5926'}
+100,2020-001504-42,(No results available),"['FR', 'BE']","[None, None]","['Ongoing', 'Ongoing']","['covtrem@inotrem.com', 'covtrem@inotrem.com']",{'spon_id': 'MOT-C-204'}
+101,2020-001747-21,(No results available),['PT'],[None],['Ongoing'],['secretaria@ispup.pt'],{'spon_id': 'ISPUP2020CT1'}
+102,2020-002106-68,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['cctu.flare@ucl.ac.uk'],{'spon_id': 'CTU/2020/354'}
+103,2020-001808-42,(No results available),['ES'],[None],['Ongoing'],['gescames@ugr.es'],{'spon_id': 'PHM-2020-001'}
+104,2020-002193-27,(No results available),['ES'],[None],['Ongoing'],['cpayares@idiphim.org'],{'spon_id': 'COVID-AT'}
+105,2020-001445-39,(No results available),['ES'],['2020-06-29'],['Prematurely Ended'],['xsolanich@bellvitgehospital.cat'],{'spon_id': 'TACRO-BELL-COVID'}
+106,2020-001765-37,(No results available),['ES'],['2020-06-26'],['Prematurely Ended'],['mgarciamartin@iconcologia.net'],{'spon_id': 'PROTOCOLO/ICO/COVID20'}
+107,2020-001707-16,(No results available),['ES'],[None],['Ongoing'],[],{'spon_id': 'TOCICOVID'}
+108,2020-001890-56,(No results available),['ES'],[None],['Ongoing'],['laura.navarro@bioithas.com'],{'spon_id': 'COVID-Γ'}
+109,2020-001794-77,(No results available),['ES'],[None],['Ongoing'],['bmartin@iconcologia.net'],{'spon_id': 'SilCOVID19'}
+110,2020-001929-31,(No results available),['ES'],[None],['Ongoing'],['anabelsanchez.hrc@gmail.com'],{'spon_id': 'ESCORPIO'}
+111,2020-002186-34,(No results available),['ES'],[None],['Ongoing'],[],{'spon_id': 'MP_COVID19'}
+112,2020-002310-41,(No results available),['ES'],[None],['Ongoing'],['nescalera@cnic.es'],{'spon_id': '“MADRID-COVID”'}
+113,2020-002166-13,(No results available),['ES'],[None],['Ongoing'],['rlleonart@bellvitgehospital.cat'],{'spon_id': 'HUB-MdI-ICAT-COVID-201'}
+114,2020-002449-41,(No results available),['ES'],[None],['Ongoing'],['antonio.antela.lopez@sergas.es'],{'spon_id': 'PRE-COVID'}
+115,2020-001904-41,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['liz-anne.lewsley@glasgow.ac.uk'],{'spon_id': 'GETAFIX-2020'}
+116,2020-002668-29,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],[],{'spon_id': '132796'}
+117,2020-002632-75,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],[],{'spon_id': 'CLI-050000-04'}
+118,2020-002494-10,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['d.j.collier@qmul.ac.uk'],{'spon_id': ''}
+119,2020-002476-13,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],[],{'spon_id': '20HH5958'}
+120,2020-002952-18,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['Freda.Gomes@nhs.net'],{'spon_id': 'Protocol'}
+121,2020-001417-21,View results,['BE'],['2020-06-26'],['Prematurely Ended'],['yvanherrewege@itg.be'],{'spon_id': 'ITM202004'}
+122,2020-001770-30,(No results available),['BE'],[None],['Prematurely Ended'],['camelia.rossi@hap.be'],{'spon_id': '2020COVID-19TCZ'}
+123,2020-002574-27,(No results available),['FR'],[None],['Ongoing'],['bp-prom-regl@chu-nantes.fr'],{'spon_id': 'RC20_0230'}
+124,2020-001333-13,(No results available),['FR'],['2020-08-07'],['Prematurely Ended'],['l.lamrani@hml.fr'],{'spon_id': '20-37815010'}
+125,2020-001739-28,(No results available),['BE'],['2021-05-04'],['Completed'],['caroline.devooght@uzleuven.be'],{'spon_id': 'S63979'}
+126,2020-001408-41,(No results available),['DE'],['2020-08-31'],['Prematurely Ended'],['tobias.wengenmayer@uniklinik-freiburg.de'],{'spon_id': 'UKF-MIT-2020-01'}
+127,2020-001888-90,(No results available),['DK'],[None],['Ongoing'],['open.adm@rsyd.dk'],{'spon_id': '20201504'}
+128,2020-002394-94,(No results available),['BE'],[None],['Ongoing'],['wilfried.debacker@outlook.com'],{'spon_id': 'PULSE-IIT-FluidDA-001'}
+129,2020-001644-25,(No results available),"['FR', 'DE', 'ES', 'SE', 'IT']","[None, '2020-11-17', None, '2020-11-17', None]","['Completed', 'Completed', 'Ongoing', 'Completed', 'Completed']","['acertamc@dlss.com', 'acertamc@dlss.com', 'acertamc@dlss.com', 'acertamc@dlss.com', 'acertamc@dlss.com']",{'spon_id': 'D822FC00001/ACE-ID-201'}
+130,2020-001673-75,(No results available),"['FR', 'DE', 'GB', 'ES', 'BE', 'IT']","['2021-04-16', '2021-03-16', None, None, '2021-04-16', None]","['Prematurely Ended', 'Completed', 'GB - no longer in EU/EEA', 'Ongoing', 'Prematurely Ended', 'Ongoing']","['Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com']",{'spon_id': 'ABX464-401'}
+131,2020-002503-19,(No results available),"['NL', 'GB']","[None, None]","['Ongoing', 'GB - no longer in EU/EEA']",['S.Rhodes@exeter.ac.uk'],"{'nct_id': 'NCT04327206', 'spon_id': '62586'}"
+132,2020-002314-40,(No results available),['AT'],[None],['Ongoing'],['klin-pharmakologie@meduniwien.ac.at'],{'spon_id': 'CoV-2_DDI'}
+133,2020-001860-27,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['e.marwood@soton.ac.uk'],{'spon_id': 'UoL001542'}
+134,2020-001466-11,(No results available),['GR'],[None],['Ongoing'],['insepsis@otenet.gr'],{'spon_id': 'SAVE'}
+135,2020-001643-13,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['j.chalmers@dundee.ac.uk'],"{'isrctn': 'ISRCTN30564012', 'spon_id': '01.01.20'}"
+136,2020-001281-11,(No results available),['FR'],['2020-04-28'],['Prematurely Ended'],['carine.labruyere@chu-st-etienne.fr'],{'spon_id': '20CH065'}
+137,2020-001530-35,(No results available),['ES'],[None],['Ongoing'],['alberto.borobia@salud.madrid.org'],{'spon_id': 'MeCOVID'}
+138,2020-001634-36,(No results available),['ES'],[None],['Ongoing'],['mariadelrosario.garcia@salud.madrid.org'],{'spon_id': 'SARCOVID'}
+139,2020-001622-64,(No results available),['ES'],[None],['Ongoing'],['mjcoma@hubu.es'],{'spon_id': 'TAC-COVID19'}
+140,2020-001722-66,(No results available),['ES'],[None],['Ongoing'],['acruceta@clinic.cat'],{'spon_id': 'REP_COVID'}
+141,2020-001505-22,(No results available),['ES'],[None],['Ongoing'],['rucoll@bst.cat'],{'spon_id': 'BST-COVID-01'}
+142,2020-001541-39,(No results available),['ES'],[None],['Ongoing'],['uicec@imibic.org'],{'spon_id': 'BEVACOR'}
+143,2020-001618-39,(No results available),['ES'],[None],['Ongoing'],['sgutierrez@oryzon.com'],{'spon_id': 'CL08-ORY-2001_COVID-19'}
+144,2020-000705-86,(No results available),['ES'],[None],['Ongoing'],['dberlana@vhebron.net'],{'spon_id': '01-2020'}
+145,2020-001825-29,(No results available),['ES'],[None],['Ongoing'],['ruth.garcia.rey@navarra.es'],{'spon_id': 'ANA-COVID-GEAS'}
+146,2020-001697-30,(No results available),['ES'],[None],['Ongoing'],['ruth.garcia.rey@navarra.es'],{'spon_id': 'COVIDNA'}
+147,2020-001376-15,(No results available),['DE'],['2020-09-03'],['Prematurely Ended'],['info@vakzine-manager.de'],{'spon_id': 'VPM1002-DE-3.06CoV'}
+148,2020-002728-35,(No results available),['HU'],[None],['Ongoing'],['krisztina.hracs@adwareresearch.com'],{'spon_id': 'HUN-AVI-01'}
+149,2020-001640-26,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],[],{'spon_id': '132151'}
+150,2020-003470-47,(No results available),['NL'],[None],['Ongoing'],['C.deHaas-3@umcutrecht.nl'],{'spon_id': '74730.041.20'}
+151,2020-001686-36,(No results available),['FR'],[None],['Ongoing'],['promotion.interne@ap-hm.fr'],{'spon_id': '2020-21'}
+152,2020-001367-88,View results,['DK'],[None],['Prematurely Ended'],['charlotte.kastberg.levin.01@regionh.dk'],{'spon_id': '25032020'}
+153,2020-001395-15,(No results available),['DK'],['2020-09-03'],['Prematurely Ended'],['anders.perner@regionh.dk'],{'spon_id': 'Awaiting'}
+154,2020-002542-16,(No results available),"['GB', 'GR', 'DK', 'DE']","[None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Completed']","['s.pett@ucl.ac.uk', 's.pett@ucl.ac.uk', 'jens.lundgren@regionh.dk', 'jens.lundgren@regionh.dk']",{'spon_id': 'INSIGHT-013-ITAC'}
+155,2020-001807-18,(No results available),"['GB', 'FI']","[None, '2021-04-21']","['GB - no longer in EU/EEA', 'Completed']","['rsaggar@theravance.com', 'rsaggar@theravance.com']","{'nct_id': 'NCT04402866', 'spon_id': 'TD-0903-0188'}"
+156,2020-001327-13,(No results available),['AT'],['2021-06-14'],['Completed'],['mattias.preusser@meduniwien.ac.at'],{'spon_id': 'OnCoVID19Trial'}
+157,2020-002110-41,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['regulatory@cancer.org.uk'],{'spon_id': 'CRUKD/20/002'}
+158,2020-001610-38,(No results available),['DK'],[None],['Ongoing'],[],{'spon_id': 'JAGG2020-1'}
+159,2020-001498-63,(No results available),"['FR', 'BE', 'GB']","[None, None, None]","['Ongoing', 'Ongoing', 'GB - no longer in EU/EEA']","['mounia.chabane@biophytis.com', 'mounia.chabane@biophytis.com', 'mounia.chabane@biophytis.com']",{'spon_id': 'BIO101-CL05'}
+160,2020-004928-42,(No results available),['HU'],[None],['Ongoing'],['krisztina.hracs@adwareresearch.com'],{'spon_id': 'REM-ENY-01'}
+161,2020-001473-79,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['afaibusevics@georgeclinical.com'],"{'nct_id': 'NCT04350593', 'spon_id': 'ESR-20-20653'}"
+162,2020-002211-21,(No results available),"['GB', 'CZ']","[None, '2021-05-12']","['GB - no longer in EU/EEA', 'Completed']","['info@sgscapital.org', 'info@sgscapital.org']",{'spon_id': 'SGS.1656.201'}
+163,2020-001803-17,(No results available),"['GB', 'IT']","[None, None]","['GB - no longer in EU/EEA', 'Ongoing']","['clinical.trials@gilead.com', 'clinical.trials@gilead.com']",{'spon_id': 'GS-US-540-5823'}
+164,2020-001010-38,(No results available),['NO'],['2020-05-20'],['Prematurely Ended'],['jan.erik.berdal@medisin.uio.no'],{'spon_id': 'Ahus-NO-COVID-19'}
+165,2020-001455-40,(No results available),['GR'],[None],['Completed'],['dvrachatis@gmail.com'],"{'nct_id': 'NCT04326790', 'spon_id': 'GRECCO-19'}"
+166,2020-002295-13,(No results available),['FR'],[None],['Ongoing'],['candy.estevez@aphp.fr'],{'spon_id': 'APHP200552'}
+167,2020-001734-36,(No results available),['FR'],[None],['Prematurely Ended'],['e.mousset@chu-tours.fr'],{'spon_id': 'DR200111'}
+168,2020-001867-94,(No results available),['FR'],[None],['Ongoing'],['parienti-jj@chu-caen.fr'],{'spon_id': '20-070'}
+169,2020-001745-40,(No results available),['IT'],[None],['Ongoing'],['agostino.riva@unimi.it'],{'spon_id': 'COVID-SARI-001'}
+170,2020-001732-10,(No results available),['DE'],[None],['Ongoing'],['yasmin.moran@kks.uni-marburg.de'],{'spon_id': 'KKS-278'}
+171,2020-003486-19,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['j.chalmers@dundee.ac.uk'],{'spon_id': '1.002.20'}
+172,2020-001162-12,View results,"['DE', 'FR', 'IT', 'ES']","['2020-09-02', '2020-09-02', None, None]","['Completed', 'Completed', 'Completed', 'Ongoing']","['medinfo.de@sanofi.com', 'Public-Registry-MA-France@sanofi.com', 'informazioni.medicoscientifiche@sanofi.com', 'es-unidadestudiosclinicos@sanofi.com']",{'spon_id': 'EFC16844'}
+173,2020-003689-37,(No results available),['FR'],[None],['Ongoing'],['bp-prom-regl@chu-nantes.fr'],{'spon_id': 'RC20_0319'}
+174,2020-002677-95,(No results available),['IT'],[None],['Ongoing'],['info@redhillbio.com'],{'spon_id': 'ABC-201'}
+175,2020-001662-11,View results,"['DE', 'GB', 'FR', 'ES', 'IT']","['2020-10-17', None, '2020-10-17', None, None]","['Completed', 'GB - no longer in EU/EEA', 'Completed', 'Ongoing', 'Completed']","['infoservice.novartis@novartis.com', 'icm.phfr@novartis.com', 'eecc.novartis@novartis.com', 'info.studiclinici@novartis.com']",{'spon_id': 'CINC424J12301'}
+176,2020-001689-12,(No results available),"['ES', 'GB', 'FR', 'GR']","[None, None, '2020-12-18', None]","['Ongoing', 'GB - no longer in EU/EEA', 'Prematurely Ended', 'Ongoing']","['alberto.borobia@salud.madrid.org', 'Zohar.Bassevitch@mhicc.org', 'Zohar.Bassevitch@mhicc.org', 'Zohar.Bassevitch@mhicc.org']","{'nct_id': 'NCT04322682', 'spon_id': 'MHIPS-2020-001'}"
+177,2020-004123-16,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['LKumar@Novavax.com'],"{'nct_id': 'NCT04583995', 'spon_id': '2019nCoV-302'}"
+178,2020-001275-32,(No results available),['DK'],['2020-10-09'],['Prematurely Ended'],['lars.erik.kristensen@regionh.dk'],{'spon_id': 'APPI2-CV-2020-01'}
+179,2020-002122-82,(No results available),['DE'],[None],['Ongoing'],['holger.hackstein@uk-erlangen.de'],"{'nct_id': 'NCT04712344', 'spon_id': 'UKER-COV2-01'}"
+180,2020-001891-14,(No results available),['ES'],[None],['Ongoing'],['secretaria@delosclinical.com'],{'spon_id': 'Heparin-SARS-CoV2'}
+181,2020-002032-69,(No results available),['ES'],[None],['Ongoing'],['ensayosclinicos@dynasolutions.com'],{'spon_id': 'COVITOZ-01'}
+182,2020-001827-15,(No results available),['ES'],[None],['Ongoing'],['ruth.garcia.rey@navarra.es'],{'spon_id': 'CORTIVID'}
+183,2020-001603-16,(No results available),['ES'],[None],['Ongoing'],['mmar.garcia@scsalud.es'],{'spon_id': 'COLCHI-COVID'}
+184,2020-001994-66,(No results available),['ES'],[None],['Ongoing'],['tomas.perez.porcuna@gmail.com'],{'spon_id': 'ECIT-PRO19'}
+185,2020-001934-37,(No results available),['ES'],[None],['Ongoing'],['mmar.garcia@scsalud.es'],{'spon_id': 'GLUCOCOVID'}
+186,2020-001474-29,(No results available),['ES'],[None],['Ongoing'],['ucicec@unav.es'],{'spon_id': 'SAINT'}
+187,2020-001953-36,(No results available),['ES'],[None],['Ongoing'],['IGregulatory.affairs@grifols.com'],{'spon_id': 'GC2005'}
+188,2020-001512-26,(No results available),['DE'],['2020-10-12'],['Prematurely Ended'],['diane.egger-adam@uni-tuebingen.de'],"{'nct_id': 'NCT04340544', 'spon_id': 'COMIHY'}"
+189,2020-001903-17,(No results available),['ES'],[None],['Ongoing'],['NIEVES.TARIN@SALUD.MADRID.ORG'],{'spon_id': 'HMos-012020'}
+190,2020-002114-40,(No results available),['FR'],[None],['Ongoing'],['didier.bouton@aphp.fr'],{'spon_id': 'APHP200527'}
+191,2020-001852-16,(No results available),['NL'],[None],['Ongoing'],['r.traksel@mmc.nl'],{'spon_id': '01-04-2020'}
+192,2020-002056-20,(No results available),['FR'],['2021-06-13'],['Completed'],['carla.vandenabele@aphp.fr'],{'spon_id': 'APHP200495'}
+193,2020-004144-28,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],[],"{'isrctn': 'ISRCTN88057279', 'nct_id': 'NCT04389359', 'spon_id': 'CCTU0307'}"
+194,2020-002497-27,(No results available),['CZ'],[None],['Ongoing'],['jiri.skopek1@ftn.cz'],{'spon_id': 'KFJ-2020-01_IMUNOR'}
+195,2020-001736-95,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['sponsor@uhs.nhs.uk'],"{'spon_id': 'ACCORD-2-001,Sub002,003,006'}"
+196,2020-002293-28,(No results available),['SE'],[None],['Ongoing'],['magnus.back@ki.se'],{'spon_id': '2020-002293-28'}
+197,2020-001072-15,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['andrew.pollard@paediatrics.ox.ac.uk'],{'spon_id': 'COV001'}
+198,2020-002225-29,(No results available),['FR'],[None],['Ongoing'],['s.sahbane@vivactis-m2research.com'],{'spon_id': 'AntagoBrad-Cov'}
+199,2020-001467-82,(No results available),['NL'],[None],['Ongoing'],['y.k.o.teng@lumc.nl'],{'spon_id': 'P020.051'}
+200,2020-004743-83,(No results available),"['GB', 'BE', 'PT', 'IT', 'DE']","[None, None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['Sophie.Hemmings@synairgen.com', 'Sophie.Hemmings@synairgen.com', 'Sophie.Hemmings@synairgen.com', 'Sophie.Hemmings@synairgen.com', 'Sophie.Hemmings@synairgen.com']",{'spon_id': 'SG018'}
+201,2020-004356-16,(No results available),"['GB', 'BE', 'FR']","[None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing']","['Information.center@astrazeneca.com', 'Information.center@astrazeneca.com', 'Information.center@astrazeneca.com']",{'spon_id': 'D8850C00002'}
+202,2020-001553-48,(No results available),['FR'],['2020-08-18'],['Prematurely Ended'],['drci_promo@chu-lyon.fr'],{'spon_id': '69HCL20_0321'}
+203,2020-001357-52,(No results available),['ES'],[None],['Ongoing'],['mmar.garcia@scsalud.es'],"{'nct_id': 'NCT04330495', 'spon_id': 'EnCovid-hidroxiCLOROQUINA'}"
+204,2020-001319-26,(No results available),['ES'],[None],['Ongoing'],['mireia.arcas@fjd.es'],{'spon_id': 'FJD-COVID-ESTATINAS'}
+205,2020-001995-13,(No results available),['ES'],[None],['Ongoing'],['raul.m@dynasolutions.com'],{'spon_id': 'BREATH-19'}
+206,2020-002274-28,(No results available),['ES'],[None],['Ongoing'],['enrique.caso@gmail.com'],{'spon_id': 'COVID-VIT-D'}
+207,2020-001704-42,(No results available),['ES'],[None],['Ongoing'],['mmar.garcia@scsalud.es'],{'spon_id': 'SANsinCOVID'}
+208,2020-002287-31,(No results available),['ES'],[None],['Ongoing'],['gloria.luque@ibima.eu'],{'spon_id': 'PREVICHARM'}
+209,2020-002037-15,(No results available),['ES'],[None],['Ongoing'],['mariabelen.ruiz@salud.madrid.org'],{'spon_id': 'SARTRE'}
+210,2020-001960-28,(No results available),['ES'],[None],['Ongoing'],['INES.PEREZFRANCISCO@osakidetza.eus'],{'spon_id': 'RCTVITD/SARS-CoV-19'}
+211,2020-001841-38,(No results available),['ES'],[None],['Ongoing'],['alberto.cecconi@salud.madrid.org'],{'spon_id': 'Col-VID'}
+212,2020-002456-21,(No results available),['NL'],['2020-09-03'],['Completed'],['jaap.tenoever@radboudumc.nl'],{'spon_id': '74082'}
+213,2020-001605-23,(No results available),['ES'],[None],['Ongoing'],['INES.PEREZFRANCISCO@osakidetza.eus'],{'spon_id': 'HUA-COVID-19'}
+214,2020-002312-43,(No results available),['ES'],[None],['Ongoing'],['mcerveroj@gmail.com'],{'spon_id': '01052020'}
+215,2020-001671-32,(No results available),['ES'],[None],['Ongoing'],['lxjiang@staidsonbio.com'],{'spon_id': 'STS-BDB001-04'}
+216,2020-002009-25,(No results available),['CZ'],[None],['Ongoing'],['matejovic@fnplzen.cz'],{'spon_id': 'SARSCov2EFTI1.0'}
+217,2020-001971-33,(No results available),['ES'],[None],['Ongoing'],['sergiosequera15@gmail.com'],{'spon_id': 'CORIVER'}
+218,2020-002567-57,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['ctrg@admin.ox.ac.uk'],{'spon_id': '1.0'}
+219,2020-004682-39,(No results available),['CZ'],[None],['Ongoing'],['jiri.skopek1@ftn.cz'],{'spon_id': 'KFJ-2020-02_NORMOSANG'}
+220,2020-001689-12,(No results available),"['ES', 'GB', 'FR', 'GR']","[None, None, '2020-12-18', None]","['Ongoing', 'GB - no longer in EU/EEA', 'Prematurely Ended', 'Ongoing']","['alberto.borobia@salud.madrid.org', 'Zohar.Bassevitch@mhicc.org', 'Zohar.Bassevitch@mhicc.org', 'Zohar.Bassevitch@mhicc.org']","{'nct_id': 'NCT04322682', 'spon_id': 'MHIPS-2020-001'}"
+221,2020-001113-21,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],[],"{'isrctn': 'ISRCTN50189673', 'nct_id': 'NCT04381936', 'spon_id': 'NDPHRECOVERY'}"
+222,2020-001784-88,(No results available),['FI'],[None],['Ongoing'],['kari.tikkinen@gmail.com'],{'spon_id': 'WHO-FIN-COVID-19'}
+223,2020-001654-21,(No results available),['DE'],[None],['Ongoing'],['nelli.ens@kks.uni-marburg.de'],{'spon_id': 'KKS-279'}
+224,2020-000936-23,(No results available),"['FR', 'BE', 'AT', 'PT', 'CZ', 'NO', 'HU']","[None, None, None, None, None, None, None]","['Ongoing', 'Ongoing', 'Temporarily Halted', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['rqrc.siege@inserm.fr', 'christelle.delmas@inserm.fr', 'juliette.saillard@inserm.fr', 'juliette.saillard@inserm.fr', 'juliette.saillard@inserm.fr', 'christelle.delmas@inserm.fr', 'christelle.delmas@inserm.fr']",{'spon_id': 'C20-15'}
+225,2020-001228-32,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['Andrew.pollard@paediatrics.ox.ac.uk'],{'spon_id': 'COV002'}
+226,2020-003643-29,(No results available),"['GB', 'DE', 'ES', 'BE']","[None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Temporarily Halted', 'Ongoing']","['ClinicalTrialsEU@its.jnj.com', 'ClinicalTrialsEU@its.jnj.com', 'drarribas.vaccov@gmail.com', 'ClinicalTrialsEU@its.jnj.com']",{'spon_id': 'VAC31518COV3009'}
+227,2020-002502-75,(No results available),['DE'],[None],['Ongoing'],['zks-pm@med.uni-tuebingen.de'],{'spon_id': 'P-pVAC-SARS-CoV-2'}
+228,2020-001928-34,(No results available),['SE'],[None],['Ongoing'],['gunilla.wahlstrom@capiostgoran.se'],{'spon_id': 'HALT_Covid-19'}
+229,2020-003654-71,(No results available),"['RO', 'GR']","[None, None]","['Ongoing', 'Completed']","['clinicaltrials@regeneron.com', 'clinicaltrials@regeneron.com']","{'nct_id': 'NCT04452318', 'spon_id': 'R10933-10987-COV-2069'}"
+230,2020-004994-27,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['Freda.Gomes@nhs.net'],{'spon_id': '2020SW03'}
+231,2020-002504-39,(No results available),['DE'],[None],['Ongoing'],['regulatory@ctc-north.com'],{'spon_id': 'HERO-19'}
+232,2020-001558-23,(No results available),['IT'],[None],['Ongoing'],['hcq.stop.covid19.trial@gmail.com'],{'spon_id': 'COFID19-AIFA17/2020'}
+233,2020-004323-16,(No results available),['IT'],[None],['Ongoing'],['massimo.costantini@ausl.re.it'],{'spon_id': 'RCT-MP-COVID-19'}
+234,2020-001921-30,(No results available),['IT'],[None],['Ongoing'],['mighali.pasquale@aou.mo.it'],{'spon_id': 'STAUNCH-19'}
+235,2020-004285-19,(No results available),['IT'],[None],['Ongoing'],['cfr@unife.it'],{'spon_id': 'NCT04505774'}
+236,2020-001645-40,(No results available),['IT'],[None],['Ongoing'],['flavio.mantelli@dompe.com'],{'spon_id': 'REPAVID-19'}
+237,2020-003936-25,(No results available),"['IT', 'FR']","[None, None]","['Ongoing', 'Ongoing']","['Flavio.Mantelli@dompe.com', 'flavio.mantelli@dompe.com']",{'spon_id': 'RLX0120'}
+238,2020-004719-28,(No results available),['GB'],[None],['GB - no longer in EU/EEA'],['Information.center@astrazeneca.com'],{'spon_id': 'D8850C00003'}
+239,2020-003367-26,(No results available),"['GB', 'SE', 'PL', 'IT']","[None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Ongoing']","['tayeb.naveed@msd.com', 'gcto.italy@merck.com']","{'nct_id': 'NCT04575584', 'spon_id': 'MK-4482-001'}"
+240,2020-003368-24,(No results available),"['GB', 'DE', 'IT']","[None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing']","['tayeb.naveed@msd.com', 'matthew.johnson1@merck.com', 'gcto.italy@merck.com']",{'spon_id': 'MK-4482-002'}
+241,2020-001370-30,(No results available),"['DE', 'GB', 'FR', 'ES', 'HU', 'IT']","[None, None, '2020-12-22', None, '2020-12-22', None]","['Completed', 'GB - no longer in EU/EEA', 'Completed', 'Ongoing', 'Completed', 'Completed']","['infoservice.novartis@novartis.com', 'icm.phfr@novartis.com', 'eecc.novartis@novartis.com', 'infoph.hungary@novartis.com', 'info.studiclinici@novartis.com']",{'spon_id': 'CACZ885D2310'}
+242,2020-002259-39,(No results available),['HU'],['2021-01-15'],['Prematurely Ended'],['jbockhorn@teliospharma.com'],{'spon_id': 'TL-895-202'}
+243,2020-002234-32,(No results available),"['BE', 'IT']","[None, None]","['Ongoing', 'Ongoing']","['Marco.Valgimigli@insel.ch', 'marco.valgimigli@insel.ch']",{'spon_id': 'CONVINCE'}
+244,2020-001857-31,(No results available),"['DE', 'BG']","[None, None]","['Ongoing', 'Ongoing']","['Lirans@pluristem.com', 'Lirans@pluristem.com']",{'spon_id': 'PLX-COV-03'}
+245,2020-001513-20,(No results available),['IT'],[None],['Ongoing'],['urc.scp@hsr.it'],"{'nct_id': 'NCT04335201', 'spon_id': 'DEFI-VID19'}"
+246,2020-001795-15,(No results available),['IT'],[None],['Ongoing'],['direzione.unirar@hsr.it'],{'spon_id': 'COMBAT-19'}
+247,2020-001987-28,(No results available),['IT'],[None],['Ongoing'],['comi.giancarlo@hsr.it'],{'spon_id': 'PRECOV'}
+248,2020-002458-25,(No results available),['IT'],[None],['Ongoing'],['bosi.emanuele@hsr.it'],{'spon_id': 'INTERCOP'}
+249,2020-001390-76,(No results available),['IT'],[None],['Ongoing'],['immunodeficienzevirali@inmi.it'],{'spon_id': 'ESCAPE'}
+250,2020-001528-32,(No results available),['IT'],[None],['Ongoing'],['simone.lanini@inmi.it'],{'spon_id': 'ARCO-Homestudy'}
+251,2020-002119-23,(No results available),['IT'],[None],['Ongoing'],['ufficio.studiclinici@ieo.it'],{'spon_id': 'IEO1253'}
+252,2020-001501-24,(No results available),['IT'],[None],['Ongoing'],['cc.ubsc@irst.emr.it'],{'spon_id': 'IRST100.47'}
+253,2020-002283-32,(No results available),['IT'],[None],['Ongoing'],['ricerca.clinica@sacrocuore.it'],{'spon_id': '2020-34'}
+254,2020-001854-23,(No results available),['IT'],[None],['Ongoing'],['evelina.tacconelli@univr.it'],{'spon_id': 'AMMURAVID'}
+255,2020-001441-39,(No results available),"['GB', 'IT']","[None, None]","['GB - no longer in EU/EEA', 'Ongoing']",['ricerca.clinica@sacrocuore.it'],{'spon_id': 'VIR20001'}
+256,2020-003872-42,(No results available),['IT'],[None],['Ongoing'],['filippo.belardelli@ift.cnr.it'],{'spon_id': 'ANTIICIPATE'}
+257,2020-001257-51,(No results available),['DK'],['2020-12-16'],['Prematurely Ended'],[],{'spon_id': '220322020'}
+258,2020-000982-18,(No results available),"['NO', 'SE']","[None, None]","['Ongoing', 'Prematurely Ended']","['andreas.barrattdue@gmail.com', 'soo.aleman@sll.se']",{'spon_id': 'WHO-NOR-COVID-19'}
+259,2020-001498-63,(No results available),"['FR', 'BE', 'GB']","[None, None, None]","['Ongoing', 'Ongoing', 'GB - no longer in EU/EEA']","['mounia.chabane@biophytis.com', 'mounia.chabane@biophytis.com', 'mounia.chabane@biophytis.com']",{'spon_id': 'BIO101-CL05'}
+260,2020-001172-15,(No results available),"['DE', 'DK', 'AT', 'GB']","['2020-12-26', '2020-12-26', '2020-12-26', None]","['Completed', 'Completed', 'Completed', 'GB - no longer in EU/EEA']","['sonja.hoeller@apeiron-biologics.com', 'sonja.hoeller@apeiron-biologics.com', 'sonja.hoeller@apeiron-biologics.com', 'sonja.hoeller@apeiron-biologics.com']",{'spon_id': 'APN01-01-COVID19'}
+261,2020-004206-59,(No results available),['ES'],[None],['Ongoing'],['Team.CDS@atriva-therapeutics.com'],{'spon_id': 'ATR-002-202'}
+262,2020-003505-58,(No results available),['IT'],[None],['Ongoing'],[],{'spon_id': 'INCIPIT'}
+263,2020-002233-15,(No results available),['DE'],[None],['Ongoing'],['kristin.herzog@charite-research.org'],{'spon_id': 'NICCAM-001'}
+264,2020-001366-11,(No results available),"['ES', 'LT', 'IE', 'IT', 'PT', 'SK', 'RO', 'LV']","[None, None, None, None, None, None, None, None]","['Temporarily Halted', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['fibucicec.hcsc@salud.madrid.org', 'fibucicec.hcsc@salud.madrid.org', 'laimonas.griskevicius@santa.lt', 'j.eustace@ucc.ie', 'j.eustace@ucc.ie', 'evelina.tacconelli@univr.it', 'helena.beaumont@aicib.pt', 'helena.beaument@aicib.pt', 'ivv@health.gov.sk', 'alexandru.rafila@ms.ro', 'alexandru.rafila@ms.ro', 'Inese.Kaupere@vm.gov.lv', 'Inese.Kaupere@vm.gov.lv']",{'spon_id': 'Solidarity'}
+265,2020-001608-40,(No results available),['DE'],['2021-02-15'],['Prematurely Ended'],['cristina.igrisan@tigermedgrp.com'],{'spon_id': 'HS216C17(MRCT)'}
+266,2021-000166-15,(No results available),['HU'],[None],['Ongoing'],['info@cortexps.hu'],{'spon_id': 'IVM-2021-01'}
+267,2020-005539-62,(No results available),['HU'],[None],['Ongoing'],['laszlo.bicskei@mitochon-technologies.com'],{'spon_id': 'BGP-15-CLIN-07'}
+268,2021-000516-37,(No results available),['HU'],[None],['Ongoing'],['info@turnsolebiologics.com'],{'spon_id': 'TS-020DESE'}
+269,2020-005915-39,(No results available),['IT'],[None],['Ongoing'],['simone.lanini@inmi.it'],{'spon_id': 'RT-CoV-2_01'}
+270,2021-001072-41,(No results available),['NL'],[None],['Ongoing'],['cobra-kai@amsterdamumc.nl'],{'spon_id': 'COBRA-KAI'}
+271,2020-005315-44,(No results available),"['DE', 'HU', 'PL', 'BG']","[None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['Information.Center@astrazeneca.com', 'Information.Center@astrazeneca.com', 'Information.Center@astrazeneca.com', 'Information.Center@astrazeneca.com']","{'nct_id': 'NCT04723394', 'spon_id': 'D8851C00001'}"
+272,2020-001936-86,(No results available),['DE'],[None],['Ongoing'],[],{'spon_id': 'COMET'}
+273,2020-001224-33,(No results available),['DE'],['2021-02-26'],['Prematurely Ended'],['diane.egger-adam@uni-tuebingen.de'],"{'nct_id': 'NCT04342221', 'spon_id': 'COV-HCQ'}"
+274,2020-001420-34,(No results available),['DK'],['2021-01-25'],['Completed'],['us@biomed.au.dk'],{'spon_id': '0001'}
+275,2020-003904-15,(No results available),['DK'],[None],['Ongoing'],['open.adm@rsyd.dk'],{'spon_id': '20202407'}
+276,2021-001054-57,(No results available),['NL'],[None],['Ongoing'],['K.Brinkman@olvg.nl'],{'spon_id': 'NL76562.100.21'}
+277,2020-002130-33,(No results available),['BE'],[None],['Ongoing'],['hiruz.ctu@uzgent.be'],{'spon_id': 'ZILU-COV'}
+278,2021-001279-18,(No results available),['Outside EU/EEA'],[None],[None],[],
+279,2020-005979-12,(No results available),"['GR', 'BG']","[None, None]","['Ongoing', 'Ongoing']","['bernard.vanhove@xenothera.com', 'bernard.vanhove@xenothera.com']",{'spon_id': 'XT-2002'}
+280,2020-002345-42,(No results available),"['ES', 'FR']","[None, None]","['Ongoing', 'Ongoing']","['ATORRES@clinic.cat', 'patrick.langohr@biotest.com']",{'spon_id': '998'}
+281,2020-005963-29,(No results available),['DK'],[None],['Ongoing'],['charlotte.kastberg.levin.01@regionh.dk'],{'spon_id': 'ERM62646-A'}
+282,2020-005961-16,(No results available),['DK'],[None],['Ongoing'],['KRTHAS@rm.dk'],{'spon_id': 'QVID-001'}
+283,2021-000320-35,(No results available),['CZ'],[None],['Ongoing'],['admin@oxygenbiotech.com'],{'spon_id': 'OB001'}
+284,2021-000710-42,(No results available),['NL'],[None],['Ongoing'],['d.tencate@maartenskliniek.nl'],{'spon_id': 'RR-xx-RTX-COVAC'}
+285,2020-001504-42,(No results available),"['FR', 'BE']","[None, None]","['Ongoing', 'Ongoing']","['covtrem@inotrem.com', 'covtrem@inotrem.com']",{'spon_id': 'MOT-C-204'}
+286,2021-000842-16,(No results available),['SE'],[None],['Ongoing'],['Kristina.jakobsson@amm.gu.se'],{'spon_id': 'PIRVACoV'}
+287,2020-002982-33,(No results available),['SE'],[None],['Ongoing'],['janet.hakansson@ctc-ab.se'],{'spon_id': '2020-PDNO-002'}
+288,2020-005801-14,(No results available),['PL'],[None],['Ongoing'],['ClinicalTrialsEU@its.jnj.com'],{'spon_id': 'VAC31518COV3003'}
+289,2021-000182-33,(No results available),['NL'],[None],['Ongoing'],['konstantin.fohse@radboudumc.nl'],{'spon_id': '76421'}
+290,2021-000206-17,(No results available),['SE'],[None],['Ongoing'],['joakim.dillner@sll.se'],{'spon_id': 'COVID19_7'}
+291,2021-000349-42,(No results available),['SE'],[None],['Ongoing'],[],{'spon_id': 'DurIRVac-1'}
+292,2020-005291-35,(No results available),['IT'],[None],['Ongoing'],['nb.protocolli@unimore.it'],{'spon_id': 'ANTICIPANT'}
+293,2020-005763-31,(No results available),"['PL', 'IT']","[None, None]","['Ongoing', 'Ongoing']","['valentin.fuster@mountsinai.org', 'valentin.fuster@mountsinai.org']","{'nct_id': 'NCT04512079', 'spon_id': 'V1.610AUG2020'}"
+294,2021-000454-26,(No results available),['NL'],[None],['Ongoing'],['a.h.e.roukens@lumc.nl'],{'spon_id': '76702'}
+295,2020-005828-11,(No results available),['GR'],[None],['Ongoing'],['insepsis@otenet.gr'],{'spon_id': 'SAVE-MORE'}
+296,2020-001602-34,(No results available),['FR'],[None],['Completed'],['justine.gonsard@chu-angers.fr'],{'spon_id': '49RC20_0080'}
+297,2020-002091-12,(No results available),['BG'],['2020-10-08'],['Completed'],['Spas.Petkov@huvepharma.com'],{'spon_id': 'HUVE-19-CT-001'}
+298,2020-001498-63,(No results available),"['FR', 'BE', 'GB']","[None, None, None]","['Ongoing', 'Ongoing', 'GB - no longer in EU/EEA']","['mounia.chabane@biophytis.com', 'mounia.chabane@biophytis.com', 'mounia.chabane@biophytis.com']",{'spon_id': 'BIO101-CL05'}
+299,2020-004408-32,(No results available),['GR'],[None],['Ongoing'],['pskendro@med.duth.gr'],{'spon_id': 'AMY-101_ITHACA'}
+300,2020-002772-12,(No results available),['FR'],[None],['Ongoing'],['dripromoteur@chru-nancy.fr'],{'spon_id': '2020PI088'}
+301,2020-001749-38,(No results available),['IT'],[None],['Ongoing'],['alberto.signore@uniroma1.it'],{'spon_id': 'IL2-COVID'}
+302,2020-002345-42,(No results available),"['ES', 'FR']","[None, None]","['Ongoing', 'Ongoing']","['ATORRES@clinic.cat', 'patrick.langohr@biotest.com']",{'spon_id': '998'}
+303,2020-003614-13,(No results available),['IT'],[None],['Ongoing'],['info.studiclinici@opis.it'],{'spon_id': 'hzVSF_v13-0006'}
+304,2020-001325-31,(No results available),['NL'],['2021-01-21'],['Completed'],['Michel.deGroot@radboudumc.nl'],{'spon_id': 'NL73551.091.20'}
+305,2020-004571-41,(No results available),"['SK', 'HU']","[None, None]","['Ongoing', 'Ongoing']","['rauno.oja@egeeninc.com', 'rauno.oja@egeeninc.com']",{'spon_id': 'RBMinCovid19'}
+306,2020-005919-51,(No results available),['IT'],[None],['Ongoing'],['flavio.mantelli@dompe.com'],{'spon_id': 'REP0220'}
+307,2020-001038-36,(No results available),['DE'],[None],['Ongoing'],['Ruben.Rizzi@BioNTech.de'],{'spon_id': 'BNT162-01'}
+308,2020-001632-10,(No results available),['DE'],[None],['Ongoing'],['Carsten.Mueller-Tidow@med.uni-heidelberg.de'],{'spon_id': 'SARS-CoV-2CP-HD-001'}
+309,2020-003349-12,(No results available),['IE'],[None],['Ongoing'],['john.laffey@nuigalway.ie'],"{'isrctn': 'ISRCTN12345678', 'nct_id': 'NCT12345678', 'spon_id': 'NUIG-2020-003'}"
+310,2020-005447-23,(No results available),['NL'],[None],['Ongoing'],['j.aman@amsterdamumc.nl'],{'spon_id': '75871'}
+311,2020-003363-25,(No results available),['DK'],[None],['Ongoing'],['covid-steroid@cric.nu'],{'spon_id': 'NA'}
+312,2020-001335-28,(No results available),"['NL', 'DE', 'BE', 'FR']","[None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['korinna.pilz@inflarx.de', 'korinna.pilz@inflarx.de', 'korinna.pilz@inflarx.de', 'korinna.pilz@inflarx.de']",{'spon_id': 'IFX-1-P2.9'}
+313,2020-002027-10,(No results available),['SE'],[None],['Ongoing'],['andreas.josefsson@umu.se'],{'spon_id': 'COVIDENZA'}
+314,2020-002190-10,(No results available),['IE'],[None],['Ongoing'],['crc.monitoring@ucd.ie'],{'spon_id': 'UCDCRC/20/03'}
+315,2020-001644-25,(No results available),"['FR', 'DE', 'ES', 'SE', 'IT']","[None, '2020-11-17', None, '2020-11-17', None]","['Completed', 'Completed', 'Ongoing', 'Completed', 'Completed']","['acertamc@dlss.com', 'acertamc@dlss.com', 'acertamc@dlss.com', 'acertamc@dlss.com', 'acertamc@dlss.com']",{'spon_id': 'D822FC00001/ACE-ID-201'}
+316,2020-001659-42,(No results available),['ES'],['2021-01-15'],['Completed'],['uicec@imibic.org'],{'spon_id': 'ANTITROMBINA'}
+317,2021-000515-24,(No results available),['NL'],[None],['Ongoing'],['r.peeters@erasmusmc.nl'],{'spon_id': 'NL76470.078.21'}
+318,2020-002123-11,(No results available),['ES'],[None],['Ongoing'],"['mtatiana.cobo@salud.madrid.org', 'gemma.moraor@salud.madrid.org', 'gonzalo.serralta@salud.madrid.org']",{'spon_id': 'HUIS-04-2020'}
+319,2020-003734-20,(No results available),['IT'],[None],['Ongoing'],['info.studiclinici@opis.it'],{'spon_id': 'COV-1/2-01'}
+320,2020-005410-18,(No results available),['PL'],[None],['Ongoing'],['krzysztoftomasiewicz@umlub.pl'],{'spon_id': '2020/ABM/COVID19/0036'}
+321,2021-000868-30,(No results available),['NL'],[None],['Ongoing'],['a.l.messchendorp@umcg.nl'],"{'nct_id': 'NCT04741386', 'spon_id': 'NL76215.042.20'}"
+322,2021-000412-28,(No results available),['BE'],[None],['Ongoing'],['delphine.kemlin@erasme.ulb.ac.be'],{'spon_id': 'P2020_284'}
+323,2021-000461-33,(No results available),['BE'],[None],['Ongoing'],['delphine.kemlin@erasme.ulb.ac.be'],{'spon_id': 'P2020_312'}
+324,2020-001760-29,(No results available),['ES'],[None],['Ongoing'],['secretaria@delosclinical.com'],{'spon_id': 'ALCOVID-19'}
+325,2020-006042-39,(No results available),['HU'],[None],['Ongoing'],['krisztina.hracs@adwareresearch.com'],{'spon_id': 'HUN-FAVI-02'}
+326,2020-001236-10,(No results available),"['NL', 'BE']","[None, None]","['Completed', 'Ongoing']","['j.aman@amsterdamumc.nl', 'j.aman@amsterdamumc.nl']",{'spon_id': 'COVID-19'}
+327,2020-004715-27,(No results available),['DE'],[None],['Ongoing'],['clinicaltrials@nociontx.com'],{'spon_id': 'NOC100-C-201'}
+328,2021-000413-17,(No results available),['SE'],[None],['Ongoing'],['ulf.malmqvist@skane.se'],{'spon_id': 'COVERS'}
+329,2020-002542-16,(No results available),"['GB', 'GR', 'DK', 'DE']","[None, None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing', 'Completed']","['s.pett@ucl.ac.uk', 's.pett@ucl.ac.uk', 'jens.lundgren@regionh.dk', 'jens.lundgren@regionh.dk']",{'spon_id': 'INSIGHT-013-ITAC'}
+330,2020-001251-41,(No results available),['FR'],['2021-01-29'],['Prematurely Ended'],['lmorisset@ch-versailles.fr'],{'spon_id': 'P20/05'}
+331,2020-001870-32,(No results available),"['DE', 'HU', 'DK', 'NL', 'ES']","['2020-12-24', '2020-12-24', '2020-12-24', '2020-12-24', '2020-12-24']","['Completed', 'Completed', 'Completed', 'Completed', 'Completed']","['infoservice.novartis@novartis.com', 'infoph.hungary@novartis.com', 'srkiv.til@novartis.com', 'clinicaltrial.enquiries@novartis.com', 'eecc.novartis@novartis.com']",{'spon_id': 'CDFV890D12201'}
+332,2020-003654-71,(No results available),"['RO', 'GR']","[None, None]","['Ongoing', 'Completed']","['clinicaltrials@regeneron.com', 'clinicaltrials@regeneron.com']","{'nct_id': 'NCT04452318', 'spon_id': 'R10933-10987-COV-2069'}"
+333,2020-000936-23,(No results available),"['FR', 'BE', 'AT', 'PT', 'CZ', 'NO', 'HU']","[None, None, None, None, None, None, None]","['Ongoing', 'Ongoing', 'Temporarily Halted', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['rqrc.siege@inserm.fr', 'christelle.delmas@inserm.fr', 'juliette.saillard@inserm.fr', 'juliette.saillard@inserm.fr', 'juliette.saillard@inserm.fr', 'christelle.delmas@inserm.fr', 'christelle.delmas@inserm.fr']",{'spon_id': 'C20-15'}
+334,2020-001244-26,(No results available),['AT'],[None],['Ongoing'],['markus.zeitlinger@meduniwien.ac.at'],{'spon_id': 'COV-2-SOLNATIDE-20'}
+335,2020-002913-16,(No results available),"['BE', 'DE', 'AT', 'PT', 'NL', 'FR', 'DK', 'IT']","[None, None, None, None, None, None, None, None]","['Ongoing', 'Ongoing', '', 'Ongoing', 'Ongoing', 'Ongoing', '', 'Ongoing']","['clintriage.rdg@boehringer-ingelheim.com', 'clintriage.rdg@boehringer-ingelheim.com', 'clintriage.rdg@boehringer-ingelheim.com', 'clintriage.rdg@boehringer-ingelheim.com', 'clintriage.rdg@boehringer-ingelheim.com', 'clintriage.rdg@boehringer-ingelheim.com', 'clintriage.rdg@boehringer-ingelheim.com', 'clintriage.rdg@boehringer-ingelheim.com']",{'spon_id': '0135-0347'}
+336,2020-002299-11,(No results available),['HU'],[None],['Ongoing'],['andrea.fekete@sigmadrugs.com'],{'spon_id': 'SD-COVID19-01'}
+337,2020-001411-25,(No results available),"['DE', 'FR', 'AT', 'GB', 'ES', 'IT']","['2021-01-13', '2021-01-13', '2021-01-13', None, None, None]","['Completed', 'Completed', 'Completed', 'GB - no longer in EU/EEA', 'Temporarily Halted', 'Prematurely Ended']","['clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com']",{'spon_id': 'XPORT-COV-1001'}
+338,2020-001406-27,(No results available),['FR'],['2020-06-08'],['Prematurely Ended'],['depotAC@chu-montpellier.fr'],{'spon_id': 'RECHMPL20-168'}
+339,2020-001307-16,(No results available),['ES'],['2020-06-03'],['Prematurely Ended'],['anabelsanchez.hrc@gmail.com'],{'spon_id': 'SIC'}
+340,2020-001440-26,(No results available),['ES'],['2020-04-08'],['Prematurely Ended'],['claram.rosso.sspa@juntadeandalucia.es'],{'spon_id': 'PrevenCOVID-19'}
+341,2020-005827-35,(No results available),['FR'],[None],['Ongoing'],['belloc.a@chu-toulouse.fr'],{'spon_id': 'RC31/20/0441'}
+342,2020-001310-38,(No results available),['DE'],['2021-02-22'],['Completed'],['s.koerper@blutspende.de'],{'spon_id': 'CAPSID2020-DRK-BSD'}
+343,2021-000880-63,(No results available),['SE'],[None],['Ongoing'],['meliha.c_kapetanovic@med.lu.se'],{'spon_id': 'na'}
+344,2021-000905-26,(No results available),['SE'],[None],['Ongoing'],['gunilla.enblad@igp.uu.se'],{'spon_id': 'CoVaCan-01'}
+345,2021-000864-32,(No results available),['NL'],[None],['Ongoing'],['b.rijnders@erasmusmc.nl'],{'spon_id': 'NL76798.078.21'}
+346,2020-001391-15,(No results available),['IE'],['2021-04-12'],['Completed'],['mandyjackson@Rcsi.ie'],{'spon_id': 'V323Oct2020'}
+347,2020-005128-12,(No results available),['LT'],[None],['Ongoing'],['greta.burneikaite@santa.lt'],{'spon_id': 'T705-COVID-GCRI-Protocol-A'}
+348,2020-005214-18,(No results available),['LT'],[None],['Ongoing'],['greta.burneikaite@santa.lt'],{'spon_id': 'T705-COVID-GCRI-Protocol-B'}
+349,2021-000566-14,(No results available),['CZ'],[None],['Ongoing'],['demlova@med.muni.cz'],{'spon_id': 'CoVigi'}
+350,2020-006130-12,(No results available),['IT'],[None],['Ongoing'],['pietro.minuz@univr.it'],{'spon_id': 'Asperum'}
+351,2021-000365-33,(No results available),['NL'],[None],['Ongoing'],['clintrials@chdr.nl'],{'spon_id': 'CHDR2043'}
+352,2020-005759-18,(No results available),"['DE', 'BE', 'DK', 'FR', 'PT']","[None, None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com']",{'spon_id': 'CV43043'}
+353,2020-006075-15,(No results available),['NL'],[None],['Ongoing'],['j.heijmans@amsterdamumc.nl'],{'spon_id': 'COVID-Compromise'}
+354,2021-000701-24,(No results available),['NL'],[None],['Ongoing'],['h.vanderkuy@erasmusmc.nl'],{'spon_id': 'NL76782.078.21'}
+355,2021-001655-13,(No results available),['NL'],[None],['Ongoing'],['Loes.H.Willems@radboudumc.nl'],{'spon_id': 'NL2021-8172'}
+356,2021-001414-10,(No results available),['NL'],[None],['Ongoing'],['g.m.p.j.verstappen@umcg.nl'],{'spon_id': '202100076'}
+357,2021-001080-24,(No results available),['NL'],[None],['Ongoing'],['j.plat@maastrichtuniversity.nl'],{'spon_id': 'NL76906.068.21'}
+358,2021-000440-22,(No results available),['BE'],[None],['Ongoing'],['kirsten.maertens@uantwerpen.be'],{'spon_id': 'Version17032021'}
+359,2021-001665-20,(No results available),['HU'],[None],['Ongoing'],['zsembery.akos@dent.semmelweis-univ.hu'],{'spon_id': 'BCAR-RESP-SE21'}
+360,2021-000455-39,(No results available),['SE'],[None],['Temporarily Halted'],['anna.asplind@ctc-ab.se'],{'spon_id': 'C21-109-09'}
+361,2020-004272-17,(No results available),"['BE', 'DE']","[None, None]","['Ongoing', 'Ongoing']","['htayhtay.han@cloverbiopharma.com', 'htayhtay.han@cloverbiopharma.com']",{'spon_id': 'CLO-SCB-2019-003'}
+362,2020-002584-63,(No results available),"['DE', 'NL', 'ES', 'Outside EU/EEA']","[None, None, None, None]","['Ongoing', 'Ongoing', 'Temporarily Halted', None]","['ClinicalTrialsEU@its.jnj.com', 'ClinicalTrialsEU@its.jnj.com', 'caparici@its.jnj.com']",
+363,2021-000175-37,(No results available),['SE'],[None],['Ongoing'],['soo.aleman@sll.se'],{'spon_id': '2021-000175-37'}
+364,2021-000872-13,(No results available),['NL'],[None],['Ongoing'],['researchcoordinator@onco.umcg.nl'],"{'nct_id': 'NCT04715438', 'spon_id': '202000865'}"
+365,2020-002282-33,(No results available),['DE'],[None],['Ongoing'],['ulf.landmesser@charite.de'],{'spon_id': 'COVID-PREVENT'}
+366,2020-004070-22,(No results available),['BE'],[None],['Ongoing'],['clinicaltrials@curevac.com'],{'spon_id': 'CV-NCOV-003'}
+367,2020-001493-29,(No results available),['DE'],[None],['Ongoing'],['frank.tacke@charite.de'],{'spon_id': 'CVC-for-COVID-19'}
+368,2020-002869-34,(No results available),['BE'],[None],['Ongoing'],['Pietropaolo.Keith@ateapharma.com'],"{'nct_id': 'NCT04396106', 'spon_id': 'AT-03A-001'}"
+369,2020-001857-31,(No results available),"['DE', 'BG']","[None, None]","['Ongoing', 'Ongoing']","['Lirans@pluristem.com', 'Lirans@pluristem.com']",{'spon_id': 'PLX-COV-03'}
+370,2020-006003-42,(No results available),['DK'],[None],['Ongoing'],['jens.lundgren@regionh.dk'],{'spon_id': 'ENFORCE'}
+371,2020-003998-22,(No results available),"['BE', 'DE', 'NL']","[None, None, None]","['Ongoing', 'Ongoing', 'Ongoing']","['clinicaltrials@curevac.com', 'clinicaltrials@curevac.com', 'clinicaltrials@curevac.com']",{'spon_id': 'CV-NCOV-004'}
+372,2020-003779-17,(No results available),['DE'],[None],['Ongoing'],['t.wittig@pohl-boskamp.de'],{'spon_id': 'P2003GF'}
+373,2020-001306-35,(No results available),['FR'],['2021-04-26'],['Prematurely Ended'],['damien.vanhoye@aphp.fr'],{'spon_id': 'APHP200394'}
+374,2020-001490-68,(No results available),['SE'],['2021-04-15'],['Completed'],['magnus.hedenstierna@sll.se'],"{'nct_id': 'NCT04306393', 'spon_id': 'NCT04306393'}"
+375,2020-001411-25,(No results available),"['DE', 'FR', 'AT', 'GB', 'ES', 'IT']","['2021-01-13', '2021-01-13', '2021-01-13', None, None, None]","['Completed', 'Completed', 'Completed', 'GB - no longer in EU/EEA', 'Temporarily Halted', 'Prematurely Ended']","['clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com', 'clinicaltrials@karyopharm.com']",{'spon_id': 'XPORT-COV-1001'}
+376,2020-002038-33,(No results available),['FI'],['2021-01-30'],['Prematurely Ended'],['regulatory@crst.fi'],{'spon_id': 'LIBERTY'}
+377,2020-003210-13,(No results available),['RO'],[None],['Ongoing'],['LYT100clinical@puretechhealth.com'],{'spon_id': 'LYT-100-2020-02'}
+378,2020-001264-28,(No results available),"['DE', 'BG', 'GR', 'HU']","['2021-02-23', '2021-02-23', '2021-02-23', '2021-02-23']","['Completed', 'Completed', 'Completed', 'Completed']","['regulatory@accelsiors.com', 'andreas.muehler@imux.com', 'regulatory@accelsiors.com', 'regulatory@accelsiors.com']","{'nct_id': 'NCT04379271', 'spon_id': 'P2-IMU-838-COV'}"
+379,2020-001623-13,(No results available),['GR'],[None],['Prematurely Ended'],['unipharma@uni-pharma.gr'],{'spon_id': 'T3inj-02/Thy-Support'}
+380,2020-001673-75,(No results available),"['FR', 'DE', 'GB', 'ES', 'BE', 'IT']","['2021-04-16', '2021-03-16', None, None, '2021-04-16', None]","['Prematurely Ended', 'Completed', 'GB - no longer in EU/EEA', 'Ongoing', 'Prematurely Ended', 'Ongoing']","['Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com', 'Paul.Gineste@abivax.com']",{'spon_id': 'ABX464-401'}
+381,2021-000893-27,(No results available),['BE'],[None],['Ongoing'],['ctc@azsintjan.be'],{'spon_id': 'SJ2021016'}
+382,2021-000930-32,(No results available),['BE'],[None],['Ongoing'],['ctc@azsintjan.be'],{'spon_id': 'SJ2021005'}
+383,2021-001040-10,(No results available),['AT'],[None],['Ongoing'],['martin.stradner@medunigraz.at'],{'spon_id': 'CoVVac'}
+384,2020-005580-32,(No results available),['AT'],[None],['Ongoing'],['peter.ferenci@meduniwien.ac.at'],{'spon_id': 'Sili'}
+385,2021-000492-36,(No results available),['BE'],[None],[''],[],{'spon_id': 'HOPECOVID-19'}
+386,2021-001144-98,(No results available),['PL'],[None],['Ongoing'],['konradrejdak@umlub.pl'],{'spon_id': 'LUB-COV-2021-01'}
+387,2020-005849-16,(No results available),['DE'],[None],['Ongoing'],['corinne.peter@kinarus.com'],{'spon_id': 'KIN001-203'}
+388,2020-004066-19,(No results available),['DE'],[None],['Ongoing'],['clinicaltrials@curevac.com'],{'spon_id': 'CV-NCOV-005'}
+389,2020-002102-58,(No results available),['BE'],[None],['Ongoing'],['yves.beguin@chuliege.be'],{'spon_id': 'TJT2012'}
+390,2020-002208-37,(No results available),['DK'],[None],['Ongoing'],['charlotte.suppli.ulrik@regionh.dk'],{'spon_id': 'HVH237CIMM-COVID19'}
+391,2020-005015-40,(No results available),['SK'],[None],['Ongoing'],['Maria.Perello@exeltis.com'],{'spon_id': 'IVER-303'}
+392,2021-000235-30,(No results available),['NL'],['2021-04-23'],['Prematurely Ended'],['marten@GPRI.nl'],{'spon_id': 'GPRI-21001-COV'}
+393,2020-005020-11,(No results available),['ES'],[None],['Ongoing'],['mvives.girona.ics@gencat.cat'],{'spon_id': '5000'}
+394,2020-005280-31,(No results available),['ES'],[None],['Ongoing'],['ensayosclinicos@dynasolutions.com'],{'spon_id': 'INHALAVID'}
+395,2020-003369-20,(No results available),"['IE', 'HU', 'IT']","[None, None, None]","['Completed', 'Ongoing', 'Ongoing']","['SungHyun.Kim@celltrion.com', 'SungHyun.Kim@celltrion.com', 'SungHyun.Kim@celltrion.com']",{'spon_id': 'CT-P59_3.2'}
+396,2021-000988-68,(No results available),['SE'],[None],['Ongoing'],['anja.rosdahl@regionorebrolan.se'],{'spon_id': 'O2021-1'}
+397,2021-000981-13,(No results available),['PL'],[None],['Ongoing'],[],{'spon_id': '00980.045'}
+398,2021-001304-15,(No results available),['BE'],[None],['Ongoing'],['ctckortrijk@azgroeninge.be'],{'spon_id': 'AZGS2021005'}
+399,2021-001520-18,(No results available),['NL'],[None],['Ongoing'],['a.l.messchendorp@umcg.nl'],{'spon_id': 'NL76839.042.21'}
+400,2021-001357-31,(No results available),['NL'],[None],['Ongoing'],['IIVAC@rivm.nl'],{'spon_id': 'IIV-478'}
+401,2020-005952-39,(No results available),['DE'],[None],['Ongoing'],['a.herrmann@corat-therapeutics.com'],{'spon_id': 'COR-101/001'}
+402,2020-001635-27,(No results available),['FR'],[None],['Ongoing'],['DL_MEDICALWRITERS@ab-science.com'],{'spon_id': 'AB20001'}
+403,2021-001202-30,(No results available),['NL'],[None],['Ongoing'],['sthijsen@diakhuis.nl'],{'spon_id': 'NL73618.100.20'}
+404,2021-001978-37,(No results available),['ES'],[None],['Ongoing'],[],{'spon_id': 'CombiVacS'}
+405,2020-001243-15,View results,['BE'],['2020-06-10'],['Prematurely Ended'],['laurens.liesenborghs@uzleuven.be'],{'spon_id': 'S63874'}
+406,2020-001266-11,(No results available),['ES'],['2020-11-11'],['Prematurely Ended'],['mireia.arcas@fjd.es'],{'spon_id': 'BALMYS-19'}
+407,2020-001469-35,(No results available),['PL'],['2020-12-31'],['Completed'],['ewa.jankowska@umed.wroc.pl'],{'spon_id': 'QUARANTINE2020'}
+408,2020-001546-19,(No results available),['BE'],['2020-10-26'],['Prematurely Ended'],['regulatory@argenx.com'],{'spon_id': 'ARGX-117-2001'}
+409,2020-001345-38,(No results available),['GR'],[None],['Completed'],['soumelas@uni-pharma.gr'],{'spon_id': 'UNIKINON-01/HOPE'}
+410,2020-001264-28,(No results available),"['DE', 'BG', 'GR', 'HU']","['2021-02-23', '2021-02-23', '2021-02-23', '2021-02-23']","['Completed', 'Completed', 'Completed', 'Completed']","['regulatory@accelsiors.com', 'andreas.muehler@imux.com', 'regulatory@accelsiors.com', 'regulatory@accelsiors.com']","{'nct_id': 'NCT04379271', 'spon_id': 'P2-IMU-838-COV'}"
+411,2020-001236-10,(No results available),"['NL', 'BE']","[None, None]","['Completed', 'Ongoing']","['j.aman@amsterdamumc.nl', 'j.aman@amsterdamumc.nl']",{'spon_id': 'COVID-19'}
+412,2020-004356-16,(No results available),"['GB', 'BE', 'FR']","[None, None, None]","['GB - no longer in EU/EEA', 'Ongoing', 'Ongoing']","['Information.center@astrazeneca.com', 'Information.center@astrazeneca.com', 'Information.center@astrazeneca.com']",{'spon_id': 'D8850C00002'}
+413,2020-002472-12,(No results available),['NL'],['2021-02-25'],['Completed'],['roger.bruggemann@radboudumc.nl'],{'spon_id': 'UMCN-AKF20.04'}
+414,2021-000683-30,(No results available),['SE'],[None],['Ongoing'],['clas.ahlm@umu.se'],{'spon_id': 'CoVacc'}
+415,2020-005759-18,(No results available),"['DE', 'BE', 'DK', 'FR', 'PT']","[None, None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com']",{'spon_id': 'CV43043'}
+416,2021-001031-72,(No results available),['DK'],[None],['Ongoing'],['cl@clin.au.dk'],{'spon_id': 'HP-POST-COVID'}
+417,2020-005576-35,(No results available),['HU'],[None],['Ongoing'],['clinicalTrialInquiries@medicago.com'],{'spon_id': 'CP-PRO-CoVLP-021'}
+418,2021-001512-28,(No results available),['DE'],[None],['Ongoing'],['leif-erik.sander@charite.de'],{'spon_id': 'COVIM'}
+419,2021-002014-14,(No results available),['CZ'],[None],['Ongoing'],['karolina.mullerova@fnhk.cz'],{'spon_id': 'COV-PBO-MO28'}
+420,2020-001302-30,(No results available),['AT'],[None],['Ongoing'],['klin-pharmakologie@meduniwien.ac.at'],{'spon_id': 'ACOVACT'}
+421,2020-005299-36,(No results available),['BE'],[None],['Ongoing'],['info@exevir.com'],{'spon_id': 'EXEVIR0101'}
+422,2020-003403-33,(No results available),"['BE', 'HU']","[None, None]","['Ongoing', 'Ongoing']","['lhermans@mithra.com', 'lhermans@mithra.com']",{'spon_id': 'MIT-Co001-C101'}
+423,2020-005315-44,(No results available),"['DE', 'HU', 'PL', 'BG']","[None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['Information.Center@astrazeneca.com', 'Information.Center@astrazeneca.com', 'Information.Center@astrazeneca.com', 'Information.Center@astrazeneca.com']","{'nct_id': 'NCT04723394', 'spon_id': 'D8851C00001'}"
+424,2020-001324-33,(No results available),['FR'],['2021-02-02'],['Completed'],['aurelie.zindjirdjian@aphp.fr'],{'spon_id': 'APHP200392'}
+425,2020-001748-24,(No results available),['SE'],['2021-05-17'],['Completed'],['jonas.sunden-cullberg@sll.se'],{'spon_id': 'ImmCoVA'}
+426,2020-001172-15,(No results available),"['DE', 'DK', 'AT', 'GB']","['2020-12-26', '2020-12-26', '2020-12-26', None]","['Completed', 'Completed', 'Completed', 'GB - no longer in EU/EEA']","['sonja.hoeller@apeiron-biologics.com', 'sonja.hoeller@apeiron-biologics.com', 'sonja.hoeller@apeiron-biologics.com', 'sonja.hoeller@apeiron-biologics.com']",{'spon_id': 'APN01-01-COVID19'}
+427,2020-001782-37,(No results available),['SK'],['2021-03-05'],['Completed'],['dodonovns@petrovax.ru'],{'spon_id': 'PО-COV-III-20'}
+428,2021-001769-19,(No results available),['SE'],[None],['Ongoing'],['anna.lundgren@microbio.gu.se'],{'spon_id': 'CVG01'}
+429,2020-005979-12,(No results available),"['GR', 'BG']","[None, None]","['Ongoing', 'Ongoing']","['bernard.vanhove@xenothera.com', 'bernard.vanhove@xenothera.com']",{'spon_id': 'XT-2002'}
+430,2020-005366-34,(No results available),"['IE', 'ES', 'GR']","[None, None, None]","['Ongoing', 'Ongoing', 'Ongoing']","['global.rochegenentechtrials@roche.com', 'spain.start_up_unit@roche.com', 'global.rochegenentechtrials@roche.com']",{'spon_id': 'WV43042'}
+431,2021-002245-15,(No results available),['DE'],[None],['Ongoing'],['rheumastudien@charite.de'],{'spon_id': 'CCM-RNT-202102'}
+432,2020-005759-18,(No results available),"['DE', 'BE', 'DK', 'FR', 'PT']","[None, None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com']",{'spon_id': 'CV43043'}
+433,2021-002327-38,(No results available),['NL'],[None],['Ongoing'],['onderzoeksbureauvkc@amsterdamumc.nl'],{'spon_id': 'NL77670.029.21'}
+434,2021-002098-25,(No results available),['DE'],[None],['Ongoing'],['ZKS-Projektmanagement@med.uni-jena.de'],{'spon_id': 'ZKSJ0137_INFLIXCOVID'}
+435,2021-000724-35,(No results available),['DE'],[None],['Ongoing'],['GSKClinicalSupportHD@gsk.com'],{'spon_id': '216912'}
+436,2021-001177-22,(No results available),['DK'],[None],['Ongoing'],['Nina.Weis@regionh.dk'],{'spon_id': '02032021'}
+437,2021-000307-20,(No results available),['DE'],[None],['Ongoing'],['infoservice.novartis@novartis.com'],{'spon_id': 'COMB157GDE01'}
+438,2020-001793-30,(No results available),['DK'],[None],['Ongoing'],['ahmad.sajadieh@regionh.dk'],{'spon_id': '20200412'}
+439,2021-000408-39,(No results available),['BE'],[None],['Prematurely Ended'],['clintriage.rdg@boehringer-ingelheim.com'],{'spon_id': '1487-0003'}
+440,2021-002348-57,(No results available),['AT'],[None],['Ongoing'],['selma.tobudic@meduniwien.ac.at'],{'spon_id': '2021-002348-57'}
+441,2021-000291-11,(No results available),['AT'],[None],['Ongoing'],['selma.tobudic@meduniwien.ac.at'],{'spon_id': 'IMRES'}
+442,2020-006082-11,(No results available),['GR'],[None],['Ongoing'],['clinicaltrials@adagiotx.com'],{'spon_id': 'ADG20-TRMT-001'}
+443,2021-001735-10,(No results available),['BE'],[None],['Ongoing'],['clinical-trials-contact@bayer.com'],{'spon_id': '21816'}
+444,2020-005752-38,(No results available),['DE'],[None],['Ongoing'],['infoservice.novartis@novartis.com'],{'spon_id': 'CBAF312ADE03'}
+445,2020-002322-85,(No results available),"['SE', 'DK']","[None, None]","['Ongoing', 'Ongoing']","['anna.runeson@scro.se', 'anna.runeson@scro.se']",{'spon_id': 'KAN0006'}
+446,2020-004695-18,(No results available),['DE'],[None],['Ongoing'],['verena.keitel@med.uni-duesseldorf.de'],{'spon_id': 'RES-Q-HR'}
+447,2020-003267-26,(No results available),['DE'],[None],['Ongoing'],['Christian.Hucke@external.biontech.de'],{'spon_id': 'BNT162-04'}
+448,2020-002039-31,(No results available),['FI'],['2021-06-16'],['Prematurely Ended'],[],{'spon_id': 'covidstorm'}
+449,2020-001431-27,(No results available),['DE'],[None],['Prematurely Ended'],[],{'spon_id': 'CovidVal01'}
+450,2020-001549-38,(No results available),['DE'],[None],['Prematurely Ended'],['i.puentmann@pharmakologie-bremen.de'],"{'nct_id': 'NCT04575064', 'spon_id': 'WHO-SOLIDARITY-GERMANY'}"
+451,2020-005763-31,(No results available),"['PL', 'IT']","[None, None]","['Ongoing', 'Ongoing']","['valentin.fuster@mountsinai.org', 'valentin.fuster@mountsinai.org']","{'nct_id': 'NCT04512079', 'spon_id': 'V1.610AUG2020'}"
+452,2021-000627-12,(No results available),"['BE', 'PT', 'DK', 'DE']","[None, None, None, None]","['Ongoing', '', 'Ongoing', '']","['global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com']",{'spon_id': 'CV43140'}
+453,2021-002184-22,(No results available),['GR'],[None],['Ongoing'],['iea@mednet.gr'],{'spon_id': 'NS3'}
+454,2020-005227-37,(No results available),['NL'],[None],['Ongoing'],['inquiries@olatec.com'],"{'nct_id': 'NCT04540120', 'spon_id': 'OLT1177-10'}"
+455,2020-001675-33,(No results available),['DE'],[None],['Ongoing'],['info@vakzine-manager.de'],{'spon_id': 'VPM1002-DE-3.07CoV'}
+456,2021-001036-25,(No results available),['DE'],[None],['Ongoing'],['asger.bering.kristensen@uniontherapeutics.com'],{'spon_id': 'UNI91103-201'}
+457,2020-005997-82,(No results available),['NL'],[None],['Ongoing'],['Go@tracercro.com'],{'spon_id': '900452-CT-20-001'}
+458,2021-000673-83,(No results available),['BE'],[None],[''],['f.baron@ulg.ac.be'],{'spon_id': 'TJB2101'}
+459,2020-005366-34,(No results available),"['IE', 'ES', 'GR']","[None, None, None]","['Ongoing', 'Ongoing', 'Ongoing']","['global.rochegenentechtrials@roche.com', 'spain.start_up_unit@roche.com', 'global.rochegenentechtrials@roche.com']",{'spon_id': 'WV43042'}
+460,2020-005911-27,(No results available),['BE'],[None],['Ongoing'],['jpdeslypere@aesculape.com'],"{'nct_id': 'NCT04730206', 'spon_id': 'S64445'}"
+461,2020-001250-21,(No results available),['FR'],['2021-06-10'],['Completed'],[],{'spon_id': '2020/3078'}
+462,2020-001320-34,(No results available),['NL'],['2021-05-25'],['Prematurely Ended'],[],"{'nct_id': 'NCT04335786', 'spon_id': '2020-6384'}"
+463,2020-001375-32,(No results available),['NL'],[None],['Completed'],['a.rutgers@umcg.nl'],{'spon_id': 'PreToVid'}
+464,2020-001206-35,(No results available),"['AT', 'DE']","[None, None]","['Ongoing', 'Completed']","['kks-regulatory@i-med.ac.at', 'kks-regulatory@i-med.ac.at']",{'spon_id': 'ACEI-COVID-19'}
+465,2020-005524-11,(No results available),['CZ'],['2021-06-02'],['Completed'],['jiri.hyncica@fno.cz'],{'spon_id': 'FNO-IMUNOR-2020'}
+466,2020-003936-25,(No results available),"['IT', 'FR']","[None, None]","['Ongoing', 'Ongoing']","['Flavio.Mantelli@dompe.com', 'flavio.mantelli@dompe.com']",{'spon_id': 'RLX0120'}
+467,2021-001070-38,(No results available),['DE'],[None],['Ongoing'],['zks-pm@med.uni-tuebingen.de'],{'spon_id': 'B-pVAC-SARS-CoV-2'}
+468,2020-005759-18,(No results available),"['DE', 'BE', 'DK', 'FR', 'PT']","[None, None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com', 'global.rochegenentechtrials@roche.com']",{'spon_id': 'CV43043'}
+469,2021-000045-41,(No results available),['FR'],[None],['Ongoing'],['benoit.deprez@univ-lille.fr'],{'spon_id': 'TEE001DP-01'}
+470,2021-002174-52,(No results available),['FR'],[None],['Ongoing'],['fatiha.djennaoui@aphp.fr'],{'spon_id': 'APHP210605'}
+471,2020-005523-37,(No results available),['DE'],[None],['Ongoing'],['info@clincompetence.de'],{'spon_id': 'BromCO'}
+472,2021-003388-90,(No results available),['NL'],[None],['Ongoing'],['trialmanagement@prinsesmaximacentrum.nl'],{'spon_id': '2021-043'}
+473,2020-000936-23,(No results available),"['FR', 'BE', 'AT', 'PT', 'CZ', 'NO', 'HU']","[None, None, None, None, None, None, None]","['Ongoing', 'Ongoing', 'Temporarily Halted', 'Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['rqrc.siege@inserm.fr', 'christelle.delmas@inserm.fr', 'juliette.saillard@inserm.fr', 'juliette.saillard@inserm.fr', 'juliette.saillard@inserm.fr', 'christelle.delmas@inserm.fr', 'christelle.delmas@inserm.fr']",{'spon_id': 'C20-15'}
+474,2020-001335-28,(No results available),"['NL', 'DE', 'BE', 'FR']","[None, None, None, None]","['Ongoing', 'Ongoing', 'Ongoing', 'Ongoing']","['korinna.pilz@inflarx.de', 'korinna.pilz@inflarx.de', 'korinna.pilz@inflarx.de', 'korinna.pilz@inflarx.de']",{'spon_id': 'IFX-1-P2.9'}

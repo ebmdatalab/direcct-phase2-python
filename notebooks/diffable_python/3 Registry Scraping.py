@@ -489,15 +489,19 @@ for u in tqdm(anzctr_urls):
 
     trial_dict = {}
 
-    trial_dict['trial_id'] = soup.find('span', {'id': 'ctl00_body_CXACTRNUMBER'}).text.replace('p','')
+    try:
+        trial_dict['trial_id'] = soup.find('span', {'id': 'ctl00_body_CXACTRNUMBER'}).text.replace('p','')
+    except AttributeError:
+        continue
+        
 
     trial_dict['last_updated'] = soup.find('span', {'id': 'ctl00_body_CXUPDATEDATE'}).text
 
-    trial_dict['trial_status'] = soup.find('span', {'id': 'ctl00_body_CXRECRUITMENTSTATUS'}).text
+    trial_dict['trial_status'] = soup.find('span', {'id': 'ctl00_body_CXRECRUITMENTSTATUS'}).text  
+    
+    anticipated_end_date = soup.find('span', {'id': 'ctl00_body_CXANTICIPATEDLASTVISITDATE'}).text
 
-    anticipated_end_date = soup.find('span', {'id': 'ctl00_body_CXANTICIPATEDENDDATE'}).text
-
-    actual_end_date = soup.find('span', {'id': 'ctl00_body_CXACTUALENDDATE'}).text
+    actual_end_date = soup.find('span', {'id': 'ctl00_body_CXACTUALLASTVISITDATE'}).text
 
     if anticipated_end_date:
         trial_dict['completion_date'] = anticipated_end_date
@@ -539,7 +543,7 @@ for u in tqdm(anzctr_urls):
 # -
 
 anzctr_df = pd.DataFrame(anzctr_trials)
-anzctr_df.to_csv(save_path + 'anzctr_trials_12jul2021.csv.csv')
+anzctr_df.to_csv(save_path + 'anzctr_trials_12jul2021_fixed.csv.csv')
 
 # # NTR
 

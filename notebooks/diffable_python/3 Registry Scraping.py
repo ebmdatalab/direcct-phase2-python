@@ -419,14 +419,14 @@ for u in tqdm(anzctr_urls):
 
     trial_dict['trial_status'] = soup.find('span', {'id': 'ctl00_body_CXRECRUITMENTSTATUS'}).text
 
-    anticipated_end_date = soup.find('span', {'id': 'ctl00_body_CXANTICIPATEDENDDATE'}).text
+    anticipated_end_date = soup.find('span', {'id': 'ctl00_body_CXANTICIPATEDLASTVISITDATE'}).text
 
-    actual_end_date = soup.find('span', {'id': 'ctl00_body_CXACTUALENDDATE'}).text
+    actual_end_date = soup.find('span', {'id': 'ctl00_body_CXACTUALLASTVISITDATE'}).text
 
-    if anticipated_end_date:
-        trial_dict['completion_date'] = anticipated_end_date
-    else:
+    if actual_end_date:
         trial_dict['completion_date'] = actual_end_date
+    else:
+        trial_dict['completion_date'] = anticipated_end_date
 
     secondary_ids = []
 

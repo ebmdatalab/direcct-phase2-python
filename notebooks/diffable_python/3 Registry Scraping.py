@@ -503,10 +503,10 @@ for u in tqdm(anzctr_urls):
 
     actual_end_date = soup.find('span', {'id': 'ctl00_body_CXACTUALLASTVISITDATE'}).text
 
-    if anticipated_end_date:
-        trial_dict['completion_date'] = anticipated_end_date
-    else:
+    if actual_end_date:
         trial_dict['completion_date'] = actual_end_date
+    else:
+        trial_dict['completion_date'] = anticipated_end_date
 
     secondary_ids = []
 
@@ -543,7 +543,7 @@ for u in tqdm(anzctr_urls):
 # -
 
 anzctr_df = pd.DataFrame(anzctr_trials)
-anzctr_df.to_csv(save_path + 'anzctr_trials_12jul2021_fixed.csv.csv')
+anzctr_df.to_csv(save_path + 'anzctr_trials_12jul2021_fixed.csv')
 
 # # NTR
 

@@ -1,38 +1,38 @@
 ,trial_id,last_updated,trial_status,completion_date,secondary_ids,results,emails
-0,ACTRN12620000443998,2020-04-06,Not yet recruiting,,['Nil known'],{},"['kate.laver@flinders.edu.au', 'Maria.Crotty@flinders.edu.au', 'miia.rahja@flinders.edu.au']"
+0,ACTRN12620000443998,2020-04-06,Not yet recruiting,,['Nil known'],{},"['Maria.Crotty@flinders.edu.au', 'miia.rahja@flinders.edu.au', 'kate.laver@flinders.edu.au']"
 1,ACTRN12620000472976,2020-04-15,Not yet recruiting,27/10/2020,['Nil known'],{},['drjoosten@hotmail.com']
 2,ACTRN12620000470998,2020-04-14,Not yet recruiting,30/06/2020,['Protocol Number FBP-004'],{},['peter.friedland@health.wa.gov.au']
-3,ACTRN12620000480987,2020-04-16,Not yet recruiting,18/10/2020,['None'],{},"['r.slykerman@auckland.ac.nz', 'r.slyerman@auckland.ac.nz']"
-4,ACTRN12620000492954,2020-04-20,Not yet recruiting,,['Nil known'],{},"['g.mckeon@unsw.edu.au', 's.rosenbaum@unsw.edu.au']"
-5,ACTRN12620000482965,2020-04-17,"Active, not recruiting",26/04/2020,['Nil known'],"{'citations': [], 'basic_reporting_doc': ''}","['svillafaina@unex.es', 'jpfuent@unex.es']"
+3,ACTRN12620000480987,2020-04-16,Not yet recruiting,18/10/2020,['None'],{},"['r.slyerman@auckland.ac.nz', 'r.slykerman@auckland.ac.nz']"
+4,ACTRN12620000492954,2020-04-20,Not yet recruiting,,['Nil known'],{},"['s.rosenbaum@unsw.edu.au', 'g.mckeon@unsw.edu.au']"
+5,ACTRN12620000482965,2020-04-17,"Active, not recruiting",26/04/2020,['Nil known'],"{'citations': [], 'basic_reporting_doc': ''}","['jpfuent@unex.es', 'svillafaina@unex.es']"
 6,ACTRN12620000524998,2020-04-28,Not yet recruiting,30/04/2021,['None'],{},['szeyuan.ooi@ehc.com.au']
 7,ACTRN12620000635965,2020-05-29,Not yet recruiting,30/09/2020,['No secondary ID'],{},['Josephine.Chow@health.nsw.gov.au']
 8,ACTRN12620000500954,2020-04-22,Not yet recruiting,1/06/2020,['Nil known'],{},['forbes.mcgain@wh.org.au']
-9,ACTRN12620000676910,2020-06-15,Not yet recruiting,31/07/2021,['None'],{},"['yahya.shehabi@monashhealth.org', 'rebecca.lim@monash.edu']"
+9,ACTRN12620000676910,2020-06-15,Not yet recruiting,31/07/2021,['None'],{},"['rebecca.lim@monash.edu', 'yahya.shehabi@monashhealth.org']"
 10,ACTRN12620000688987,2020-06-19,Completed,5/06/2020,['Nil Known'],"{'citations': [], 'basic_reporting_doc': ''}","['Daryl.Williams@mh.org.au', 'Irene.Ng@mh.org.au']"
 11,ACTRN12620000740998,2020-07-16,Not yet recruiting,,['None'],{},['thomas.melhuish@health.nsw.gov.au']
 12,ACTRN12620000731998,2020-07-13,Not yet recruiting,,['Nil Known'],{},['jen.martin@newcastle.edu.au']
 13,ACTRN12620000737932,2020-07-14,"Active, not recruiting",30/09/2020,['Nil Known'],"{'citations': [], 'basic_reporting_doc': ''}",['thomas.daniels@uhs.nhs.uk']
-14,ACTRN12620000588998,2020-07-30,Withdrawn,,['Nil Known'],{},"['anders.aneman@health.nsw.gov.au', 'mtanudji@sirtex.com']"
-15,ACTRN12620000566932,2020-07-28,Not yet recruiting,30/06/2023,['Nil known'],{},"['g.marks@unsw.edu.au', 'kwilson@ctc.usyd.edu.au']"
+14,ACTRN12620000588998,2020-07-30,Withdrawn,,['Nil Known'],{},"['mtanudji@sirtex.com', 'anders.aneman@health.nsw.gov.au']"
+15,ACTRN12620000566932,2020-07-28,Not yet recruiting,30/06/2023,['Nil known'],{},"['kwilson@ctc.usyd.edu.au', 'g.marks@unsw.edu.au']"
 16,ACTRN12620000674932,2020-07-24,Recruiting,,['UQ-1-SARS-CoV-2-Sclamp'],{},"['rapid.response.trials@uq.edu.au', 'p.griffin@nucleusnetwork.com.au']"
 17,ACTRN12620000787987,2020-08-04,Not yet recruiting,29/03/2022,['Nil'],{},['r.bryant@unsw.edu.au']
 18,ACTRN12620000786998,2020-08-04,Not yet recruiting,19/10/2020,['Nil known'],{},['e.broadbent@auckland.ac.nz']
 19,ACTRN12620000795998,2020-08-07,"Active, not recruiting",31/03/2021,['None'],"{'citations': [], 'basic_reporting_doc': ''}",['asadul.islam@monash.edu']
 20,ACTRN12620000811909,2020-08-13,Not yet recruiting,29/03/2022,['Nil'],{},['r.bryant@unsw.edu.au']
-21,ACTRN12620000840987,2020-08-26,Recruiting,31/03/2021,"['Royal Perth Hospital (15261)Protocol Number: RGS0000003982', 'CTN Application ID: CT-2020-CTN-01580-1 v1']",{},"['marian.sturm@health.wa.gov.au', 'ben.carnley@health.wa.gov.au']"
+21,ACTRN12620000840987,2020-08-26,Recruiting,31/03/2021,"['Royal Perth Hospital (15261)Protocol Number: RGS0000003982', 'CTN Application ID: CT-2020-CTN-01580-1 v1']",{},"['ben.carnley@health.wa.gov.au', 'marian.sturm@health.wa.gov.au']"
 22,ACTRN12620000843954,2020-08-26,Not yet recruiting,1/12/2021,['nil known'],{},"['monica.slavin@petermac.org', 'michelle.yong@petermac.org', 'ronan.burder@petermac.org']"
 23,ACTRN12620000842965,2020-08-26,Not yet recruiting,1/12/2021,['nil known'],{},"['monica.slavin@petermac.org', 'michelle.yong@petermac.org', 'ronan.burder@petermac.org']"
 24,ACTRN12620000841976,2020-08-26,Not yet recruiting,1/12/2021,['nil known'],{},"['monica.slavin@petermac.org', 'michelle.yong@petermac.org', 'ronan.burder@petermac.org']"
 25,ACTRN12620000844943,2020-08-26,Not yet recruiting,1/12/2021,['nil known'],{},"['monica.slavin@petermac.org', 'michelle.yong@petermac.org', 'ronan.burder@petermac.org']"
 26,ACTRN12620000876998,2020-09-03,Recruiting,25/07/2021,['N/A'],{},['belinda.parker@blackdog.org.au']
-27,ACTRN12620000477921,2020-09-08,Completed,20/04/2020,['Nil Known'],"{'citations': [], 'basic_reporting_doc': ''}",['cuirass@periopmed.com.au']
+27,ACTRN12620000477921,2020-09-08,Completed,23/04/2020,['Nil Known'],"{'citations': [], 'basic_reporting_doc': ''}",['cuirass@periopmed.com.au']
 28,ACTRN12620000454976,2020-09-04,Recruiting,9/04/2021,['Protocol Number DT 62996/2020'],{},['jjischia@unimelb.edu.au']
 29,ACTRN12620000517976,2020-09-08,Recruiting,25/07/2021,['None'],{},['barry.dixon@svha.org.au']
 30,ACTRN12620000580976,2020-09-08,Not yet recruiting,,['none'],{},['bridget.barber@qimrberghofer.edu.au']
 31,ACTRN12620000698976,2020-09-04,Recruiting,16/12/2020,['Nil known'],{},['jennifer.alison@sydney.edu.au']
 32,ACTRN12620000707965,2020-09-08,Withdrawn,30/03/2021,['Nil known'],{},"['VPM1002_covid19@accelagen.com.au', 'mark.bloch@holdsworthhouse.com.au']"
-33,ACTRN12620000817943,2020-09-08,Recruiting,30/03/2021,['None'],{},"['p.griffin@nucleusnetwork.com.au', 'RBDCovid@Accelagen.com.au']"
+33,ACTRN12620000817943,2020-09-08,Recruiting,30/03/2021,['None'],{},"['RBDCovid@Accelagen.com.au', 'p.griffin@nucleusnetwork.com.au']"
 34,ACTRN12620000860965,2020-08-28,Not yet recruiting,,['None'],{},['jtr.epr@gmail.com']
 35,ACTRN12620000571976,2020-09-17,"Active, not recruiting",20/09/2020,['None'],"{'citations': [], 'basic_reporting_doc': ''}","['s.harvey@unsw.edu.au', 's.sanatkar@unsw.edu.au']"
 36,ACTRN12620000834954,2020-08-24,Not yet recruiting,27/11/2020,['Nil'],{},"['angela.molga@sa.gov.au', 'jere@tekteam.net']"
@@ -40,49 +40,49 @@
 38,ACTRN12620000557932,2020-10-23,Recruiting,30/06/2021,['Nil'],{},['karinried@niim.com.au']
 39,ACTRN12620000788976,2020-12-03,Recruiting,17/04/2021,['None'],{},"['daniel.steinfort@mh.org.au', 's.valle@unsw.edu.au']"
 40,ACTRN12620000417987,2020-12-17,Stopped early,28/09/2020,['None'],"{'citations': [], 'basic_reporting_doc': ''}",['ADFMIDI.C4@defence.gov.au']
-41,ACTRN12620000555954,2020-12-09,"Active, not recruiting",31/03/2021,['Nil known'],"{'citations': [], 'basic_reporting_doc': ''}","['humanethics@unsw.edu.au', 'm.deady@unsw.edu.au']"
+41,ACTRN12620000555954,2020-12-09,"Active, not recruiting",31/03/2021,['Nil known'],"{'citations': [], 'basic_reporting_doc': ''}","['m.deady@unsw.edu.au', 'humanethics@unsw.edu.au']"
 42,ACTRN12620000501943,2020-12-09,Recruiting,30/04/2021,['Nil Known'],{},"['communityrelations@wehi.edu.au ', 'pellegrini@wehi.edu.au']"
-43,ACTRN12620000640909,2021-07-16,Recruiting,31/01/2022,['Nil'],{},"['v.palmer@unimelb.edu.au', 'covidcare-trial@unimelb.edu.au']"
-44,ACTRN12620000636954,2020-12-09,Recruiting,,['None'],{},"['sarah.dalton@health.nsw.gov.au', 's.harvey@unsw.edu.au', 'rita.holland@capstan.com.au']"
+43,ACTRN12620000640909,2021-07-16,Recruiting,31/01/2022,['Nil'],{},"['covidcare-trial@unimelb.edu.au', 'v.palmer@unimelb.edu.au']"
+44,ACTRN12620000636954,2020-12-09,Recruiting,,['None'],{},"['sarah.dalton@health.nsw.gov.au', 'rita.holland@capstan.com.au', 's.harvey@unsw.edu.au']"
 45,ACTRN12620000779976,2020-12-17,Completed,30/09/2020,['Script ID through Curtin University: RES-62642'],"{'citations': [], 'basic_reporting_doc': ''}","['MentalHealthCovid@curtin.edu.au', 's.egan@curtin.edu.au']"
-46,ACTRN12620000975998,2020-12-17,Not yet recruiting,,['Nil known'],{},"['mdickins@boltonclarke.com.au', 'jlowthian@boltonclarke.com.au']"
+46,ACTRN12620000975998,2020-12-17,Not yet recruiting,,['Nil known'],{},"['jlowthian@boltonclarke.com.au', 'mdickins@boltonclarke.com.au']"
 47,ACTRN12620001308987,2020-12-04,Not yet recruiting,,['None'],{},"['t.nolan@unimelb.edu.au', 'RBDCovid@Accelagen.com.au']"
-48,ACTRN12620001371987,2021-07-08,Completed,28/02/2021,['SPL7013-021'],"{'citations': [], 'basic_reporting_doc': ''}","['jeremy.paull@starpharma.com', 'jwilliams@linear.org.au']"
-49,ACTRN12621000034831,2021-09-02,Completed,30/11/2021,['Protocol Number FBP-005'],"{'citations': [], 'basic_reporting_doc': ''}","['sgoodall@firebrickpharma.com', 'douwe@lantic.net', 'sellos@onqsa.co.za']"
-50,ACTRN12621000048886,2021-01-19,Recruiting,26/02/2021,['nil known'],{},"['lauren.fox@icon.team', 'covidstudy@icon.team', 'john.bashford@icon.team']"
+48,ACTRN12620001371987,2021-07-08,Completed,29/03/2021,['SPL7013-021'],"{'citations': [], 'basic_reporting_doc': ''}","['jwilliams@linear.org.au', 'jeremy.paull@starpharma.com']"
+49,ACTRN12621000034831,2021-09-02,Completed,15/12/2020,['Protocol Number FBP-005'],"{'citations': [], 'basic_reporting_doc': ''}","['douwe@lantic.net', 'sgoodall@firebrickpharma.com', 'sellos@onqsa.co.za']"
+50,ACTRN12621000048886,2021-01-19,Recruiting,26/02/2021,['nil known'],{},"['john.bashford@icon.team', 'lauren.fox@icon.team', 'covidstudy@icon.team']"
 51,ACTRN12621000031864,2021-01-15,Not yet recruiting,7/06/2021,['None'],{},['anthony.byrne@svha.org.au']
 52,ACTRN12620000516987,2021-01-22,"Active, not recruiting",15/03/2021,['None'],"{'citations': [], 'basic_reporting_doc': ''}",['a.serlachius@auckland.ac.nz']
 53,ACTRN12620000634976,2021-01-22,Completed,17/09/2020,['None'],"{'citations': [], 'basic_reporting_doc': ''}",['a.serlachius@auckland.ac.nz']
 54,ACTRN12621000067875,2021-01-27,Not yet recruiting,26/03/2021,['COVINHAL-01'],{},['barry.clements@telethonkids.org.au']
 55,ACTRN12620000982910,2021-01-27,Not yet recruiting,,['None'],{},"['msteintpep1@florey.edu.au', 'TPEPCorona@florey.edu.au']"
-56,ACTRN12620000445976,2021-02-04,Recruiting,,['none'],{},"['ascot-team@unimelb.edu.au', 'steven.tong@unimelb.edu.au']"
+56,ACTRN12620000445976,2021-02-04,Recruiting,,['none'],{},"['steven.tong@unimelb.edu.au', 'ascot-team@unimelb.edu.au']"
 57,ACTRN12621000112864,2021-02-04,Recruiting,,['None'],{},['pkelly@uow.edu.au']
-58,ACTRN12620000468921,2021-09-01,Completed,12/05/2021,['Nil'],"{'citations': [], 'basic_reporting_doc': ''}",['r.bryant@unsw.edu.au']
+58,ACTRN12620000468921,2021-09-01,Completed,20/10/2020,['Nil'],"{'citations': [], 'basic_reporting_doc': ''}",['r.bryant@unsw.edu.au']
 59,ACTRN12621000131853,2021-02-09,Not yet recruiting,31/05/2021,['Nil known'],{},['paul.wabnitz@cmax.com.au']
 60,ACTRN12621000183886,2021-02-22,Not yet recruiting,22/02/2023,['None'],{},['grenyer@uow.edu.au']
 61,ACTRN12620000447954,2021-03-11,Withdrawn,31/08/2020,['Nil'],{},['kevin.laupland@qut.edu.au']
 62,ACTRN12620000473965,2021-03-09,"Active, not recruiting",30/04/2021,['BV-2020/19'],"{'citations': [], 'basic_reporting_doc': ''}","['s.brabon@uq.edu.au', 'p.sly@uq.edu.au']"
-63,ACTRN12621000283875,2021-03-16,Not yet recruiting,,['None'],{},"['katherine.chisholm@unimelb.edu.au', 'mod@unimelb.edu.au', 'sean.cowlishaw@unimelb.edu.au']"
+63,ACTRN12621000283875,2021-03-16,Not yet recruiting,,['None'],{},"['mod@unimelb.edu.au', 'katherine.chisholm@unimelb.edu.au', 'sean.cowlishaw@unimelb.edu.au']"
 64,ACTRN12620000612910,2021-03-22,Recruiting,,['Nil Known'],{},"['madison.paton@cerebralpalsy.org.au', 'Vineet.Nayyar@health.nsw.gov.au', 'kilian.kelly@cynata.com']"
-65,ACTRN12620001355965,2021-03-24,Completed,22/03/2021,['Nil'],"{'citations': [], 'basic_reporting_doc': ''}","['Carissa.bonner@sydney.edu.au', 'kirsten.mccaffery@sydney.edu.au']"
+65,ACTRN12620001355965,2021-03-24,Completed,22/03/2021,['Nil'],"{'citations': [], 'basic_reporting_doc': ''}","['kirsten.mccaffery@sydney.edu.au', 'Carissa.bonner@sydney.edu.au']"
 66,ACTRN12621000344897,2021-03-25,Recruiting,1/07/2021,['None'],{},['michelle.barakatjohnson@health.nsw.gov.au']
 67,ACTRN12621000309886,2021-03-19,Not yet recruiting,21/05/2021,['Nil known'],{},['cleofas.rguez@gmail.com']
-68,ACTRN12620001048976,2021-03-29,Not yet recruiting,28/05/2021,['None'],{},"[' Michael.Collins@adhb.govt.nz', 'Mary.Ellis-Pegler@clinicalstudies.co.nz']"
+68,ACTRN12620001048976,2021-03-29,Not yet recruiting,28/05/2021,['None'],{},"['Mary.Ellis-Pegler@clinicalstudies.co.nz', ' Michael.Collins@adhb.govt.nz']"
 69,ACTRN12621000387820,2021-09-01,Recruiting,17/12/2021,['None'],{},"['lauren.young@deakin.edu.au', 'adrienne.oneil@deakin.edu.au']"
-70,ACTRN12620001249943,2021-09-01,Recruiting,1/12/2021,['Sponsor ID: AEG-CTP-01'],{},"['Roderick.CliftonBligh@health.nsw.gov.au', 'guy.gavagna@aegros.com.au']"
+70,ACTRN12620001249943,2021-09-01,Recruiting,1/12/2021,['Sponsor ID: AEG-CTP-01'],{},"['guy.gavagna@aegros.com.au', 'Roderick.CliftonBligh@health.nsw.gov.au']"
 71,ACTRN12621000347864,2021-03-26,Not yet recruiting,15/05/2021,['None'],{},['cleofas.rguez@gmail.com']
 72,ACTRN12621000420842,2021-04-15,Not yet recruiting,,['Nil'],{},"['gustavo.duque@unimelb.edu.au', 'petra.marusic@unimelb.edu.au']"
-73,ACTRN12621000468820,2021-04-20,Not yet recruiting,15/12/2021,['Protocol PRTX007-001'],{},"['charlotte.lemech@scientiaclinicalresearch.com.au', 'rdaniels@primmunerx.com', 'lisa.nelson@scientiaclinicalresearch.com.au']"
+73,ACTRN12621000468820,2021-04-20,Not yet recruiting,15/12/2021,['Protocol PRTX007-001'],{},"['rdaniels@primmunerx.com', 'lisa.nelson@scientiaclinicalresearch.com.au', 'charlotte.lemech@scientiaclinicalresearch.com.au']"
 74,ACTRN12620000478910,2021-05-03,Not yet recruiting,31/12/2022,['None'],{},['atul.malhotra@monash.edu']
-75,ACTRN12620001104943,2021-05-10,Completed,24/12/2020,['RVL-NHV01'],"{'citations': [], 'basic_reporting_doc': ''}","['codle@cgjtx.com', 'gtidmarsh@cjgtx.com', 'jwilliams@linear.org.au']"
+75,ACTRN12620001104943,2021-05-10,Completed,26/02/2021,['RVL-NHV01'],"{'citations': [], 'basic_reporting_doc': ''}","['jwilliams@linear.org.au', 'gtidmarsh@cjgtx.com', 'codle@cgjtx.com']"
 76,ACTRN12621000567820,2021-09-01,Recruiting,31/10/2022,['Nil known'],{},['geraint.rogers@sahmri.com']
-77,ACTRN12621000607875,2021-05-20,Not yet recruiting,,['Protocol INNA051-001'],{},"['charlotte.lemech@scientiaclinicalresearch.com.au', 'fm@enarespiratory.com', 'nk@enarespiratory.com']"
+77,ACTRN12621000607875,2021-05-20,Not yet recruiting,,['Protocol INNA051-001'],{},"['fm@enarespiratory.com', 'nk@enarespiratory.com', 'charlotte.lemech@scientiaclinicalresearch.com.au']"
 78,ACTRN12621000532808,2021-05-06,Recruiting,1/12/2021,['None'],{},['toby.coates@sa.gov.au']
 79,ACTRN12621000661875,2021-08-27,Recruiting,,['Nil known'],{},['ai@jointswest.com.au']
-80,ACTRN12620000579998,2021-06-10,Completed,2/06/2020,['Nil known'],"{'citations': [], 'basic_reporting_doc': '/Steps11and12/379818-(Uploaded-08-06-2021-14-11-16)-Basic results summary.docx'}",['marcelokanc@gmail.com']
-81,ACTRN12621000704897,2021-09-02,Not yet recruiting,,['AT-H201-AU-01'],{},"['Emir.Redzepagic@cmax.com.au', 'steven.quay@atossainc.com', 'heather.fraser@atossainc.com']"
+80,ACTRN12620000579998,2021-06-10,Completed,16/06/2020,['Nil known'],"{'citations': [], 'basic_reporting_doc': '/Steps11and12/379818-(Uploaded-08-06-2021-14-11-16)-Basic results summary.docx'}",['marcelokanc@gmail.com']
+81,ACTRN12621000704897,2021-09-02,Not yet recruiting,,['AT-H201-AU-01'],{},"['Emir.Redzepagic@cmax.com.au', 'heather.fraser@atossainc.com', 'steven.quay@atossainc.com']"
 82,ACTRN12621000722897,2021-06-09,Not yet recruiting,,['None'],{},['kj.petrie@auckland.ac.nz']
 83,ACTRN12621000738820,2021-06-11,Recruiting,15/03/2022,['IVX-411-01'],{},['rscott2@usc.edu.au']
 84,ACTRN12620000448943,2021-06-28,Recruiting,1/10/2021,['Nil known'],{},['mikocka@deakin.edu.au']
-85,ACTRN12621000637842,2021-05-27,Not yet recruiting,6/02/2023,['None'],{},"['impact-ico@ctc.usyd.edu.au', 'cmt@ctc.usyd.edu.au']"
+85,ACTRN12621000637842,2021-05-27,Not yet recruiting,6/02/2023,['None'],{},"['cmt@ctc.usyd.edu.au', 'impact-ico@ctc.usyd.edu.au']"
 86,ACTRN12620000816954,2021-06-28,Completed,1/11/2020,['NIL'],"{'citations': [], 'basic_reporting_doc': ''}","['Emir.Redzepagic@cmax.com.au', 'heather.fraser@atossainc.com']"

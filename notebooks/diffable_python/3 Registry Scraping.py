@@ -529,7 +529,10 @@ for u in tqdm(anzctr_urls):
         if soup.find('a', {'id': 'ctl00_body_hyperlink_CXRESULTATTACHMENT'}):
             results_dict['basic_reporting_doc'] = soup.find('a', {'id': 'ctl00_body_hyperlink_CXRESULTATTACHMENT'}).text
 
-    trial_dict['results'] = results_dict
+    if results_dict:
+        trial_dict['results'] = results_dict
+    else:
+        trial_dict['results'] = None
     
     trial_dict['last_updated'] = pd.to_datetime(soup.find('span', {'id': 'ctl00_body_CXUPDATEDATE'}).text, format='%d/%m/%Y')
     

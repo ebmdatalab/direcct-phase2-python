@@ -21,11 +21,6 @@
 #
 # This doesn't really need to be a notebook but for organisation, disply, and if you are running than all at once, ease. Any of the specific scrapers could be copied into a .py file and run that way if preferred.
 
-# To add for July scrape:
-#
-# -Contact info
-# -last updated date
-
 import sys
 from pathlib import Path
 import os
@@ -143,7 +138,7 @@ for nct in tqdm(nct_urls):
     ctgov_list.append(trial_dict)
     
 #Can be expanded for some covariates as needed but also can archive our full copy from the FDAAA TT 
-#on the day of the scrape and
+#on the day of the scrape
 
 # +
 ctgov_results = pd.DataFrame(ctgov_list)
@@ -590,7 +585,7 @@ ntr_df = pd.read_csv(save_path + 'ntr - 2021-07-12.csv')
 
 covid_ntr = ntr_df[ntr_df.idFull.isin(ntr_ids)]
 
-covid_ntr[['idFull', 'status', 'dateStop', 'publications', 'idSource', 'isrctn', 'contact']].to_csv(save_path + 'ntr_covid_12jul.csv')
+covid_ntr[['idFull', 'status', 'dateStop', 'publications', 'idSource', 'isrctn', 'contact']].to_csv(save_path + 'ntr_covid_03apr_2022.csv')
 # -
 
 # # IRCT

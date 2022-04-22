@@ -1,0 +1,71 @@
+,trial_id,status,secondary_ids,last_updated,emails
+0,JPRN-jRCTs031190226,Complete,,2022-03-31,"['tokue49@gmail.com', 'nakamurt@gunma-u.ac.jp']"
+1,JPRN-jRCT2031200126,Suspended,NCT04369469,2021-09-28,['Jun.Yokosawa@alexion.com']
+2,JPRN-jRCT2031190264,Complete,,2021-08-11,"['nohmagari@hosp.ncgm.go.jp', 'amikami@hosp.ncgm.go.jp']"
+3,JPRN-jRCT1032200025,Not Recruiting,,2020-08-07,['ponponta@marianna-u.ac.jp']
+4,JPRN-jRCTs031190227,Complete,,2021-07-20,"['tokue49@gmail.com', 'nakamurt@gunma-u.ac.jp']"
+5,JPRN-jRCTs031190269,Not Recruiting,,2021-12-06,"['hasugiya@hosp.ncgm.go.jp', 'jterada@hosp.ncgm.go.jp']"
+6,JPRN-jRCTs031200026,Not Recruiting,,2022-03-23,['okugawa-tky@g.ecc.u-tokyo.ac.jp']
+7,JPRN-jRCTs032200044,Recruiting,,2020-06-03,['waka-tmd@umin.ac.jp']
+8,JPRN-jRCTs041190120,Complete,,2020-08-31,"['yoheidoi@fujita-hu.ac.jp', 'mkond@fujita-hu.ac.jp']"
+9,JPRN-jRCTs061200002,Recruiting,,2021-09-16,['ichiha-e@md.okayama-u.ac.jp']
+10,JPRN-jRCT2031200035,Complete,NCT04401579,2021-09-05,"['nohmagari@hosp.ncgm.go.jp', 'amikami@hosp.ncgm.go.jp']"
+11,JPRN-jRCTs041200025,Complete,,2021-08-08,['yshindo@med.nagoya-u.ac.jp']
+12,JPRN-jRCTs051200036,Recruiting,,2021-08-17,['plum0022@yahoo.co.jp']
+13,JPRN-jRCT2071200023,Not Recruiting,,2021-12-25,"['taiga-m@nagasaki-u.ac.jp', 'nhosogaya@nagasaki-u.ac.jp']"
+14,JPRN-jRCTs021200020,Recruiting,,2021-11-09,['takayama@med.tohoku.ac.jp']
+15,JPRN-jRCT2031200120,Not Recruiting,,2021-10-30,"['yamaoka@med.kitasato-u.ac.jp', 'ivm-iit@insti.kitasato-u.ac.jp']"
+16,JPRN-jRCTs031200124,Not Recruiting,,2022-03-22,['ssaito@hosp.ncgm.go.jp']
+17,JPRN-jRCTs032200131,Recruiting,,2021-06-22,"['dkatagiri@hosp.ncgm.go.jp', 'sizumi@hosp.ncgm.go.jp']"
+18,JPRN-jRCTs051200060,Suspended,,2021-05-20,"['akira555@med.osaka-cu.ac.jp', 'kakeya@med.osaka-cu.ac.jp']"
+19,JPRN-jRCT2021200018,Complete,,2021-08-13,['r187chiken@crieto.hosp.tohoku.ac.jp']
+20,JPRN-jRCT2071200041,Recruiting,,2021-02-08,['toshihiro_kita@med.miyazaki-u.ac.jp']
+21,JPRN-jRCTs031200150,Recruiting,,2022-03-01,['tnamiki@faculty.chiba-u.jp']
+22,JPRN-jRCTs051200049,Recruiting,,2021-10-13,"['yukiotanaka@dmi.med.osaka-u.ac.jp', 'iwahori@climm.med.osaka-u.ac.jp']"
+23,JPRN-jRCTs052200053,Recruiting,,2021-06-15,['nori@ncvc.go.jp']
+24,JPRN-jRCTs071200048,Complete,,2022-03-16,"['ttakeshi@nagasaki-u.ac.jp', 'koizumik@nagasaki-u.ac.jp']"
+25,JPRN-jRCT1051200078,Not Recruiting,,2022-01-23,"['akifumi-matsuyama@umin.ac.jp', 'covid-19@ra.opho.jp']"
+26,JPRN-jRCT1052200041,Complete,,2021-01-07,"['sawasec@surg1.med.osaka-u.ac.jp', 'saisentan@tissue.med.osaka-u.ac.jp']"
+27,JPRN-jRCT2031200180,Not Recruiting,,2021-11-09,['taniguchi.masaki@nobelpharma.co.jp']
+28,JPRN-jRCT2051200085,Complete,,2022-03-22,"['k-asano@dmi.med.osaka-u.ac.jp', 'rakugi@geriat.med.osaka-u.ac.jp']"
+29,JPRN-jRCTs031200196,Complete,,2022-02-15,"['jirotera@iuhw.ac.jp', 'ktsushima@iuhw.ac.jp']"
+30,JPRN-jRCT2071200045,Complete,NCT04588480,2022-03-03,['clinical-trials@pfizer.com']
+31,JPRN-jRCT2031200174,Not Recruiting,NCT04546581,2021-04-22,"['nohmagari@hosp.ncgm.go.jp', 'ssaito@hosp.ncgm.go.jp']"
+32,JPRN-JRCT2031200252,,,,
+33,JPRN-jRCT2051200088,Not Recruiting,NCT04655625,2021-02-19,"['info@anges.co.jp', 'anges-cr@anges.co.jp']"
+34,JPRN-jRCT1030200309,Recruiting,,2021-01-18,['m-yamada@human.tsukuba.ac.jp']
+35,JPRN-jRCT1030200310,Recruiting,,2021-01-18,['m-yamada@human.tsukuba.ac.jp']
+36,JPRN-jRCTs052200134,Recruiting,,2022-03-22,['isaka@kid.med.osaka-u.ac.jp']
+37,JPRN-jRCT2032200381,Recruiting,,2021-03-08,"['naoki.ando.w5@mail.toray', 'jun.miyakawa.m5@mail.toray']"
+38,JPRN-jRCT2051200153,Complete,,2021-07-15,['dsclinicaltrial@daiichisankyo.co.jp']
+39,JPRN-jRCT1030200279,Suspended,,2021-11-27,"['r-yamazaki@keio.jp', 'rtanosak@keio.jp']"
+40,JPRN-jRCT1030210037,Not Recruiting,,2022-03-14,"['shotaro.kinoshita@keio.jp', 'tkishimoto@keio.jp']"
+41,JPRN-jRCT1051200148,Recruiting,,2021-10-20,"['satop@med.osaka-cu.ac.jp', 'aikeai2@yahoo.co.jp']"
+42,JPRN-jRCT1052200163,Pending,,2021-03-31,"['sawasec@surg1.med.osaka-u.ac.jp', 'saisentan@tissue.med.osaka-u.ac.jp']"
+43,JPRN-jRCT1061200057,Not Recruiting,,2021-12-01,"['ohira@med.kawasaki-m.ac.jp', 'nakano@med.kawasaki-m.ac.jp']"
+44,JPRN-jRCT2031200092,Not Recruiting,NCT04492475,2020-12-24,"['nohmagari@hosp.ncgm.go.jp', 'amikami@hosp.ncgm.go.jp']"
+45,JPRN-jRCT2031200198,Complete,NCT04657497,2021-10-29,['clinical_trial@ono.co.jp']
+46,JPRN-jRCT2031200252,Not Recruiting,NCT04640168,2021-10-13,"['nohmagari@hosp.ncgm.go.jp', 'amikami@hosp.ncgm.go.jp']"
+47,JPRN-jRCT2031200368,Not Recruiting,NCT04723394,2021-09-29,['RD-clinical-information-Japan@astrazeneca.com']
+48,JPRN-jRCT2031210010,Complete,,2022-03-17,['msdjrct@merck.com']
+49,JPRN-jRCT2051200159,Recruiting,,2022-01-25,['hashisyo@ra.opho.jp']
+50,JPRN-jRCT2071200078,Not Recruiting,,2022-03-17,['drc-06c@ml.u-ryukyu.ac.jp']
+51,JPRN-jRCT2071200109,Complete,,2021-06-17,['clinical_trial@ono.co.jp']
+52,JPRN-jRCT2071200110,Not Recruiting,,2021-07-09,['dsclinicaltrial@daiichisankyo.co.jp']
+53,JPRN-jRCT2071200117,Complete,,2021-11-27,['clinical-trials@chugai-pharm.co.jp']
+54,JPRN-jRCTs052200157,Complete,,2021-12-01,['mnagao@kuhp.kyoto-u.ac.jp']
+55,JPRN-jRCT1021210009,Recruiting,,2022-01-13,"['takashi.hirama.b5@tohoku.ac.jp', 'yoshinori.okada.a1@tohoku.ac.jp']"
+56,JPRN-jRCT1071210024,Not Recruiting,,2022-03-12,['kei.7.nakashima@gmail.com']
+57,JPRN-jRCT2021210006,Recruiting,,2021-09-10,"['harigae@med.tohoku.ac.jp', 'tm5614covid@c-ctd.co.jp']"
+58,JPRN-jRCT2031200443,Recruiting,NCT02735707,2022-02-25,"['shigekifujitani@marianna-u.ac.jp', 'shimodaira@clinical-s.jp']"
+59,JPRN-jRCT2031210095,Pending,NCT04892888 ,2022-02-10,['smb.Japanclinicalstudydisclosure@takeda.com']
+60,JPRN-jRCT2041210004,Recruiting,,2021-11-24,['fftc-clinicaltrial-info1@fujifilm.com']
+61,JPRN-jRCT2041210013,Suspended,NCT04863131,2021-05-21,"['yoheidoi@fujita-hu.ac.jp', 'aca-rspf@fujita-hu.ac.jp']"
+62,JPRN-jRCT2051200092,Not Recruiting,,2021-09-06,['shionogiclintrials-admin@shionogi.co.jp']
+63,JPRN-jRCT2071200106,Not Recruiting,,2021-11-17,"['kmb-otoiawase@kmbiologics.com', 'rinkai-jrct@kmbiologics.com']"
+64,JPRN-jRCT2071200111,Not Recruiting,NCT04896541,2021-07-16,['RD-clinical-information-Japan@astrazeneca.com']
+65,JPRN-jRCTs031200374,Not Recruiting,,2021-12-03,['covipla-rct@hosp.ncgm.go.jp']
+66,JPRN-jRCTs031200436,Complete,,2022-03-31,"['tokue49@gmail.com', 'nakamurt@gunma-u.ac.jp']"
+67,JPRN-jRCTs031210123,Recruiting,,2021-08-04,['nagashima_hirotaka@tc-clinic.jp']
+68,JPRN-jRCTs041200072,Recruiting,,2022-01-19,"['okeiko22@hiroshima-u.ac.jp', 'okeiko@med.kanazawa-u.ac.jp']"
+69,JPRN-jRCTs071210011,Recruiting,,2021-12-28,"['kazukomd@nagasaki-u.ac.jp', 'hmukae@nagasaki-u.ac.jp']"

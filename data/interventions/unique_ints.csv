@@ -1,0 +1,820 @@
+,interventions,counts
+0,Traditional Medicine,223
+1,Azvudine,3
+2,Remdesivir,25
+3,Cytokine absorber,3
+4,Canakinumab,3
+5,BNT162b1,1
+6,BNT162b2,5
+7,BNT162b2SA,1
+8,Ruxolitinib,15
+9,Sarilumab,10
+10,Convalescent Plasma,135
+11,Acalabrutinib,3
+12,Recombinant human angiotensin-converting enzyme 2,1
+13,Favipiravir,51
+14,ABX464,1
+15,Extracorporeal CO2 removal (ECCO2R),1
+16,Selinexor,1
+17,BCG Vaccine,14
+18,Tocilizumab,51
+19,Exosomes,1
+20,Vitamin C,15
+21,Baloxavir marboxil,2
+22,Lopinavir,54
+23,Ritonavir,61
+24,Interleukin-2,2
+25,Interferon Alpha,13
+26,Ozone,2
+27,itolizumab,4
+28,Chloroquine,41
+29,Methylprednisolone,23
+30,Interferon Lambda,2
+31,Blood Transfusion,2
+32,Hydroxychloroquine,198
+33,Azithromycin,58
+34,Bamlanivimab,14
+35,Sotrovimab,5
+36,BRII-196/BRII-198,1
+37,Lufotrelvir,1
+38,Ensovibep,1
+39,AZD7442,4
+40,Ivermectin,64
+41,Ciclesonide,4
+42,Interleukin-7,6
+43,Itraconazole,1
+44,Vitamin D (Cholecalciferol),7
+45,Bromhexine,6
+46,CD24Fc,1
+47,Anakinra,17
+48,Siltuximab,3
+49,Rivaroxaban,9
+50,Thromboprophylaxis,1
+51,Candesartan,1
+52,non-RAS blocking antihypertensives,1
+53,Asunercept,3
+54,Pentaglobin,1
+55,BLD-2660,1
+56,Mouthrinse,3
+57,Interferon Beta,15
+58,Immunoglobulin,21
+59,Ulinastatin,4
+60,Dexamethasone,26
+61,Clarithromycin,2
+62,NA-831,3
+63,Atazanavir,3
+64,Losartan,7
+65,Radiation,4
+66,Prednison,2
+67,Casirivimab,7
+68,Imdevimab,7
+69,Merimepodib,1
+70,Doxycycline,10
+71,Cospherunate,2
+72,Phytomedicine,4
+73,Vitamin D3 (Calcitriol),1
+74,Clindamycin,3
+75,Primaquine,2
+76,peginterferon Lambda-1a,1
+77,Colchicine,27
+78,Aspirin,12
+79,Recombinant human plasma gelsolin (Rhu-pGSN),1
+80,Hydrocortisone,1
+81,mefloquine,2
+82,Zinc,21
+83,Povidone-iodine,30
+84,Daclatasvir,8
+85,Sofosbuvir,11
+86,Nitazoxanide,23
+87,Ribavirin,7
+88,sirolimus,3
+89,Deferoxamine,2
+90,Danoprevir,4
+91,Peginterferon Lambda-1a,1
+92,Indometacin,2
+93,Tacrolimus,1
+94,Pembrolizumab,1
+95,Budesonide,4
+96,Formoterol,1
+97,Levamisol,2
+98,Umifenovir,4
+99,Oseltamivir,11
+100,Umifenovir (Arbidol),5
+101,Recombinant Super-Compound Interferon,1
+102,Ixekizumab,2
+103,Hemoperfusion,2
+104,Artemisine,1
+105,Piperaquine,1
+106,Febuxostat,1
+107,Paracetamol,2
+108,Methylene Blue,6
+109,Therapeutic plasma exchange,8
+110,Etesevimab,5
+111,LY3853113,2
+112,Vitamin D3 (Cholecalciferol),9
+113,Pamrevlumab,1
+114,Stem Cells (Mesenchymal),40
+115,umbilical cord mesenchymal,1
+116,Isoprinosin,1
+117,Vitamins (unspecified),1
+118,Telmisartan,5
+119,FINLAY-FR-1A,2
+120,JS016,1
+121,Atorvastatin,8
+122,Black Seed Oil,1
+123,DWJ1248,1
+124,Clofazimine,2
+125,Low molecular weight heparin (LMWH),10
+126,Unfractionated heparin,8
+127,High-Flow Nasal Oxygen,2
+128,Mechanical Ventilation (non-invasive),1
+129,Masks,1
+130,Low Flow Extracorporeal Membrane Oxygenation (ECMO),2
+131,Ad5-nCoV,11
+132,LY3127804,1
+133,Nivolumab,3
+134,Extracorporeal Cytokine Absorber,1
+135,blood filtration,1
+136,Continuous renal replacement therapy,4
+137,Neuromuscular Electrical Stimulation (NMES),1
+138,Simvastatin,1
+139,S,1
+140,Tradipitant,1
+141,DAS181,1
+142,Natural honey,1
+143,immunity- and matrix-regulatory cells (IMRCs),1
+144,Angiotensin 1-7,4
+145,Farpiravir,3
+146,Suramin sodium,2
+147,Bevacizumab,3
+148,Pyridostigmine,1
+149,spironolactone,2
+150,Sodium Bicarbonate,2
+151,Dialyzable Leukocyte Extract (DLE),1
+152,Hydrogen Oxygen Generator with Nebulizer,1
+153,escin,2
+154,Umbilical Cord-Mesenchymal Stem Cells (UC-MSCs),14
+155,selenium,1
+156,N-acetyl cysteine,5
+157,Polyinosinic-polycytidylic Acid,1
+158,leflunomide,2
+159,ozone autohemotherapy,7
+160,Baicalein,1
+161,artemisinin-pipequine,1
+162,Hyperbaric Oxygen Therapy,9
+163,celecoxib,1
+164,pirfenidone,3
+165,Lactobacillus K8,1
+166,Levamisole,2
+167,Isoprinosine,2
+168,Estradiol,2
+169,Chlorpromazine,2
+170,Melatonin,4
+171,Triiodothyronine,1
+172,Cetylperidium chloride,4
+173,Nafamostat,7
+174,tracheotomy,3
+175,povidone-iodine (PVP-I),1
+176,NK cells,6
+177,dexmedetomidine,1
+178,SnPP Protoporphyrin,3
+179,Sunlight exposure,4
+180,Sulfonatoporphyrin (TPPS),1
+181,heparin,3
+182,P2Y12 inhibitor (Unspecified),2
+183,Crizanlizumab,1
+184,SGLT2 inhibitor (Unspecified),1
+185,immunomodulary agent,1
+186,axatilimab,1
+187,Dipyridamole,3
+188,Secukinumab,1
+189,Nitric Oxide via LungFit system,1
+190,Baricitinib,11
+191,Isotretinoin,3
+192,Tamoxifen,3
+193,Aerosolized Isotretinoin,3
+194,Emtricitabin,1
+195,Tenofovir,7
+196,Emtricitabine,6
+197,ViraCide,1
+198,Nuvastatic,1
+199,Enoxaparin,20
+200,Edoxaban,3
+201,Ledipasvir,2
+202,EDP1815,2
+203,Ambrisentan,1
+204,Dapagliflozin,2
+205,Meningococcal vaccine,1
+206,CIGB 300,1
+207,bisindole,1
+208,Prone Positioning,20
+209,Supine Positioning,2
+210,All-Trans Retinoic acid,1
+211,Berberine,1
+212,XC221,1
+213,Inactivated SARS-CoV-2 Vaccine,26
+214,Ramelteon,1
+215,DNA Vaccine,1
+216,AG0301 (COVID-19 DNA Vaccine),1
+217,Cannabidiol,1
+218,Nebulised dornase alfa,1
+219,Diosmin,1
+220,Hesperidin,2
+221,Pentoxifylline,3
+222,Lactoferrin,10
+223,imatinib,6
+224,Multiwave Locked System (MLS) Laser Therapy,1
+225,Desferal,1
+226,COVID-19 Specific T Cell derived exosomes (CSTC-Exo),1
+227,Aerosolized 13 cis retinoic acid,5
+228,All trans retinoic acid,1
+229,adenoviral-based vaccine against SARS-CoV-2,3
+230,Boswellia Serrata gum,1
+231,Licorice extract,1
+232,Bone Marrow Mesenchymal Stem Cell,1
+233,Bone Marrow Mesenchymal Stem Cells,2
+234,cetylpyridinium chloride (CPC),7
+235,Hydrogen peroxide,12
+236,Chlorhexidine gluconate,8
+237,SCTA01,3
+238,Metabolic cofactor (unspecified),1
+239,Nitric Oxide Gas,8
+240,Vitamin D,9
+241,Brequinar,1
+242,Maraviroc,2
+243,Dactolisib (RTB101),2
+244,Progesterone,1
+245,Dalargin,2
+246,Leitragin,2
+247,Thymosin Alpha,2
+248,Garadacimab,1
+249,monoclonal antibody,2
+250,Gam-COVID-Vac,6
+251,Clevudine,1
+252,Low Dose Radiotherapy,1
+253,Nebulized Heparin,1
+254,Iota-Carrageenan,1
+255,Plasmapheresis,1
+256,orotracheal intubation,1
+257,Recombinant Bacterial ACE2,1
+258,captopril,1
+259,Prostaglandin E1,1
+260,Monoclonal antibodies,7
+261,norelgesetromin,1
+262,leukocyte modulatory device (L-MOD),1
+263,slow low-efficiency daily dialysis (SLEDD),1
+264,Folic Acid,4
+265,L-Arginine,4
+266,Nebivolol,2
+267,Nicorandil,3
+268,Auxora,1
+269,Metformin,1
+270,Ensifentrine,1
+271,Camostat Mesilate,7
+272,Almitrine,1
+273,Liposomal Lacroferrin,1
+274,High flow nasal cannula,10
+275,AdimrSC-2f Vaccine,4
+276,Aluminum,1
+277,poractant alfa,2
+278,Probiotic,11
+279,epoprostenol,1
+280,Medical mask,1
+281,N95 respirator,1
+282,chlorhexidine gluconate,1
+283,Pegylated IFN alfa-2b,2
+284,Avdoralimab,2
+285,DFV890,2
+286,Dimethyl Fumarate,2
+287,Empagliflozin,1
+288,Cobicistat,1
+289,Darunavir,1
+290,Ravulizumab,3
+291,IFX-1,1
+292,vidofludimus calcium,2
+293,Sargramostim,3
+294,Biomodulin T,3
+295,Recombinant Bacterial ACE2 Receptors,1
+296,COVID19-0001-USR,1
+297,Probiorinse,1
+298,rosuvatatine,2
+299,gammaCore (vagus nerve stimulation),1
+300,Collagen-Polyvinylpyrrolidone,1
+301,prayer,1
+302,Atovaquone,1
+303,Tafenoquine,1
+304,Zofin (Organicell Flow),1
+305,aerosolized DNase,1
+306,Endotracheal intubation,2
+307,Lenzilumab,1
+308,Zilucoplan,2
+309,ArtemiC,1
+310,octagram,1
+311,Iloprost,1
+312,Famotidine,7
+313,Mesenchymal Stromal Cells,11
+314,Losmapimod,1
+315,13 cis retinoic acid,2
+316,Pulmozyme,4
+317,Leronlimab,3
+318,herbal phenolic monoterpene fractions,1
+319,Helmet CPAP,1
+320,Hepatocyte growth factor mimetic,1
+321,Alteplase,2
+322,NuSepin,2
+323,Tranexamic acid (TXA),2
+324,liposomal transcrocetin,1
+325,LTX-109,1
+326,BRII-198,3
+327,BRII-196,3
+328,Ravidasvir,1
+329,Rhea Health Tone,1
+330,Systemic indirect endovenous ozone therapy,1
+331,COVSurf Drug Delivery System,1
+332,Amoxicillin,3
+333,clavulanate,2
+334,Oxygen-ozone therapy,1
+335,Oxygen,7
+336,Physical therapy,3
+337,metenkefalin,1
+338,tridecactide,1
+339,Melphalan,1
+340,RPH-104,1
+341,Olokizumab,1
+342,Essential oils,2
+343,prasugrel hydrochloride,1
+344,Bivalirudin,1
+345,Mucodentol,1
+346,Personal protective equipment (PPE),4
+347,Mu,1
+348,RIPK1 Inhibitor,1
+349,co-trimoxazole,1
+350,Unisabana-Herons Ventilator,1
+351,Camostat mesylate,3
+352,Hyper-Immunoglobulin,9
+353,chlorhexidine (CHX),2
+354,testosterone,1
+355,Emapalumab,1
+356,Pemziviptadil,3
+357,Recombinant new coronavirus vaccine (CHO cell),4
+358,UV Light Device,1
+359,NK-1R antagonist (Unspecified),1
+360,Clazakizumab,2
+361,Sulodexide,2
+362,Training,2
+363,Life2000 Ventilator,1
+364,Ketogenic diet,1
+365,Autologous Non-Hematopoietic Peripheral Blood Stem Cells (NHPBSC),1
+366,Flow controlled ventilation,1
+367,Levilimab,1
+368,Low Dose Radiation,2
+369,Hyperimmune Equine Serum (INM005),1
+370,Defibrotide,2
+371,Tofacitinib,3
+372,ASC09,1
+373,cobicistat,1
+374,darunavir,2
+375,adalimumab,1
+376,Recombinant human granulocyte colony-stimulating factor (rhG-CSF),1
+377,Tranilast,1
+378,ASC09F,1
+379,PD-1 blocking antibody,1
+380,Thymosin,2
+381,thalidomide,3
+382,Captopril,1
+383,Random Donor Plasma,1
+384,Nintedanib,2
+385,Ebastine,1
+386,Lipoic,1
+387,LL-37 antiviral peptide (CAS001),1
+388,Abidol,5
+389,Inspiratory training device,1
+390,Expiratory training,1
+391,Ascorbic Acid,5
+392,Anluohuaxian,1
+393,Valsartan,1
+394,gerontological telemonitoring,1
+395,Aliskiren,1
+396,Nifedipine,1
+397,Pinene Hydronoplactone Ribonucleic (PHR),1
+398,Consumption of foods rich in Vitamin-D,1
+399,Apixaban,2
+400,RD-X19 Device,1
+401,Dutasteride,1
+402,ImmunoLin,1
+403,Aldesleukin,1
+404,nutrition mix,1
+405,Bufei,1
+406,Novaferon,4
+407,Carrimycin,2
+408,Mycobacterium w,3
+409,Iodine,3
+410,Nitric Oxide,1
+411,Vero Cell Vaccine,5
+412,CPAP,3
+413,Vitamin E,1
+414,Caficrestat (,1
+415,Infliximab,1
+416,QazCovid-in,2
+417,Antroquinonol,1
+418,Ad26.COV2.S,3
+419,angiotensin II receptor blockers (ARB),1
+420,angiotensin converting enzyme inhibitors (ACEi),3
+421,Gimsilumab,1
+422,CERC-002,1
+423,EpiVacCorona,1
+424,Bidirectional Oxygenation Valve,1
+425,Hydrogen-Oxygen Generator with Nebulizer,1
+426,angiotensin receptor blockers (BRA),2
+427,Calcifediol,1
+428,Standard plasma,1
+429,Asbrip,2
+430,Viusid,2
+431,Avasopasem Manganese (GC4419),1
+432,Hydrogen,1
+433,external diaphragmatic pacing assisted invasive ventilation,1
+434,Opaganib,1
+435,ChAdOx1 nCoV-19 vaccine,11
+436,MenACWY vaccine,1
+437,Ultra Short Wave Electrotherapy,1
+438,Alpha lipoic acid,1
+439,Corticosteroids (Unspecified),5
+440,Blood purification,1
+441,interferon atomization,1
+442,Quercetin,5
+443,Bromelain,1
+444,Recombinant Interferon Alpha,3
+445,Dociparstat sodium,1
+446,clopidogrel,2
+447,fondaparinux,1
+448,tirofiban,1
+449,Recombinant Interferon Alpha Gamma,1
+450,Fitbit,1
+451,Physiotherapy,1
+452,Combined Thoracic Ultrasound,1
+453,Tramadol,1
+454,Sildenafil citrate,1
+455,Fluvoxamine,2
+456,mucoadhesive paste,1
+457,Meplazumab,2
+458,Vitamin B,2
+459,nutritional support system,1
+460,Travelan,1
+461,Cefditoren,1
+462,DailyTab Gold lmmuno Booster,2
+463,Crocodile Breathing,1
+464,Montelukast,2
+465,Trimetazidine,1
+466,Sodium Hypochlorite,1
+467,INO-4800,5
+468,Liothyronine,1
+469,Isoquercetin,3
+470,GBP510,4
+471,Antithrombin,2
+472,AS03,1
+473,Hyperthermia therapy,1
+474,Artesunate,5
+475,Pyronaridin,1
+476,CPAP (Helmet),1
+477,Covid Testing,1
+478,rAd26-S,2
+479,Menaquinone-7,1
+480,Lactobacillus,1
+481,Adsorbed COVID-19 Inactivated vaccine (Sinovac),8
+482,Carragelose,1
+483,Reparixin,2
+484,MVC-COV1901 vaccine,1
+485,Tetracycline hydrochloride,1
+486,GRAd-COV2 vaccine,2
+487,ursodeoxycholate,1
+488,Bemcentinib,2
+489,Silymarin,1
+490,Brensocatib,1
+491,Saisei Maf,1
+492,Exogenous Surfactant,1
+493,Proxalutamide,3
+494,BioNTech/Pfizer/COMIRNATY vaccine,1
+495,photodynamic therapy,3
+496,Thymic peptides,1
+497,Estetrol monohydrate,1
+498,EEG-based sedation with mechanical ventilation,1
+499,Secretome of Hypoxia-Mesenchymal Stem Cells,1
+500,Low-field thoracic magnetic stimulation (LF-ThMS),1
+501,SARS-CoV-2 antigen rapid test,2
+502,Diclofenac sodium,1
+503,Menthol,1
+504,Methyl salicylate,1
+505,zinc lactate,1
+506,Dalcetrapib,3
+507,Tinzaparin,4
+508,Cisatracurium,1
+509,Oxygen mask,1
+510,Prednisone,1
+511,In Situ Thrombolysis With tPA,1
+512,N-acetylglucosamine,1
+513,Triflo Deep Breathing,1
+514,Fenofibrate,1
+515,Silmitasertib,1
+516,Video chat,1
+517,Artemisinin,2
+518,Glycyhrrizic acid,1
+519,cineol,1
+520,Sputnik Light Vector Vaccine,1
+521,intranasal and oral disinfection,1
+522,oral disinfection,1
+523,Cyclosporine A Plus,1
+524,C21,1
+525,BNO 1030 (Imupret),1
+526,High Frequency Chest Wall Oscillation (HFCWO) device,1
+527,immediate-release 20-hydroxyecdysone (BIO101),1
+528,V590,1
+529,BI 764198,1
+530,Lung physiotherapy,1
+531,pulse oximeter,2
+532,CVnCoV,3
+533,AZD1656,1
+534,Low Dose Thimerosal,1
+535,Bovine Lactoferrin,1
+536,Maltodextrin,1
+537,abivertinib maleate,2
+538,S-nitrosylation (SNO) therapy,1
+539,Niclosamide,3
+540,allogeneic T memory cells,1
+541,allogeneic NK cells,1
+542,Prolonged Prone Positioning,1
+543,Fostamatinib,1
+544,Oscillation and Lung Expansion (OLE) Therapy,1
+545,Senicapoc,2
+546,Nicotine patch,1
+547,Pioglitazone,2
+548,Alisporivir,1
+549,Cod liver oil,1
+550,Remimazolam,1
+551,Inspiratory training,1
+552,FX06,1
+553,Masitinib,1
+554,Acetyl L-Carnitine,1
+555,Human Ezrin Peptide 1 (HEP1),1
+556,Monoc,1
+557,Low-flow nasal cannula,6
+558,Double-Trunk Mask,1
+559,Surgical Mask,3
+560,Face mask,1
+561,Face mask awareness,1
+562,Prayer,1
+563,poliovirus vaccine (IPV),1
+564,BBV152 (Whole-Virion Inactivated SARS-CoV-2 Vaccine),1
+565,Ovotransferrin,1
+566,Closed face shield,1
+567,Desidustat,1
+568,Recombinant Nematode Anticoagulant Protein c2,2
+569,Beta carotene,1
+570,Copper,1
+571,Multivitamin,1
+572,Remote Ischemic Conditioning,1
+573,Amodiaquine,1
+574,Pyronaridine,1
+575,nebulized heparin,2
+576,STOPCOV intervention,1
+577,Matrix-M1,1
+578,Measles Mumps and Rubella vaccine,4
+579,Low dose radiotherapy,3
+580,micronized flavonoids,1
+581,Nibima,1
+582,AYUSH 64,1
+583,Ashwagandha,1
+584,2-Deoxy-D-Glucose,1
+585,254 nm ultraviolet C rays,1
+586,Arsenicum album 30,1
+587,Bryonia 30,1
+588,Camphora 1M,1
+589,Neem Capsules (Azadirachta indica),1
+590,Panchgavya Therapy,1
+591,Non invasive ventilation,1
+592,High Flow Nasal Oxygen therapy,3
+593,Meditation,1
+594,Oxford/AZ-ChAdOx1 nCoV-19 vaccine,4
+595,Covishield,1
+596,Ashwagandha tablet,1
+597,Shunti capsule,1
+598,Nilavembu Kuidneer,1
+599,Kaba sura Kudineer,1
+600,Nasopharyngeal saline wash,4
+601,Pavidone iodine gargling,1
+602,Saline gargling,1
+603,Steam inhation,1
+604,Dabur chyawanprash,1
+605,Giloy ki Ghanvati,1
+606,Kalmegh Tablets,1
+607,Tulsi tablets,1
+608,Cordyceps capsules,1
+609,AyurCov3,1
+610,Vedicinals-9,1
+611,Yoga,4
+612,RV Forte Capsule,1
+613,Immuncoction,2
+614,Curaneum 20,1
+615,Phosphorus,1
+616,Gelsemium sempervirens,1
+617,Bryonia alba,1
+618,amniotic fluid,1
+619,Awake Proning,2
+620,Propofol,1
+621,Sevoflurane,1
+622,Coronavirus-Like Particle COVID-19 Vaccine,1
+623,COVAX-19 vaccine,1
+624,RESP301,1
+625,icosapent ethyl,1
+626,P-MMSCs,1
+627,Mavrilimumab,4
+628,INOSARS,1
+629,Allocetra-OTS,1
+630,Razuprotafib,1
+631,telmisartan,1
+632,Antioxidation therapy,1
+633,holding the RAAS inhibitor,1
+634,Human Amniotic Fluid,1
+635,Broncho-Vaxom adult capsules® (OM85),2
+636,Prolastin,1
+637,mRNA-1273 vaccine,3
+638,Aprepitant injectable emulsion,1
+639,Triazavirin,1
+640,General health education,1
+641,Personalized health education,1
+642,Lidocaine,1
+643,Ibuprofen,2
+644,L-citrulline,1
+645,INB03,1
+646,EB05,1
+647,Nicotinamide riboside,1
+648,Aviptadil,1
+649,Conestat alfa,1
+650,APL-9,1
+651,TL-895,1
+652,Bovine Lipid Extract Surfactant (BLES),1
+653,Sirukumab,1
+654,lanadelumab,2
+655,Autophagy inhibitor (GNS651),1
+656,Monalizumab,1
+657,LSALT peptide,1
+658,Ibudilast,1
+659,BBV152A Vaccine,1
+660,cloth face mask,1
+661,Rehabilitation exercise protocol,1
+662,Abatacept (ORENCIA),1
+663,Pyronaridine-Artesunate (Pyramax),1
+664,Enzalutamide,1
+665,Prismaflex® oXiris® system,1
+666,Angiography scan,1
+667,ATI-450,1
+668,Thymalfasin,1
+669,Bardoxolone Methyl,1
+670,Resistant Starch,1
+671,RBT-9,1
+672,Ibrutinib,1
+673,zanubrutinib,1
+674,MAS825,1
+675,Astegolimab,1
+676,Efmarodocokin alfa,1
+677,Angiotensin Receptor Blockers (ARB),4
+678,Degarelix,1
+679,Molnupiravir,5
+680,LifeSignals Biosensor,1
+681,NasoVAX,1
+682,Glycine,1
+683,Prostacyclin (Iloprost),1
+684,Apilimod Dimesylate,1
+685,Polyoxidonium,2
+686,TCC-COVID mHealth solution (smartphone application),1
+687,Allogeneic Amniotic Epithelial Cells,1
+688,VPM1002 vaccine,1
+689,AT-301,1
+690,IMUNOR,2
+691,benzalkonium chloride,1
+692,AZD1222,1
+693,UB-612,1
+694,silver nanoparticles (AgNPs),1
+695,V-SARS,1
+696,NVX-CoV2373,7
+697,Positive Expiratory Pressure (PEP) flute,1
+698,hzVSF-v13,2
+699,iota-carrageenan,2
+700,CoV2 preS dTM,2
+701,Tetrandrine,1
+702,Human embryonic stem cell-derived M cells (CAStem),1
+703,gastroscope mask,1
+704,Eight lung exercises,1
+705,Free activities,1
+706,Camrelizumab,1
+707,Regulating intestinal flora,1
+708,UVC,1
+709,CIGB-258 peptide,3
+710,balloon-blowing,1
+711,Interferon-beta-1a,2
+712,TRV027,1
+713,photobiomodulation therapy (PBMT),2
+714,Compound amino acid,1
+715,Cytosorb adsorber,1
+716,sitagliptin,1
+717,Baby Shampoo,1
+718,Auricular neuromodulation,1
+719,Naltrexone,1
+720,Ketamine,1
+721,AYUSH-64,1
+722,Tahini oil,1
+723,Shuanghuanglian,1
+724,Fluoxetine,1
+725,Viruxal Nasal Spray,1
+726,Zinc Chloride,1
+727,1E11vp vaccine,1
+728,5E10vp vaccine,1
+729,recombinant chimeric DC vaccine,1
+730,Omeprazole,1
+731,Linagliptin,1
+732,5% glucose,1
+733,Traditional Chinese Medicine (TCM),2
+734,Washed microbiota transplantation,1
+735,recombinant tissue-Plasminogen Activator (rt-PA),1
+736,Ramipril,1
+737,alpha-1 antitrypsin,1
+738,kolimycin,1
+739,Naproxen,1
+740,mesenchymal stem cells,1
+741,Aerosol mask,1
+742,Aerosol mask with one hole closed,1
+743,Participate in a massive musical event,1
+744,core warming,1
+745,School closed,1
+746,School open,1
+747,SNG001,1
+748,aerosol inhalation,3
+749,BVM compressor,1
+750,Mechanical Ventilation,1
+751,Eculizumab,1
+752,Transcutaneous Auricular Vagus Nerve Stimulation,1
+753,jaktinib hydrochloride,2
+754,Vitamin Super B-Complex,1
+755,chlorine dioxide,3
+756,chlorine dioxid,1
+757,Ceftriaxone,1
+758,macrolide,4
+759,Moxifloxacin,1
+760,levofloxacin,1
+761,Piperacillin-tazobactam,1
+762,Ceftaroline,1
+763,Tozorakimab (MEDI3506),1
+764,Aprotinin,3
+765,AT-527,1
+766,Resveratrol,2
+767,Zinc Picolinate,1
+768,SPL7013,1
+769,hyperimmune bovine colostrum,1
+770,Recombinant COVID-19 vaccine (Sf9 cells),1
+771,Recombinant SARS-CoV-2 Vaccine (Sf9 Cell),1
+772,SCB-2019,4
+773,Homeostec,3
+774,Viral macrophage inflammatory protein,1
+775,Azivudine,1
+776,Vitamin A,1
+777,HBsAg VLP Vaccine,2
+778,Unspecified spray,1
+779,Chest PhysioTherapy (CPT),2
+780,non-invasive oscillating device (NIOD),2
+781,Platelet Rich Plasms,1
+782,food emulsion (unspecified),1
+783,oropharygeal spray (unspecified),1
+784,QuadraMune,1
+785,Manremyc,1
+786,Baking soda,1
+787,hypertonic saline,1
+788,Methotrexate,4
+789,KB109,1
+790,Anticoagulants (Unspecified),1
+791,Elmo System,1
+792,MF59 adjuvanted SARS-CoV-2 Sclamp vaccine,3
+793,Toothpaste,1
+794,VIR-7832,1
+795,inosine-glutathione,1
+796,potassium chloride,1
+797,ACE Inhibitors,3
+798,Mechanical Anticoagulation,1
+799,Aerobic Exercises,1
+800,KELEA Excellerated Water,1
+801,Sodium Aescinate,1
+802,Alendronic Acid,1
+803,vibroacoustic device,1
+804,AN69-Oxiris Membrane,1
+805,AN69-Standard Membrane,1
+806,Hypertonic Saline,1
+807,TD-0903,1
+808,Prolectin-M,1
+809,Bemiparin sodium,2
+810,Text message,1
+811,Sleep Position Trainer,1
+812,CBDRA60,1
+813,Monitoring wearable,1
+814,Dental tools,1
+815,Grapefruit Seed Extract,1
+816,Xylitol,1
+817,Amiodarone,1
+818,Verapamil,1

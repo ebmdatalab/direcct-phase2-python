@@ -25,3 +25,6 @@ requests
 lxml
 
 # Add extra per-notebook packages here
+lifelines
+schemdraw
+matplotlib_venn

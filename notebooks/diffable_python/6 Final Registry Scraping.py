@@ -49,13 +49,17 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 save_path = parent + '/data/final_registry_data_apr2022/'
 
 # + trusted=true
+ictrp = pd.read_csv(parent + '/data/COVID19-web_31mar_2022.csv')
+
 df = pd.read_csv(parent + '/data/2022-03-01_registrations.csv')
 df.registry.unique()
-# -
 
+# + trusted=true
 df.registry.value_counts()
 
+# + trusted=true
 df.columns
+# -
 
 # # ClinicalTrials.gov
 
@@ -335,8 +339,6 @@ pd.DataFrame(drks_trials).to_csv(save_path + 'drks_trials_03apr_2022.csv')
 
 # + trusted=true
 ctri_trials = df[df.registry == 'CTRI']
-
-ictrp = pd.read_csv(parent + '/data/COVID19-web_31mar_2022.csv')
 # -
 
 ctri_merged = ctri_trials.merge(ictrp[['TrialID', 'web address']], how='left', left_on='trn', right_on='TrialID').drop('TrialID', axis=1)
@@ -808,12 +810,6 @@ umin_urls = umin_merged['web address'].to_list()
 umin_trials = []
 
 # + trusted=true
-soup=get_url('https://upload.umin.ac.jp/cgi-open-bin/ctr_e/ctr_view.cgi?recptno=R000045268')
-
-# + trusted=true
-soup.find('font', text='Last follow-up date').find_next('td').text
-
-# + trusted=true
 for u in tqdm(umin_urls):
     u_dict = {}
     soup=get_url(u)
@@ -822,7 +818,11 @@ for u in tqdm(umin_urls):
     
     u_dict['trial_status'] = soup.find('font', text='Recruitment status').find_next('td').text
     
-    u_dict['comp_date'] = soup.find('font', text='Last follow-up date').find_next('td').text
+    cd = soup.find('font', text='Last follow-up date').find_next('td').text.strip()
+    if cd:
+        u_dict['comp_date'] = f"{cd[0:4]}-{cd[10:12]}-{cd[19:21]}"
+    else:
+        u_dict['comp_date'] = None
     
     u_dict['last_updated'] = pd.to_datetime(soup.find('font', text='Last modified on').find_next('td').text, errors='coerce')
     
@@ -834,17 +834,35 @@ for u in tqdm(umin_urls):
     results = []
     results_sec = soup.find('font', text='Result').parent.parent.parent.parent
     
-    results.append(results_sec.find('font', text='Results').find_next('td'))
-
-    results.append(results_sec.find('font', text='URL related to results and publications').find_next('td'))
-    u_dict['results'] = results
+    try:
+        results.append(results_sec.find('font', text='Results').find_next('td')).text.strip()
+    except AttributeError:
+        pass
+    
+    try:
+        results.append(results_sec.find('font', text='URL related to results and publications').find_next('td')).text.strip()
+    except AttributeError:
+        pass
+        
+    if results:
+        u_dict['results'] = results
+    else:
+        u_dict['results'] = None
+    
+    u_dict['url'] = u
     
     umin_trials.append(u_dict)
 
 # + trusted=true
-pd.DataFrame(umin_trials).to_csv(save_path + 'umin_trials_update.csv')
-# -
+pd.DataFrame(umin_trials)
 
+# + trusted=true
+um = pd.DataFrame(umin_trials)
+
+# + trusted=true
+um.to_csv(save_path + 'umin_trials_update.csv')
+
+# + [markdown] tags=[]
 # # RPCEC
 
 # +

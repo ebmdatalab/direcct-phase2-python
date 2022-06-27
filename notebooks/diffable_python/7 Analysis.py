@@ -46,7 +46,7 @@ from matplotlib.pyplot import Text
 
 
 # + trusted=true
-df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct2/master/data/analysis/kaplan-meier-time-to-pub.csv?token=GHSAT0AAAAAABSHEFNCNS5N3PZCNICRQUBMYUPLD7A')
+df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct2/master/data/analysis/kaplan-meier-time-to-pub.csv?token=GHSAT0AAAAAABSHEFNDTXVJZSNYPXBLD3DWYUTOB3A')
 df.head()
 
 # + trusted=true
@@ -60,10 +60,10 @@ results_cutoff = pd.to_datetime('2021-08-15')
 # To Do: 
 # 1. Remove dates after August 15th 2021 (or other date this gets changes to) XX
 # 2. Fix what this does to other columns XX
-# 2. Zero out negative follow-ups
+# 2. Zero out negative follow-ups XX (doing this per graph)
 # 3. Create columns accounting for censorship XX
 # 4. Make date into dates XX
-# 5. Prepare for A-J
+# 5. Prepare for A-J XX
 # 6. Write sanity checks
 
 # # Making Dates into Dates
@@ -72,6 +72,15 @@ results_cutoff = pd.to_datetime('2021-08-15')
 for x in df2.columns:
     if 'date' in x:
         df2[x] = pd.to_datetime(df2[x])
+# -
+
+# # Joining in IDs
+
+# + trusted=true
+df_reg = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct2/master/data/analysis/trials.csv?token=GHSAT0AAAAAABSHEFNDMTUDUNUF6F6CY3DEYUTOZEQ')
+
+# + trusted=true
+df2 = df2.merge(df_reg[['id', 'trn']], on='id', how='left')
 # -
 
 # # Filtering out post cut-off dates
@@ -121,10 +130,30 @@ df2['time_reporting_any_adj'] = df2[['time_publication_preprint_adj', 'time_publ
 # # Overall Reporting Rate
 
 # + trusted=true
-df2.publication_any_adj.value_counts()
+df2.columns
 
 # + trusted=true
-395/len(df2)
+overall_cols = ['id', 'trn', 'date_completion', 'date_publication_preprint_adj', 'date_publication_article_adj', 
+                'date_publication_summary_adj', 'publication_preprint_adj', 'publication_article_adj', 
+                'publication_summary_adj', 'publication_any_adj', 'time_publication_preprint_adj', 
+                'time_publication_article_adj','time_publication_summary_adj', 'time_reporting_any_adj']
+
+# + trusted=true
+adjusted_data = df2[overall_cols].reset_index(drop=True)
+
+# + trusted=true
+395/(395+1191)
+
+# + trusted=true
+adjusted_data['preprint_to_jounral'] = (adjusted_data.date_publication_article_adj - adjusted_data.date_publication_preprint_adj) / pd.Timedelta('1 day')
+
+# + trusted=true
+adjusted_data[(adjusted_data.preprint_to_jounral <= 0)]
+
+# + trusted=true
+adjusted_data[(adjusted_data.publication_preprint_adj == True) & 
+              (adjusted_data.publication_article_adj == True) & 
+              (adjusted_data.preprint_to_jounral >= 0)]['preprint_to_jounral'].describe()
 
 # + [markdown] tags=[]
 # # Data Handling for A-J curves for time to preprint with article pub as a competing risk
@@ -176,6 +205,9 @@ aj_corrected = aj_corrected.set_index(aj_corrected.event_at.apply(round)).drop('
 # + trusted=true
 d = aj_corrected.merge(d, how='outer', left_index=True, right_index=True)
 d = d.loc[d['event_cr'] == 0].copy()
+
+# + trusted=true
+len(df)
 
 # + [markdown] tags=[]
 # # Any Publication
@@ -365,15 +397,6 @@ date_out = [1,2,3]
 df2['pandemic_phase'] = np.select(date_conds, date_out)
 
 # + trusted=true
-df2[df2.pandemic_phase == 1]
-
-# + trusted=true
-df2[df2.pandemic_phase == 2]
-
-# + trusted=true
-df2['pandemic_phase'].value_counts()
-
-# +
 #What does this look like for reporting
 
 # + trusted=true
@@ -390,7 +413,7 @@ T1 = phase_pub[phase_pub.pandemic_phase == 1].time_reporting_any_adj
 E1 = phase_pub[phase_pub.pandemic_phase == 1].publication_any_adj
 
 kmf_1 = KaplanMeierFitter()
-kmf_1.fit(T1, E1, label='Phase 1')
+kmf_1.fit(T1, E1, label='1-6 Months')
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
 ax = kmf_1.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=True, ax=ax, lw=2.5, 
@@ -400,7 +423,7 @@ T2 = phase_pub[phase_pub.pandemic_phase == 2].time_reporting_any_adj
 E2 = phase_pub[phase_pub.pandemic_phase == 2].publication_any_adj
 
 kmf_2 = KaplanMeierFitter()
-kmf_2.fit(T2, E2, label='Phase 2')
+kmf_2.fit(T2, E2, label='7-12 Months')
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
 ax = kmf_2.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=True, ax=ax, lw=2.5, 
@@ -411,7 +434,7 @@ T3 = phase_pub[phase_pub.pandemic_phase == 3].time_reporting_any_adj
 E3 = phase_pub[phase_pub.pandemic_phase == 3].publication_any_adj
 
 kmf_3 = KaplanMeierFitter()
-kmf_3.fit(T3, E3, label='Phase 3')
+kmf_3.fit(T3, E3, label='13-18 Months')
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
 ax = kmf_3.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=True, ax=ax, lw=2.5, 
@@ -419,15 +442,19 @@ ax = kmf_3.plot_cumulative_density(ci_show=False, show_censors=True, censor_styl
 
 ax.set_ylim([0, .5])
 
-plt.title("Time To Results Dissemination From Registered Completion Date By Pandmic Phase", pad=20, fontsize=20)
+plt.title("Time To Results Dissemination by Timing of Completion", pad=20, fontsize=20)
 plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
 plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
+ax.legend(fontsize = 18)
 
 from lifelines.plotting import add_at_risk_counts
 add_at_risk_counts(kmf_1, kmf_2, kmf_3, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
-# -
 
+# + trusted=true
+phase_pub[phase_pub.pandemic_phase == 3].to_csv('temp_phase3.csv')
+
+# + [markdown] tags=[]
 # # Interventions
 
 # + trusted=true
@@ -469,8 +496,9 @@ E_hcq = hcq_pub.publication_any_adj
 kmf_hcq = KaplanMeierFitter()
 kmf_hcq.fit(T_hcq, E_hcq)
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
-ax = kmf_hcq.plot_cumulative_density(ci_show=True, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
-                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+ax = kmf_hcq.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5, 
+                                     color='green')
 
 ax.set_ylim([0, 1])
 
@@ -581,6 +609,7 @@ ax.set_ylim([0, 1])
 plt.title("Time To Results Dissemination From Registered Completion Date - Common Interventions", pad=20, fontsize=20)
 plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
 plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
+ax.legend(fontsize = 18)
 
 from lifelines.plotting import add_at_risk_counts
 add_at_risk_counts(kmf_1, kmf_2, kmf_3, rows_to_show = ['At risk'], ax=ax)
@@ -588,5 +617,62 @@ plt.tight_layout()
 # -
 
 
+# + [markdown]
+# # Registrations for presentation
+
+
+# + trusted=true
+test = df2.merge(trials[['id','crossreg']], how='left', on='id')
+
+# + trusted=true
+test['reg_result'] = np.where((test.crossreg.str.contains('NCT') | test.crossreg.str.contains('EUCTR') | test.crossreg.str.contains('ISRCTN')), 1,0)
+
+# + trusted=true
+reg_only_km = test[test.reg_result == 1].reset_index(drop=True)
+
+# + trusted=true
+reg_pub2 = reg_only_km[['publication_summary_adj', 'time_publication_summary_adj']].reset_index(drop=True)
+reg_pub2['publication_summary_adj'] = reg_pub2['publication_summary_adj'].astype(int)
+reg_pub2['time_publication_summary_adj'] = np.where(reg_pub2['time_publication_summary_adj'] < 0, 0, reg_pub2['time_publication_summary_adj'])
+
+# + trusted=true
+yticks = list(np.arange(0,1.05,.05))
+fig = plt.figure(dpi=300)
+ax = plt.subplot()
+
+T = reg_pub2.time_publication_summary_adj
+E = reg_pub2.publication_summary_adj
+
+kmf_article = KaplanMeierFitter()
+kmf_article.fit(T, E)
+#ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+ax = kmf_article.plot_cumulative_density(ci_show=True, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+
+ax.set_ylim([0, 1])
+
+plt.title("Time To Registry Results From Primary Completion - ClinicalTrials.gov, EUCTR, ISRCTN", pad=20, fontsize=20)
+plt.ylabel('Reporting', labelpad=10, fontsize=14)
+plt.xlabel('Days to Journal Publication', labelpad=10, fontsize=14)
+
+add_at_risk_counts(kmf_article, rows_to_show = ['At risk'], ax=ax)
+plt.tight_layout()
+# -
+
+
+
+
+
+
+
+# + trusted=true
+test.reg_result.sum()
+
+# + trusted=true
+1163/len(test)
+
+# + trusted=true
+trials.head()
+# -
 
 

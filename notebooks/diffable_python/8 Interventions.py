@@ -48,6 +48,9 @@ final_int = pd.concat([remove_rec[cols], rec_arms[cols]]).reset_index(drop=True)
 final_exp = final_int[final_int.type == 'experimental'].reset_index(drop=True)
 
 # + trusted=true
+final_exp
+
+# + trusted=true
 final_exp['HCQ'] = np.where(final_exp.intervention.str.contains('Hydroxychloroquine'), 1, 0)
 final_exp['IVE'] = np.where(final_exp.intervention.str.contains('Ivermectin'), 1, 0)
 final_exp['CP'] = np.where(final_exp.intervention.str.contains('Convalescent Plasma'), 1, 0)
@@ -63,6 +66,7 @@ final_exp[['db_id', 'HCQ', 'IVE', 'CP']].groupby('db_id').sum().to_csv(parent + 
 
 
 
+# +
 
 
 
@@ -71,7 +75,7 @@ ints = final_int[final_int.type == 'experimental'].intervention
 
 # + trusted=true
 ints
-# -
+# +
 
 
 
@@ -94,6 +98,7 @@ final_int[final_int.intervention == 'Dabur chyawanprash']
 
 
 
+# +
 
 
 
@@ -130,5 +135,6 @@ int_counts.to_csv(parent + '/data/interventions/unique_ints.csv')
 
 
 
+# +
 
 

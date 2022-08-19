@@ -46,7 +46,7 @@ from matplotlib.pyplot import Text
 
 
 # + trusted=true
-df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct2/master/data/analysis/kaplan-meier-time-to-pub.csv?token=GHSAT0AAAAAABSHEFNDTXVJZSNYPXBLD3DWYUTOB3A')
+df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct2/master/data/analysis/kaplan-meier-time-to-pub.csv?token=GHSAT0AAAAAABXKCQD4HXSPYAEQ5KKN7UV6YX6DLWA')
 df.head()
 
 # + trusted=true
@@ -77,12 +77,12 @@ for x in df2.columns:
 # # Joining in IDs
 
 # + trusted=true
-df_reg = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct2/master/data/analysis/trials.csv?token=GHSAT0AAAAAABSHEFNDMTUDUNUF6F6CY3DEYUTOZEQ')
+df_reg = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct2/master/data/analysis/trials.csv?token=GHSAT0AAAAAABXKCQD5FQPXTQDNYMSYQFLKYX6DNIA')
 
 # + trusted=true
 df2 = df2.merge(df_reg[['id', 'trn']], on='id', how='left')
-# -
 
+# + [markdown] jp-MarkdownHeadingCollapsed=true tags=[]
 # # Filtering out post cut-off dates
 
 # + trusted=true
@@ -206,9 +206,6 @@ aj_corrected = aj_corrected.set_index(aj_corrected.event_at.apply(round)).drop('
 d = aj_corrected.merge(d, how='outer', left_index=True, right_index=True)
 d = d.loc[d['event_cr'] == 0].copy()
 
-# + trusted=true
-len(df)
-
 # + [markdown] tags=[]
 # # Any Publication
 
@@ -219,7 +216,7 @@ any_pub['time_reporting_any_adj'] = np.where(any_pub['time_reporting_any_adj'] <
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(figsize = (10,10), dpi=300)
 ax = plt.subplot()
 
 T = any_pub.time_reporting_any_adj
@@ -229,7 +226,7 @@ kmf_any = KaplanMeierFitter()
 kmf_any.fit(T, E)
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
 ax = kmf_any.plot_cumulative_density(ci_show=True, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
-                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=4)
 
 ax.set_ylim([0, 1])
 
@@ -261,7 +258,7 @@ kmf_article = KaplanMeierFitter()
 kmf_article.fit(T, E)
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
 ax = kmf_article.plot_cumulative_density(ci_show=True, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
-                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=4)
 
 ax.set_ylim([0, 1])
 
@@ -285,7 +282,7 @@ aj = AalenJohansenFitter(seed=10)
 with warnings.catch_warnings():
     warnings.simplefilter('ignore')
     aj.fit(competing_risks.time_cr, competing_risks.event_cr, event_of_interest=1)
-aj.plot(yticks=yticks, figsize=(15,10), lw=2.5, legend=None, grid=True)
+aj.plot(yticks=yticks, figsize=(15,10), lw=4, legend=None, grid=True)
 plt.plot(d.index, d['CIF_1'], '|', markersize=10, color='C0')
 
 plt.title('Time to Preprint Publication', pad=15, fontsize=20)
@@ -378,8 +375,45 @@ v1.get_label_by_id("010").set_y(.16)
 
 venn3_circles((167, 19, 20, 96, 79, 5, 10))
 plt.title('COVID-19 Clinical Trial Results by Dissemination Route', fontweight='bold')
-# -
 
+# + trusted=true
+colors = ['#4daf4a', '#ff7f00', '#1f77b4']
+labels = ['Preprints', 'Registry\nResults', 'Journal Articles']
+values = (96, 19, 5, 167, 79, 20, 10)
+
+plt.figure(figsize=(8,8), dpi=300)
+v1 = venn3(
+    subsets = values, 
+    set_labels = labels,
+    set_colors = colors, 
+    subset_label_formatter = lambda x: str(x) + "\n(" + f"{(x/sum(values)):1.2%}" + ")", 
+    alpha = .6)
+
+for text in v1.set_labels:
+    text.set_fontsize(16)
+
+for text in v1.subset_labels:
+    if text == v1.subset_labels[2]:
+        text.set_fontsize(6)
+    elif text == v1.subset_labels[-1]:
+        text.set_fontsize(10)
+    elif text == v1.subset_labels[1] or text == v1.subset_labels[5]:
+        text.set_fontsize(12)
+    else:
+        text.set_fontsize(14)
+
+v1.get_label_by_id("100").set_x(-0.2)
+v1.get_label_by_id("111").set_x(.155)
+v1.get_label_by_id("011").set_y(.1)
+v1.get_label_by_id("011").set_x(.3)
+v1.get_label_by_id("010").set_x(.35)
+v1.get_label_by_id("010").set_y(.3)
+
+venn3_circles((96, 19, 5, 167, 79, 20, 10))
+#plt.title('COVID-19 Clinical Trial Results by Dissemination Route', fontweight='bold')
+plt.show()
+
+# + [markdown] tags=[]
 # # Breaking Pandemic into Phases
 
 # + trusted=true
@@ -614,7 +648,6 @@ ax.legend(fontsize = 18)
 from lifelines.plotting import add_at_risk_counts
 add_at_risk_counts(kmf_1, kmf_2, kmf_3, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
-# -
 
 
 # + [markdown]
@@ -622,7 +655,7 @@ plt.tight_layout()
 
 
 # + trusted=true
-test = df2.merge(trials[['id','crossreg']], how='left', on='id')
+test = df2.merge(df_reg[['id','crossreg']], how='left', on='id')
 
 # + trusted=true
 test['reg_result'] = np.where((test.crossreg.str.contains('NCT') | test.crossreg.str.contains('EUCTR') | test.crossreg.str.contains('ISRCTN')), 1,0)
@@ -662,6 +695,7 @@ plt.tight_layout()
 
 
 
+# +
 
 
 
@@ -673,6 +707,6 @@ test.reg_result.sum()
 
 # + trusted=true
 trials.head()
-# -
+# +
 
 

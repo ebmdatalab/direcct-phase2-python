@@ -60,6 +60,8 @@ entrypoints==0.4
     # via
     #   jupyter-client
     #   nbconvert
+et-xmlfile==1.1.0
+    # via openpyxl
 executing==0.8.3
     # via stack-data
 fastjsonschema==2.15.3
@@ -232,6 +234,8 @@ numpy==1.22.4
     #   matplotlib-venn
     #   pandas
     #   scipy
+openpyxl==3.0.10
+    # via -r requirements.in
 packaging==21.3
     # via
     #   ipykernel
@@ -261,7 +265,7 @@ pickleshare==0.7.5
     # via ipython
 pillow==9.1.1
     # via matplotlib
-pip-tools==6.6.1
+pip-tools==6.8.0
     # via -r requirements.in
 plotly==5.8.0
     # via -r requirements.in

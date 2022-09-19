@@ -28,10 +28,10 @@ import numpy as np
 import collections
 
 # + trusted=true
-raw_extract = pd.read_csv(parent + '/data/interventions/2022-07-27_101245-form_7-refset_34-extractions.tsv', sep='\t', encoding="ISO-8859-1")
-raw_arms = pd.read_csv(parent + '/data/interventions/2022-07-27_101248-sub_arm-refset_34-sub-extraction.tsv', sep='\t', encoding="ISO-8859-1")
-rec_extract = pd.read_csv(parent + '/data/interventions/2022-07-27_101251-form_7-refset_34-final.tsv', sep='\t', encoding="ISO-8859-1")
-rec_arms = pd.read_csv(parent + '/data/interventions/2022-07-27_101253-sub_arm-refset_34-sub-final.tsv', sep='\t', encoding="ISO-8859-1")
+raw_extract = pd.read_csv(parent + '/data/interventions/2022-09-13_082824-form_7-refset_34-extractions.tsv', sep='\t', encoding="ISO-8859-1")
+raw_arms = pd.read_csv(parent + '/data/interventions/2022-09-13_082828-sub_arm-refset_34-sub-extraction.tsv', sep='\t', encoding="ISO-8859-1")
+rec_extract = pd.read_csv(parent + '/data/interventions/2022-09-13_082831-form_7-refset_34-final.tsv', sep='\t', encoding="ISO-8859-1")
+rec_arms = pd.read_csv(parent + '/data/interventions/2022-09-13_082834-sub_arm-refset_34-sub-final.tsv', sep='\t', encoding="ISO-8859-1")
 
 # + trusted=true
 reconciled_ids = rec_arms.db_id.to_list()
@@ -49,16 +49,23 @@ final_int = pd.concat([remove_rec[cols], rec_arms[cols]]).reset_index(drop=True)
 final_exp = final_int[final_int.type == 'experimental'].reset_index(drop=True)
 
 # + trusted=true
-final_exp
+final_exp.head()
 
 # + trusted=true
-#final_exp.to_csv('int_norm.csv')
+final_exp.to_csv(parent + '/data/interventions/int_norm.csv')
 # + trusted=true
 exp = final_int[final_int.type == 'experimental']
 
 # + trusted=true
+final_int[final_int.intervention.isna()]
+
+# + trusted=true
 ints = final_int[final_int.type == 'experimental'].intervention
 int_list = ints.to_list()
+
+# + trusted=true
+a = ints.to_frame()
+a[a.intervention.isna()]
 
 # + trusted=true
 all_ints = []
@@ -84,6 +91,9 @@ c2 = collections.Counter(x for x in int_list if x)
 # + trusted=true
 int_counts2 = pd.DataFrame.from_dict(dict(c2), orient='index').reset_index()
 int_counts2.columns = ['interventions', 'counts']
+
+# + trusted=true
+int_counts2
 
 # + trusted=true
 int_counts2.sort_values(by='counts', ascending=False).to_csv(parent + '/data/interventions/int_to_norm.csv')
@@ -177,5 +187,6 @@ int_counts.to_csv(parent + '/data/interventions/unique_ints.csv')
 
 
 
+# +
 
 

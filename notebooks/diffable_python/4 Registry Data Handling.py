@@ -70,7 +70,7 @@ merged['potential_other_results'] = np.where((filt_1 | filt_2), 1, 0)
 merged.to_csv(parent + '/data/registry_data/registry_data_clean_apr22.csv')
 
 # + trusted=true
-merged.head(50)
-# -
+len(merged)
+# +
 
 

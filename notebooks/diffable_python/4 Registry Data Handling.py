@@ -30,7 +30,7 @@ import re
 import numpy as np
 
 # + trusted=true
-reg = pd.read_excel(parent + '/data/registry_data/registry_data_apr22.xlsx', sheet_name='Full')
+reg = pd.read_excel(parent + '/data/registry_data/registry_data_jul21.xlsx', sheet_name='Full')
 
 ictrp = pd.read_csv(parent + '/data/cleaned_ictrp_1jul2021.csv')
 
@@ -67,10 +67,8 @@ filt_2 = merged.other_results_2.notnull()
 merged['potential_other_results'] = np.where((filt_1 | filt_2), 1, 0)
 
 # + trusted=true
-merged.to_csv(parent + '/data/registry_data/registry_data_clean_apr22.csv')
+merged.to_csv(parent + '/data/registry_data/registry_data_clean_jul21.csv')
+# -
 
-# + trusted=true
-len(merged)
-# +
 
 

@@ -706,16 +706,18 @@ pd.DataFrame(rebec_trials).to_csv(save_path + 'rebec_04apr_2022.csv')
 
 # # PACTR
 
+# + trusted=true
 pactr_ids = df[df.registry == 'PACTR']
 
+# + trusted=true
 pactr_merged = pactr_ids.merge(ictrp[['TrialID', 'web address']], how='left', left_on='trn', right_on='TrialID').drop('TrialID', axis=1)
 
-# +
+# + trusted=true
 pactr_urls = pactr_merged['web address'].to_list()
 
 pactr_trials = []
 
-# +
+# + trusted=true
 id_regex = re.compile(r'PACTR\d{15}')
 
 for p in tqdm(pactr_urls):
@@ -723,17 +725,28 @@ for p in tqdm(pactr_urls):
     p_dict = {}
     
     p_dict['trial_id'] = soup.find('td', text=re.compile(id_regex)).text
+
+    p_dict['anticipated_comp'] = pd.to_datetime(soup.find('td', text='Anticipated date of last follow up').find_next('td').text, format="%d/%m/%Y", errors='coerce')
     
-    p_dict['anticipated_comp'] = pd.to_datetime(soup.find('td', text='Anticipated date of last follow up').find_next('td').text)
-    
-    p_dict['actual_comp'] = pd.to_datetime(soup.find('td', text='Actual Last follow-up date').find_next('td').text)
+    p_dict['actual_comp'] = pd.to_datetime(soup.find('td', text='Actual Last follow-up date').find_next('td').text, format="%d/%m/%Y", errors='coerce')
     
     p_dict['trial_status'] = soup.find('td', text='Recruitment status').find_next('td').text
     
-    if soup.find('td', text='Changes to trial information').find_next('tr'):
-        p_dict['last_updated'] = pd.to_datetime(soup.find('td', text='Changes to trial information').find_next('tr').find_next('tr').find_all('td')[2].text)
-    else:
-        p_dict['last_updated'] = pd.to_datetime(soup.find('td', text='\r\n                  Date of Approval:\r\n                ').find_next('td').text)
+    update_dates = []
+    for x in range(2,len(soup.find_all('table')[-1].find_all('tr')), 2):
+        update_dates.append(pd.to_datetime(soup.find_all('table')[-1].find_all('tr')[x].find_all('td')[2].text, format="%d/%m/%Y").date())
+    
+    approval_date = pd.to_datetime(soup.find('td', text='\r\n                  Date of Approval:\r\n                ').find_next('td').text, format="%d/%m/%Y")
+    
+    try:
+        p_dict['last_updated'] = max(update_dates)
+    except:
+        p_dict['last_updated'] = approval_date
+    
+    if p_dict['last_updated'] < approval_date:
+        p_dict['last_updated'] = approval_date
+
+    p_dict['last_updated_approval'] = pd.to_datetime(soup.find('td', text='\r\n                  Date of Approval:\r\n                ').find_next('td').text, format="%d/%m/%Y")
         
     emails = []
     for e in soup.find('td', text='CONTACT PEOPLE').parent.parent.find_all('b',text='Email'):
@@ -741,9 +754,10 @@ for p in tqdm(pactr_urls):
     p_dict['emails'] = emails
     
     pactr_trials.append(p_dict)
-# -
 
+# + trusted=true
 pd.DataFrame(pactr_trials).to_csv(save_path + 'pactr_04apr_2022.csv')
+# -
 
 # # CRIS
 
@@ -865,26 +879,34 @@ um.to_csv(save_path + 'umin_trials_update.csv')
 # + [markdown] tags=[]
 # # RPCEC
 
-# +
+# + trusted=true
 rpcec_ids = df[df.registry == 'RPCEC'].trn.to_list()
 
 rpcec_url_format = 'https://rpcec.sld.cu/en/trials/{}-En'
-# -
+rpcec_rev_format = 'https://rpcec.sld.cu/en/trials/{}-En/revisions'
 
+# + trusted=true
 rpcec_trials = []
 
+# + trusted=true
 for rp in tqdm(rpcec_ids):
     rp_dict = {}
     soup = get_url(rpcec_url_format.format(rp))
     sopa = get_url(rpcec_url_format.format(rp).replace('En', 'Sp').replace('en/trials', 'ensayos'))
+    soup_rev = get_url(rpcec_rev_format.format(rp))
     
     rp_dict['trial_id'] = soup.find('div', text=re.compile(r'\s*Unique ID number:\s*')).find_next().text.strip()
     
     rp_dict['trial_status'] = soup.find('div', text=re.compile(r'\s*Recruitment status:\s*')).find_next().text.strip()
     
-    rp_dict['comp_date'] = pd.to_datetime(soup.find('div', text=re.compile(r'\s*Study completion date:\s*')).find_next().text.strip())
+    rp_dict['comp_date'] = pd.to_datetime(soup.find('div', text=re.compile(r'\s*Study completion date:\s*')).find_next().text.strip(), format='%d/%m/%Y')
     
-    rp_dict['last_updated'] = pd.to_datetime(soup.find('div', text = re.compile(r'\s*Record Verification Date\s*:\s*')).find_next().text.strip())
+    revs = soup_rev.find('table', {'class': "table-revisions sticky-enabled"}).find_all('tr', {'class': ['even', 'odd']})
+    revs2 = [pd.to_datetime(re.findall('\d{2}/\d{2}/\d{4}', x.text)[0], format='%d/%m/%Y').date() for x in revs if "draft/pending" not in x.text]
+    
+    rp_dict['last_updated'] = max(revs2)
+    
+    #rp_dict['last_updated'] = pd.to_datetime(soup.find('div', text = re.compile(r'\s*Record Verification Date\s*:\s*')).find_next().text.strip(), format='%Y/%m/%d')
     
     emails = []
     for e in soup.find_all('div', text = re.compile(r'\s*Email\s*:\s*')):
@@ -894,6 +916,7 @@ for rp in tqdm(rpcec_ids):
     rp_dict['results'] = sopa.find('div', text=re.compile(r'\s*Referencias:\s*')).find_next().text.strip()
     
     rpcec_trials.append(rp_dict)
+# -
 
 pd.DataFrame(rpcec_trials).to_csv(save_path + 'rpcec_05apr_2022.csv')
 

@@ -28,10 +28,10 @@ import numpy as np
 import collections
 
 # + trusted=true
-raw_extract = pd.read_csv(parent + '/data/interventions/2022-09-13_082824-form_7-refset_34-extractions.tsv', sep='\t', encoding="ISO-8859-1")
-raw_arms = pd.read_csv(parent + '/data/interventions/2022-09-13_082828-sub_arm-refset_34-sub-extraction.tsv', sep='\t', encoding="ISO-8859-1")
-rec_extract = pd.read_csv(parent + '/data/interventions/2022-09-13_082831-form_7-refset_34-final.tsv', sep='\t', encoding="ISO-8859-1")
-rec_arms = pd.read_csv(parent + '/data/interventions/2022-09-13_082834-sub_arm-refset_34-sub-final.tsv', sep='\t', encoding="ISO-8859-1")
+raw_extract = pd.read_csv(parent + '/data/interventions/2022-10-05_095641-form_7-refset_34-extractions.tsv', sep='\t', encoding="ISO-8859-1")
+raw_arms = pd.read_csv(parent + '/data/interventions/2022-10-05_095649-sub_arm-refset_34-sub-extraction.tsv', sep='\t', encoding="ISO-8859-1")
+rec_extract = pd.read_csv(parent + '/data/interventions/2022-10-05_095652-form_7-refset_34-final.tsv', sep='\t', encoding="ISO-8859-1")
+rec_arms = pd.read_csv(parent + '/data/interventions/2022-10-05_095655-sub_arm-refset_34-sub-final.tsv', sep='\t', encoding="ISO-8859-1")
 
 # + trusted=true
 reconciled_ids = rec_arms.db_id.to_list()
@@ -62,6 +62,9 @@ final_int[final_int.intervention.isna()]
 # + trusted=true
 ints = final_int[final_int.type == 'experimental'].intervention
 int_list = ints.to_list()
+
+# + trusted=true
+final_int.loc[3916]
 
 # + trusted=true
 a = ints.to_frame()

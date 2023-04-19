@@ -8,7 +8,7 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.3.3
+#       jupytext_version: 1.13.8
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -399,6 +399,6 @@ print(f'{len(in_2020)} started since 1 Jan 2020. We exclude {len(non_int) - len(
 withdrawn = in_2020[~(in_2020.Public_title.str.contains('Cancelled') | in_2020.Public_title.str.contains('Retracted due to'))].reset_index(drop=True)
 
 print(f'{len(withdrawn)} are not listed as cancelled/withdrawn. We exclude {len(in_2020) - len(withdrawn)} at this step but will exclude additional trials after scraping the registries')
-# +
+# -
 
 

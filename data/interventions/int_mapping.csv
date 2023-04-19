@@ -1,0 +1,1643 @@
+,id,intervention
+0,tri00002,Ritonavir;Lopinavir;Umifenovir (Arbidol)
+1,tri00005,Umifenovir (Arbidol)
+2,tri00006,Immunoglobulin
+3,tri00010,Traditional Medicine
+4,tri00011,Traditional Medicine
+5,tri00012,Chloroquine
+6,tri00013,Chloroquine
+7,tri00019,Traditional Medicine
+8,tri00020,Ritonavir;Carrimycin;Lopinavir
+9,tri00022,Azvudine
+10,tri00024,Regulating intestinal flora
+11,tri00026,Traditional Medicine
+12,tri00028,Traditional Medicine
+13,tri00030,Traditional Medicine
+14,tri00031,Traditional Medicine
+15,tri00034,Camrelizumab;Thymosin
+16,tri00037,Traditional Medicine
+17,tri00039,Traditional Medicine
+18,tri00043,Traditional Medicine
+19,tri00044,Polyinosinic-polycytidylic Acid
+20,tri00045,Traditional Medicine
+21,tri00046,Traditional Medicine;Vitamin C
+22,tri00047,Tocilizumab
+23,tri00049,Traditional Medicine
+24,tri00054,Traditional Medicine
+25,tri00055,Corticosteroids (Unspecified);Sodium ATraditional Medicineate
+26,tri00056,Ritonavir;Lopinavir;Chloroquine
+27,tri00062,Methylprednisolone
+28,tri00065,Viral macrophage inflammatory protein
+29,tri00070,Umifenovir (Arbidol)
+30,tri00071,Ritonavir;Lopinavir;Chloroquine
+31,tri00073,Ritonavir;ASC09;Lopinavir
+32,tri00074,Traditional Medicine
+33,tri00075,Traditional Medicine
+34,tri00076,Interferon Alpha (Any);Favipiravir;Lopinavir;Ritonavir;Interferon Alpha (Any) (Any)
+35,tri00077,Traditional Medicine
+36,tri00080,Hydroxychloroquine
+37,tri00082,Ritonavir;Lopinavir;Favipiravir;Baloxavir marboxil
+38,tri00083,Favipiravir;Baloxavir marboxil
+39,tri00084,Chloroquine
+40,tri00085,Cobicistat;Ritonavir;Lopinavir;Darunavir
+41,tri00086,Ritonavir;Lopinavir
+42,tri00087,Traditional Medicine
+43,tri00088,Traditional Medicine
+44,tri00091,Traditional Medicine
+45,tri00092,Emtricitabine;Tenofovir;Lopinavir;Ritonavir;Dimethyl Fumarate
+46,tri00100,Traditional Medicine
+47,tri00101,Traditional Medicine
+48,tri00102,Traditional Medicine
+49,tri00105,Traditional Medicine
+50,tri00106,Traditional Medicine;Lopinavir;Ritonavir
+51,tri00107,Traditional Medicine
+52,tri00108,Anti-PD-1 Monoclonal Antibody;Thymosin
+53,tri00109,Traditional Medicine
+54,tri00112,Stem Cells (Mesenchymal)
+55,tri00113,Jaktinib hydrochloride
+56,tri00114,Interleukin-2
+57,tri00115,Traditional Medicine
+58,tri00116,Ozone-based Therapy
+59,tri00118,Stem Cells (Mesenchymal)
+60,tri00123,Stem Cells (Mesenchymal)
+61,tri00125,Ritonavir;Favipiravir
+62,tri00126,Ozone-based Therapy
+63,tri00132,Adalimumab
+64,tri00137,Leflunomide
+65,tri00139,Hydroxychloroquine;Chloroquine
+66,tri00140,Convalescent Plasma
+67,tri00141,Traditional Medicine
+68,tri00142,Azivudine
+69,tri00143,Convalescent Plasma
+70,tri00144,Traditional Medicine
+71,tri00145,Traditional Medicine
+72,tri00148,Suramin sodium
+73,tri00149,Traditional Medicine
+74,tri00157,Convalescent Plasma
+75,tri00159,Recombinant human granulocyte colony-stimulating factor (rhG-CSF)
+76,tri00160,Ozone-based Therapy
+77,tri00162,Traditional Medicine
+78,tri00163,Tranilast
+79,tri00164,Triazavirin
+80,tri00167,Favipiravir
+81,tri00169,Traditional Medicine
+82,tri00170,Hydroxychloroquine;Chloroquine
+83,tri00171,Stem Cells (Mesenchymal)
+84,tri00172,Interferon Alpha (Any)
+85,tri00173,Chloroquine
+86,tri00176,Traditional Medicine
+87,tri00177,Probiotic (Unspecified)
+88,tri00178,Ultra Short Wave Electrotherapy
+89,tri00179,Traditional Medicine
+90,tri00182,Traditional Medicine
+91,tri00185,Lipoic acid acid
+92,tri00187,Traditional Medicine
+93,tri00188,Traditional Medicine
+94,tri00189,Hydroxychloroquine
+95,tri00191,Thalidomide
+96,tri00192,Thalidomide
+97,tri00193,Meplazumab
+98,tri00202,Traditional Medicine
+99,tri00205,Lung Rehabilitation Exercises
+100,tri00220,Gastroscope mask
+101,tri00222,Traditional Medicine
+102,tri00227,Continuous renal replacement therapy
+103,tri00230,Stem Cells (Mesenchymal)
+104,tri00232,Ritonavir;Danoprevir
+105,tri00233,Hydrogen
+106,tri00235,Traditional Medicine
+107,tri00238,Traditional Medicine
+108,tri00241,Traditional Medicine
+109,tri00242,Traditional Medicine
+110,tri00243,Traditional Medicine
+111,tri00244,Tocilizumab
+112,tri00248,Traditional Medicine
+113,tri00249,Interferon Alpha (Any)
+114,tri00250,Traditional Medicine
+115,tri00251,Chloroquine
+116,tri00254,Hydroxychloroquine;Chloroquine
+117,tri00255,Hydroxychloroquine;Chloroquine
+118,tri00261,Traditional Medicine
+119,tri00263,Ritonavir;Lopinavir;Ribavirin
+120,tri00264,Methylprednisolone
+121,tri00265,Stem Cells (Mesenchymal)
+122,tri00267,Pirfenidone
+123,tri00269,Carrimycin
+124,tri00270,Convalescent Plasma
+125,tri00285,Continuous renal replacement therapy
+126,tri00286,Ebastine;Lopinavir;Interferon Alpha (Any)
+127,tri00288,Traditional Medicine
+128,tri00293,Traditional Medicine
+129,tri00295,Azvudine
+130,tri00297,Stem Cells (Mesenchymal)
+131,tri00299,Corticosteroids (Unspecified)
+132,tri00301,Traditional Medicine
+133,tri00302,Blood Filtratration
+134,tri00303,Cytokine absorber
+135,tri00304,Ritonavir;Danoprevir
+136,tri00305,Lipoic acid
+137,tri00306,Traditional Medicine
+138,tri00317,Traditional Medicine;Umifenovir (Arbidol)
+139,tri00319,Convalescent Plasma
+140,tri00320,Ruxolitinib;Stem Cells (Mesenchymal)
+141,tri00324,Ritonavir;Lopinavir
+142,tri00327,Interferon Alpha (Any)
+143,tri00328,Traditional Medicine
+144,tri00329,Mask (PPE)
+145,tri00335,Probiotic (Unspecified)
+146,tri00336,Traditional Medicine
+147,tri00343,Traditional Medicine
+148,tri00352,Mechanical Ventilation (Any)
+149,tri00354,Dexmedetomidine
+150,tri00358,Immunoglobulin
+151,tri00361,Traditional Medicine
+152,tri00362,Stem Cells (Mesenchymal)
+153,tri00373,Traditional Medicine
+154,tri00378,Traditional Medicine
+155,tri00390,Ulinastatin
+156,tri00392,Blood purification
+157,tri00397,Continuous renal replacement therapy
+158,tri00399,Traditional Medicine
+159,tri00407,Traditional Medicine
+160,tri00409,Low Flow Extracorporeal Membrane Oxygenation (ECMO)
+161,tri00418,Chloroquine
+162,tri00424,Ixekizumab
+163,tri00425,Convalescent Plasma
+164,tri00426,Heparin (LMWH or Unfractionated)
+165,tri00427,Heparin (LMWH or Unfractionated)
+166,tri00440,Traditional Medicine
+167,tri00453,Ritonavir;Lopinavir
+168,tri00473,Vitamin C
+169,tri00476,Stem Cells (Mesenchymal)
+170,tri00482,Stem Cells (Mesenchymal)
+171,tri00483,Pirfenidone
+172,tri00502,Heparin (LMWH or Unfractionated);Mechanical Anticoagulation
+173,tri00503,Stem Cells (Mesenchymal);NK cells
+174,tri00507,LL-37 antiviral peptide (CAS001)
+175,tri00512,Convalescent Plasma
+176,tri00513,Interferon Alpha (Any);Umifenovir (Arbidol)
+177,tri00521,Favipiravir;Umifenovir (Arbidol)
+178,tri00526,Hydroxychloroquine
+179,tri00529,Novaferon
+180,tri00530,Ritonavir;Novaferon;Lopinavir
+181,tri00534,Interferon atomization
+182,tri00535,Ritonavir;Oseltamivir;Lopinavir;Umifenovir (Arbidol)
+183,tri00536,Ritonavir;ASC09F;Oseltamivir
+184,tri00537,Methylprednisolone
+185,tri00538,Immunoglobulin
+186,tri00543,Traditional Medicine
+187,tri00546,Sildenafil
+188,tri00549,Traditional Medicine
+189,tri00552,Stem Cells (Mesenchymal)
+190,tri00574,Compound amino acid
+191,tri00582,Chloroquine
+192,tri00585,Ritonavir;Lopinavir
+193,tri00588,Traditional Medicine
+194,tri00590,Traditional Medicine
+195,tri00593,Traditional Medicine
+196,tri00594,Traditional Medicine
+197,tri00596,Traditional Medicine
+198,tri00598,Traditional Medicine
+199,tri00601,Anti-PD-1 Monoclonal Antibody
+200,tri00606,Bevacizumab
+201,tri00609,Favipiravir;Chloroquine
+202,tri00610,Traditional Medicine
+203,tri00612,Traditional Medicine
+204,tri00613,Vitamin C
+205,tri00623,Celecoxib
+206,tri00632,Convalescent Plasma
+207,tri00635,Stem Cells (Mesenchymal)
+208,tri00650,imatinib
+209,tri00654,Bevacizumab
+210,tri00656,Thymosin Alpha;Interferon Alpha (Any)
+211,tri00663,CPAP
+212,tri00666,Convalescent Plasma
+213,tri00668,Hydroxychloroquine;Azithromycin
+214,tri00675,Ciclesonide
+215,tri00677,immunity- and matrix-regulatory cells (IMRCs)
+216,tri00679,Angiotensin 1-7
+217,tri00685,Defibrotide
+218,tri00692,Zinc (Any)
+219,tri00705,NK cells
+220,tri00712,Epitope gene recombinant chimeric DC vaccine
+221,tri00722,Dexamethasone
+222,tri00728,Methylprednisolone
+223,tri00731,Cobicistat;Darunavir
+224,tri00732,Hydroxychloroquine
+225,tri00735,Interferon Beta (Any);Danoprevir;Ritonavir
+226,tri00738,Tocilizumab;Favipiravir
+227,tri00739,Tocilizumab
+228,tri00744,Tocilizumab;Sarilumab
+229,tri00745,Anakinra;Emapalumab
+230,tri00748,Losartan
+231,tri00753,Formoterol;Budesonide;Levamisol
+232,tri00755,Ruxolitinib
+233,tri00756,Hydroxychloroquine
+234,tri00757,Tocilizumab
+235,tri00759,Aspirin;Clopidogrel;Rivaroxaban;Atorvastatin;Omeprazole
+236,tri00762,Vitamin D (Any)
+237,tri00763,Hydroxychloroquine;Azithromycin
+238,tri00767,Oxygen;Hydrogen-Oxygen Generator with Nebulizer
+239,tri00770,Favipiravir
+240,tri00776,Mask (PPE)
+241,tri00781,Hydroxychloroquine;Azithromycin;Oseltamivir
+242,tri00782,Nintedanib
+243,tri00787,Stem Cells (Mesenchymal)
+244,tri00789,Methylprednisolone;Tacrolimus
+245,tri00791,Hydroxychloroquine;Azithromycin
+246,tri00798,Hydroxychloroquine
+247,tri00801,Cytokine absorber
+248,tri00807,Povidone-iodine
+249,tri00808,OM85
+250,tri00812,Traditional Medicine
+251,tri00816,Hyperbaric Oxygen Therapy
+252,tri00820,Traditional Medicine;Unspecified spray
+253,tri00822,Traditional Medicine
+254,tri00829,Traditional Medicine
+255,tri00830,Traditional Medicine
+256,tri00834,Cyclosporine
+257,tri00836,Azithromycin;Hydroxychloroquine
+258,tri00842,Hydroxychloroquine
+259,tri00862,Paracetamol;Febuxostat;Hydroxychloroquine
+260,tri00877,Stem Cells (Mesenchymal)
+261,tri00884,Favipiravir
+262,tri00892,Stem Cells (Mesenchymal)
+263,tri00893,Remdesivir
+264,tri00894,Remdesivir
+265,tri00895,Stem Cells (Mesenchymal)
+266,tri00896,Interferon Beta (Any);Ribavirin
+267,tri00900,Hydroxychloroquine
+268,tri00901,Hydroxychloroquine
+269,tri00902,Ritonavir;Lopinavir;Baricitinib
+270,tri00904,Ritonavir;Lopinavir
+271,tri00906,Natural honey
+272,tri00908,Sarilumab
+273,tri00912,Dexamethasone
+274,tri00913,Naproxen
+275,tri00914,Tradipitant
+276,tri00916,Methylprednisolone;Siltuximab
+277,tri00917,Formoterol;Budesonide
+278,tri00920,Chloroquine
+279,tri00921,Ruxolitinib
+280,tri00931,Anakinra
+281,tri00933,Hydroxychloroquine
+282,tri00935,Chloroquine
+283,tri00937,Nivolumab
+284,tri00938,Hyperbaric Oxygen Therapy
+285,tri00944,Pyridostigmine
+286,tri00949,Hydroxychloroquine;Azithromycin
+287,tri00950,Convalescent Plasma
+288,tri00953,Heparin (LMWH or Unfractionated)
+289,tri00954,Bevacizumab
+290,tri00960,Methylprednisolone;Tocilizumab
+291,tri00962,Convalescent Plasma
+292,tri00966,Spironolactone
+293,tri00975,Stem Cells (Mesenchymal)
+294,tri00985,Prone Positioning
+295,tri00986,Dexamethasone;Hydroxychloroquine
+296,tri00988,Defibrotide
+297,tri00992,Stem Cells (Mesenchymal)
+298,tri00993,Ruxolitinib;Simvastatin
+299,tri00995,Convalescent Plasma
+300,tri00996,Chloroquine
+301,tri00997,Remdesivir;Doxycycline;Clindamycin;Interferon Alpha (Any);Convalescent Plasma;Losartan;Azithromycin;Hydroxychloroquine;Primaquine;Methylprednisolone;Tocilizumab
+302,tri01002,Interferon Beta (Any)
+303,tri01003,Interferon Beta (Any)
+304,tri01004,Umifenovir (Arbidol)
+305,tri01005,BCG Vaccine
+306,tri01006,Favipiravir;Chloroquine
+307,tri01010,Hydroxychloroquine
+308,tri01014,Verapamil;Amiodarone
+309,tri01021,Citrox;Beta Cyclodextrin
+310,tri01029,Bromhexine
+311,tri01030,Methylprednisolone
+312,tri01036,Nivolumab
+313,tri01040,Chloroquine
+314,tri01048,Vitamin C
+315,tri01051,Traditional Medicine
+316,tri01053,Nifedipine;Aliskiren
+317,tri01054,Traditional Medicine
+318,tri01055,Kolimycin
+319,tri01062,Traditional Medicine
+320,tri01068,High flow nasal cannula;CPAP
+321,tri01071,Alpha-1 antitrypsin
+322,tri01076,Antithrombin
+323,tri01078,Hydroxychloroquine
+324,tri01079,Azithromycin
+325,tri01081,Hydroxychloroquine
+326,tri01085,Hydroxychloroquine
+327,tri01092,Sargramostim
+328,tri01094,Azithromycin;Hydroxychloroquine
+329,tri01096,Anakinra;Tocilizumab;Siltuximab
+330,tri01097,Tocilizumab
+331,tri01098,Convalescent Plasma
+332,tri01099,Convalescent Plasma
+333,tri01100,Favipiravir
+334,tri01101,Traditional Medicine
+335,tri01107,Angiotensin converting enzyme inhibitors (ACEi);Angiotensin Receptor Blockers (ARB)
+336,tri01108,Anakinra;Tocilizumab
+337,tri01109,Hydroxychloroquine;Nitazoxanide
+338,tri01114,Convalescent Plasma
+339,tri01116,Eculizumab
+340,tri01119,Azithromycin;Hydroxychloroquine
+341,tri01122,Immunoglobulin
+342,tri01125,CoronaVac (Sinovac)
+343,tri01127,Hydroxychloroquine
+344,tri01128,Hydroxychloroquine
+345,tri01129,Mycobacterium w
+346,tri01131,Hydroxychloroquine
+347,tri01132,Camostat Mesilate;Azithromycin;Hydroxychloroquine
+348,tri01135,Captopril
+349,tri01147,Convalescent Plasma
+350,tri01153,imatinib
+351,tri01154,Vitamin C
+352,tri01155,Sarilumab
+353,tri01157,Sarilumab
+354,tri01161,Recombinant human plasma gelsolin (Rhu-pGSN)
+355,tri01164,Ritonavir;Lopinavir;Baricitinib
+356,tri01167,Mycobacterium w
+357,tri01168,Colchicine;Tenofovir;Emtricitabine;Rosuvatatin
+358,tri01170,Ruxolitinib
+359,tri01171,Azithromycin
+360,tri01172,Estradiol
+361,tri01174,Hydroxychloroquine;Favipiravir
+362,tri01179,Telmisartan;Hydroxychloroquine;Azithromycin
+363,tri01182,Ivermectin;Nitazoxanide
+364,tri01185,Telmisartan
+365,tri01195,Hydroxychloroquine;Nitazoxanide
+366,tri01197,Physiotherapy;non-invasive oscillating device (NIOD)
+367,tri01201,Cytokine absorber
+368,tri01208,Anakinra
+369,tri01222,Aspirin;Vitamin D (Any)
+370,tri01224,Ritonavir;Lopinavir
+371,tri01227,Progesterone
+372,tri01228,Convalescent Plasma
+373,tri01230,Caficrestat (AT 001)
+374,tri01234,Ramipril
+375,tri01241,Traditional Medicine
+376,tri01246,Traditional Medicine
+377,tri01249,Hydroxychloroquine
+378,tri01258,Oxygen
+379,tri01260,Ulinastatin
+380,tri01263,Hydroxychloroquine
+381,tri01273,Tocilizumab
+382,tri01275,Bromhexine
+383,tri01279,Colchicine
+384,tri01280,Hydroxychloroquine
+385,tri01281,Tenofovir;Hydroxychloroquine;Emtricitabine;Emtricitabin
+386,tri01282,Tocilizumab
+387,tri01285,Azithromycin;Hydroxychloroquine;Indometacin
+388,tri01289,Stem Cells (Mesenchymal)
+389,tri01290,Hydroxychloroquine;Chloroquine
+390,tri01291,Methotrexate
+391,tri01292,Hydroxychloroquine
+392,tri01294,recombinant tissue-Plasminogen Activator (rt-PA)
+393,tri01300,Prone Positioning
+394,tri01301,Convalescent Plasma
+395,tri01306,Convalescent Plasma
+396,tri01311,Clavulanate;Amoxicillin;Azithromycin
+397,tri01312,Hydroxychloroquine
+398,tri01315,Aspirin
+399,tri01320,Stem Cells (Mesenchymal)
+400,tri01321,Ozone-based Therapy;Probiotic (Unspecified)
+401,tri01324,Lactobacillus
+402,tri01327,Chlorpromazine
+403,tri01330,Prone Positioning
+404,tri01332,Vitamin D (Any)
+405,tri01350,Vagus nerve stimulation
+406,tri01358,Aspirin;Tirofiban;Fondaparinux;Clopidogrel
+407,tri01365,Azithromycin
+408,tri01367,Ravulizumab
+409,tri01369,BCG Vaccine
+410,tri01390,Washed microbiota transplantation
+411,tri01391,Traditional Medicine;Vitamin C
+412,tri01395,Traditional Medicine
+413,tri01413,Tocilizumab
+414,tri01419,DAS181
+415,tri01420,Deferoxamine
+416,tri01424,Interferon Beta (Any)
+417,tri01426,Hydroxychloroquine;Chloroquine
+418,tri01427,Colchicine
+419,tri01428,Azithromycin;Hydroxychloroquine
+420,tri01431,Hyperbaric Oxygen Therapy
+421,tri01434,Inosine pranobex;Levamisole
+422,tri01435,Deferoxamine;Tocilizumab
+423,tri01442,Methylene Blue;N-acetyl cysteine;Vitamin C
+424,tri01444,Avdoralimab
+425,tri01452,Povidone-iodine
+426,tri01453,Linagliptin
+427,tri01468,Ivermectin
+428,tri01472,Ruxolitinib;Therapeutic plasma exchange
+429,tri01476,Therapeutic plasma exchange
+430,tri01479,Sirolimus;Azithromycin;Hydroxychloroquine
+431,tri01481,Colchicine
+432,tri01482,Traditional Medicine
+433,tri01483,Remdesivir
+434,tri01485,Colchicine
+435,tri01486,Hydroxychloroquine
+436,tri01489,Azithromycin;Hydroxychloroquine
+437,tri01492,Hydroxychloroquine
+438,tri01493,Azithromycin;Hydroxychloroquine
+439,tri01496,Clazakizumab
+440,tri01497,Vitamin D (Any)
+441,tri01500,Selinexor
+442,tri01501,Extracorporeal CO2 removal (ECCO2R)
+443,tri01508,Viruxal Nasal Spray
+444,tri01513,Vitamin C
+445,tri01514,Colchicine
+446,tri01520,Hydroxychloroquine
+447,tri01528,Tridecactide;Metenkefalin
+448,tri01536,Hydroxychloroquine
+449,tri01545,Convalescent Plasma;Methylene Blue;Blood Transfusion
+450,tri01552,Fluoxetine
+451,tri01557,Methylprednisolone;Tocilizumab
+452,tri01559,Zinc (Any);Hydroxychloroquine
+453,tri01560,Tocilizumab
+454,tri01564,Heparin (LMWH or Unfractionated)
+455,tri01571,Vagus nerve stimulation
+456,tri01577,BCG Vaccine
+457,tri01580,Dialyzable Leukocyte Extract (DLE)
+458,tri01583,Olokizumab;RPH-104
+459,tri01592,Piperaquine;Artemisine
+460,tri01596,Interferon Kappa (Any)
+461,tri01597,Interferon Alpha (Any)
+462,tri01598,Traditional Medicine
+463,tri01601,Vitamin C
+464,tri01611,Traditional Medicine
+465,tri01614,Methylprednisolone;Dexamethasone
+466,tri01625,Sofosbuvir;Daclatasvir;Ribavirin
+467,tri01648,Tracheotomy;Intubation (Any)
+468,tri01651,Traditional Medicine
+469,tri01658,Convalescent Plasma
+470,tri01687,Traditional Medicine
+471,tri01717,Nafamostat
+472,tri01736,Traditional Medicine
+473,tri01742,Convalescent Plasma
+474,tri01745,Convalescent Plasma
+475,tri01756,Traditional Medicine
+476,tri01766,Traditional Medicine
+477,tri01787,Favipiravir
+478,tri01788,Traditional Medicine
+479,tri01790,Traditional Medicine
+480,tri01795,Methylprednisolone
+481,tri01798,Azithromycin;Hydroxychloroquine
+482,tri01802,Hydroxychloroquine
+483,tri01804,imatinib;Baricitinib
+484,tri01805,Acalabrutinib
+485,tri01806,Clevudine
+486,tri01811,Naltrexone;Ketamine
+487,tri01822,Vidofludimus calcium
+488,tri01826,Melphalan
+489,tri01827,Acalabrutinib
+490,tri01834,Convalescent Plasma
+491,tri01843,Azoximer Bromide
+492,tri01845,Convalescent Plasma;Immunoglobulin
+493,tri01846,Traditional Medicine
+494,tri01848,Nasopharyngeal saline wash
+495,tri01855,Neuromuscular Electrical Stimulation (NMES)
+496,tri01856,Zilucoplan
+497,tri01860,Nitric Oxide Gas Gas
+498,tri01861,CoronaVac (Sinovac)
+499,tri01868,Hydroxychloroquine
+500,tri01871,BCG Vaccine
+501,tri01872,Convalescent Plasma
+502,tri01880,Hydroxychloroquine;Vitamin C
+503,tri01882,Hydroxychloroquine
+504,tri01886,Convalescent Plasma
+505,tri01887,Bromhexine;Hydroxychloroquine
+506,tri01888,Auricular neuromodulation
+507,tri01889,Zinc (Any);Vitamin C
+508,tri01893,Baby Shampoo;Nasopharyngeal saline wash
+509,tri01896,Convalescent Plasma
+510,tri01897,Hydroxychloroquine
+511,tri01906,Heparin (LMWH or Unfractionated)
+512,tri01909,Anakinra
+513,tri01915,Sitagliptin
+514,tri01919,Hydrogen-Oxygen Generator with Nebulizer
+515,tri01921,Lipsonal transcrocetin
+516,tri01925,Hydroxychloroquine
+517,tri01930,Poractant alfa
+518,tri01935,Convalescent Plasma
+519,tri01937,SNG001
+520,tri01940,Convalescent Plasma
+521,tri01942,Cytokine absorber
+522,tri01950,Sarilumab
+523,tri01964,Convalescent Plasma
+524,tri01976,Convalescent Plasma
+525,tri01986,Infliximab;Ozogamicin;Gemtuzumab;Namilumab
+526,tri01987,Convalescent Plasma
+527,tri01994,Traditional Medicine
+528,tri02006,Artemisinin-piperaquine
+529,tri02016,Colchicine
+530,tri02017,Hydroxychloroquine
+531,tri02023,Ad5-nCoV (Convidecia)
+532,tri02028,Convalescent Plasma
+533,tri02029,Hydroxychloroquine
+534,tri02030,Convalescent Plasma
+535,tri02033,Heparin (LMWH or Unfractionated)
+536,tri02035,Azithromycin;Doxycycline
+537,tri02037,Doxycycline
+538,tri02038,Convalescent Plasma
+539,tri02040,Angiotensin 1-7
+540,tri02043,Quercetin
+541,tri02046,Nitric Oxide Gas Gas
+542,tri02049,COVID-19 Specific T Cell derived exosomes (CSTC-Exo)
+543,tri02054,Deferoxamine
+544,tri02055,Convalescent Plasma
+545,tri02056,Tofacitinib
+546,tri02060,Low Dose Radiotherapy
+547,tri02067,Multiwave Locked System (MLS) Laser Therapy
+548,tri02073,Colchicine;herbal phenolic monoterpene fractions
+549,tri02080,Ivermectin
+550,tri02081,Stem Cells (Mesenchymal)
+551,tri02086,Radiation
+552,tri02088,Traditional Medicine
+553,tri02091,Nitric Oxide Gas Gas
+554,tri02095,Nitric Oxide Gas Gas
+555,tri02097,Sirolimus
+556,tri02099,Fluvoxamine
+557,tri02100,Convalescent Plasma
+558,tri02110,Convalescent Plasma
+559,tri02111,Azithromycin;Hydroxychloroquine
+560,tri02116,Canakinumab
+561,tri02120,Prone Positioning
+562,tri02130,Zofin (Organicell Flow)
+563,tri02136,Ivermectin
+564,tri02138,Convalescent Plasma
+565,tri02141,Convalescent Plasma
+566,tri02142,ABX464
+567,tri02143,Baricitinib
+568,tri02148,Convalescent Plasma
+569,tri02149,Povidone-iodine
+570,tri02157,Hydroxychloroquine
+571,tri02168,AT-527
+572,tri02175,Hydroxychloroquine
+573,tri02177,Convalescent Plasma
+574,tri02188,Stem Cells (Mesenchymal)
+575,tri02189,Vitamin D (Any);Ivermectin;Azithromycin
+576,tri02198,Leflunomide
+577,tri02205,Traditional Medicine
+578,tri02207,Traditional Medicine
+579,tri02209,Traditional Medicine
+580,tri02215,Povidone-iodine
+581,tri02225,Hydroxychloroquine
+582,tri02228,Aprotinin;Heparin (LMWH or Unfractionated);Anakinra
+583,tri02242,Nitric Oxide Gas Gas
+584,tri02244,Azithromycin
+585,tri02245,Chloroquine
+586,tri02251,Dalargin;Leitragin
+587,tri02252,BCG Vaccine
+588,tri02258,Sodium Bicarbonate
+589,tri02264,Ivermectin
+590,tri02266,Nafamostat
+591,tri02268,Stem Cells (Mesenchymal);Platelet Rich Plasma
+592,tri02269,Dexamethasone
+593,tri02273,Mavrilimumab
+594,tri02275,Clarithromycin
+595,tri02277,Remote Monitoring
+596,tri02279,Niclosamide
+597,tri02282,Baricitinib
+598,tri02284,Immunoglobulin
+599,tri02290,Resveratrol
+600,tri02291,Sargramostim
+601,tri02297,Traditional Medicine
+602,tri02303,Angiotensin 1-7
+603,tri02307,Favipiravir
+604,tri02314,Immunoglobulin
+605,tri02316,Convalescent Plasma
+606,tri02322,Ritonavir;Hydroxychloroquine;Lopinavir
+607,tri02323,CD24Fc
+608,tri02324,Convalescent Plasma
+609,tri02325,BCG Vaccine
+610,tri02327,Hydroxychloroquine
+611,tri02328,Chloroquine
+612,tri02329,Ibuprofen
+613,tri02333,Convalescent Plasma
+614,tri02335,Ritonavir;Hydroxychloroquine;Lopinavir;Azithromycin
+615,tri02344,NVX-CoV2373 (Nuvaxovid);NVX-CoV2373
+616,tri02346,Convalescent Plasma
+617,tri02354,Stem Cells (Mesenchymal)
+618,tri02355,Convalescent Plasma
+619,tri02360,Convalescent Plasma
+620,tri02364,Nitric Oxide Gas Gas
+621,tri02371,Ruxolitinib;Colchicine;Secukinumab
+622,tri02372,Traditional Medicine
+623,tri02374,Tocilizumab
+624,tri02378,L-citrulline
+625,tri02380,Tenofovir;Emtricitabine
+626,tri02381,Convalescent Plasma
+627,tri02384,Ivermectin
+628,tri02386,Bromhexine
+629,tri02391,Nitazoxanide
+630,tri02393,Anticoagulants (Unspecified)
+631,tri02401,Vitamin D (Any)
+632,tri02405,Ivermectin
+633,tri02412,Heparin (LMWH or Unfractionated)
+634,tri02421,Ivermectin
+635,tri02438,Ivermectin
+636,tri02445,Remdesivir
+637,tri02446,Remdesivir
+638,tri02447,Tocilizumab
+639,tri02448,Hydroxychloroquine;Azithromycin
+640,tri02450,Vitamin A;Vitamin E;Selenium;Zinc (Any);Vitamin C
+641,tri02451,Hydroxychloroquine;Azithromycin
+642,tri02452,Hydroxychloroquine
+643,tri02455,Telehealth
+644,tri02457,Interferon Lambda (Any)
+645,tri02458,Chloroquine
+646,tri02461,Triiodothyronine
+647,tri02462,Gimsilumab
+648,tri02465,Physiotherapy
+649,tri02467,Tocilizumab
+650,tri02468,Hydroxychloroquine
+651,tri02471,INB03
+652,tri02473,Baricitinib
+653,tri02477,Convalescent Plasma
+654,tri02480,Dipyridamole
+655,tri02482,Retinoic acid (Any)
+656,tri02483,Convalescent Plasma
+657,tri02484,Stem Cells (Mesenchymal)
+658,tri02486,EB05
+659,tri02497,Viusid;Asbrip
+660,tri02499,Convalescent Plasma
+661,tri02501,Nicotinamide riboside
+662,tri02513,Hydroxychloroquine
+663,tri02516,Dactolisib (RTB101)
+664,tri02518,Garadacimab
+665,tri02519,Melatonin
+666,tri02529,Aspirin;Dipyridamole
+667,tri02535,Hydroxychloroquine
+668,tri02539,Azithromycin;Hydroxychloroquine;Favipiravir
+669,tri02543,Sargramostim
+670,tri02556,Aviptadil
+671,tri02558,Expiratory muscle training (IMT) device;Inspiratory muscle training (IMT) device
+672,tri02559,Dexamethasone
+673,tri02562,Hyperbaric Oxygen Therapy
+674,tri02563,Hydroxychloroquine
+675,tri02565,Azithromycin
+676,tri02568,Ivermectin
+677,tri02569,Nitazoxanide
+678,tri02570,Ritonavir;Danoprevir
+679,tri02571,Hydroxychloroquine
+680,tri02575,Clazakizumab
+681,tri02577,Telmisartan
+682,tri02578,Convalescent Plasma
+683,tri02581,Nitazoxanide
+684,tri02583,Prayer
+685,tri02586,Heparin (LMWH or Unfractionated)
+686,tri02589,ArtemiC
+687,tri02592,Ivermectin;Zinc (Any);Hydroxychloroquine
+688,tri02597,Isotretinoin;Tamoxifen
+689,tri02598,Convalescent Plasma
+690,tri02612,Vitamin D (Any)
+691,tri02615,Immunoglobulin
+692,tri02619,Vero Cell Vaccine (CAMS)
+693,tri02626,Nivolumab
+694,tri02631,Ruxolitinib
+695,tri02632,KB109
+696,tri02635,Conestat alfa
+697,tri02637,Axatilimab
+698,tri02643,Photodynamic therapy;Photobiomodulation therapy (PBMT)
+699,tri02644,Stem Cells (Mesenchymal)
+700,tri02655,N-acetyl cysteine
+701,tri02666,Bromhexine
+702,tri02672,Hydroxychloroquine
+703,tri02674,Hydroxychloroquine
+704,tri02771,Hydroxychloroquine
+705,tri02772,Sofosbuvir;Daclatasvir
+706,tri02773,Vitamin A
+707,tri02778,Ritonavir;Lopinavir;Favipiravir
+708,tri02779,Colchicine
+709,tri02795,Traditional Medicine
+710,tri02845,Umifenovir (Arbidol)
+711,tri02852,Tocilizumab
+712,tri02863,Traditional Medicine
+713,tri02875,Traditional Medicine
+714,tri02882,Ritonavir;Hydroxychloroquine;Lopinavir;Chloroquine
+715,tri02883,MMR Vaccine
+716,tri02884,Traditional Medicine
+717,tri02885,Folic Acid
+718,tri02888,Azithromycin;Hydroxychloroquine
+719,tri02890,Artesunate;Vitamin C
+720,tri02908,Interferon Gamma (Any);Interferon Alpha (Any)
+721,tri02910,Homeostec
+722,tri02912,itolizumab
+723,tri02914,CIGB-258 peptide
+724,tri02915,Meningococcal vaccine
+725,tri02918,CIGB-300 peptide
+726,tri02921,Ozone-based Therapy
+727,tri02924,Favipiravir
+728,tri02927,Blood Filtratration
+729,tri02929,Vitamin C;Chloroquine
+730,tri02933,Sarilumab
+731,tri02934,Hydroxychloroquine
+732,tri02935,Personalized health education;General health education
+733,tri02937,Pembrolizumab;Tocilizumab
+734,tri02942,Convalescent Plasma
+735,tri02943,Traditional Medicine
+736,tri02944,Convalescent Plasma
+737,tri02951,Interleukin-2
+738,tri02957,Ozone-based Therapy
+739,tri02960,Vitamin D (Any);Hydroxychloroquine
+740,tri02961,Convalescent Plasma
+741,tri02964,Azithromycin
+742,tri02968,High flow nasal cannula;CPAP
+743,tri02970,Heparin (LMWH or Unfractionated)
+744,tri02972,APL-9
+745,tri02973,Ritonavir;Hydroxychloroquine;Lopinavir
+746,tri02978,Tracheotomy
+747,tri02979,Yoga
+748,tri02982,Budesonide
+749,tri02984,Nafamostat
+750,tri02991,Convalescent Plasma
+751,tri02995,TL-895
+752,tri02997,oropharygeal spray (unspecified);food emulsion (unspecified)
+753,tri03001,Low Dose Radiotherapy
+754,tri03008,QuadraMune
+755,tri03009,Lactoferrin
+756,tri03011,Hydroxychloroquine
+757,tri03017,Tocilizumab
+758,tri03020,Bromhexine;Spironolactone
+759,tri03025,Stem Cells (Mesenchymal)
+760,tri03026,Colchicine
+761,tri03028,Tocilizumab
+762,tri03029,BLD-2660
+763,tri03030,Valsartan
+764,tri03033,Tranexamic acid (TXA)
+765,tri03037,Leronlimab
+766,tri03039,Prednisone
+767,tri03042,Azithromycin
+768,tri03044,Favipiravir
+769,tri03045,Mycobacterium w
+770,tri03046,Leronlimab
+771,tri03047,Nitazoxanide
+772,tri03049,Lenzilumab
+773,tri03051,ACE Inhibitors;Angiotensin Receptor Blockers (ARB)
+774,tri03057,Canakinumab
+775,tri03060,Ruxolitinib;Anakinra
+776,tri03065,Convalescent Plasma
+777,tri03066,Bovine Lipid Extract Surfactant (BLES)
+778,tri03067,Ciclesonide
+779,tri03069,Sirukumab
+780,tri03071,Ibuprofen
+781,tri03074,Photobiomodulation therapy (PBMT)
+782,tri03075,Vitamin D (Any)
+783,tri03077,Stem Cells (Mesenchymal)
+784,tri03081,Hydroxychloroquine
+785,tri03085,Convalescent Plasma;Immunoglobulin
+786,tri03086,Mavrilimumab
+787,tri03092,Hyperbaric Oxygen Therapy
+788,tri03099,Opaganib
+789,tri03102,Bemiparin sodium
+790,tri03104,Lanadelumab
+791,tri03110,imatinib
+792,tri03116,Nitazoxanide
+793,tri03124,Dipyridamole
+794,tri03130,Favipiravir
+795,tri03132,Infliximab
+796,tri03133,Ivermectin
+797,tri03135,Azvudine
+798,tri03136,Convalescent Plasma
+799,tri03138,Convalescent Plasma
+800,tri03156,Convalescent Plasma
+801,tri03162,Stem Cells (Mesenchymal)
+802,tri03163,Convalescent Plasma
+803,tri03164,Hydroxychloroquine
+804,tri03171,Exosomes
+805,tri03172,Ivermectin
+806,tri03173,Therapeutic plasma exchange
+807,tri03183,Itraconazole
+808,tri03193,Methylprednisolone
+809,tri03196,Losartan
+810,tri03197,Losartan
+811,tri03198,Nitric Oxide Gas Gas
+812,tri03199,Monalizumab;GNS651;Avdoralimab
+813,tri03200,Low Flow Extracorporeal Membrane Oxygenation (ECMO)
+814,tri03202,Convalescent Plasma
+815,tri03204,Melatonin
+816,tri03208,Famotidine
+817,tri03211,Ritonavir;Hydroxychloroquine;Lopinavir;Favipiravir
+818,tri03212,DFV890
+819,tri03213,Convalescent Plasma
+820,tri03217,VPM1002 vaccine
+821,tri03223,Levilimab
+822,tri03227,Dornase Alfa
+823,tri03228,LSALT peptide
+824,tri03230,CERC-002
+825,tri03235,Convalescent Plasma
+826,tri03244,Lactoferrin
+827,tri03248,Ibudilast
+828,tri03249,Ivermectin
+829,tri03253,Hydroxychloroquine
+830,tri03261,Ivermectin
+831,tri03264,Convalescent Plasma
+832,tri03265,Immunoglobulin
+833,tri03270,Convalescent Plasma
+834,tri03274,Stem Cells (Mesenchymal)
+835,tri03275,Stem Cells (Mesenchymal)
+836,tri03276,Hydroxychloroquine
+837,tri03277,Hydroxychloroquine
+838,tri03289,Ritonavir;Hydroxychloroquine;Lopinavir
+839,tri03291,Hydroxychloroquine
+840,tri03292,Bidirectional Oxygenation Valve
+841,tri03293,Interferon Lambda (Any)
+842,tri03294,Hydroxychloroquine
+843,tri03295,Recombinant human angotensin-converting enzyme 2 (rhACE2)
+844,tri03296,Nitric Oxide Gas
+845,tri03299,Hypertonic Saline;Hydrogen peroxide;Azadirachta indicia;Povidone-iodine
+846,tri03300,Resistant Starch
+847,tri03301,LY3127804
+848,tri03302,Convalescent Plasma
+849,tri03303,Methylprednisolone
+850,tri03306,Text message
+851,tri03309,Tocilizumab
+852,tri03311,Povidone-iodine
+853,tri03312,Favipiravir
+854,tri03313,Dapagliflozin
+855,tri03316,Retinoic acid (Any)
+856,tri03317,Camostat Mesilate
+857,tri03323,Chlorpromazine
+858,tri03325,Convalescent Plasma
+859,tri03326,Convalescent Plasma
+860,tri03327,Tocilizumab
+861,tri03328,MMR Vaccine
+862,tri03331,Alteplase
+863,tri03332,Azithromycin;Hydroxychloroquine
+864,tri03334,Favipiravir
+865,tri03336,P2Y12 inhibitor (Unspecified);Heparin (LMWH or Unfractionated);SGLT2 inhibitor (Unspecified);Crizanlizumab
+866,tri03337,Heparin (LMWH or Unfractionated)
+867,tri03340,Ruxolitinib
+868,tri03341,Hydroxychloroquine;Chloroquine
+869,tri03343,Hydroxychloroquine;Azithromycin
+870,tri03346,Tocilizumab
+871,tri03347,Convalescent Plasma
+872,tri03348,RBT-9
+873,tri03349,ACE Inhibitors;Angiotensin Receptor Blockers (ARB)
+874,tri03357,Physiotherapy;Oxygen
+875,tri03358,Hydroxychloroquine
+876,tri03359,Tocilizumab
+877,tri03361,Stem Cells (Mesenchymal)
+878,tri03365,Tin protoporphyrin (SnPP);Sulfonatoporphyrin (TPPS)
+879,tri03366,Tocilizumab
+880,tri03369,Favipiravir
+881,tri03371,Ibrutinib
+882,tri03378,Ruxolitinib
+883,tri03380,Radiation
+884,tri03381,Zanubrutinib
+885,tri03382,MAS825
+886,tri03386,Prone Positioning
+887,tri03390,Astegolimab;Efmarodocokin alfa
+888,tri03392,Hydroxychloroquine;Favipiravir
+889,tri03394,Sabizabulin
+890,tri03396,Convalescent Plasma
+891,tri03397,Dociparstat sodium
+892,tri03404,Radiation
+893,tri03405,Angiotensin Receptor Blockers (ARB)
+894,tri03406,Rivaroxaban
+895,tri03407,Radiation
+896,tri03412,Degarelix
+897,tri03414,Mechanical Ventilation (Any)
+898,tri03418,Baricitinib
+899,tri03419,TD-0903
+900,tri03423,Molnupiravir
+901,tri03425,AS03 (adjuvant);CpG 1018 (adjuvant);Alum (adjuvant);SCB-2019 (Clover);CpG 1018
+902,tri03426,Azithromycin;Hydroxychloroquine
+903,tri03429,Ivermectin;Doxycycline
+904,tri03434,Tocilizumab
+905,tri03436,Essential oils;Povidone-iodine
+906,tri03437,Merimepodib;Remdesivir
+907,tri03440,Anakinra;Tocilizumab
+908,tri03444,BCG Vaccine
+909,tri03450,TRV027
+910,tri03451,Hydroxychloroquine;Chloroquine
+911,tri03454,Iloprost
+912,tri03455,Baricitinib
+913,tri03456,Nitric Oxide Gas Gas
+914,tri03458,Ivermectin
+915,tri03462,Imdevimab;Casirivimab
+916,tri03463,Remote Monitoring
+917,tri03467,Imdevimab;Casirivimab
+918,tri03468,Heparin (LMWH or Unfractionated)
+919,tri03470,Etesevimab;Bamlanivimab
+920,tri03480,Convalescent Plasma
+921,tri03481,Pamrevlumab
+922,tri03488,Dornase Alfa
+923,tri03489,Traditional Medicine
+924,tri03496,Pemziviptadil
+925,tri03499,Convalescent Plasma
+926,tri03502,Favipiravir
+927,tri03514,Nitazoxanide
+928,tri03516,Vibroacoustic device
+929,tri03519,Ritonavir;Ivermectin;Hydroxychloroquine;Darunavir
+930,tri03522,Hydroxychloroquine
+931,tri03525,Gam-COVID-Vac (Sputnik V)
+932,tri03532,Stem Cells (Mesenchymal)
+933,tri03533,Gam-COVID-Vac (Sputnik V)
+934,tri03536,Convalescent Plasma
+935,tri03540,Convalescent Plasma
+936,tri03542,Ivermectin
+937,tri03547,Methylprednisolone
+938,tri03553,Abivertinib Maleate
+939,tri03556,Maraviroc
+940,tri03557,Nitazoxanide
+941,tri03558,Convalescent Plasma
+942,tri03565,Therapeutic plasma exchange
+943,tri03570,Convalescent Plasma
+944,tri03573,NasoVAX
+945,tri03579,Convalescent Plasma
+946,tri03583,Chloroquine
+947,tri03585,Glycine
+948,tri03587,Sofosbuvir;Daclatasvir
+949,tri03591,Anakinra
+950,tri03593,Stem Cells (Mesenchymal)
+951,tri03602,ChAdOx1 nCoV-19 (Vaxzevria)
+952,tri03610,Iloprost
+953,tri03612,Tocilizumab
+954,tri03614,Ivermectin
+955,tri03624,Favipiravir
+956,tri03629,Prasugrel hydrochloride
+957,tri03631,Bivalirudin
+958,tri03634,Ivermectin;Povidone-iodine;Hydroxychloroquine;Zinc (Any);Vitamin C
+959,tri03638,Apilimod Dimesylate
+960,tri03639,Proxalutamide
+961,tri03644,Ivermectin;Losartan
+962,tri03650,Favipiravir
+963,tri03664,Interferon Beta (Any)
+964,tri03674,Prone Positioning
+965,tri03710,CPAP
+966,tri03718,Sleep Position Trainer
+967,tri03726,Convalescent Plasma
+968,tri03730,Hydroxychloroquine;Chloroquine
+969,tri03747,Hydrocortisone
+970,tri03748,Sarilumab
+971,tri03853,Blood Filtratration
+972,tri03856,Favipiravir
+973,tri03883,Traditional Medicine
+974,tri03964,Pentoxifylline
+975,tri03979,Hydroxychloroquine
+976,tri03983,AT-301
+977,tri04021,Mucoadhesive paste
+978,tri04042,HBsAg VLP Vaccine
+979,tri04045,Anakinra
+980,tri04052,Cetylpyridinium chloride (CPC);Chlorhexidine (CHX);Povidone-iodine
+981,tri04057,Potassium chloride;Inosine-glutathione
+982,tri04114,Chlorhexidine (CHX);Hydrogen peroxide
+983,tri04160,Vero Cell Vaccine (Sinopharm Wuhan)
+984,tri04173,Traditional Medicine
+985,tri04202,Azoximer Bromide
+986,tri04205,Cetylpyridinium chloride (CPC);Povidone-iodine
+987,tri04213,Lanadelumab
+988,tri04220,Convalescent Plasma
+989,tri04236,Alendronic Acid;MMR Vaccine
+990,tri04272,Hydrogen peroxide
+991,tri04349,COVID Testing
+992,tri04385,Selenium
+993,tri04394,Balloon blowing
+994,tri04396,Traditional Medicine
+995,tri04400,Traditional Medicine
+996,tri04415,Azithromycin;Lopinavir;Hydroxychloroquine;Ritonavir;Zinc (Any)
+997,tri04417,Nebulized Heparin
+998,tri04419,Convalescent Plasma
+999,tri04420,MMR Vaccine
+1000,tri04422,Traditional Medicine
+1001,tri04424,STOPCOV intervention
+1002,tri04426,Low Dose Radiotherapy
+1003,tri04428,Traditional Medicine
+1004,tri04431,Traditional Medicine
+1005,tri04434,Ritonavir;Hydroxychloroquine;Lopinavir
+1006,tri04436,CIGB-258 peptide
+1007,tri04439,CIGB-258 peptide
+1008,tri04441,Biomodulin T
+1009,tri04442,Biomodulin T
+1010,tri04443,Interferon Alpha (Any)
+1011,tri04465,Ivermectin
+1012,tri04506,Traditional Medicine
+1013,tri04509,Convalescent Plasma
+1014,tri04511,Traditional Medicine
+1015,tri04523,Traditional Medicine
+1016,tri04524,Traditional Medicine
+1017,tri04525,Traditional Medicine
+1018,tri04526,Traditional Medicine
+1019,tri04537,Convalescent Plasma
+1020,tri04544,Traditional Medicine
+1021,tri04546,Traditional Medicine
+1022,tri04551,Traditional Medicine
+1023,tri04562,Traditional Medicine
+1024,tri04563,Tocilizumab
+1025,tri04565,Traditional Medicine
+1026,tri04568,Traditional Medicine
+1027,tri04578,Traditional Medicine
+1028,tri04598,Traditional Medicine
+1029,tri04599,Traditional Medicine
+1030,tri04605,Traditional Medicine
+1031,tri04612,2-Deoxy-D-Glucose
+1032,tri04622,Ulinastatin
+1033,tri04628,Traditional Medicine
+1034,tri04632,Traditional Medicine
+1035,tri04638,Traditional Medicine
+1036,tri04641,Convalescent Plasma
+1037,tri04643,Nitazoxanide
+1038,tri04647,Homeopathy
+1039,tri04650,Traditional Medicine
+1040,tri04659,Favipiravir;Umifenovir (Arbidol)
+1041,tri04660,Traditional Medicine
+1042,tri04674,Interferon Alpha (Any)
+1043,tri04698,Immunoglobulin
+1044,tri04699,Traditional Medicine
+1045,tri04701,Nafamostat
+1046,tri04704,Traditional Medicine
+1047,tri04707,Traditional Medicine
+1048,tri04711,Traditional Medicine
+1049,tri04722,Ozone-based Therapy
+1050,tri04723,Traditional Medicine
+1051,tri04733,Traditional Medicine
+1052,tri04735,Traditional Medicine
+1053,tri04758,Sodium Bicarbonate
+1054,tri04760,Azadirachta indicia
+1055,tri04764,Traditional Medicine
+1056,tri04766,Traditional Medicine
+1057,tri04775,Traditional Medicine
+1058,tri04778,Traditional Medicine
+1059,tri04809,Aspirin;Atorvastatin
+1060,tri04818,Traditional Medicine
+1061,tri04826,Traditional Medicine
+1062,tri04828,Traditional Medicine
+1063,tri04829,High flow nasal cannula
+1064,tri04853,Traditional Medicine
+1065,tri04860,Meditation
+1066,tri04882,Thymosin Alpha
+1067,tri04886,Traditional Medicine
+1068,tri04895,Traditional Medicine
+1069,tri04902,ChAdOx1-S (Covishield)
+1070,tri04912,Traditional Medicine
+1071,tri04913,Ivermectin
+1072,tri04931,Traditional Medicine
+1073,tri04952,Nasopharyngeal saline wash
+1074,tri04958,Traditional Medicine
+1075,tri04964,Traditional Medicine
+1076,tri04973,Traditional Medicine
+1077,tri04991,Nasopharyngeal saline wash;Steam inhalation;Povidone-iodine
+1078,tri04999,Traditional Medicine
+1079,tri05017,Traditional Medicine
+1080,tri05043,Traditional Medicine
+1081,tri05060,Traditional Medicine
+1082,tri05064,Thalidomide
+1083,tri05076,Traditional Medicine
+1084,tri05083,Traditional Medicine
+1085,tri05105,Yoga
+1086,tri05108,Yoga
+1087,tri05116,RV Forte Capsule
+1088,tri05117,Yoga
+1089,tri05118,Traditional Medicine
+1090,tri05179,Traditional Medicine
+1091,tri05203,Homeopathy
+1092,tri05213,Homeopathy
+1093,tri05241,Indometacin
+1094,tri05344,Amniotic Fluid
+1095,tri05347,Hydroxychloroquine
+1096,tri05350,Losartan
+1097,tri05351,Hydroxychloroquine;Azithromycin
+1098,tri05354,Convalescent Plasma
+1099,tri05356,Mefloquine;Tocilizumab;Hydroxychloroquine;Azithromycin
+1100,tri05359,Azithromycin;Hydroxychloroquine
+1101,tri05372,Ozone-based Therapy
+1102,tri05373,Propofol;Sevoflurane
+1103,tri05378,Colchicine
+1104,tri05383,Azithromycin
+1105,tri05386,Convalescent Plasma
+1106,tri05395,Convalescent Plasma
+1107,tri05396,Azithromycin;Hydroxychloroquine;Levamisol;Isoprinosin
+1108,tri05408,Hydroxychloroquine
+1109,tri05432,Maraviroc
+1110,tri05442,Vitamin D (Any)
+1111,tri05445,Povidone-iodine
+1112,tri05450,Prednisone
+1113,tri05461,C21
+1114,tri05464,NA-831;Dexamethasone;Atazanavir
+1115,tri05469,Epoprostenol
+1116,tri05473,Manremyc
+1117,tri05474,Diosmin;Hesperidin
+1118,tri05475,Convalescent Plasma
+1119,tri05480,BCG Vaccine
+1120,tri05492,COVAX-19 (SpikoGen)
+1121,tri05496,Tramadol
+1122,tri05514,Atovaquone
+1123,tri05515,Stem Cells (Mesenchymal)
+1124,tri05522,Therapeutic plasma exchange
+1125,tri05526,Stem Cells (Mesenchymal)
+1126,tri05532,Convalescent Plasma
+1127,tri05533,Probiorinse
+1128,tri05534,Azithromycin;Hydroxychloroquine
+1129,tri05536,Ritonavir;Nitazoxanide;Atazanavir
+1130,tri05538,Dornase Alfa
+1131,tri05547,ANG-3777
+1132,tri05557,RESP301
+1133,tri05565,Icosapent ethyl
+1134,tri05570,Sirolimus
+1135,tri05571,BCG Vaccine
+1136,tri05572,Stem Cells (Mesenchymal)
+1137,tri05581,Nitazoxanide
+1138,tri05582,Traditional Medicine
+1139,tri05584,AG0301-COVID19 (AnGes)
+1140,tri05601,Interferon Beta (Any);Clofazimine
+1141,tri05604,Mucodentol;Hydroxychloroquine
+1142,tri05608,Hydroxychloroquine
+1143,tri05611,Antioxidation therapy
+1144,tri05617,Stem Cells (Mesenchymal)
+1145,tri05622,Cannabidiol
+1146,tri05624,Convalescent Plasma
+1147,tri05627,Bromelain;Quercetin;Zinc (Any);Vitamin C
+1148,tri05633,NK-1R antagonist (Unspecified)
+1149,tri05638,Tofacitinib
+1150,tri05641,SAR443122
+1151,tri05645,Elmo System
+1152,tri05646,Ramelteon
+1153,tri05650,Co-trimoxazole
+1154,tri05654,Vero Cell Vaccine (CAMS)
+1155,tri05655,Aprepitant
+1156,tri05660,BBV152 (Covaxin)
+1157,tri05664,Mask (PPE)
+1158,tri05665,Physiotherapy
+1159,tri05669,Abatacept
+1160,tri05680,Stem Cells (Mesenchymal)
+1161,tri05695,Convalescent Plasma
+1162,tri05702,Artesunate;Pyronaridine
+1163,tri05703,Liposomal Lacroferrin
+1164,tri05706,BCG Vaccine
+1165,tri05711,itolizumab
+1166,tri05718,Vitamin D (Any)
+1167,tri05721,Convalescent Plasma
+1168,tri05726,Tocilizumab
+1169,tri05728,Hydroxychloroquine
+1170,tri05735,Hyperbaric Oxygen Therapy
+1171,tri05736,Ruxolitinib
+1172,tri05739,Blood Filtratration
+1173,tri05743,Convalescent Plasma
+1174,tri05744,Traditional Medicine
+1175,tri05750,Tocilizumab
+1176,tri05752,Angiography scan
+1177,tri05764,Traditional Medicine
+1178,tri05774,ATI-450
+1179,tri05788,Vitamin D (Any)
+1180,tri05790,Sulodexide
+1181,tri05800,Therapeutic plasma exchange
+1182,tri05806,Traditional Medicine
+1183,tri05807,Vitamin Super B-Complex;Nitazoxanide
+1184,tri05811,Heparin (LMWH or Unfractionated);Atorvastatin
+1185,tri05817,Thymalfasin
+1186,tri05818,XC221
+1187,tri05825,Traditional Medicine
+1188,tri05837,Sildenafil
+1189,tri05845,KELEA Excellerated Water
+1190,tri05855,Hydroxychloroquine
+1191,tri05858,Ketogenic diet
+1192,tri05872,Stem Cells (Mesenchymal)
+1193,tri05877,Traditional Medicine
+1194,tri05883,Core warming
+1195,tri05885,Hyperimmune Equine Serum (INM005)
+1196,tri05886,Prolastin
+1197,tri05893,MF59 adjuvanted SARS-CoV-2 Sclamp vaccine
+1198,tri05897,OM85
+1199,tri05913,Mechanical Ventilation (Any)
+1200,tri05918,Etesevimab;Bamlanivimab
+1201,tri05930,Ledipasvir;Sofosbuvir;Nitazoxanide
+1202,tri05932,Methylprednisolone;Dexamethasone
+1203,tri05936,Immunoglobulin
+1204,tri05946,Training
+1205,tri05947,Favipiravir
+1206,tri05950,Traditional Medicine;Hydroxychloroquine
+1207,tri05956,Phytomedicine;Azithromycin;Hydroxychloroquine;Cospherunate
+1208,tri05959,Vitamin D (Any)
+1209,tri05964,Famotidine
+1210,tri05980,Vitamin B;nutritional support system;Probiotic (Unspecified)
+1211,tri05982,CoronaVac (Sinovac)
+1212,tri05983,Heparin (LMWH or Unfractionated)
+1213,tri05992,RAAS inhibitor (Unspecified)
+1214,tri05999,Colchicine
+1215,tri06001,Vero Cell Vaccine (Sinopharm Wuhan)
+1216,tri06002,Ivermectin
+1217,tri06010,Telmisartan
+1218,tri06012,Razuprotafib
+1219,tri06014,Losmapimod
+1220,tri06018,Prolectin-M
+1221,tri06023,Dexamethasone
+1222,tri06026,Early apoptotic cells
+1223,tri06034,Immunoglobulin
+1224,tri06047,AZD1656
+1225,tri06059,Collagen-Polyvinylpyrrolidone
+1226,tri06061,Probiotic (Unspecified)
+1227,tri06067,Continuous renal replacement therapy
+1228,tri06069,Tenofovir;Emtricitabine
+1229,tri06075,Dexamethasone;Tocilizumab
+1230,tri06084,Convalescent Plasma
+1231,tri06085,Camostat Mesilate
+1232,tri06086,Immunoglobulin
+1233,tri06087,Iota-Carrageenan
+1234,tri06088,Interferon Beta (Any)
+1235,tri06091,Aluminum (adjuvant);AdimrSC-2f (Adimmune)
+1236,tri06097,Thimerosal
+1237,tri06103,Ivermectin;Doxycycline
+1238,tri06107,Convalescent Plasma
+1239,tri06110,Camostat Mesilate
+1240,tri06114,Stem Cells (Mesenchymal)
+1241,tri06120,Vitamin D (Any)
+1242,tri06127,Lactoferrin
+1243,tri06128,VIB7734
+1244,tri06130,Aprotinin;Favipiravir
+1245,tri06132,Ivermectin
+1246,tri06139,Colchicine
+1247,tri06140,EpiVacCorona
+1248,tri06144,Convalescent Plasma
+1249,tri06146,Abivertinib Maleate
+1250,tri06147,S-nitrosylation (SNO) therapy
+1251,tri06148,Heparin (LMWH or Unfractionated);Methylprednisolone
+1252,tri06155,Favipiravir
+1253,tri06156,Ivermectin
+1254,tri06157,QazVac
+1255,tri06158,Convalescent Plasma
+1256,tri06159,Gam-COVID-Vac (Sputnik V)
+1257,tri06160,Dexamethasone;Methylprednisolone
+1258,tri06161,Ledipasvir;Sofosbuvir
+1259,tri06162,Positive Expiratory Pressure (PEP) flute
+1260,tri06167,Heparin (LMWH or Unfractionated)
+1261,tri06169,Traditional Medicine;Camostat Mesilate
+1262,tri06187,Artesunate;Favipiravir;Nitazoxanide;Amodiaquine;Sofosbuvir;Daclatasvir;Pyronaridinee
+1263,tri06189,Tafenoquine
+1264,tri06191,Matrix-M1 (adjuvant);NVX-CoV2373 (Nuvaxovid)
+1265,tri06201,Low Dose Radiotherapy
+1266,tri06203,Convalescent Plasma
+1267,tri06209,Pioglitazone
+1268,tri06211,Vitamin D (Any)
+1269,tri06213,Sofosbuvir;Daclatasvir
+1270,tri06215,Isoquercetin
+1271,tri06219,Prostaglandin E1
+1272,tri06232,BCG Vaccine
+1273,tri06236,Cetylpyridinium chloride (CPC);Chlorhexidine (CHX);Hydrogen peroxide;Toothpaste
+1274,tri06240,Convalescent Plasma
+1275,tri06250,Ad5-nCoV (Convidecia)
+1276,tri06252,Heparin (LMWH or Unfractionated);Corticosteroids (Unspecified);Cyclosporine A Plus
+1277,tri06256,aerosolized DNase
+1278,tri06266,Heparin (LMWH or Unfractionated);Edoxaban
+1279,tri06269,Nuvastatic
+1280,tri06271,Favipiravir
+1281,tri06273,Traditional Medicine
+1282,tri06275,Convalescent Plasma
+1283,tri06277,Convalescent Plasma
+1284,tri06279,Zinc (Any);Resveratrol
+1285,tri06281,Prone Positioning
+1286,tri06299,Convalescent Plasma
+1287,tri06303,Prone Positioning
+1288,tri06305,Convalescent Plasma
+1289,tri06310,Immunoglobulin
+1290,tri06316,Povidone-iodine
+1291,tri06320,Immunoglobulin
+1292,tri06325,Beta carotene;Multivitamin;Zinc (Any);Copper;Vitamin C
+1293,tri06329,Ivermectin;Doxycycline
+1294,tri06332,BGB-DXP593
+1295,tri06336,Nitazoxanide
+1296,tri06337,Vitamin D (Any)
+1297,tri06339,Traditional Medicine
+1298,tri06348,Hyper-Immunoglobulin
+1299,tri06362,Niclosamide
+1300,tri06372,Favipiravir;Oseltamivir
+1301,tri06378,Sodium Bicarbonate;Povidone-iodine
+1302,tri06382,Remdesivir
+1303,tri06396,Nitazoxanide
+1304,tri06401,Nitazoxanide;Ribavirin
+1305,tri06406,Cetylpyridinium chloride (CPC);Chlorhexidine (CHX)
+1306,tri06407,VXA-CoV2-1
+1307,tri06412,Taurodeoxycholate
+1308,tri06416,Stem Cells (Mesenchymal)
+1309,tri06418,ChulaCov19
+1310,tri06431,Retinoic acid (Any);Tamoxifen
+1311,tri06443,Melatonin
+1312,tri06446,Convalescent Plasma
+1313,tri06456,Melatonin;Vitamin E;N-acetyl cysteine;Pentoxifylline;Vitamin C
+1314,tri06458,Ravulizumab
+1315,tri06465,UV Light Device
+1316,tri06468,Metabolic cofactor (unspecified)
+1317,tri06469,Stem Cells (Mesenchymal)
+1318,tri06476,Immunoglobulin
+1319,tri06493,Retinoic acid (Any)
+1320,tri06494,Tocilizumab
+1321,tri06495,Quercetin
+1322,tri06497,T memory cells;NK cells
+1323,tri06498,Captopril;Retinoic acid (Any)
+1324,tri06507,Vitamin D (Any)
+1325,tri06516,Mechanical Ventilation (Any)
+1326,tri06519,Aerobic Exercises
+1327,tri06522,Prone Positioning
+1328,tri06523,Pulse oximeter
+1329,tri06527,Ruxolitinib;Fostamatinib
+1330,tri06529,Oscillation and Lung Expansion (OLE) Therapy
+1331,tri06531,NGM621
+1332,tri06533,CoronaVac (Sinovac)
+1333,tri06549,Heparin (LMWH or Unfractionated)
+1334,tri06555,Dactolisib (RTB101)
+1335,tri06559,Meplazumab
+1336,tri06561,Gam-COVID-Vac (Sputnik V)
+1337,tri06574,Prone Positioning
+1338,tri06592,Ivermectin;Doxycycline
+1339,tri06609,Traditional Medicine
+1340,tri06615,Senicapoc
+1341,tri06625,ViraCide
+1342,tri06629,Remdesivir
+1343,tri06636,Hydroxychloroquine
+1344,tri06641,Radiation
+1345,tri06642,Nicotine
+1346,tri06651,Favipiravir
+1347,tri06655,Regdanvimab
+1348,tri06671,Dexamethasone;Methylprednisolone
+1349,tri06674,Chlorhexidine (CHX);Hydrogen peroxide;Povidone-iodine
+1350,tri06675,Niclosamide
+1351,tri06679,Pioglitazone
+1352,tri06681,Bemiparin sodium
+1353,tri06694,Losartan
+1354,tri06699,Alisporivir
+1355,tri06704,Cod liver oil
+1356,tri06705,High flow nasal cannula;Oxygen
+1357,tri06714,Hyper-Immunoglobulin
+1358,tri06718,Methotrexate
+1359,tri06721,Stem Cells (Mesenchymal)
+1360,tri06724,Remimazolam
+1361,tri06727,Vero Cell Vaccine (Sinopharm Wuhan);Vero Cell Vaccines (Covilo)
+1362,tri06729,Favipiravir
+1363,tri06736,Stem Cells (Mesenchymal)
+1364,tri06745,Stem Cells (Mesenchymal)
+1365,tri06750,Methylene Blue
+1366,tri06753,Immunoglobulin
+1367,tri06758,Inspiratory muscle training (IMT) device
+1368,tri06762,FX06
+1369,tri06767,Methylene Blue
+1370,tri06774,Hyperbaric Oxygen Therapy
+1371,tri06777,Probiotic (Unspecified)
+1372,tri06779,Convalescent Plasma
+1373,tri06780,chlorine dioxide;Famotidine;Lactoferrin;Zinc (Any);Green Tea Extract
+1374,tri06782,Zinc (Any)
+1375,tri06783,Traditional Medicine
+1376,tri06786,Convalescent Plasma
+1377,tri06787,Isoquercetin;Masitinib
+1378,tri06788,Clarithromycin;Azithromycin
+1379,tri06789,Nafamostat
+1380,tri06795,Retinoic acid (Any);testosterone
+1381,tri06796,Acetyl L-Carnitine
+1382,tri06809,Metformin
+1383,tri06814,Human Ezrin Peptide 1 (HEP1)
+1384,tri06815,Chloroquine
+1385,tri06816,Rhea Health Tone
+1386,tri06817,MW33
+1387,tri06823,Nafamostat
+1388,tri06834,Mask (PPE) (PPE);Double-Trunk Mask
+1389,tri06836,Awareness campaign;Masks (PPE)
+1390,tri06839,Prayer
+1391,tri06841,Nicorandil;Nebivolol;Atorvastatin;Folic Acid;L-Arginine
+1392,tri06845,Intubation (Any)
+1393,tri06851,Prone Positioning
+1394,tri06856,Angiotensin 1-7
+1395,tri06861,NK cells
+1396,tri06862,Convalescent Plasma;Therapeutic plasma exchange
+1397,tri06864,Heparin (LMWH or Unfractionated)
+1398,tri06870,Ivermectin
+1399,tri06883,L-Arginine
+1400,tri06887,Poliovirus vaccine (IPV)
+1401,tri06890,Rivaroxaban;Heparin (LMWH or Unfractionated)
+1402,tri06892,Recombinant sf9 cell vaccine
+1403,tri06896,BBV152 (Covaxin)
+1404,tri06902,Phototherapy
+1405,tri06906,Ovotransferrin
+1406,tri06910,Travelan
+1407,tri06918,SCTA01
+1408,tri06926,Traditional Medicine
+1409,tri06932,Ivermectin
+1410,tri06937,Heparin (LMWH or Unfractionated)
+1411,tri06938,Face shield
+1412,tri06952,Adsorbed COVID-19 Inactivated vaccine (Sinovac)
+1413,tri06954,Desidustat
+1414,tri06955,ZF2001 (Zifivax)
+1415,tri06956,Telmisartan;Atorvastatin
+1416,tri06971,Interferon Beta (Any);Remdesivir
+1417,tri06972,Sofosbuvir;Daclatasvir
+1418,tri06976,Remdesivir
+1419,tri06977,Rivaroxaban
+1420,tri06979,Ad26.COV2.S (Janssen)
+1421,tri06983,ChAdOx1 nCoV-19 (Vaxzevria)
+1422,tri06988,Antroquinonol
+1423,tri06992,Ensifentrine
+1424,tri06998,Remdesivir
+1425,tri07001,Sotrovimab
+1426,tri07004,Ad5-nCoV (AMMS)
+1427,tri07005,Interferon Beta (Any)
+1428,tri07010,Methylprednisolone
+1429,tri07011,Tocilizumab
+1430,tri07012,High flow nasal cannula
+1431,tri07015,Gam-COVID-Vac (Sputnik V)
+1432,tri07018,Convalescent Plasma
+1433,tri07021,V590 (MSD)
+1434,tri07030,Camostat Mesilate
+1435,tri07034,Zinc (Any);Doxycycline
+1436,tri07043,Ivermectin
+1437,tri07046,BI 764198
+1438,tri07047,Hydroxychloroquine;Nitazoxanide;Ribavirin
+1439,tri07058,Tixagevimab;Cilgavimab
+1440,tri07059,Tixagevimab;Cilgavimab
+1441,tri07070,Dexamethasone;Baricitinib
+1442,tri07074,Anakinra
+1443,tri07080,Physiotherapy; Pulse oximeter
+1444,tri07082,BCG Vaccine
+1445,tri07109,CVnCoV (Curevac)
+1446,tri07114,Hydroxychloroquine
+1447,tri07124,High Frequency Chest Wall Oscillation (HFCWO) device
+1448,tri07126,Recombinant Nematode Anticoagulant Protein c2
+1449,tri07128,AG0302-COVID19 (AnGes)
+1450,tri07134,Bamlanivimab
+1451,tri07141,Camostat Mesilate
+1452,tri07156,Remote Ischemic Conditioning
+1453,tri07171,Sarilumab
+1454,tri07177,Fenofibrate
+1455,tri07183,RD-X19 Device
+1456,tri07193,Traditional Medicine;Vitamin C
+1457,tri07210,Probiotic (Unspecified)
+1458,tri07216,Imdevimab;Casirivimab
+1459,tri07222,Prone Positioning
+1460,tri07288,BCG Vaccine
+1461,tri07294,NK cells
+1462,tri07300,Hyperimmune bovine colostrum
+1463,tri07338,hzVSF-v13
+1464,tri07339,Iota-Carrageenan
+1465,tri07346,Triflo Deep Breathing
+1466,tri07376,SCTA01
+1467,tri07380,Traditional Medicine
+1468,tri07385,N-acetylglucosamine
+1469,tri07387,Cetylpyridinium chloride (CPC);Chlorhexidine (CHX);Hydrogen peroxide;Povidone-iodine
+1470,tri07390,Novaferon
+1471,tri07395,Cefditoren
+1472,tri07402,Ivermectin
+1473,tri07408,Stem Cells (Mesenchymal)
+1474,tri07423,Dexamethasone
+1475,tri07452,Traditional Medicine
+1476,tri07455,Traditional Medicine
+1477,tri07464,Nintedanib;Pirfenidone
+1478,tri07511,DailyTab Gold lmmuno Booster
+1479,tri07571,Crocodile Breathing
+1480,tri07580,Rivaroxaban;Azithromycin;Hydroxychloroquine;Doxycycline
+1481,tri07588,Traditional Medicine
+1482,tri07591,Montelukast
+1483,tri07595,Alcohol mouthwash;Chlorhexidine (CHX);Hydrogen peroxide;Povidone-iodine
+1484,tri07601,Cetylpyridinium chloride (CPC);Sodium Hypochlorite;Hydrogen peroxide;Povidone-iodine
+1485,tri07608,Aldesleukin;Colchicine;Ixekizumab
+1486,tri07614,INO-4800
+1487,tri07618,ImmunoLin
+1488,tri07629,Camostat Mesilate
+1489,tri07630,Traditional Medicine
+1490,tri07637,Liothyronine
+1491,tri07638,Dexamethasone
+1492,tri07654,Dutasteride
+1493,tri07656,Methylprednisolone;Tocilizumab
+1494,tri07662,Vitamin D (Any)
+1495,tri07669,Participate in a massive musical event
+1496,tri07686,Isoquercetin
+1497,tri07703,Ivermectin
+1498,tri07748,Antithrombin
+1499,tri07753,Ivermectin;Hydroxychloroquine
+1500,tri07768,Tofacitinib
+1501,tri07782,Prone Positioning
+1502,tri07790,Hydroxychloroquine
+1503,tri07798,Hyperthermia therapy
+1504,tri07809,Plasmapheresis
+1505,tri07846,High flow nasal cannula
+1506,tri07877,Traditional Medicine
+1507,tri07884,CPAP
+1508,tri07893,Mask (PPE)
+1509,tri07899,KCONVAC
+1510,tri07902,COVID Testing
+1511,tri07910,Cetylpyridinium chloride (CPC)
+1512,tri07917,Prone Positioning
+1513,tri07919,rAd26-S (adjuvant);ChAdOx1 nCoV-19 (Vaxzevria)
+1514,tri07922,Trimetazidine
+1515,tri07946,Ivermectin
+1516,tri07949,Viusid;Asbrip
+1517,tri07950,Ivermectin;Iota-Carrageenan
+1518,tri07952,DWJ1248
+1519,tri07953,Nebulized Heparin
+1520,tri07959,Convalescent Plasma
+1521,tri07960,Rivaroxaban
+1522,tri07965,Aspirin;Ivermectin
+1523,tri07987,Sofosbuvir;Daclatasvir
+1524,tri08007,Convalescent Plasma
+1525,tri08012,Lactobacillus
+1526,tri08015,CoronaVac (Sinovac)
+1527,tri08019,CBDRA60
+1528,tri08055,Hydroxychloroquine;Apixaban
+1529,tri08099,N-acetyl cysteine
+1530,tri08101,Vitamin D (Any)
+1531,tri08103,Carragelose
+1532,tri08107,Reparixin
+1533,tri08114,BNO 1030 (Imupret)
+1534,tri08138,Vero Cell Vaccine (Sinopharm Wuhan)
+1535,tri08140,Vero Cell Vaccine (Sinopharm Wuhan)
+1536,tri08142,Traditional Medicine
+1537,tri08147,Ivermectin
+1538,tri08148,Ivermectin
+1539,tri08152,Ritonavir;Lopinavir
+1540,tri08159,Ivermectin;Remdesivir;Hydroxychloroquine;Lopinavir;Ritonavir
+1541,tri08164,CoronaVac (Sinovac)
+1542,tri08221,Nitric Oxide Gas Gas
+1543,tri08274,Tocilizumab;Remdesivir
+1544,tri08276,Anakinra
+1545,tri08279,MVC-COV1901 (Medigen)
+1546,tri08314,Remote Monitoring
+1547,tri08319,Vitamin D (Any)
+1548,tri08330,Nicorandil;Atorvastatin;Folic Acid;L-Arginine;Vitamin B
+1549,tri08347,Silymarin
+1550,tri08350,Convalescent Plasma
+1551,tri08351,Brensocatib
+1552,tri08355,Colchicine
+1553,tri08411,Ivermectin
+1554,tri08418,Sofosbuvir;Daclatasvir;Ravidasvir
+1555,tri08434,Traditional Medicine
+1556,tri08435,Traditional Medicine
+1557,tri08436,Traditional Medicine
+1558,tri08437,Suramin sodium
+1559,tri08446,ACE Inhibitors;Angiotensin Receptor Blockers (ARB)
+1560,tri08457,Tetracycline hydrochloride
+1561,tri08464,CoronaVac (Sinovac)
+1562,tri08469,Colchicine
+1563,tri08473,GRAd-COV2 (ReiThera)
+1564,tri08475,Bamlanivimab
+1565,tri08505,Dexamethasone
+1566,tri08537,Fluvoxamine;Ursodiol
+1567,tri08544,Traditional Medicine
+1568,tri08546,Traditional Medicine
+1569,tri08568,Traditional Medicine
+1570,tri08571,Saisei Maf
+1571,tri08594,Traditional Medicine
+1572,tri08600,Remdesivir
+1573,tri08607,Convalescent Plasma
+1574,tri08632,Traditional Medicine
+1575,tri08635,Traditional Medicine
+1576,tri08638,High flow nasal cannula;Mechanical Ventilation (Any)
+1577,tri08641,Hydrogen peroxide;Povidone-iodine
+1578,tri08683,Hydroxychloroquine;Remdesivir
+1579,tri08733,Traditional Medicine
+1580,tri08762,Ivermectin
+1581,tri08780,Proxalutamide
+1582,tri08787,Probiotic (Unspecified)
+1583,tri08800,Lactoferrin
+1584,tri08804,Hydroxychloroquine
+1585,tri08853,Dental tools
+1586,tri08864,Xylitol;Grapefruit Seed Extract
+1587,tri08866,LTX-109
+1588,tri08872,BNT162b2 (Comirnaty)
+1589,tri08900,Convalescent Plasma
+1590,tri08909,Remdesivir
+1591,tri08929,Photodynamic therapy
+1592,tri08954,Hesperidin
+1593,tri08957,Dexamethasone
+1594,tri09014,Hydrogen peroxide
+1595,tri09127,Thymic peptides
+1596,tri09132,Estetrol monohydrate
+1597,tri09148,Povidone-iodine
+1598,tri09159,Vitamin D (Any)
+1599,tri09190,Ivermectin
+1600,tri09336,Traditional Medicine
+1601,tri09384,EEG-based sedation
+1602,tri09448,Bemcentinib
+1603,tri09466,silver nanoparticles (AgNPs)
+1604,tri09471,Low-field thoracic magnetic stimulation (LF-ThMS)
+1605,tri09491,Stem Cells (Mesenchymal)
+1606,tri09492,COVID Testing
+1607,tri09502,Methyl salicylate;N-acetyl cysteine;Menthol;Diclofenac sodium
+1608,tri09521,Cetylpyridinium chloride (CPC);zinc lactate
+1609,tri09580,Dalcetrapib
+1610,tri09585,IMUNOR
+1611,tri09589,Heparin (LMWH or Unfractionated)
+1612,tri09595,UB-612 (COVAXX)
+1613,tri09601,Oxygen mask
+1614,tri09610,Quercetin
+1615,tri09726,Famotidine
+1616,tri09750,Hydroxychloroquine
+1617,tri09792,Traditional Medicine
+1618,tri09914,Benzalkonium chloride0
+1619,tri09969,Traditional Medicine
+1620,tri09971,Traditional Medicine
+1621,tri09972,Traditional Medicine
+1622,tri09973,Video chat
+1623,tri09999,Nicorandil;Nebivolol;Atorvastatin;Folic Acid;L-Arginine
+1624,tri10000,Chlorhexidine (CHX);Povidone-iodine
+1625,tri10004,Artemisinin
+1626,tri10016,Cineol;Artemisinin
+1627,tri10029,Neutral Electrolyzed Water (SES);Mouthwash (Unspecified)
+1628,tri10032,itolizumab
+1629,tri10070,CoronaVac (Sinovac)
+1630,tri10073,Povidone-iodine
+1631,tri10119,Colchicine
+1632,tri10121,CVnCoV (Curevac)
+1633,tri10125,Bamlanivimab
+1634,tri10131,Proxalutamide
+1635,tri10144,Prednisonee
+1636,tri10157,BI 767551
+1637,tri10174,Colchicine
+1638,tri10177,Reparixin
+1639,tri10194,Alteplase
+1640,tri10236,Methylene Blue;Photodynamic therapy
+1641,tri10318,Heparin (LMWH or Unfractionated)

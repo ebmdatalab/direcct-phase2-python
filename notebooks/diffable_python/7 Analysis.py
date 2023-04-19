@@ -46,7 +46,7 @@ from matplotlib.pyplot import Text
 
 
 # + trusted=true
-df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct2/master/data/analysis/kaplan-meier-time-to-pub.csv?token=GHSAT0AAAAAABXKCQD4HXSPYAEQ5KKN7UV6YX6DLWA')
+df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/kaplan-meier-time-to-pub.csv?token=GHSAT0AAAAAAB5S2YBIYUVFOOYJG2AATYXSZBVHIFQ')
 df.head()
 
 # + trusted=true
@@ -77,7 +77,7 @@ for x in df2.columns:
 # # Joining in IDs
 
 # + trusted=true
-df_reg = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct2/master/data/analysis/trials.csv?token=GHSAT0AAAAAABXKCQD5FQPXTQDNYMSYQFLKYX6DNIA')
+df_reg = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/registrations.csv?token=GHSAT0AAAAAAB5S2YBJNSWM6KQE5D6TM7RKZBVHJBQ')
 
 # + trusted=true
 df2 = df2.merge(df_reg[['id', 'trn']], on='id', how='left')
@@ -142,9 +142,6 @@ overall_cols = ['id', 'trn', 'date_completion', 'date_publication_preprint_adj',
 adjusted_data = df2[overall_cols].reset_index(drop=True)
 
 # + trusted=true
-395/(395+1191)
-
-# + trusted=true
 adjusted_data['preprint_to_jounral'] = (adjusted_data.date_publication_article_adj - adjusted_data.date_publication_preprint_adj) / pd.Timedelta('1 day')
 
 # + trusted=true
@@ -190,7 +187,7 @@ d = competing_risks[['time_cr', 'event_cr']].reset_index(drop=True)
 d = d.set_index('time_cr')
 
 # + trusted=true
-aj = AalenJohansenFitter(seed=10)
+aj = AalenJohansenFitter(seed=5236)
 
 #This just hides the warning that data is randomly "jiggered" to break ties, which is fine.
 #The seed for this is set above
@@ -237,6 +234,9 @@ plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsiz
 from lifelines.plotting import add_at_risk_counts
 add_at_risk_counts(kmf_any, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
+
+# + trusted=true
+#fig.savefig('time_any_pub.png')
 # -
 
 # # Article Publication
@@ -268,6 +268,9 @@ plt.xlabel('Days to Journal Publication', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_article, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
+
+# + trusted=true
+#fig.savefig('time_to_journal.png')
 # -
 
 # # Time to Preprint Publication (with article pub as competing risk)
@@ -295,6 +298,9 @@ from lifelines.plotting import add_at_risk_counts
 add_at_risk_counts(aj, rows_to_show = ['At risk'])
 plt.tight_layout()
 plt.show()
+
+# + trusted=true
+#fig.savefig('time_to_preprint_aj.png')
 # -
 
 # # Registry results
@@ -340,12 +346,21 @@ art = venn_data.publication_article_adj == True
 reg = venn_data.publication_summary_adj == True
 
 # + trusted=true
-len(venn_data[~art & prep & reg])
+len(venn_data[art & prep & reg])
 
 # + trusted=true
 colors = ['#377eb8', '#ff7f00', '#4daf4a','#f781bf', '#a65628', '#984ea3', '#999999', '#e41a1c', '#dede00']
 labels = ['Journal Articles', 'Registry Results', 'Preprints']
-values = (167, 19, 20, 96, 79, 5, 10)
+
+#Order of values: J, R, J+R, P, P+J, R+P, J+R+P
+
+values = (len(venn_data[art & ~prep & ~reg]), 
+          len(venn_data[~art & ~prep & reg]), 
+          len(venn_data[art & ~prep & reg]), 
+          len(venn_data[~art & prep & ~reg]), 
+          len(venn_data[art & prep & ~reg]), 
+          len(venn_data[~art & prep & reg]), 
+          len(venn_data[art & prep & reg]))
 
 
 # + trusted=true
@@ -358,59 +373,29 @@ v1 = venn3(
     alpha = .6)
 
 for text in v1.set_labels:
-    text.set_fontsize(9)
-
-for text in v1.subset_labels:
-    if text == v1.subset_labels[5]:
-        text.set_fontsize(6)
-    else:
-        text.set_fontsize(8)
-
-v1.get_label_by_id("100").set_x(-0.2)
-v1.get_label_by_id("111").set_x(.24)
-v1.get_label_by_id("011").set_y(-.028)
-v1.get_label_by_id("011").set_x(.365)
-v1.get_label_by_id("010").set_x(.43)
-v1.get_label_by_id("010").set_y(.16)
-
-venn3_circles((167, 19, 20, 96, 79, 5, 10))
-plt.title('COVID-19 Clinical Trial Results by Dissemination Route', fontweight='bold')
-
-# + trusted=true
-colors = ['#4daf4a', '#ff7f00', '#1f77b4']
-labels = ['Preprints', 'Registry\nResults', 'Journal Articles']
-values = (96, 19, 5, 167, 79, 20, 10)
-
-plt.figure(figsize=(8,8), dpi=300)
-v1 = venn3(
-    subsets = values, 
-    set_labels = labels,
-    set_colors = colors, 
-    subset_label_formatter = lambda x: str(x) + "\n(" + f"{(x/sum(values)):1.2%}" + ")", 
-    alpha = .6)
-
-for text in v1.set_labels:
-    text.set_fontsize(16)
+    text.set_fontsize(10)
 
 for text in v1.subset_labels:
     if text == v1.subset_labels[2]:
-        text.set_fontsize(6)
-    elif text == v1.subset_labels[-1]:
-        text.set_fontsize(10)
-    elif text == v1.subset_labels[1] or text == v1.subset_labels[5]:
-        text.set_fontsize(12)
+        text.set_fontsize(5)
     else:
-        text.set_fontsize(14)
+        text.set_fontsize(8)
 
+#Journal Only
 v1.get_label_by_id("100").set_x(-0.2)
-v1.get_label_by_id("111").set_x(.155)
-v1.get_label_by_id("011").set_y(.1)
-v1.get_label_by_id("011").set_x(.3)
+#All
+v1.get_label_by_id("111").set_x(.15)
+v1.get_label_by_id("111").set_y(.18)
+#Registry + preprint
+v1.get_label_by_id("011").set_y(.12)
+v1.get_label_by_id("011").set_x(.31)
+#Registry Only
 v1.get_label_by_id("010").set_x(.35)
-v1.get_label_by_id("010").set_y(.3)
+v1.get_label_by_id("010").set_y(.28)
 
-venn3_circles((96, 19, 5, 167, 79, 20, 10))
-#plt.title('COVID-19 Clinical Trial Results by Dissemination Route', fontweight='bold')
+venn3_circles(values)
+plt.title('COVID-19 Clinical Trial Results by Dissemination Route', fontweight='bold')
+#plt.savefig('reporting_venn.png')
 plt.show()
 
 # + [markdown] tags=[]
@@ -486,7 +471,7 @@ add_at_risk_counts(kmf_1, kmf_2, kmf_3, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-phase_pub[phase_pub.pandemic_phase == 3].to_csv('temp_phase3.csv')
+fig.savefig('pandemic_phase_reporting.png')
 
 # + [markdown] tags=[]
 # # Interventions
@@ -495,148 +480,85 @@ phase_pub[phase_pub.pandemic_phase == 3].to_csv('temp_phase3.csv')
 df_int = df2.copy()
 
 # + trusted=true
-int_data = pd.read_csv(parent + '/data/interventions/common_ints.csv')
+top_ints = pd.read_csv(parent + '/data/interventions/top_ints.csv')
+int_mapping = pd.read_csv(parent + '/data/interventions/int_mapping.csv')
 
 # + trusted=true
-int_merge = df_int.merge(int_data, how='left', left_on='id', right_on='db_id')
+top_ints.head(12)
 
 # + trusted=true
-hcq = int_merge[int_merge.HCQ > 0]
-ive = int_merge[int_merge.IVE > 0]
-cp = int_merge[int_merge.CP > 0]
+int_merge = df_int.merge(int_mapping, how='left', left_on='id', right_on='id').drop('Unnamed: 0', axis=1)
 
 # + trusted=true
-len(hcq)
+int_merge.head()
 
 # + trusted=true
-len(ive)
+#Create dummies for the most common therapies
+
+common_therapies = ['Hydroxychloroquine', 'Convalescent Plasma', 'Stem Cells (Mesenchymal)', 'Ivermectin', 'Azithromycin']
+
+for ct in common_therapies:
+    int_merge[ct] = np.where(int_merge.intervention.str.contains(ct, regex=False), 1, 0)
 
 # + trusted=true
-len(cp)
-
-# + trusted=true
-hcq_pub = hcq[['publication_any_adj', 'time_reporting_any_adj']].reset_index(drop=True)
-hcq_pub['publication_any_adj'] = hcq_pub['publication_any_adj'].astype(int)
-hcq_pub['time_reporting_any_adj'] = np.where(hcq_pub['time_reporting_any_adj'] < 0, 0, hcq_pub['time_reporting_any_adj'])
+int_merge['publication_any_adj'] = int_merge['publication_any_adj'].astype(int)
+int_merge['time_reporting_any_adj'] = np.where(int_merge['time_reporting_any_adj'] < 0, 0, int_merge['time_reporting_any_adj'])
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
 fig = plt.figure(dpi=300)
 ax = plt.subplot()
 
-T_hcq = hcq_pub.time_reporting_any_adj
-E_hcq = hcq_pub.publication_any_adj
+T_hcq = int_merge[int_merge[common_therapies[0]] == 1].time_reporting_any_adj
+E_hcq = int_merge[int_merge[common_therapies[0]] == 1].publication_any_adj
 
 kmf_hcq = KaplanMeierFitter()
-kmf_hcq.fit(T_hcq, E_hcq)
+kmf_hcq.fit(T_hcq, E_hcq, label='HCQ')
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
 ax = kmf_hcq.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
-                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5, 
-                                     color='green')
-
-ax.set_ylim([0, 1])
-
-plt.title("Time To Results Dissemination From Registered Completion Date - HCQ", pad=20, fontsize=20)
-plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
-
-from lifelines.plotting import add_at_risk_counts
-add_at_risk_counts(kmf_any, rows_to_show = ['At risk'], ax=ax)
-plt.tight_layout()
-
-# + trusted=true
-ive_pub = ive[['publication_any_adj', 'time_reporting_any_adj']].reset_index(drop=True)
-ive_pub['publication_any_adj'] = ive_pub['publication_any_adj'].astype(int)
-ive_pub['time_reporting_any_adj'] = np.where(ive_pub['time_reporting_any_adj'] < 0, 0, ive_pub['time_reporting_any_adj'])
-
-# + trusted=true
-yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
-ax = plt.subplot()
-
-T_ive = ive_pub.time_reporting_any_adj
-E_ive = ive_pub.publication_any_adj
-
-kmf_ive = KaplanMeierFitter()
-kmf_ive.fit(T_ive, E_ive)
-#ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
-ax = kmf_ive.plot_cumulative_density(ci_show=True, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
-                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
-
-ax.set_ylim([0, 1])
-
-plt.title("Time To Results Dissemination From Registered Completion Date - Ivermectin", pad=20, fontsize=20)
-plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
-
-from lifelines.plotting import add_at_risk_counts
-add_at_risk_counts(kmf_any, rows_to_show = ['At risk'], ax=ax)
-plt.tight_layout()
-
-# + trusted=true
-cp_pub = cp[['publication_any_adj', 'time_reporting_any_adj']].reset_index(drop=True)
-cp_pub['publication_any_adj'] = cp_pub['publication_any_adj'].astype(int)
-cp_pub['time_reporting_any_adj'] = np.where(cp_pub['time_reporting_any_adj'] < 0, 0, cp_pub['time_reporting_any_adj'])
-
-# + trusted=true
-yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
-ax = plt.subplot()
-
-T_cp = cp_pub.time_reporting_any_adj
-E_cp = cp_pub.publication_any_adj
-
-kmf_cp = KaplanMeierFitter()
-kmf_cp.fit(T_cp, E_cp)
-#ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
-ax = kmf_cp.plot_cumulative_density(ci_show=True, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
-                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
-
-ax.set_ylim([0, 1])
-
-plt.title("Time To Results Dissemination From Registered Completion Date", pad=20, fontsize=20)
-plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
-
-from lifelines.plotting import add_at_risk_counts
-add_at_risk_counts(kmf_any, rows_to_show = ['At risk'], ax=ax)
-plt.tight_layout()
-
-# + trusted=true
-yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
-ax = plt.subplot()
-
-#T1 = phase_pub[phase_pub.pandemic_phase == 1].time_reporting_any_adj
-#E1 = phase_pub[phase_pub.pandemic_phase == 1].publication_any_adj
-
-kmf_1 = KaplanMeierFitter()
-kmf_1.fit(T_hcq, E_hcq, label='HCQ')
-#ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
-ax = kmf_1.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=True, ax=ax, lw=2.5, 
                                    color='green')
 
-#T2 = phase_pub[phase_pub.pandemic_phase == 2].time_reporting_any_adj
-#E2 = phase_pub[phase_pub.pandemic_phase == 2].publication_any_adj
+T_cp = int_merge[int_merge[common_therapies[1]] == 1].time_reporting_any_adj
+E_cp = int_merge[int_merge[common_therapies[1]] == 1].publication_any_adj
 
-kmf_2 = KaplanMeierFitter()
-kmf_2.fit(T_ive, E_ive, label='Ivermectin')
+kmf_cp = KaplanMeierFitter()
+kmf_cp.fit(T_cp, E_cp, label='Con. Plasma')
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
-ax = kmf_2.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+ax = kmf_cp.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=True, ax=ax, lw=2.5, 
+                                   color='blue')
+
+T_scm = int_merge[int_merge[common_therapies[2]] == 1].time_reporting_any_adj
+E_scm = int_merge[int_merge[common_therapies[2]] == 1].publication_any_adj
+
+kmf_scm = KaplanMeierFitter()
+kmf_scm.fit(T_scm, E_scm, label='Stem Cells')
+#ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+ax = kmf_scm.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=True, ax=ax, lw=2.5, 
                                    color='red')
 
 
-#T3 = phase_pub[phase_pub.pandemic_phase == 3].time_reporting_any_adj
-#E3 = phase_pub[phase_pub.pandemic_phase == 3].publication_any_adj
+T_ive = int_merge[int_merge[common_therapies[3]] == 1].time_reporting_any_adj
+E_ive = int_merge[int_merge[common_therapies[3]] == 1].publication_any_adj
 
-kmf_3 = KaplanMeierFitter()
-kmf_3.fit(T_cp, E_cp, label='Con. Plasma')
+kmf_ive = KaplanMeierFitter()
+kmf_ive.fit(T_ive, E_ive, label='Ivermectin')
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
-ax = kmf_3.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+ax = kmf_ive.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=True, ax=ax, lw=2.5, 
-                                   color='blue')
+                                   color='gold')
+
+T_azm = int_merge[int_merge[common_therapies[4]] == 1].time_reporting_any_adj
+E_azm = int_merge[int_merge[common_therapies[4]] == 1].publication_any_adj
+
+kmf_azm = KaplanMeierFitter()
+kmf_azm.fit(T_azm, E_azm, label='Azithromycin')
+#ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+ax = kmf_azm.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=True, ax=ax, lw=2.5, 
+                                   color='darkorchid')
 
 ax.set_ylim([0, 1])
 
@@ -645,36 +567,42 @@ plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
 plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
 ax.legend(fontsize = 18)
 
-from lifelines.plotting import add_at_risk_counts
-add_at_risk_counts(kmf_1, kmf_2, kmf_3, rows_to_show = ['At risk'], ax=ax)
+#from lifelines.plotting import add_at_risk_counts
+add_at_risk_counts(kmf_hcq, kmf_cp, kmf_scm, kmf_ive, kmf_azm, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
+# + trusted=true
+#fig.savefig('intervention_reporting.png')
 
 # + [markdown]
-# # Registrations for presentation
+# # Registrations with only major results registries
 
 
 # + trusted=true
-test = df2.merge(df_reg[['id','crossreg']], how='left', on='id')
+df_reg
 
 # + trusted=true
-test['reg_result'] = np.where((test.crossreg.str.contains('NCT') | test.crossreg.str.contains('EUCTR') | test.crossreg.str.contains('ISRCTN')), 1,0)
+all_reg = df_reg[['id', 'trn']].groupby('id')['trn'].apply(list).to_frame().reset_index()
 
 # + trusted=true
-reg_only_km = test[test.reg_result == 1].reset_index(drop=True)
+just_results_reg = all_reg[(all_reg.trn.astype(str).str.contains('NCT')) | (all_reg.trn.astype(str).str.contains('EUCTR')) | (all_reg.trn.astype(str).str.contains('ISRCTN'))]
 
 # + trusted=true
-reg_pub2 = reg_only_km[['publication_summary_adj', 'time_publication_summary_adj']].reset_index(drop=True)
+reg_pub2 = df2[['id', 'publication_summary_adj', 'time_publication_summary_adj']].reset_index(drop=True)
 reg_pub2['publication_summary_adj'] = reg_pub2['publication_summary_adj'].astype(int)
 reg_pub2['time_publication_summary_adj'] = np.where(reg_pub2['time_publication_summary_adj'] < 0, 0, reg_pub2['time_publication_summary_adj'])
+
+# + trusted=true
+#Doing an inner join here so we just get the common elements between trials on those registries, and those we searched
+reg_results_df = just_results_reg.merge(reg_pub2, on='id', how='inner')
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
 fig = plt.figure(dpi=300)
 ax = plt.subplot()
 
-T = reg_pub2.time_publication_summary_adj
-E = reg_pub2.publication_summary_adj
+T = reg_results_df.time_publication_summary_adj
+E = reg_results_df.publication_summary_adj
 
 kmf_article = KaplanMeierFitter()
 kmf_article.fit(T, E)
@@ -684,29 +612,51 @@ ax = kmf_article.plot_cumulative_density(ci_show=True, show_censors=True, censor
 
 ax.set_ylim([0, 1])
 
-plt.title("Time To Registry Results From Primary Completion - ClinicalTrials.gov, EUCTR, ISRCTN", pad=20, fontsize=20)
+plt.title("Time To Registry Results From Primary Completion - EUCTR, CTG, ISRCTN", pad=20, fontsize=20)
 plt.ylabel('Reporting', labelpad=10, fontsize=14)
 plt.xlabel('Days to Journal Publication', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_article, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
+
+# + trusted=true
+fig.savefig('registry_eu_ctg_isrctn_reporting.png')
 # -
 
-
-
-
-# +
-
-
+# # Pub to Preprint
 
 # + trusted=true
-test.reg_result.sum()
+pp_df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/kaplan-meier-preprint-to-article.csv?token=GHSAT0AAAAAAB5S2YBIM7GK7ACYYMVVRF4IZBOZKRA')
 
 # + trusted=true
-1163/len(test)
+pp_df.head()
 
 # + trusted=true
-trials.head()
-# +
+yticks = list(np.arange(0,1.05,.05))
+fig = plt.figure(dpi=300)
+ax = plt.subplot()
+
+T = pp_df.time_preprint_article
+E = pp_df.publication_article.astype(int)
+
+kmf_pre_pub = KaplanMeierFitter()
+kmf_pre_pub.fit(T, E)
+#ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+ax = kmf_pre_pub.plot_cumulative_density(ci_show=True, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+
+ax.set_ylim([0, 1])
+
+plt.title("Time From Preprting to Journal Publication", pad=20, fontsize=20)
+plt.ylabel('Converting', labelpad=10, fontsize=14)
+plt.xlabel('Days to Journal Publication', labelpad=10, fontsize=14)
+
+add_at_risk_counts(kmf_pre_pub, rows_to_show = ['At risk'], ax=ax)
+plt.tight_layout()
+
+# + trusted=true
+fig.savefig('preprint_article_pub.png')
+# -
+
 
 

@@ -346,7 +346,7 @@ art = venn_data.publication_article_adj == True
 reg = venn_data.publication_summary_adj == True
 
 # + trusted=true
-len(venn_data[art & prep & reg])
+len(venn_data[~art & reg & prep])
 
 # + trusted=true
 colors = ['#377eb8', '#ff7f00', '#4daf4a','#f781bf', '#a65628', '#984ea3', '#999999', '#e41a1c', '#dede00']
@@ -376,7 +376,7 @@ for text in v1.set_labels:
     text.set_fontsize(10)
 
 for text in v1.subset_labels:
-    if text == v1.subset_labels[2]:
+    if text == v1.subset_labels[-2]:
         text.set_fontsize(5)
     else:
         text.set_fontsize(8)
@@ -384,14 +384,14 @@ for text in v1.subset_labels:
 #Journal Only
 v1.get_label_by_id("100").set_x(-0.2)
 #All
-v1.get_label_by_id("111").set_x(.15)
-v1.get_label_by_id("111").set_y(.18)
+v1.get_label_by_id("111").set_x(.18)
+v1.get_label_by_id("111").set_y(.05)
 #Registry + preprint
-v1.get_label_by_id("011").set_y(.12)
-v1.get_label_by_id("011").set_x(.31)
+v1.get_label_by_id("011").set_y(-.04)
+v1.get_label_by_id("011").set_x(.35)
 #Registry Only
-v1.get_label_by_id("010").set_x(.35)
-v1.get_label_by_id("010").set_y(.28)
+v1.get_label_by_id("010").set_x(.43)
+v1.get_label_by_id("010").set_y(.18)
 
 venn3_circles(values)
 plt.title('COVID-19 Clinical Trial Results by Dissemination Route', fontweight='bold')
@@ -471,7 +471,7 @@ add_at_risk_counts(kmf_1, kmf_2, kmf_3, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-fig.savefig('pandemic_phase_reporting.png')
+#fig.savefig('pandemic_phase_reporting.png')
 
 # + [markdown] tags=[]
 # # Interventions
@@ -620,7 +620,7 @@ add_at_risk_counts(kmf_article, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-fig.savefig('registry_eu_ctg_isrctn_reporting.png')
+#fig.savefig('registry_eu_ctg_isrctn_reporting.png')
 # -
 
 # # Pub to Preprint
@@ -630,6 +630,9 @@ pp_df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/
 
 # + trusted=true
 pp_df.head()
+
+# + trusted=true
+pp_df.time_preprint_article.describe()
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
@@ -647,7 +650,7 @@ ax = kmf_pre_pub.plot_cumulative_density(ci_show=True, show_censors=True, censor
 
 ax.set_ylim([0, 1])
 
-plt.title("Time From Preprting to Journal Publication", pad=20, fontsize=20)
+plt.title("Time From Preprint to Journal Publication", pad=20, fontsize=20)
 plt.ylabel('Converting', labelpad=10, fontsize=14)
 plt.xlabel('Days to Journal Publication', labelpad=10, fontsize=14)
 
@@ -655,8 +658,43 @@ add_at_risk_counts(kmf_pre_pub, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-fig.savefig('preprint_article_pub.png')
+#fig.savefig('preprint_article_pub.png')
 # -
+# # Sensitivity Analysis - Only Completed Trials
 
+# + trusted=true
+completed = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/sensitivity-analyses/kaplan-meier-time-to-pub_latest_completion_status.csv')
+
+# + trusted=true
+completed.head()
+
+# + trusted=true
+completed2 = completed[['id', 'publication_any', 'time_publication_any']].reset_index(drop=True)
+completed2['publication_any'] = completed2['publication_any'].astype(int)
+completed2['time_publication_any'] = np.where(completed2['time_publication_any'] < 0, 0, completed2['time_publication_any'])
+
+# + trusted=true
+yticks = list(np.arange(0,1.05,.05))
+fig = plt.figure(dpi=300)
+ax = plt.subplot()
+
+T = completed2.time_publication_any
+E = completed2.publication_any
+
+kmf_comp = KaplanMeierFitter()
+kmf_comp.fit(T, E)
+#ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+ax = kmf_comp.plot_cumulative_density(ci_show=True, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
+
+ax.set_ylim([0, 1])
+
+plt.title("Time to Any Publication - Completed Trials", pad=20, fontsize=20)
+plt.ylabel('Percent Reported', labelpad=10, fontsize=14)
+plt.xlabel('Days to Any Publication', labelpad=10, fontsize=14)
+
+add_at_risk_counts(kmf_comp, rows_to_show = ['At risk'], ax=ax)
+plt.tight_layout()
+# -
 
 

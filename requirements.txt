@@ -20,7 +20,7 @@ attrs==21.4.0
     # via
     #   jsonschema
     #   pytest
-autograd==1.4
+autograd==1.5
     # via
     #   autograd-gamma
     #   lifelines
@@ -38,6 +38,8 @@ beautifulsoup4==4.11.1
     #   nbconvert
 bleach==5.0.0
     # via nbconvert
+build==0.10.0
+    # via pip-tools
 certifi==2022.5.18.1
     # via requests
 cffi==1.15.0
@@ -162,7 +164,7 @@ jupytext==1.13.8
     # via -r requirements.in
 kiwisolver==1.4.2
     # via matplotlib
-lifelines==0.27.0
+lifelines==0.27.7
     # via -r requirements.in
 lxml==4.8.0
     # via -r requirements.in
@@ -238,6 +240,7 @@ openpyxl==3.0.10
     # via -r requirements.in
 packaging==21.3
     # via
+    #   build
     #   ipykernel
     #   jupyter-server
     #   jupyterlab
@@ -255,8 +258,6 @@ pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
     # via jedi
-pep517==0.12.0
-    # via pip-tools
 pexpect==4.8.0
     # via
     #   bash-kernel
@@ -303,6 +304,8 @@ pyparsing==3.0.9
     # via
     #   matplotlib
     #   packaging
+pyproject-hooks==1.0.0
+    # via build
 pyrsistent==0.18.1
     # via jsonschema
 pytest==7.1.2
@@ -371,7 +374,8 @@ toml==0.10.2
     # via jupytext
 tomli==2.0.1
     # via
-    #   pep517
+    #   build
+    #   pyproject-hooks
     #   pytest
 tornado==6.1
     # via

@@ -49,7 +49,7 @@ from matplotlib.pyplot import Text
 
 
 # + trusted=true
-df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/kaplan-meier-time-to-pub.csv?token=GHSAT0AAAAAAB5S2YBIYUVFOOYJG2AATYXSZBVHIFQ')
+df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/main-analyses/kaplan-meier-time-to-pub.csv')
 df.head()
 
 # + trusted=true
@@ -59,15 +59,6 @@ df_copy = df.copy()
 # + trusted=true
 results_cutoff = pd.to_datetime('2021-08-15')
 # -
-
-# To Do: 
-# 1. Remove dates after August 15th 2021 (or other date this gets changes to) XX
-# 2. Fix what this does to other columns XX
-# 2. Zero out negative follow-ups XX (doing this per graph)
-# 3. Create columns accounting for censorship XX
-# 4. Make date into dates XX
-# 5. Prepare for A-J XX
-# 6. Write sanity checks
 
 # # Making Dates into Dates
 
@@ -236,9 +227,9 @@ ax = kmf_any.plot_cumulative_density(ci_show=False, show_censors=True, censor_st
 
 ax.set_ylim([0, 1])
 
-plt.title("Time To Results Dissemination From Registered Completion Date", pad=20, fontsize=20)
+#plt.title("Time To Results Dissemination From Trial Completion", pad=20, fontsize=20)
 plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
+plt.xlabel('Days to Any Result from Registered Completion Date', labelpad=10, fontsize=14)
 
 from lifelines.plotting import add_at_risk_counts
 add_at_risk_counts(kmf_any, rows_to_show = ['At risk'], ax=ax)
@@ -277,9 +268,9 @@ ax = kmf_article.plot_cumulative_density(ci_show=False, show_censors=True, censo
 
 ax.set_ylim([0, 1])
 
-plt.title("Time To Journal Publication From Primary Completion", pad=20, fontsize=20)
-plt.ylabel('Reporting', labelpad=10, fontsize=14)
-plt.xlabel('Days to Journal Publication', labelpad=10, fontsize=14)
+#plt.title("Time To Journal Publication From Trial Completion", pad=20, fontsize=20)
+plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
+plt.xlabel('Days to Journal Publication from Registered Completion Date', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_article, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
@@ -309,9 +300,9 @@ with warnings.catch_warnings():
 aj.plot(yticks=yticks, figsize=(15,10), lw=3, legend=None, grid=True, ci_show=False, color= '#377eb8')
 plt.plot(d.index, d['CIF_1'], '|', markersize=10, color='C0')
 
-plt.title('Time to Preprint Publication', pad=15, fontsize=20)
+#plt.title('Time to Preprint Publication from Trial Completion', pad=15, fontsize=20)
 plt.ylabel('Proportion Reported', labelpad=10, fontsize=15)
-plt.xlabel('Days From Completion', labelpad=10, fontsize=12)
+plt.xlabel('Days to Preprint Publication from Registered Completion Date', labelpad=10, fontsize=12)
 
 ax.set_ylim([0, 1])
 
@@ -347,9 +338,9 @@ ax = kmf_reg2.plot_cumulative_density(ci_show=False, show_censors=True, censor_s
 
 ax.set_ylim([0, 1])
 
-plt.title("Time To Registry Results From Primary Completion - EUCTR, CTG, ISRCTN", pad=20, fontsize=20)
-plt.ylabel('Reporting', labelpad=10, fontsize=14)
-plt.xlabel('Days to Journal Publication', labelpad=10, fontsize=14)
+#plt.title("Time To Registry Results From Trial Completion (EUCTR, CTG, ISRCTN)", pad=20, fontsize=20)
+plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
+plt.xlabel('Days to Registry Results from Registered Completion Date', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_reg2, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
@@ -388,9 +379,9 @@ ax = kmf_article.plot_cumulative_density(ci_show=False, show_censors=True, censo
 
 ax.set_ylim([0, 1])
 
-plt.title("Time To Registry Results From Primary Completion", pad=20, fontsize=20)
-plt.ylabel('Reporting', labelpad=10, fontsize=14)
-plt.xlabel('Days to Journal Publication', labelpad=10, fontsize=14)
+#plt.title("Time To Registry Results From Trial Completion", pad=20, fontsize=20)
+plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
+plt.xlabel('Days to Registry Results from Registered Completion Date', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_article, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
@@ -476,9 +467,6 @@ date_out = [1,2,3]
 df2['pandemic_phase'] = np.select(date_conds, date_out)
 
 # + trusted=true
-#What does this look like for reporting
-
-# + trusted=true
 phase_pub = df2[['publication_any_adj', 'time_reporting_any_adj', 'pandemic_phase']].reset_index(drop=True)
 phase_pub['publication_any_adj'] = phase_pub['publication_any_adj'].astype(int)
 phase_pub['time_reporting_any_adj'] = np.where(phase_pub['time_reporting_any_adj'] < 0, 0, phase_pub['time_reporting_any_adj'])
@@ -519,11 +507,11 @@ ax = kmf_3.plot_cumulative_density(ci_show=False, show_censors=True, censor_styl
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=True, ax=ax, lw=2.5, 
                                    color='#4daf4a')
 
-ax.set_ylim([0, .5])
+ax.set_ylim([0, 1])
 
-plt.title("Time To Results Dissemination by Timing of Completion", pad=20, fontsize=20)
+#plt.title("Time To Results Dissemination by Timing of Completion", pad=20, fontsize=20)
 plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
+plt.xlabel('Days to Any Result from Registered Completion Date', labelpad=10, fontsize=14)
 ax.legend(fontsize = 18)
 
 from lifelines.plotting import add_at_risk_counts
@@ -651,9 +639,9 @@ ax = kmf_any_comp.plot_cumulative_density(ci_show=False, show_censors=True, cens
 
 ax.set_ylim([0, 1])
 
-plt.title("Time To Results Dissemination From Registered Completion Date - Common Interventions", pad=20, fontsize=20)
+#plt.title("Time To Results Dissemination From Registered Completion Date (Common Interventions)", pad=20, fontsize=20)
 plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
+plt.xlabel('Days to Any Result from Registered Completion Date', labelpad=10, fontsize=14)
 ax.legend(fontsize = 18)
 
 #from lifelines.plotting import add_at_risk_counts
@@ -664,7 +652,7 @@ plt.tight_layout()
 #fig.savefig('Figures/intervention_reporting.png')
 # -
 
-# # "High Quality" trials only
+# # Trial Design Characteristics
 
 # + trusted=true
 hq_df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/subgroup-analyses/kaplan-meier-minimum-standards.csv')
@@ -693,7 +681,7 @@ T_hq = hq_df.time_publication_any_adj
 E_hq = hq_df.publication_any_adj
 
 kmf_hq = KaplanMeierFitter()
-kmf_hq.fit(T_hq, E_hq, label='High Design Standard')
+kmf_hq.fit(T_hq, E_hq, label='Meets Design Standard')
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
 ax = kmf_hq.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=3, color='#377eb8')
@@ -703,7 +691,7 @@ T_nhq = nhq.time_reporting_any_adj
 E_nhq = nhq.publication_any_adj
 
 kmf_nhq = KaplanMeierFitter()
-kmf_nhq.fit(T_nhq, E_nhq, label='Low Design Standard')
+kmf_nhq.fit(T_nhq, E_nhq, label="Doesn't Meet Design Standard")
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
 ax = kmf_nhq.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=3, color='#ff7f00')
@@ -711,25 +699,28 @@ ax = kmf_nhq.plot_cumulative_density(ci_show=False, show_censors=True, censor_st
 ax.set_ylim([0, 1])
 ax.legend(fontsize = 18)
 
-plt.title("Time To Results Dissemination From Registered Completion Date - High vs. Low Design Standard", pad=20, fontsize=20)
+#plt.title("Time To Results Dissemination From Registered Completion Date Based on Trial Characteristics", pad=20, fontsize=20)
 plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Result from Registered Completion', labelpad=10, fontsize=14)
+plt.xlabel('Days to Any Result from Registered Completion Date', labelpad=10, fontsize=14)
 
 from lifelines.plotting import add_at_risk_counts
 add_at_risk_counts(kmf_hq, kmf_nhq, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-#fig.savefig('Figures/design_standard_reporting.png')
+#fig.savefig('Figures/design_char_reporting.png')
 # -
 
 # # Pub to Preprint
 
 # + trusted=true
-pp_df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/kaplan-meier-preprint-to-article.csv?token=GHSAT0AAAAAAB5S2YBIM7GK7ACYYMVVRF4IZBOZKRA')
+pp_df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/main-analyses/kaplan-meier-preprint-to-article.csv')
 
 # + trusted=true
 pp_df.head()
+
+# + trusted=true
+pp_df.time_preprint_article.max()
 
 # + trusted=true
 pp_df.time_preprint_article.describe()
@@ -749,9 +740,9 @@ ax = kmf_pre_pub.plot_cumulative_density(ci_show=False, show_censors=True, censo
 
 ax.set_ylim([0, 1])
 
-plt.title("Time From Preprint to Journal Publication", pad=20, fontsize=20)
-plt.ylabel('Converting', labelpad=10, fontsize=14)
-plt.xlabel('Days to Journal Publication', labelpad=10, fontsize=14)
+#plt.title("Time From Preprint to Journal Publication", pad=20, fontsize=20)
+plt.ylabel('Proportion Converting', labelpad=10, fontsize=14)
+plt.xlabel('Days to Journal Publication from Preprint Publication', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_pre_pub, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
@@ -804,9 +795,9 @@ ax = kmf_any2.plot_cumulative_density(ci_show=False, show_censors=True, censor_s
 ax.set_ylim([0, 1])
 ax.legend(fontsize = 18)
 
-plt.title("Time to Any Publication - Completed Status Trials", pad=20, fontsize=20)
-plt.ylabel('Percent Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Publication', labelpad=10, fontsize=14)
+#plt.title("Time to Any Publication for Completed Status Trials", pad=20, fontsize=20)
+plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
+plt.xlabel('Days to Any Result from Registered Completion Date', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_comp, kmf_any2, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
@@ -852,9 +843,9 @@ ax = kmf_any2.plot_cumulative_density(ci_show=False, show_censors=True, censor_s
 ax.set_ylim([0, 1])
 ax.legend(fontsize = 18)
 
-plt.title("Time to Any Publication - Only Full Study Completion Dates", pad=20, fontsize=20)
-plt.ylabel('Percent Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Publication', labelpad=10, fontsize=14)
+#plt.title("Time to Any Publication for Only Full Study Completion Dates", pad=20, fontsize=20)
+plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
+plt.xlabel('Days to Any Result from Registered Full Completion Date', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_fc, kmf_any2, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
@@ -865,7 +856,7 @@ plt.tight_layout()
 # + [markdown] tags=[]
 # # Sensitivity Analysis - Interim Results
 # + trusted=true
-interim_df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/kaplan-meier-time-to-pub.csv')
+interim_df = pd.read_csv('https://raw.githubusercontent.com/maia-sh/direcct-analysis/main/data/reporting/main-analyses/kaplan-meier-time-to-pub.csv')
 
 # + trusted=true
 interim_df.columns
@@ -904,9 +895,9 @@ ax = kmf_any2.plot_cumulative_density(ci_show=False, show_censors=True, censor_s
 ax.set_ylim([0, 1])
 ax.legend(fontsize = 18)
 
-plt.title("Time to Any Publication Inclusive of Interim Results", pad=20, fontsize=20)
-plt.ylabel('Percent Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Publication', labelpad=10, fontsize=14)
+#plt.title("Time to Any Publication Inclusive of Interim Results", pad=20, fontsize=20)
+plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
+plt.xlabel('Days to Any Result from Registered Completion Date', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_in, kmf_any2, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
@@ -955,9 +946,9 @@ ax = kmf_any2.plot_cumulative_density(ci_show=False, show_censors=True, censor_s
 ax.set_ylim([0, 1])
 ax.legend(fontsize = 18)
 
-plt.title("Time to Any Publication - April 2022 Data Refresh", pad=20, fontsize=20)
-plt.ylabel('Percent Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Publication', labelpad=10, fontsize=14)
+#plt.title("Time to Any Publication (April 2022 Data Refresh)", pad=20, fontsize=20)
+plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
+plt.xlabel('Days to Any Result from Registered Completion Date as of April 2022', labelpad=10, fontsize=14)
 
 add_at_risk_counts(kmf_up, kmf_any2, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()

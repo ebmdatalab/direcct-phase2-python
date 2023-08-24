@@ -44,6 +44,9 @@ from matplotlib_venn import venn3, venn3_circles, venn3_unweighted
 # + trusted=true
 from matplotlib.pyplot import Text
 
+# + trusted=true
+dpi = 400
+
 # + [markdown]
 # # Loading Data
 
@@ -213,7 +216,7 @@ any_pub['time_reporting_any_adj'] = np.where(any_pub['time_reporting_any_adj'] <
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(figsize = (10,10), dpi=300)
+fig = plt.figure(figsize = (10,10), dpi=dpi)
 ax = plt.subplot()
 
 T = any_pub.time_reporting_any_adj
@@ -242,7 +245,7 @@ any_df['ci_values'] = 1-any_df.KM_estimate
 any_df.loc[100]
 
 # + trusted=true
-#fig.savefig('Figures/time_any_pub.png')
+#fig.savefig('Figures/time_any_pub.tiff')
 # -
 
 # # Article Publication
@@ -254,7 +257,7 @@ article_pub['time_publication_article_adj'] = np.where(article_pub['time_publica
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T_art = article_pub.time_publication_article_adj
@@ -282,14 +285,14 @@ j_df['ci_values'] = 1-j_df.KM_estimate
 j_df.loc[299]
 
 # + trusted=true
-#fig.savefig('Figures/time_to_journal.png')
+#fig.savefig('Figures/time_to_journal.tiff')
 # -
 
 # # Time to Preprint Publication (with article pub as competing risk)
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 aj = AalenJohansenFitter(seed=10)
@@ -312,7 +315,7 @@ plt.tight_layout()
 plt.show()
 
 # + trusted=true
-#fig.savefig('Figures/time_to_preprint_aj.png')
+#fig.savefig('Figures/time_to_preprint_aj.tiff')
 # -
 
 # # Registrations with only mature results registries
@@ -324,7 +327,7 @@ reg_pub2['time_publication_summary_adj'] = np.where(reg_pub2['time_publication_s
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T_mag_reg = reg_pub2.time_publication_summary_adj
@@ -352,7 +355,7 @@ reg2_df['ci_values'] = 1-reg2_df.KM_estimate
 reg2_df.loc[365]
 
 # + trusted=true
-#fig.savefig('Figures/registry_eu_ctg_isrctn_reporting.png')
+#fig.savefig('Figures/registry_eu_ctg_isrctn_reporting.tiff')
 # -
 
 # # Registry results (All Registries)
@@ -365,7 +368,7 @@ reg_pub['time_publication_summary_adj'] = np.where(reg_pub['time_publication_sum
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T_reg = reg_pub.time_publication_summary_adj
@@ -387,7 +390,7 @@ add_at_risk_counts(kmf_article, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-#fig.savefig('Figures/all_registries.png')
+#fig.savefig('Figures/all_registries.tiff')
 # -
 
 # # Venn
@@ -416,7 +419,7 @@ values = (len(venn_data[art & ~prep & ~reg]),
 
 
 # + trusted=true
-plt.figure(figsize=(8,8), dpi=300)
+plt.figure(figsize=(8,8), dpi=dpi)
 v1 = venn3(
     subsets = values, 
     set_labels = labels,
@@ -447,7 +450,7 @@ v1.get_label_by_id("010").set_y(.18)
 
 venn3_circles(values)
 #plt.title('COVID-19 Clinical Trial Results by Dissemination Route', fontweight='bold')
-#plt.savefig('Figures/reporting_venn.png')
+#plt.savefig('Figures/reporting_venn.tiff')
 plt.show()
 # + [markdown] tags=[]
 # # Breaking Pandemic into Phases
@@ -473,7 +476,7 @@ phase_pub['time_reporting_any_adj'] = np.where(phase_pub['time_reporting_any_adj
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T1 = phase_pub[phase_pub.pandemic_phase == 1].time_reporting_any_adj
@@ -519,7 +522,7 @@ add_at_risk_counts(kmf_1, kmf_2, kmf_3, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-#fig.savefig('Figures/pandemic_phase_reporting.png')
+#fig.savefig('Figures/pandemic_phase_reporting.tiff')
 
 # + trusted=true
 #These are the KM values
@@ -572,7 +575,7 @@ int_merge['time_reporting_any_adj'] = np.where(int_merge['time_reporting_any_adj
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T_hcq = int_merge[int_merge[common_therapies[0]] == 1].time_reporting_any_adj
@@ -649,7 +652,7 @@ add_at_risk_counts(kmf_hcq, kmf_cp, kmf_scm, kmf_ive, kmf_azm, kmf_any_comp, row
 plt.tight_layout()
 
 # + trusted=true
-#fig.savefig('Figures/intervention_reporting.png')
+#fig.savefig('Figures/intervention_reporting.tiff')
 # -
 
 # # Trial Design Characteristics
@@ -674,7 +677,7 @@ nhq['time_reporting_any_adj'] = np.where(nhq['time_reporting_any_adj'] < 0, 0, n
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(figsize = (10,10), dpi=300)
+fig = plt.figure(figsize = (10,10), dpi=dpi)
 ax = plt.subplot()
 
 T_hq = hq_df.time_publication_any_adj
@@ -708,7 +711,7 @@ add_at_risk_counts(kmf_hq, kmf_nhq, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-#fig.savefig('Figures/design_char_reporting.png')
+#fig.savefig('Figures/design_char_reporting.tiff')
 # -
 
 # # Pub to Preprint
@@ -727,7 +730,7 @@ pp_df.time_preprint_article.describe()
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T_pub_preprint = pp_df.time_preprint_article
@@ -748,7 +751,7 @@ add_at_risk_counts(kmf_pre_pub, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-#fig.savefig('Figures/preprint_article_pub.png')
+#fig.savefig('Figures/preprint_article_pub.tiff')
 # + trusted=true
 #These are the KM values
 pre_pub_df = kmf_pre_pub.survival_function_
@@ -768,7 +771,7 @@ completed2['time_publication_any'] = np.where(completed2['time_publication_any']
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T_comp2 = completed2.time_publication_any
@@ -802,7 +805,7 @@ plt.xlabel('Days to Any Result from Registered Completion Date', labelpad=10, fo
 add_at_risk_counts(kmf_comp, kmf_any2, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 # + trusted=true
-#fig.savefig('Figures/completed_trials_sens.png')
+#fig.savefig('Figures/completed_trials_sens.tiff')
 # -
 # # Sensitivity Analysis - Full Completion Date
 
@@ -816,7 +819,7 @@ full_comp['time_publication_any'] = np.where(full_comp['time_publication_any'] <
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T_fc = full_comp.time_publication_any
@@ -851,7 +854,7 @@ add_at_risk_counts(kmf_fc, kmf_any2, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-#fig.savefig('Figures/full_complete_sens.png')
+#fig.savefig('Figures/full_complete_sens.tiff')
 
 # + [markdown] tags=[]
 # # Sensitivity Analysis - Interim Results
@@ -868,7 +871,7 @@ interim['time_publication_interim_any'] = np.where(interim['time_publication_int
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T_in = interim.time_publication_interim_any
@@ -903,7 +906,7 @@ add_at_risk_counts(kmf_in, kmf_any2, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
-#fig.savefig('Figures/interim_sens.png')
+#fig.savefig('Figures/interim_sens.tiff')
 # -
 
 
@@ -919,7 +922,7 @@ updated['time_publication_any'] = np.where(updated['time_publication_any'] < 0, 
 
 # + trusted=true
 yticks = list(np.arange(0,1.05,.05))
-fig = plt.figure(dpi=300)
+fig = plt.figure(dpi=dpi)
 ax = plt.subplot()
 
 T_updated = updated.time_publication_any
@@ -953,7 +956,7 @@ plt.xlabel('Days to Any Result from Registered Completion Date as of April 2022'
 add_at_risk_counts(kmf_up, kmf_any2, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 # + trusted=true
-#fig.savefig('Figures/apr22_sens.png')
+#fig.savefig('Figures/apr22_sens.tiff')
 # -
 
 
@@ -970,5 +973,6 @@ plt.tight_layout()
 # -
 
 
+# +
 
 

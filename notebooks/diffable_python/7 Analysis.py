@@ -45,7 +45,7 @@ from matplotlib_venn import venn3, venn3_circles, venn3_unweighted
 from matplotlib.pyplot import Text
 
 # + trusted=true
-dpi = 400
+dpi = 300
 
 # + [markdown]
 # # Loading Data
@@ -219,11 +219,11 @@ yticks = list(np.arange(0,1.05,.05))
 fig = plt.figure(figsize = (10,10), dpi=dpi)
 ax = plt.subplot()
 
-T = any_pub.time_reporting_any_adj
-E = any_pub.publication_any_adj
+T_any = any_pub.time_reporting_any_adj
+E_any = any_pub.publication_any_adj
 
 kmf_any = KaplanMeierFitter()
-kmf_any.fit(T, E)
+kmf_any.fit(T_any, E_any)
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
 ax = kmf_any.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=3, color='#377eb8')
@@ -231,8 +231,8 @@ ax = kmf_any.plot_cumulative_density(ci_show=False, show_censors=True, censor_st
 ax.set_ylim([0, 1])
 
 #plt.title("Time To Results Dissemination From Trial Completion", pad=20, fontsize=20)
-plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
-plt.xlabel('Days to Any Result from Registered Completion Date', labelpad=10, fontsize=14)
+plt.ylabel('Proportion Reported', labelpad=10, fontsize=16)
+plt.xlabel('Days to Any Result from Registered Completion Date', labelpad=10, fontsize=16)
 
 from lifelines.plotting import add_at_risk_counts
 add_at_risk_counts(kmf_any, rows_to_show = ['At risk'], ax=ax)
@@ -309,7 +309,7 @@ plt.xlabel('Days to Preprint Publication from Registered Completion Date', label
 
 ax.set_ylim([0, 1])
 
-from lifelines.plotting import add_at_risk_counts
+#from lifelines.plotting import add_at_risk_counts
 add_at_risk_counts(aj, rows_to_show = ['At risk'])
 plt.tight_layout()
 plt.show()
@@ -358,6 +358,71 @@ reg2_df.loc[365]
 #fig.savefig('Figures/registry_eu_ctg_isrctn_reporting.tiff')
 # -
 
+# # Combining Figures for Dissemination Routes
+
+# + trusted=true
+fig = plt.figure(dpi=dpi)
+yticks = list(np.arange(0,1.1,.1))
+
+
+ax1 = plt.subplot(221)
+kmf_any = KaplanMeierFitter()
+kmf_any.fit(T_any, E_any)
+kmf_any.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, label='Any',
+                                     yticks=yticks, figsize=(24, 12), grid=True, legend=False, ax=ax1, lw=3, color='#377eb8')
+
+
+ax1.set_title('A) Any Reporting', pad=12, fontsize=16)
+ax1.set_xlabel('')
+add_at_risk_counts(kmf_any, rows_to_show = ['At risk'], ax=ax1, ypos=-.3, labels=['Any'], fontsize=12)
+
+ax2 = plt.subplot(222)
+kmf_article = KaplanMeierFitter()
+kmf_article.fit(T_art, E_art)
+kmf_article.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, label='Article',
+                                     yticks=yticks, figsize=(24, 12), grid=True, legend=False, ax=ax2, lw=3, color='#377eb8')
+
+ax2.set_title('B) Article Reporting', pad=12, fontsize=16)
+ax2.set_xlabel('')
+add_at_risk_counts(kmf_article, rows_to_show = ['At risk'], ax=ax2, ypos=-.3, labels=['Article'], fontsize=12)
+
+ax3 = plt.subplot(223)
+with warnings.catch_warnings():
+    warnings.simplefilter('ignore')
+    aj.fit(competing_risks.time_cr, competing_risks.event_cr, event_of_interest=1)
+aj.plot(yticks=yticks, figsize=(24,12), lw=3, legend=None, grid=True, ci_show=False, color= '#377eb8', ax=ax3)
+plt.plot(d.index, d['CIF_1'], '|', markersize=10, color='C0')
+ax3.set_ylim([0, 1])
+
+ax3.set_title('C) Preprint Reporting', pad=12, fontsize=16)
+ax3.set_ylabel('Proportion Reported', fontsize=18)
+ax3.yaxis.set_label_coords(-.055,1.1)
+ax3.set_xlabel('Days to Results from Registered Completion Date', fontsize=18)
+ax3.xaxis.set_label_coords(1.05,-.25)
+
+add_at_risk_counts(aj, rows_to_show = ['At risk'], ax=ax3, ypos=-.3, labels=['Preprint'], fontsize=12)
+
+ax4 = plt.subplot(224)
+kmf_reg2 = KaplanMeierFitter()
+kmf_reg2.fit(T_mag_reg, E_mag_reg)
+kmf_reg2.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24, 12), grid=True, legend=False, ax=ax4, lw=3, color='#377eb8')
+
+ax4.set_title('D) Registry Reporting', pad=12, fontsize=16)
+ax4.set_xlabel('')
+
+add_at_risk_counts(kmf_reg2, rows_to_show = ['At risk'], ax=ax4, ypos=-.3, labels=['Registry'], fontsize=12)
+
+plt.tight_layout()
+
+for a in [ax1, ax2, ax3, ax4]:
+    a.tick_params(labelsize=12)
+
+
+# + trusted=true
+#fig.savefig('Figures/figure_2_combined.tiff', dpi=300, format="tiff", pil_kwargs={"compression": "tiff_lzw"})
+# -
+
 # # Registry results (All Registries)
 # -We restrict this only to registrations on registries that can accept registry results
 
@@ -374,10 +439,10 @@ ax = plt.subplot()
 T_reg = reg_pub.time_publication_summary_adj
 E_reg = reg_pub.publication_summary_adj
 
-kmf_article = KaplanMeierFitter()
-kmf_article.fit(T_reg, E_reg)
+kmf_all_reg = KaplanMeierFitter()
+kmf_all_reg.fit(T_reg, E_reg)
 #ax = kmf_any.plot(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=2.5)
-ax = kmf_article.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+ax = kmf_all_reg.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
                                      yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=3, color='#377eb8')
 
 ax.set_ylim([0, 1])
@@ -386,7 +451,7 @@ ax.set_ylim([0, 1])
 plt.ylabel('Proportion Reported', labelpad=10, fontsize=14)
 plt.xlabel('Days to Registry Results from Registered Completion Date', labelpad=10, fontsize=14)
 
-add_at_risk_counts(kmf_article, rows_to_show = ['At risk'], ax=ax)
+add_at_risk_counts(kmf_all_reg, rows_to_show = ['At risk'], ax=ax)
 plt.tight_layout()
 
 # + trusted=true
@@ -714,6 +779,133 @@ plt.tight_layout()
 #fig.savefig('Figures/design_char_reporting.tiff')
 # -
 
+# # Combining Subgroup Analyses
+
+# + trusted=true
+fig = plt.figure(dpi=dpi)
+yticks = list(np.arange(0,1.05,.1))
+
+#Pandemic Phase
+
+ax_phase = plt.subplot2grid((2,2), (0,0))
+
+kmf_1 = KaplanMeierFitter()
+kmf_1.fit(T1, E1, label='1-6 Months')
+kmf_1.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=True, ax=ax_phase, lw=2.5, 
+                                   color='#377eb8')
+
+kmf_2 = KaplanMeierFitter()
+kmf_2.fit(T2, E2, label='7-12 Months')
+kmf_2.plot_cumulative_density(ci_show=False, show_censors=False, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=True, ax=ax_phase, lw=2.5, 
+                                   color='#ff7f00')
+
+kmf_3 = KaplanMeierFitter()
+kmf_3.fit(T3, E3, label='13-18 Months')
+kmf_3.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=True, ax=ax_phase, lw=2.5, 
+                                   color='#4daf4a')
+
+ax_phase.set_ylim([0, 1])
+ax_phase.set_title('A) Pandemic Period', pad=12, fontsize=16)
+ax_phase.set_xlabel('')
+ax_phase.legend(fontsize=12)
+add_at_risk_counts(kmf_1, kmf_2, kmf_3, rows_to_show = ['At risk'], ax=ax_phase, ypos=-.3, fontsize=12)
+
+#########
+
+#Design
+
+ax_des = plt.subplot2grid((2,2), (0,1))
+
+kmf_hq = KaplanMeierFitter()
+kmf_hq.fit(T_hq, E_hq, label='Meets Criteria')
+kmf_hq.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24, 12), grid=True, legend=True, ax=ax_des, lw=3, color='#377eb8')
+
+
+kmf_nhq = KaplanMeierFitter()
+kmf_nhq.fit(T_nhq, E_nhq, label="Lacking Criteria")
+kmf_nhq.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=True, ax=ax_des, lw=3, color='#ff7f00')
+
+ax_des.set_ylim([0, 1])
+ax_des.set_title('B) Trial Design', pad=12, fontsize=16)
+ax_des.set_xlabel('')
+ax_des.legend(fontsize=12)
+add_at_risk_counts(kmf_hq, kmf_nhq, rows_to_show = ['At risk'], ax=ax_des, ypos=-.3, fontsize=12)
+
+#########
+
+#Interventions
+
+ax_ints = plt.subplot2grid((2,2), (1,0), colspan=2)
+
+kmf_hcq = KaplanMeierFitter()
+kmf_hcq.fit(T_hcq, E_hcq, label='HCQ')
+kmf_hcq.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=True, ax=ax_ints, lw=2.5, 
+                                   color='#377eb8')
+
+kmf_cp = KaplanMeierFitter()
+kmf_cp.fit(T_cp, E_cp, label='Con. Plasma')
+kmf_cp.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=True, ax=ax_ints, lw=2.5, 
+                                   color='#ff7f00')
+
+kmf_scm = KaplanMeierFitter()
+kmf_scm.fit(T_scm, E_scm, label='Stem Cells')
+kmf_scm.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=True, ax=ax_ints, lw=2.5, 
+                                   color='#4daf4a')
+
+
+kmf_ive = KaplanMeierFitter()
+kmf_ive.fit(T_ive, E_ive, label='Ivermectin')
+kmf_ive.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=True, ax=ax_ints, lw=2.5, 
+                                   color='#f781bf')
+
+kmf_azm = KaplanMeierFitter()
+kmf_azm.fit(T_azm, E_azm, label='Azithromycin')
+kmf_azm.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=True, ax=ax_ints, lw=2.5, 
+                                   color='#a65628')
+
+
+kmf_any_comp = KaplanMeierFitter()
+kmf_any_comp.fit(T_other, E_other, label='All Other Trials')
+kmf_any_comp.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|', 'alpha':.4}, 
+                                     yticks=yticks, figsize=(24,12), grid=True, legend=False, ax=ax_ints, lw=4, 
+                                     color='lightsteelblue', alpha=.4)
+
+ax_ints.set_ylim([0, 1])
+ax_ints.set_title('C) Common Interventions', pad=12, fontsize=16)
+add_at_risk_counts(kmf_hcq, kmf_cp, kmf_scm, kmf_ive, kmf_azm, kmf_any_comp, rows_to_show = ['At risk'], ax=ax_ints, ypos=-.3, fontsize=12)
+
+
+ax_ints.set_ylabel('Proportion Reported', fontsize=18)
+ax_ints.yaxis.set_label_coords(-.03,0.5)
+ax_phase.set_ylabel('Proportion Reported', fontsize=18)
+ax_phase.yaxis.set_label_coords(-.06,.5)
+ax_ints.set_xlabel('Days to Results from Registered Completion Date', fontsize=18)
+ax_ints.xaxis.set_label_coords(0.5,-.55)
+
+plt.tight_layout()
+ax_ints.legend(fontsize=12)
+
+pos = ax_ints.get_position()
+new_pos = [pos.x0, pos.y0-.015, pos.width, pos.height]
+ax_ints.set_position(new_pos)
+
+for a in [ax_phase, ax_ints, ax_des]:
+    a.tick_params(labelsize=12)
+
+# + trusted=true
+#fig.savefig('Figures/figure5_combined.tiff', dpi=300, format="tiff", pil_kwargs={"compression": "tiff_lzw"})
+# -
+
 # # Pub to Preprint
 
 # + trusted=true
@@ -958,9 +1150,30 @@ plt.tight_layout()
 # + trusted=true
 #fig.savefig('Figures/apr22_sens.tiff')
 # -
+# # Figure Testing
 
+# + trusted=true
+ax = plt.subplot(221)
+kmf_any.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=3, color='#377eb8')
 
+ax = plt.subplot(222)
+kmf_article.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=3, color='#377eb8')
 
+ax = plt.subplot(223)
+with warnings.catch_warnings():
+    warnings.simplefilter('ignore')
+    aj.fit(competing_risks.time_cr, competing_risks.event_cr, event_of_interest=1)
+aj.plot(yticks=yticks, figsize=(15,10), lw=3, legend=None, grid=True, ci_show=False, color= '#377eb8', ax=ax)
+plt.plot(d.index, d['CIF_1'], '|', markersize=10, color='C0')
+
+ax = plt.subplot(224)
+kmf_reg2.plot_cumulative_density(ci_show=False, show_censors=True, censor_styles={'ms':10, 'marker':'|'}, 
+                                     yticks=yticks, figsize=(15, 10), grid=True, legend=False, ax=ax, lw=3, color='#377eb8')
+
+plt.tight_layout()
+# -
 
 
 
@@ -973,6 +1186,39 @@ plt.tight_layout()
 # -
 
 
-# +
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
